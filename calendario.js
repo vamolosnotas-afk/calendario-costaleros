@@ -139,7 +139,7 @@
     caja.appendChild(cta);
 
     caja.appendChild(el("div", "font:12px Arial,sans-serif;margin-top:16px;opacity:.75;line-height:1.5",
-      "Fechas publicadas por las propias hermandades en sus webs y redes oficiales; cada cita enlaza a la publicación original. Pueden cambiar: confírmalas siempre con tu hermandad o tu capataz."));
+      "Fechas publicadas por las propias hermandades y cuadrillas. Pueden cambiar: confírmalas siempre con tu hermandad o tu capataz."));
   }
 
   function tarjeta(e, conFecha) {
@@ -159,7 +159,7 @@
     if (e.titulo) t.appendChild(el("div", "font-size:13px;margin-top:2px;opacity:.85", e.titulo));
     if (e.fuente) { var a = el("a", "font-size:12px;color:" + BURDEOS, "Ver fuente" + (e.fuente_nombre ? " (" + e.fuente_nombre + ")" : ""));
       a.href = e.fuente; a.target = "_blank"; a.rel = "noopener nofollow"; t.appendChild(a); }
-    else if (e.fuente_nombre) t.appendChild(el("div", "font-size:12px;color:" + BURDEOS, "Fuente: " + e.fuente_nombre));
+    else if (e.fuente_nombre && e.verificado_por !== "manuel") t.appendChild(el("div", "font-size:12px;color:" + BURDEOS, "Fuente: " + e.fuente_nombre));
     return t;
   }
   function boton(txt, url, c) { var a = el("a", "flex:1 1 220px;text-align:center;text-decoration:none;background:" + c + ";color:#fff;border-radius:10px;padding:12px;font:bold 14px Arial,sans-serif", txt); a.href = url; a.target = "_blank"; a.rel = "noopener"; return a; }
