@@ -110,7 +110,7 @@
     var futuros = visibles().filter(function (e) { return e.fecha >= hk; }).sort(function (a, b) { return (a.fecha + (a.hora || "")).localeCompare(b.fecha + (b.hora || "")); });
     var lista = el("div", "margin-top:22px");
     lista.appendChild(el("h3", "font-size:21px;margin:0 0 10px;border-bottom:2px solid " + DORADO + ";padding-bottom:6px", "Próximas igualás y ensayos"));
-    if (!futuros.length) lista.appendChild(el("div", "font:14px Arial,sans-serif", "Aún no hay citas publicadas para estas provincias. Cada mañana revisamos webs de hermandades y prensa cofrade."));
+    if (!futuros.length) lista.appendChild(el("div", "font:14px Arial,sans-serif", "Aún no hay citas publicadas para estas provincias. Cada mañana revisamos las webs y redes oficiales de las hermandades."));
     futuros.slice(0, 12).forEach(function (e) { lista.appendChild(tarjeta(e, true)); });
     caja.appendChild(lista);
 
@@ -122,7 +122,7 @@
     caja.appendChild(cta);
 
     caja.appendChild(el("div", "font:12px Arial,sans-serif;margin-top:16px;opacity:.75;line-height:1.5",
-      "Fechas recogidas de webs de hermandades y prensa cofrade; cada cita enlaza a su fuente. Pueden cambiar: confírmalas siempre con tu hermandad o tu capataz."));
+      "Fechas publicadas por las propias hermandades en sus webs y redes oficiales; cada cita enlaza a la publicación original. Pueden cambiar: confírmalas siempre con tu hermandad o tu capataz."));
   }
 
   function tarjeta(e, conFecha) {
