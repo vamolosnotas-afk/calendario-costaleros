@@ -1,4 +1,5 @@
-"""Fusiona eventos nuevos en eventos.json sin duplicados.
+"""Ámbito: hermandades, agrupaciones parroquiales, pro-hermandades y asociaciones que saquen un paso a la calle con costaleros.
+Fusiona eventos nuevos en eventos.json sin duplicados.
 Uso: python3 fusionar.py eventos.json nuevos1.json [nuevos2.json ...]
 Clave de duplicado: fecha + provincia + hermandad normalizada + tipo + paso.
 """
