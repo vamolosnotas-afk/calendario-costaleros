@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-10-29",
- "total": 36,
+ "total": 37,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -64,6 +64,23 @@
    "fuente": "https://realhermandadamorcordoba.blogspot.com/2026/10/iv-ensayo-solidario-kilos-de-amor.html",
    "fuente_nombre": "Web oficial de la Hdad. del Amor",
    "nota": "Los capataces de las distintas cuadrillas convocan a costaleros y costaleras; abierto a quien quiera sumarse. Recorrido: Pasaje Cristo del Amor, Beato Henares, Carretera de Castro, Alcaide de los Donceles, Beato Henares y Pasaje Cristo del Amor. Recogida de kilos de alimentos. Acompaña la BCT Ntra. Sra. de la Fuensanta Coronada.",
+   "añadido": "2026-10-29"
+  },
+  {
+   "fecha": "2026-11-15",
+   "hora": null,
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "Abnegación de San Bernardo",
+   "paso": null,
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de costaleros de la Asociación Cofrade de la Abnegación de San Bernardo",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Cita facilitada por Manuel (29/10/2026). Hora pendiente de confirmar.",
    "añadido": "2026-10-29"
   },
   {
