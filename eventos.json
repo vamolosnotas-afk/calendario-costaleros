@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-10-29",
- "total": 28,
+ "total": 29,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -96,6 +96,22 @@
    "fuente": "https://hermandaddelacaridad.org/iguala-costaleros-2026/",
    "fuente_nombre": "Web oficial de la Hdad. de la Caridad",
    "nota": "Calzado negro de salida. Los nuevos deben traer costal. Quien no pueda asistir: WhatsApp de la hermandad 618 509 982. La misma web informa en otra noticia (https://hermandaddelacaridad.org/designacion-capataz-2027/) de que el capataz designado para la Semana Santa 2027 es N.H.D. Ángel Carrero Pérez-Angulo; la noticia de la igualá no lo nombra, por eso capataz=null.",
+   "añadido": "2026-10-29"
+  },
+  {
+   "fecha": "2026-12-13",
+   "hora": "10:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "Agrup. Caridad y Desconsuelo (Los Príncipes)",
+   "paso": "Cristo",
+   "tipo": "igualá",
+   "titulo": "Igualá y ensayo de costaleros de Ntro. Padre Jesús de la Caridad en su Tercera Caída",
+   "lugar": "Calle Fray Serafín Madrid (capilla de salida)",
+   "capataz": null,
+   "fuente": "https://www.instagram.com/caridadydesconsuelo/p/DfFLBx3CFhP/",
+   "fuente_nombre": "Instagram oficial de la Agrupación Caridad y Desconsuelo",
+   "nota": "Igualá y posterior ensayo. Calzado negro obligatorio. No se iguala a menores de 18 años.",
    "añadido": "2026-10-29"
   },
   {
