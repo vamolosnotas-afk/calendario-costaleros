@@ -31,6 +31,9 @@
       var a = root.parentElement, caja = null;
       while (a && a !== document.body) { var w = a.getBoundingClientRect().width; if (w >= objetivo) { caja = a; break; } a = a.parentElement; }
       if (!caja) return;
+      for (var b = root.parentElement; b && b !== caja; b = b.parentElement) {
+        var cs = getComputedStyle(b); if (cs.overflowX !== "visible" || cs.overflow === "hidden") return;
+      }
       var c = caja.getBoundingClientRect(), ancho = Math.min(objetivo, c.width - 16);
       var izq = c.left + (c.width - ancho) / 2;
       root.style.width = ancho + "px"; root.style.maxWidth = "none";
