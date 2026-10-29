@@ -65,7 +65,7 @@
     ensanchar();
 
     caja.appendChild(el("div", "text-align:center;font-size:13px;letter-spacing:3px;color:" + BURDEOS + ";font-family:Arial,sans-serif;font-weight:bold", "TEMPORADA 2026 · 2027"));
-    caja.appendChild(el("h2", "text-align:center;margin:6px 0 4px;font-size:28px;line-height:1.15;color:" + MARRON, "Calendario de igualás y ensayos"));
+    caja.appendChild(el("h2", "text-align:center;margin:6px 0 4px;font-size:28px;line-height:1.15;color:" + MARRON + " !important;text-transform:none;letter-spacing:0", "Calendario de igualás y ensayos"));
     caja.appendChild(el("div", "text-align:center;font-size:15px;margin-bottom:14px;font-style:italic", "Cuadrillas a costal de Sevilla, Huelva, Granada y Córdoba"));
 
     // leyenda / filtros
@@ -126,7 +126,7 @@
     // próximas citas (texto, útil también para Google)
     var futuros = visibles().filter(function (e) { return e.fecha >= hk; }).sort(function (a, b) { return (a.fecha + (a.hora || "")).localeCompare(b.fecha + (b.hora || "")); });
     var lista = el("div", "margin-top:22px");
-    lista.appendChild(el("h3", "font-size:21px;margin:0 0 10px;border-bottom:2px solid " + DORADO + ";padding-bottom:6px", "Próximas igualás y ensayos"));
+    lista.appendChild(el("h3", "font-size:21px;margin:0 0 10px;border-bottom:2px solid " + DORADO + ";padding-bottom:6px;color:" + MARRON + " !important;font-family:Georgia,serif;text-transform:none;letter-spacing:0", "Próximas igualás y ensayos"));
     if (!futuros.length) lista.appendChild(el("div", "font:14px Arial,sans-serif", "Aún no hay citas publicadas para estas provincias. Cada mañana revisamos las webs y redes oficiales de las hermandades."));
     futuros.slice(0, 12).forEach(function (e) { lista.appendChild(tarjeta(e, true)); });
     caja.appendChild(lista);
@@ -164,7 +164,15 @@
   }
   function boton(txt, url, c) { var a = el("a", "flex:1 1 220px;text-align:center;text-decoration:none;background:" + c + ";color:#fff;border-radius:10px;padding:12px;font:bold 14px Arial,sans-serif", txt); a.href = url; a.target = "_blank"; a.rel = "noopener"; return a; }
 
-  function arrancar(datos) { eventos = (datos || []).filter(function (e) { return e && e.fecha && PROV[e.provincia]; }); pintar(); }
+  function arrancar(datos) {
+    eventos = (datos || []).filter(function (e) { return e && e.fecha && PROV[e.provincia]; });
+    // Abrir en el mes de la próxima cita si este mes ya no tiene ninguna
+    var hk = key(hoy.getFullYear(), hoy.getMonth(), hoy.getDate());
+    var prox = eventos.filter(function (e) { return e.fecha >= hk; }).map(function (e) { return e.fecha; }).sort()[0];
+    if (prox) { var py = +prox.slice(0, 4), pm = +prox.slice(5, 7) - 1, c2 = { y: py, m: pm };
+      if (cmp(c2, cur) > 0 && cmp(c2, FIN) <= 0) cur = c2; }
+    pintar();
+  }
   if (DATA_URL) {
     fetch(DATA_URL + (DATA_URL.indexOf("?") < 0 ? "?" : "&") + "v=" + Date.now()).then(function (r) { return r.json(); })
       .then(function (j) { arrancar(j.eventos || j); }).catch(function () { arrancar(RESPALDO); });
