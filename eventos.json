@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-10-29",
- "total": 37,
+ "total": 39,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -215,6 +215,23 @@
   {
    "provincia": "sevilla",
    "localidad": "Sevilla",
+   "hermandad": "Abnegación de San Bernardo",
+   "paso": null,
+   "tipo": "ensayo",
+   "lugar": "Camino de la Reina, 4",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "añadido": "2026-10-29",
+   "fecha": "2027-01-24",
+   "hora": "15:00",
+   "titulo": "Primer ensayo de la cuadrilla de costaleros",
+   "nota": "De 15:00 a 20:00. Cita facilitada por Manuel (29/10/2026)."
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
    "hora": "21:00",
    "paso": "Cristo",
    "lugar": null,
@@ -243,6 +260,23 @@
    "fuente_nombre": "Web oficial de la Hdad. del Rescatado",
    "nota": "Calendario publicado el 06/10/2026 \"de cara a la Semana Santa de 2027\". Calzado negro de salida obligatorio.",
    "añadido": "2026-10-29"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "Abnegación de San Bernardo",
+   "paso": null,
+   "tipo": "ensayo",
+   "lugar": "Camino de la Reina, 4",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "añadido": "2026-10-29",
+   "fecha": "2027-01-31",
+   "hora": "15:00",
+   "titulo": "Segundo ensayo de la cuadrilla de costaleros",
+   "nota": "De 15:00 a 20:00. Cita facilitada por Manuel (29/10/2026)."
   },
   {
    "provincia": "sevilla",
