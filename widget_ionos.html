@@ -139,8 +139,10 @@
     if (e.lugar) linea.push(e.lugar);
     if (linea.length) t.appendChild(el("div", "font-size:14px;margin-top:2px", linea.join(" · ")));
     if (e.capataz) t.appendChild(el("div", "font-size:13px;opacity:.85", "Capataz: " + e.capataz));
+    if (e.titulo) t.appendChild(el("div", "font-size:13px;margin-top:2px;opacity:.85", e.titulo));
     if (e.fuente) { var a = el("a", "font-size:12px;color:" + BURDEOS, "Ver fuente" + (e.fuente_nombre ? " (" + e.fuente_nombre + ")" : ""));
       a.href = e.fuente; a.target = "_blank"; a.rel = "noopener nofollow"; t.appendChild(a); }
+    else if (e.fuente_nombre) t.appendChild(el("div", "font-size:12px;color:" + BURDEOS, "Fuente: " + e.fuente_nombre));
     return t;
   }
   function boton(txt, url, c) { var a = el("a", "flex:1 1 220px;text-align:center;text-decoration:none;background:" + c + ";color:#fff;border-radius:10px;padding:12px;font:bold 14px Arial,sans-serif", txt); a.href = url; a.target = "_blank"; a.rel = "noopener"; return a; }

@@ -21,7 +21,8 @@ def valido(e):
     except Exception:
         return False
     return (e.get("provincia") in PROV and DESDE <= e["fecha"] <= HASTA
-            and e.get("hermandad") and str(e.get("fuente", "")).startswith("http"))
+            and e.get("hermandad")
+            and (str(e.get("fuente") or "").startswith("http") or e.get("verificado_por") == "manuel"))
 
 def clave(e):
     return (e["fecha"], e["provincia"], norm(e["hermandad"]), e.get("tipo") or "otro", (e.get("paso") or "").lower())

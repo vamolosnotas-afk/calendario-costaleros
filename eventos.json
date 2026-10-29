@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-10-29",
- "total": 29,
+ "total": 33,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -179,6 +179,23 @@
    "añadido": "2026-10-29"
   },
   {
+   "fecha": "2027-01-24",
+   "hora": "11:30",
+   "provincia": "sevilla",
+   "localidad": "Morón de la Frontera",
+   "hermandad": "Cautivo",
+   "paso": "Virgen",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de María Santísima de la Paz",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": "Cartel oficial de la cuadrilla (difundido por WhatsApp)",
+   "verificado_por": "manuel",
+   "nota": "Cartel 'Calendario 2027' de la cuadrilla de María Stma. de la Paz, enviado por Manuel el 29/10/2026.",
+   "añadido": "2026-10-29"
+  },
+  {
    "provincia": "sevilla",
    "localidad": "Sevilla",
    "hora": "21:00",
@@ -227,6 +244,23 @@
    "añadido": "2026-10-29"
   },
   {
+   "fecha": "2027-02-07",
+   "hora": "10:30",
+   "provincia": "sevilla",
+   "localidad": "Morón de la Frontera",
+   "hermandad": "Cautivo",
+   "paso": "Virgen",
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo de la cuadrilla de María Santísima de la Paz",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": "Cartel oficial de la cuadrilla (difundido por WhatsApp)",
+   "verificado_por": "manuel",
+   "nota": "Primer ensayo.",
+   "añadido": "2026-10-29"
+  },
+  {
    "provincia": "sevilla",
    "localidad": "Sevilla",
    "hora": "21:00",
@@ -272,6 +306,23 @@
    "fuente": "https://rescatado.es/2026/10/06/calendario-de-las-cuadrillas-de-costaleros/",
    "fuente_nombre": "Web oficial de la Hdad. del Rescatado",
    "nota": "Calendario publicado el 06/10/2026 \"de cara a la Semana Santa de 2027\". Calzado negro de salida obligatorio.",
+   "añadido": "2026-10-29"
+  },
+  {
+   "fecha": "2027-02-14",
+   "hora": "10:30",
+   "provincia": "sevilla",
+   "localidad": "Morón de la Frontera",
+   "hermandad": "Cautivo",
+   "paso": "Virgen",
+   "tipo": "ensayo",
+   "titulo": "Segundo ensayo de la cuadrilla de María Santísima de la Paz",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": "Cartel oficial de la cuadrilla (difundido por WhatsApp)",
+   "verificado_por": "manuel",
+   "nota": "Segundo ensayo.",
    "añadido": "2026-10-29"
   },
   {
@@ -336,6 +387,23 @@
    "fuente": "https://rescatado.es/2026/10/06/calendario-de-las-cuadrillas-de-costaleros/",
    "fuente_nombre": "Web oficial de la Hdad. del Rescatado",
    "nota": "Calendario publicado el 06/10/2026 \"de cara a la Semana Santa de 2027\". Calzado negro de salida obligatorio. Es ensayo DE RESERVA (solo si hace falta); la web no da hora para los de reserva.",
+   "añadido": "2026-10-29"
+  },
+  {
+   "fecha": "2027-02-21",
+   "hora": null,
+   "provincia": "sevilla",
+   "localidad": "Morón de la Frontera",
+   "hermandad": "Cautivo",
+   "paso": "Virgen",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de reserva (solo si el tiempo impide alguno de los anteriores)",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": "Cartel oficial de la cuadrilla (difundido por WhatsApp)",
+   "verificado_por": "manuel",
+   "nota": "Fin de semana del 21 de febrero reservado como alternativa por si las condiciones meteorológicas no permiten algún ensayo.",
    "añadido": "2026-10-29"
   },
   {
