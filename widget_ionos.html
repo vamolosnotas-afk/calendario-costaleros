@@ -7,7 +7,7 @@
 <div id="vln-cal"></div>
 <script>
 (function () {
-  var DATA_URL = "https://raw.githubusercontent.com/vamolosnotas-afk/calendario-costaleros/main/eventos.json";            // se rellena cuando esté el alojamiento de los datos
+  var DATA_URL = "https://raw.githubusercontent.com/vamolosnotas-afk/calendario-costaleros/main/eventos.json";
   var WHATSAPP_CANAL = "";      // enlace del canal de WhatsApp cuando exista
   var WHATSAPP_AVISO = "https://wa.me/34692942182?text=" + encodeURIComponent("Hola, quiero avisaros de una igualá/ensayo: ");
   var TIENDA = "https://www.vamolosnota.es/tienda-costales/";
@@ -118,7 +118,7 @@
     var cta = el("div", "display:flex;flex-wrap:wrap;gap:10px;margin-top:20px");
     if (WHATSAPP_CANAL) cta.appendChild(boton("Recibe las nuevas igualás en WhatsApp", WHATSAPP_CANAL, "#25a244"));
     cta.appendChild(boton("¿Falta tu igualá? Avísanos", WHATSAPP_AVISO, MARRON));
-    cta.appendChild(boton("Costales desde 39 € · Envío gratis", TIENDA, BURDEOS));
+    cta.appendChild(boton("Costales desde 39 € · Ver tienda", TIENDA, BURDEOS));
     caja.appendChild(cta);
 
     caja.appendChild(el("div", "font:12px Arial,sans-serif;margin-top:16px;opacity:.75;line-height:1.5",
