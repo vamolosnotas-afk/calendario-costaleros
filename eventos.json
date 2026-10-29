@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-10-29",
- "total": 39,
+ "total": 40,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -113,6 +113,23 @@
    "fuente": "https://hermandaddelacaridad.org/iguala-costaleros-2026/",
    "fuente_nombre": "Web oficial de la Hdad. de la Caridad",
    "nota": "Calzado negro de salida. Los nuevos deben traer costal. Quien no pueda asistir: WhatsApp de la hermandad 618 509 982. La misma web informa en otra noticia (https://hermandaddelacaridad.org/designacion-capataz-2027/) de que el capataz designado para la Semana Santa 2027 es N.H.D. Ángel Carrero Pérez-Angulo; la noticia de la igualá no lo nombra, por eso capataz=null.",
+   "añadido": "2026-10-29"
+  },
+  {
+   "fecha": "2026-11-22",
+   "hora": "09:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "Abnegación de San Bernardo",
+   "paso": null,
+   "tipo": "otro",
+   "titulo": "Prueba del paso por Sevilla",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "De 9:00 a 10:00. Cita facilitada por Manuel (29/10/2026).",
    "añadido": "2026-10-29"
   },
   {
