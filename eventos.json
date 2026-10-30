@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-10-30",
- "total": 78,
+ "total": 82,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -297,6 +297,23 @@
    "tipo": "igualá",
    "titulo": "Igualá de costaleros y aspirantes del paso de misterio de Ntro. Padre Jesús de la Luz Despojado de sus Vestiduras",
    "nota": "Sale el Domingo de Pasión (14/3/2027). Calzado negro de salida obligatorio. Después, convivencia.",
+   "añadido": "2026-10-30"
+  },
+  {
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Angustias",
+   "paso": "Virgen",
+   "capataz": "David López Santander",
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "fecha": "2026-11-27",
+   "hora": "20:00",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de Ntra. Sra. de las Angustias",
+   "lugar": "Casa Hermandad",
    "añadido": "2026-10-30"
   },
   {
@@ -711,6 +728,23 @@
    "añadido": "2026-10-29"
   },
   {
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Angustias",
+   "paso": "Virgen",
+   "capataz": "David López Santander",
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "fecha": "2027-02-07",
+   "hora": "09:30",
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo de la cuadrilla de Ntra. Sra. de las Angustias",
+   "lugar": "Colegio Compañía de María",
+   "añadido": "2026-10-30"
+  },
+  {
    "fecha": "2027-02-07",
    "hora": "10:30",
    "provincia": "sevilla",
@@ -841,6 +875,23 @@
    "fuente": "https://lacenadesevilla.es/convocatoria-de-igualas-ensayos-y-retranqueos-para-las-cuadrillas-de-costaleros/",
    "fuente_nombre": "Web oficial de la Hdad. de la Sagrada Cena",
    "añadido": "2026-10-29"
+  },
+  {
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Angustias",
+   "paso": "Virgen",
+   "capataz": "David López Santander",
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "fecha": "2027-02-21",
+   "hora": "09:30",
+   "tipo": "ensayo",
+   "titulo": "Segundo ensayo de la cuadrilla de Ntra. Sra. de las Angustias",
+   "lugar": "Colegio Compañía de María",
+   "añadido": "2026-10-30"
   },
   {
    "fecha": "2027-02-21",
@@ -1133,6 +1184,23 @@
    "fuente": "https://santacenadealmeria.org/calendario-de-ensayos-de-la-cuadrilla-de-costaleros-2027/",
    "fuente_nombre": "Web oficial de la Hdad. de la Santa Cena de Almería",
    "nota": "Sábado 13 de marzo, hora por determinar.",
+   "añadido": "2026-10-30"
+  },
+  {
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Angustias",
+   "paso": "Virgen",
+   "capataz": "David López Santander",
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "fecha": "2027-03-14",
+   "hora": "09:30",
+   "tipo": "ensayo",
+   "titulo": "Tercer ensayo de la cuadrilla de Ntra. Sra. de las Angustias",
+   "lugar": "Casa Hermandad",
    "añadido": "2026-10-30"
   },
   {
