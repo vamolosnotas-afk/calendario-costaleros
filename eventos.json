@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-10-30",
- "total": 83,
+ "total": 93,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -201,6 +201,22 @@
    "añadido": "2026-10-30"
   },
   {
+   "fecha": "2026-11-14",
+   "hora": "18:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "La Milagrosa",
+   "paso": "Virgen (Rosario)",
+   "tipo": "igualá",
+   "titulo": "Igualá general de la cuadrilla de María Stma. del Rosario",
+   "lugar": "Futura Casa Hermandad (Avda. Ronda del Tamarguillo s/n)",
+   "capataz": null,
+   "fuente": "https://hermandaddelamilagrosa.es/2026/10/19/calendario-de-igualas-y-ensayos-de-nuestra-hermandad/",
+   "fuente_nombre": "Web oficial de la Hermandad de la Milagrosa",
+   "nota": "Costaleros actuales y aspirantes. Calzado negro.",
+   "añadido": "2026-10-30"
+  },
+  {
    "provincia": "jerez",
    "localidad": "Jerez de la Frontera",
    "paso": null,
@@ -215,6 +231,22 @@
    "hora": "10:00",
    "hermandad": "Pasión",
    "titulo": "Igualá de costaleros",
+   "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2026-11-15",
+   "hora": "10:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "La Milagrosa",
+   "paso": "Misterio (Jesús de la Esperanza)",
+   "tipo": "igualá",
+   "titulo": "Igualá general de la cuadrilla de Ntro. Padre Jesús de la Esperanza",
+   "lugar": "Futura Casa Hermandad (Avda. Ronda del Tamarguillo s/n)",
+   "capataz": null,
+   "fuente": "https://hermandaddelamilagrosa.es/2026/10/19/calendario-de-igualas-y-ensayos-de-nuestra-hermandad/",
+   "fuente_nombre": "Web oficial de la Hermandad de la Milagrosa",
+   "nota": "Costaleros actuales y aspirantes. Calzado negro.",
    "añadido": "2026-10-30"
   },
   {
@@ -350,6 +382,22 @@
    "añadido": "2026-10-30"
   },
   {
+   "fecha": "2026-11-28",
+   "hora": "17:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "Bendición y Esperanza",
+   "paso": "Misterio",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla del paso de misterio de Bendición y Esperanza",
+   "lugar": "Parroquia de Jesús Obrero / Fundación Don Bosco",
+   "capataz": "Manuel Roldán Rojas",
+   "fuente": "https://bendicionyesperanza.es/?p=3510",
+   "fuente_nombre": "Web oficial de la Hermandad de Bendición y Esperanza",
+   "nota": "Actuales y aspirantes; obligatoria para los actuales. Zapatillas negras de salida (Viernes de Dolores).",
+   "añadido": "2026-10-30"
+  },
+  {
    "provincia": "jerez",
    "localidad": "Jerez de la Frontera",
    "paso": null,
@@ -429,6 +477,22 @@
    "hora": "16:30",
    "hermandad": "La Esperanza",
    "titulo": "Igualá de costaleros",
+   "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2027-01-10",
+   "hora": "09:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "La Milagrosa",
+   "paso": "Misterio (Jesús de la Esperanza)",
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo del paso de Ntro. Padre Jesús de la Esperanza",
+   "lugar": null,
+   "capataz": null,
+   "fuente": "https://hermandaddelamilagrosa.es/2026/10/19/calendario-de-igualas-y-ensayos-de-nuestra-hermandad/",
+   "fuente_nombre": "Web oficial de la Hermandad de la Milagrosa",
+   "nota": "Prueba de la nueva parihuela de salida y de la puerta de la parroquia.",
    "añadido": "2026-10-30"
   },
   {
@@ -630,6 +694,22 @@
    "añadido": "2026-10-29"
   },
   {
+   "fecha": "2027-01-30",
+   "hora": "19:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "La Milagrosa",
+   "paso": "Misterio (Jesús de la Esperanza)",
+   "tipo": "ensayo",
+   "titulo": "Igualá y segundo ensayo del paso de Ntro. Padre Jesús de la Esperanza",
+   "lugar": null,
+   "capataz": null,
+   "fuente": "https://hermandaddelamilagrosa.es/2026/10/19/calendario-de-igualas-y-ensayos-de-nuestra-hermandad/",
+   "fuente_nombre": "Web oficial de la Hermandad de la Milagrosa",
+   "nota": null,
+   "añadido": "2026-10-30"
+  },
+  {
    "fecha": "2027-01-31",
    "hora": "10:00",
    "provincia": "almeria",
@@ -743,6 +823,22 @@
    "verificado_por": "manuel",
    "nota": "Calendario 'Igualá y ensayos 2027' de la Hdad. de la Candelaria enviado por Manuel (29/10/2026).",
    "añadido": "2026-10-29"
+  },
+  {
+   "fecha": "2027-02-06",
+   "hora": "19:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "La Milagrosa",
+   "paso": "Virgen (Rosario)",
+   "tipo": "ensayo",
+   "titulo": "Igualá y primer ensayo del paso de María Stma. del Rosario",
+   "lugar": null,
+   "capataz": null,
+   "fuente": "https://hermandaddelamilagrosa.es/2026/10/19/calendario-de-igualas-y-ensayos-de-nuestra-hermandad/",
+   "fuente_nombre": "Web oficial de la Hermandad de la Milagrosa",
+   "nota": null,
+   "añadido": "2026-10-30"
   },
   {
    "provincia": "almeria",
@@ -892,6 +988,22 @@
    "fuente": "https://lacenadesevilla.es/convocatoria-de-igualas-ensayos-y-retranqueos-para-las-cuadrillas-de-costaleros/",
    "fuente_nombre": "Web oficial de la Hdad. de la Sagrada Cena",
    "añadido": "2026-10-29"
+  },
+  {
+   "fecha": "2027-02-20",
+   "hora": "19:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "La Milagrosa",
+   "paso": "Virgen (Rosario)",
+   "tipo": "ensayo",
+   "titulo": "Igualá y segundo ensayo del paso de María Stma. del Rosario",
+   "lugar": null,
+   "capataz": null,
+   "fuente": "https://hermandaddelamilagrosa.es/2026/10/19/calendario-de-igualas-y-ensayos-de-nuestra-hermandad/",
+   "fuente_nombre": "Web oficial de la Hermandad de la Milagrosa",
+   "nota": null,
+   "añadido": "2026-10-30"
   },
   {
    "provincia": "almeria",
@@ -1075,6 +1187,22 @@
    "añadido": "2026-10-29"
   },
   {
+   "fecha": "2027-03-03",
+   "hora": "20:30",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "La Milagrosa",
+   "paso": "Misterio (Jesús de la Esperanza)",
+   "tipo": "mudá",
+   "titulo": "Igualá, ensayo y mudá del paso de Ntro. Padre Jesús de la Esperanza",
+   "lugar": null,
+   "capataz": null,
+   "fuente": "https://hermandaddelamilagrosa.es/2026/10/19/calendario-de-igualas-y-ensayos-de-nuestra-hermandad/",
+   "fuente_nombre": "Web oficial de la Hermandad de la Milagrosa",
+   "nota": null,
+   "añadido": "2026-10-30"
+  },
+  {
    "provincia": "sevilla",
    "localidad": "Sevilla",
    "hora": "21:00",
@@ -1170,6 +1298,38 @@
    "verificado_por": "manuel",
    "nota": null,
    "añadido": "2026-10-29"
+  },
+  {
+   "fecha": "2027-03-10",
+   "hora": "20:30",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "La Milagrosa",
+   "paso": "Misterio (Jesús de la Esperanza)",
+   "tipo": "retranqueo",
+   "titulo": "Igualá, ensayo y retranqueo del paso de Ntro. Padre Jesús de la Esperanza",
+   "lugar": null,
+   "capataz": null,
+   "fuente": "https://hermandaddelamilagrosa.es/2026/10/19/calendario-de-igualas-y-ensayos-de-nuestra-hermandad/",
+   "fuente_nombre": "Web oficial de la Hermandad de la Milagrosa",
+   "nota": null,
+   "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2027-03-10",
+   "hora": null,
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "La Milagrosa",
+   "paso": "Virgen (Rosario)",
+   "tipo": "retranqueo",
+   "titulo": "Retranqueo del paso de María Stma. del Rosario",
+   "lugar": null,
+   "capataz": null,
+   "fuente": "https://hermandaddelamilagrosa.es/2026/10/19/calendario-de-igualas-y-ensayos-de-nuestra-hermandad/",
+   "fuente_nombre": "Web oficial de la Hermandad de la Milagrosa",
+   "nota": "Hora por definir según la hermandad.",
+   "añadido": "2026-10-30"
   },
   {
    "fecha": "2027-03-12",

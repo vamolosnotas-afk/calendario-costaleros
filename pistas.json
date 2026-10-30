@@ -25,5 +25,203 @@
   "tipo": "ensayo",
   "detectada": "2026-10-30",
   "origen": "agenda de terceros"
+ },
+ {
+  "fecha": "2026-11-08",
+  "hora": "09:00",
+  "hermandad": "San Benito (Sagrada Presentación, cuadrilla actual)",
+  "localidad": "Sevilla",
+  "tipo": "igualá",
+  "detectada": "2026-10-30",
+  "origen": "agenda de terceros (infocofrade.com) — falta confirmar en fuente oficial"
+ },
+ {
+  "fecha": "2026-11-15",
+  "hora": "16:30",
+  "hermandad": "Humildad de Sevilla Este",
+  "localidad": "Sevilla",
+  "tipo": "igualá",
+  "detectada": "2026-10-30",
+  "origen": "agenda de terceros (infocofrade.com) — falta confirmar en fuente oficial; ArteSacro dice salón parroquial, calzado negro, +18"
+ },
+ {
+  "fecha": "2026-12-12",
+  "hora": "10:00",
+  "hermandad": "La Sed (palio de Consolación)",
+  "localidad": "Sevilla",
+  "tipo": "igualá",
+  "detectada": "2026-10-30",
+  "origen": "agenda de terceros (infocofrade.com) — falta confirmar en fuente oficial; Casa Hermandad"
+ },
+ {
+  "fecha": "2027-01-25",
+  "hora": "21:00",
+  "hermandad": "La Carretería (cuadrilla del Cristo de la Salud)",
+  "localidad": "Sevilla",
+  "tipo": "igualá",
+  "detectada": "2026-10-30",
+  "origen": "blog costalerossaludcarreteria.blogspot.com (no se pudo abrir); aspirantes 23:00, en la Capilla"
+ },
+ {
+  "fecha": "2027-02-25",
+  "hora": "21:00",
+  "hermandad": "La Carretería (cuadrilla del Cristo de la Salud)",
+  "localidad": "Sevilla",
+  "tipo": "ensayo",
+  "detectada": "2026-10-30",
+  "origen": "blog costalerossaludcarreteria.blogspot.com; Plaza del Pumarejo"
+ },
+ {
+  "fecha": "2027-03-11",
+  "hora": "21:00",
+  "hermandad": "La Carretería (cuadrilla del Cristo de la Salud)",
+  "localidad": "Sevilla",
+  "tipo": "ensayo",
+  "detectada": "2026-10-30",
+  "origen": "blog costalerossaludcarreteria.blogspot.com; Plaza del Pumarejo"
+ },
+ {
+  "fecha": "2026-11-06",
+  "hora": "21:00",
+  "hermandad": "Huerto",
+  "localidad": "Córdoba",
+  "tipo": "igualá",
+  "detectada": "2026-10-30",
+  "origen": "agenda de terceros (cordobacapitalcofrade.com) — falta confirmar en fuente oficial"
+ },
+ {
+  "fecha": "2026-11-06",
+  "hora": "21:00",
+  "hermandad": "Virgen Milagrosa",
+  "localidad": "Córdoba",
+  "tipo": "igualá",
+  "detectada": "2026-10-30",
+  "origen": "agenda de terceros (cordobacapitalcofrade.com) — falta confirmar en fuente oficial; igualá y ensayo, Colegio de la Milagrosa"
+ },
+ {
+  "fecha": "2026-11-07",
+  "hora": "17:00",
+  "hermandad": "Niño Jesús de la Compañía",
+  "localidad": "Córdoba",
+  "tipo": "igualá",
+  "detectada": "2026-10-30",
+  "origen": "agenda de terceros (cordobacapitalcofrade.com) — falta confirmar en fuente oficial"
+ },
+ {
+  "fecha": "2026-11-15",
+  "hora": "09:15",
+  "hermandad": "Encarnación (costaleras)",
+  "localidad": "Córdoba",
+  "tipo": "igualá",
+  "detectada": "2026-10-30",
+  "origen": "agenda de terceros (cordobacapitalcofrade.com) — falta confirmar en fuente oficial"
+ },
+ {
+  "fecha": "2026-11-20",
+  "hora": "21:00",
+  "hermandad": "Afligidos (Cañero)",
+  "localidad": "Córdoba",
+  "tipo": "igualá",
+  "detectada": "2026-10-30",
+  "origen": "agenda de terceros (cordobacapitalcofrade.com) — falta confirmar en fuente oficial"
+ },
+ {
+  "fecha": "2026-11-27",
+  "hora": "21:00",
+  "hermandad": "Cristo de la Confianza (pro-hermandad)",
+  "localidad": "Córdoba",
+  "tipo": "igualá",
+  "detectada": "2026-10-30",
+  "origen": "agenda de terceros (cordobacapitalcofrade.com) — falta confirmar en fuente oficial"
+ },
+ {
+  "fecha": "2026-12-12",
+  "hora": "17:00",
+  "hermandad": "Caído",
+  "localidad": "Córdoba",
+  "tipo": "igualá",
+  "detectada": "2026-10-30",
+  "origen": "agenda de terceros (cordobacapitalcofrade.com) — falta confirmar en fuente oficial"
+ },
+ {
+  "fecha": "2027-01-08",
+  "hora": "21:00",
+  "hermandad": "Amargura",
+  "localidad": "Córdoba",
+  "tipo": "igualá",
+  "detectada": "2026-10-30",
+  "origen": "agenda de terceros (cordobacapitalcofrade.com) — falta confirmar en fuente oficial"
+ },
+ {
+  "fecha": "2027-01-08",
+  "hora": "21:00",
+  "hermandad": "Humildad y Paciencia",
+  "localidad": "Córdoba",
+  "tipo": "igualá",
+  "detectada": "2026-10-30",
+  "origen": "agenda de terceros (cordobacapitalcofrade.com) — falta confirmar en fuente oficial; aspirantes 19:00"
+ },
+ {
+  "fecha": "2027-01-09",
+  "hora": "17:00",
+  "hermandad": "Salud",
+  "localidad": "Córdoba",
+  "tipo": "igualá",
+  "detectada": "2026-10-30",
+  "origen": "agenda de terceros (cordobacapitalcofrade.com) — falta confirmar en fuente oficial"
+ },
+ {
+  "fecha": "2027-01-09",
+  "hora": "17:00",
+  "hermandad": "Lágrimas",
+  "localidad": "Córdoba",
+  "tipo": "igualá",
+  "detectada": "2026-10-30",
+  "origen": "agenda de terceros (cordobacapitalcofrade.com) — falta confirmar en fuente oficial"
+ },
+ {
+  "fecha": "2026-11-15",
+  "hora": "10:00",
+  "hermandad": "Trabajo y Luz (costaleros de la Virgen de la Luz)",
+  "localidad": "Granada",
+  "tipo": "igualá",
+  "detectada": "2026-10-30",
+  "origen": "prensa (granadacofrade.zree.es) — falta confirmar en fuente oficial; Centro Cívico del Zaidín; costaleras del Cristo a las 12:00"
+ },
+ {
+  "fecha": "2026-11-20",
+  "hora": "12:00",
+  "hermandad": "Expiración (Escolapios)",
+  "localidad": "Granada",
+  "tipo": "igualá",
+  "detectada": "2026-10-30",
+  "origen": "prensa (granadacofrade.zree.es) — falta confirmar en fuente oficial; colegio PP. Escolapios"
+ },
+ {
+  "fecha": "2027-01-17",
+  "hora": "10:00",
+  "hermandad": "Expiración (Escolapios)",
+  "localidad": "Granada",
+  "tipo": "ensayo",
+  "detectada": "2026-10-30",
+  "origen": "prensa (granadacofrade.zree.es) — falta confirmar en fuente oficial; Casa Hdad. del Rocío, c/ Tiburón 7"
+ },
+ {
+  "fecha": "2027-02-19",
+  "hora": null,
+  "hermandad": "Expiración (Escolapios)",
+  "localidad": "Granada",
+  "tipo": "ensayo",
+  "detectada": "2026-10-30",
+  "origen": "prensa (granadacofrade.zree.es) — falta confirmar en fuente oficial"
+ },
+ {
+  "fecha": "2027-03-08",
+  "hora": null,
+  "hermandad": "Expiración (Escolapios)",
+  "localidad": "Granada",
+  "tipo": "mudá",
+  "detectada": "2026-10-30",
+  "origen": "prensa (granadacofrade.zree.es) — falta confirmar en fuente oficial"
  }
 ]
