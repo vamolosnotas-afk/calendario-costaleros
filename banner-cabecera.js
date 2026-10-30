@@ -26,7 +26,7 @@
     var a = document.createElement("a");
     a.id = "vln-cab"; a.href = URL_CAL;
     a.setAttribute("aria-label", "Calendario de igualás y ensayos 2026-2027");
-    a.innerHTML = ICONO + '<span class="t"><span class="e">TEMPORADA 2026 · 2027</span><span class="h">Calendario de igualás y ensayos</span><span class="s">Sevilla, Huelva, Granada y Córdoba · se actualiza cada día</span></span><span class="b">Ver fechas ›</span>';
+    a.innerHTML = ICONO + '<span class="t"><span class="e">TEMPORADA 2026 · 2027</span><span class="h">Calendario de igualás y ensayos</span><span class="s">Andalucía, Madrid, Castilla y Cataluña · se actualiza cada día</span></span><span class="b">Ver fechas ›</span>';
     return a;
   }
 

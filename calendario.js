@@ -7,10 +7,19 @@
   var RESPALDO = [];
 
   var PROV = {
-    sevilla: { n: "Sevilla", c: "#c0392b" },
-    huelva:  { n: "Huelva",  c: "#1f5fa8" },
-    granada: { n: "Granada", c: "#2e8b57" },
-    cordoba: { n: "Córdoba", c: "#7b3fa0" }
+    sevilla:    { n: "Sevilla",     c: "#c0392b" },
+    huelva:     { n: "Huelva",      c: "#1f5fa8" },
+    cordoba:    { n: "Córdoba",     c: "#7b3fa0" },
+    granada:    { n: "Granada",     c: "#2e8b57" },
+    jerez:      { n: "Jerez",       c: "#e07b00" },
+    jaen:       { n: "Jaén",        c: "#6b8e23" },
+    almeria:    { n: "Almería",     c: "#00838f" },
+    madrid:     { n: "Madrid",      c: "#ad1457" },
+    ciudadreal: { n: "Ciudad Real", c: "#8d6e00" },
+    toledo:     { n: "Toledo",      c: "#5d4037" },
+    salamanca:  { n: "Salamanca",   c: "#455a64" },
+    barcelona:  { n: "Barcelona",   c: "#283593" },
+    tarragona:  { n: "Tarragona",   c: "#d84315" }
   };
   var MESES = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
   var DIAS = ["L","M","X","J","V","S","D"];
@@ -42,19 +51,21 @@
     } catch (e) {}
   }
   var tEns; window.addEventListener("resize", function () { clearTimeout(tEns); tEns = setTimeout(ensanchar, 150); });
-  var eventos = [], filtro = { sevilla: 1, huelva: 1, granada: 1, cordoba: 1 };
+  var eventos = [], solo = null;
+  try { var g = localStorage.getItem("vln-cal-prov"); if (g && PROV[g]) solo = g; } catch (e) {}
   var hoy = new Date(); var cur = { y: hoy.getFullYear(), m: hoy.getMonth() };
   if (cmp(cur, INICIO) < 0) cur = { y: INICIO.y, m: INICIO.m };
   if (cmp(cur, FIN) > 0) cur = { y: FIN.y, m: FIN.m };
   var diaSel = null;
 
+  function guardar() { try { if (solo) localStorage.setItem("vln-cal-prov", solo); else localStorage.removeItem("vln-cal-prov"); } catch (e) {} }
   function cmp(a, b) { return (a.y - b.y) * 12 + (a.m - b.m); }
   function el(tag, st, txt) { var e = document.createElement(tag); if (st) e.setAttribute("style", st); if (txt != null) e.textContent = txt; return e; }
   function pad(n) { return (n < 10 ? "0" : "") + n; }
   function key(y, m, d) { return y + "-" + pad(m + 1) + "-" + pad(d); }
   function fechaLarga(k) { var p = k.split("-"); var d = new Date(+p[0], +p[1] - 1, +p[2]);
     return ["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"][d.getDay()] + " " + (+p[2]) + " de " + MESES[+p[1] - 1].toLowerCase(); }
-  function visibles() { return eventos.filter(function (e) { return filtro[e.provincia]; }); }
+  function visibles() { return eventos.filter(function (e) { return !solo || e.provincia === solo; }); }
   function porDia() { var o = {}; visibles().forEach(function (e) { (o[e.fecha] = o[e.fecha] || []).push(e); }); return o; }
   function tipoTxt(t) { return { "igualá": "Igualá", ensayo: "Ensayo", "mudá": "Mudá", retranqueo: "Retranqueo" }[t] || "Cita"; }
 
@@ -66,15 +77,23 @@
 
     caja.appendChild(el("div", "text-align:center;font-size:13px;letter-spacing:3px;color:" + BURDEOS + ";font-family:Arial,sans-serif;font-weight:bold", "TEMPORADA 2026 · 2027"));
     caja.appendChild(el("h2", "text-align:center;margin:6px 0 4px;font-size:28px;line-height:1.15;color:" + MARRON + " !important;text-transform:none;letter-spacing:0", "Calendario de igualás y ensayos"));
-    caja.appendChild(el("div", "text-align:center;font-size:15px;margin-bottom:14px;font-style:italic", "Cuadrillas a costal de Sevilla, Huelva, Granada y Córdoba"));
+    caja.appendChild(el("div", "text-align:center;font-size:15px;margin-bottom:14px;font-style:italic", "Cuadrillas a costal de Andalucía, Madrid, Castilla y Cataluña · pulsa tu provincia"));
 
-    // leyenda / filtros
-    var ley = el("div", "display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:16px");
+    // leyenda / filtro por provincia (una o todas)
+    var ley = el("div", "display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-bottom:16px");
+    var hoyK = key(hoy.getFullYear(), hoy.getMonth(), hoy.getDate()), cuenta = {};
+    eventos.forEach(function (e) { if (e.fecha >= hoyK) cuenta[e.provincia] = (cuenta[e.provincia] || 0) + 1; });
+    function chip(txt, color, activo, onclick, etiqueta) {
+      var b = el("button", "cursor:pointer;border:2px solid " + color + ";background:" + (activo ? color : "#fff") + ";color:" + (activo ? "#fff" : color) + ";border-radius:20px;padding:5px 11px;font:bold 13px Arial,sans-serif;line-height:1.2", txt);
+      b.setAttribute("aria-pressed", activo ? "true" : "false"); if (etiqueta) b.setAttribute("aria-label", etiqueta);
+      b.onclick = onclick; return b;
+    }
+    ley.appendChild(chip("Todas", MARRON, !solo, function () { solo = null; guardar(); pintar(); }));
     Object.keys(PROV).forEach(function (k) {
-      var on = filtro[k];
-      var b = el("button", "cursor:pointer;border:2px solid " + PROV[k].c + ";background:" + (on ? PROV[k].c : "#fff") + ";color:" + (on ? "#fff" : PROV[k].c) + ";border-radius:20px;padding:6px 14px;font:bold 14px Arial,sans-serif", PROV[k].n);
-      b.onclick = function () { filtro[k] = on ? 0 : 1; pintar(); };
-      ley.appendChild(b);
+      var n = cuenta[k] || 0;
+      ley.appendChild(chip(PROV[k].n + (n ? " · " + n : ""), PROV[k].c, !solo || solo === k,
+        function () { solo = solo === k ? null : k; guardar(); diaSel = null; pintar(); },
+        PROV[k].n + (n ? ", " + n + " próximas citas" : ", sin citas por ahora")));
     });
     caja.appendChild(ley);
 
@@ -127,7 +146,7 @@
     var futuros = visibles().filter(function (e) { return e.fecha >= hk; }).sort(function (a, b) { return (a.fecha + (a.hora || "")).localeCompare(b.fecha + (b.hora || "")); });
     var lista = el("div", "margin-top:22px");
     lista.appendChild(el("h3", "font-size:21px;margin:0 0 10px;border-bottom:2px solid " + DORADO + ";padding-bottom:6px;color:" + MARRON + " !important;font-family:Georgia,serif;text-transform:none;letter-spacing:0", "Próximas igualás y ensayos"));
-    if (!futuros.length) lista.appendChild(el("div", "font:14px Arial,sans-serif", "Aún no hay citas publicadas para estas provincias. Cada mañana revisamos las webs y redes oficiales de las hermandades."));
+    if (!futuros.length) lista.appendChild(el("div", "font:14px Arial,sans-serif", (solo ? "Aún no hay citas publicadas en " + PROV[solo].n + ". " : "Aún no hay citas publicadas. ") + "Cada mañana revisamos las webs y redes oficiales de las hermandades. ¿Sabes de alguna? Avísanos."));
     futuros.slice(0, 12).forEach(function (e) { lista.appendChild(tarjeta(e, true)); });
     caja.appendChild(lista);
 

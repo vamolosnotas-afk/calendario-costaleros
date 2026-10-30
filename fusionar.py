@@ -5,7 +5,7 @@ Clave de duplicado: fecha + provincia + hermandad normalizada + tipo + paso.
 """
 import json, sys, unicodedata, re, datetime
 
-PROV = {"sevilla", "huelva", "granada", "cordoba"}
+PROV = {"sevilla", "huelva", "granada", "cordoba", "jerez", "jaen", "almeria", "madrid", "ciudadreal", "toledo", "salamanca", "barcelona", "tarragona"}
 TIPOS = {"igualá", "ensayo", "mudá", "retranqueo", "otro"}
 DESDE, HASTA = "2026-09-01", "2027-06-30"
 
