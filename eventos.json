@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-10-30",
- "total": 76,
+ "total": 78,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -49,6 +49,40 @@
    "fuente": "https://www.hermandaddelasoledad.org/events/ensayo-de-la-cuadrilla-de-costaleros/",
    "fuente_nombre": "Web oficial de la Hdad. de la Soledad de San Lorenzo",
    "añadido": "2026-10-29"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "Salud del Plantinar",
+   "paso": "Virgen",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "fecha": "2026-10-27",
+   "hora": "21:00",
+   "lugar": "Casa Hermandad",
+   "tipo": "igualá",
+   "titulo": "Igualá de costaleros de Ntra. Sra. de la Salud del Plantinar",
+   "nota": "Ya celebrada. Fue en la misma cita que la mudá, para la salida del 30/10/2026.",
+   "añadido": "2026-10-30"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "Salud del Plantinar",
+   "paso": "Virgen",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "fecha": "2026-10-27",
+   "hora": "21:00",
+   "lugar": "Casa Hermandad",
+   "tipo": "mudá",
+   "titulo": "Mudá del paso de Ntra. Sra. de la Salud del Plantinar",
+   "nota": "Ya celebrada. En la misma cita se igualó a los costaleros. Salida el 30/10/2026.",
+   "añadido": "2026-10-30"
   },
   {
    "fecha": "2026-10-30",
