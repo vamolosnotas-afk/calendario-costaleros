@@ -1,6 +1,6 @@
 {
- "actualizado": "2026-10-29",
- "total": 40,
+ "actualizado": "2026-10-30",
+ "total": 55,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -67,6 +67,22 @@
    "añadido": "2026-10-29"
   },
   {
+   "fecha": "2026-11-13",
+   "hora": null,
+   "provincia": "jerez",
+   "localidad": "Jerez de la Frontera",
+   "hermandad": "La Vera Cruz",
+   "paso": "Stmo. Cristo de la Esperanza (misterio)",
+   "tipo": "igualá",
+   "titulo": "Igualá cuadrilla del Stmo. Cristo de la Esperanza",
+   "lugar": "Oración en San Juan de los Caballeros y después igualá en la Casa de Hermandad",
+   "capataz": "Francisco Javier Pérez Rodríguez",
+   "fuente": "https://www.veracruzjerez.es/el-proximo-13-de-noviembre-iguala-de-la-cuadrilla-del-stmo-cristo-de-la-esperanza/",
+   "fuente_nombre": "Web oficial de la Hdad. de la Santa Vera-Cruz de Jerez",
+   "nota": "Publicado el 12/10/2026. Acudir con calzado negro de salida. La web no indica hora.",
+   "añadido": "2026-10-30"
+  },
+  {
    "fecha": "2026-11-15",
    "hora": "14:00",
    "provincia": "sevilla",
@@ -114,6 +130,22 @@
    "fuente_nombre": "Web oficial de la Hdad. de la Caridad",
    "nota": "Calzado negro de salida. Los nuevos deben traer costal. Quien no pueda asistir: WhatsApp de la hermandad 618 509 982. La misma web informa en otra noticia (https://hermandaddelacaridad.org/designacion-capataz-2027/) de que el capataz designado para la Semana Santa 2027 es N.H.D. Ángel Carrero Pérez-Angulo; la noticia de la igualá no lo nombra, por eso capataz=null.",
    "añadido": "2026-10-29"
+  },
+  {
+   "fecha": "2026-11-20",
+   "hora": null,
+   "provincia": "jerez",
+   "localidad": "Jerez de la Frontera",
+   "hermandad": "La Vera Cruz",
+   "paso": "Ntra. Sra. de las Lágrimas (palio)",
+   "tipo": "igualá",
+   "titulo": "Igualá cuadrilla de la Virgen de las Lágrimas",
+   "lugar": "Oración en San Juan de los Caballeros y después igualá en la Casa de Hermandad",
+   "capataz": "Manuel Pichaco",
+   "fuente": "https://www.veracruzjerez.es/el-proximo-viernes-20-de-noviembre-iguala-de-la-cuadrilla-de-la-virgen-de-las-lagrimas/",
+   "fuente_nombre": "Web oficial de la Hdad. de la Santa Vera-Cruz de Jerez",
+   "nota": "Publicado el 14/10/2026. Calzado negro de salida. La web no indica hora.",
+   "añadido": "2026-10-30"
   },
   {
    "fecha": "2026-11-22",
@@ -198,6 +230,22 @@
   },
   {
    "fecha": "2027-01-17",
+   "hora": "11:00",
+   "provincia": "ciudadreal",
+   "localidad": "Ciudad Real",
+   "hermandad": "Oración en el Huerto",
+   "paso": "Misterio de Nuestro Padre Jesús Orando en el Huerto",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla del Huerto",
+   "lugar": "Silos de Semilla (C/ Campo de Criptana, 1, Ciudad Real)",
+   "capataz": "Julián Villaseñor Coello",
+   "fuente": "https://www.oracionenelhuertocr.es/2026/10/02/calendario-de-la-cuadrilla-de-costaleros-2027/",
+   "fuente_nombre": "Web oficial de la Real y Muy Ilustre Hdad. de la Oración en el Huerto de los Olivos",
+   "nota": "Antes, reunión de costaleros y aspirantes el 27/11/2026 a las 21:00 en el Hotel El Molino (Ctra. de Carrión, 10). Acudir con calzado blanco de procesión",
+   "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2027-01-17",
    "hora": "12:00",
    "provincia": "cordoba",
    "localidad": "Córdoba",
@@ -211,6 +259,22 @@
    "fuente_nombre": "Web oficial de la Hdad. del Rescatado",
    "nota": "Calendario publicado el 06/10/2026 \"de cara a la Semana Santa de 2027\". Calzado negro de salida obligatorio.",
    "añadido": "2026-10-29"
+  },
+  {
+   "fecha": "2027-01-22",
+   "hora": "21:00",
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Santa Cena",
+   "paso": "Misterio y palio (no especificado)",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de costaleros",
+   "lugar": "Casa de Hermandad",
+   "capataz": null,
+   "fuente": "https://santacenadealmeria.org/calendario-de-ensayos-de-la-cuadrilla-de-costaleros-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. de la Santa Cena de Almería",
+   "nota": "Publicado el 20/10/2026 en el 'Calendario de ensayos de la cuadrilla de costaleros 2027'; año deducido del título (viernes 22 de enero cuadra con 2027). Calzado de salida negro.",
+   "añadido": "2026-10-30"
   },
   {
    "fecha": "2027-01-24",
@@ -247,6 +311,22 @@
    "nota": "De 15:00 a 20:00. Cita facilitada por Manuel (29/10/2026)."
   },
   {
+   "fecha": "2027-01-29",
+   "hora": "21:00",
+   "provincia": "ciudadreal",
+   "localidad": "Ciudad Real",
+   "hermandad": "Oración en el Huerto",
+   "paso": "Misterio de Nuestro Padre Jesús Orando en el Huerto",
+   "tipo": "ensayo",
+   "titulo": "1er ensayo cuadrilla del Huerto",
+   "lugar": "Guardapasos de Semana Santa (C/ Quevedo, 14, Ciudad Real)",
+   "capataz": "Julián Villaseñor Coello",
+   "fuente": "https://www.oracionenelhuertocr.es/2026/10/02/calendario-de-la-cuadrilla-de-costaleros-2027/",
+   "fuente_nombre": "Web oficial de la Real y Muy Ilustre Hdad. de la Oración en el Huerto de los Olivos",
+   "nota": null,
+   "añadido": "2026-10-30"
+  },
+  {
    "provincia": "sevilla",
    "localidad": "Sevilla",
    "hora": "21:00",
@@ -261,6 +341,22 @@
    "fuente": "https://lacenadesevilla.es/convocatoria-de-igualas-ensayos-y-retranqueos-para-las-cuadrillas-de-costaleros/",
    "fuente_nombre": "Web oficial de la Hdad. de la Sagrada Cena",
    "añadido": "2026-10-29"
+  },
+  {
+   "fecha": "2027-01-31",
+   "hora": "10:00",
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Santa Cena",
+   "paso": "Misterio y palio (no especificado)",
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo de costaleros",
+   "lugar": "Casa de Hermandad",
+   "capataz": null,
+   "fuente": "https://santacenadealmeria.org/calendario-de-ensayos-de-la-cuadrilla-de-costaleros-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. de la Santa Cena de Almería",
+   "nota": "Calendario 2027 publicado el 20/10/2026 (domingo 31 de enero).",
+   "añadido": "2026-10-30"
   },
   {
    "fecha": "2027-01-31",
@@ -294,6 +390,22 @@
    "hora": "15:00",
    "titulo": "Segundo ensayo de la cuadrilla de costaleros",
    "nota": "De 15:00 a 20:00. Cita facilitada por Manuel (29/10/2026)."
+  },
+  {
+   "fecha": "2027-02-05",
+   "hora": "21:00",
+   "provincia": "ciudadreal",
+   "localidad": "Ciudad Real",
+   "hermandad": "Oración en el Huerto",
+   "paso": "Misterio de Nuestro Padre Jesús Orando en el Huerto",
+   "tipo": "ensayo",
+   "titulo": "2º ensayo cuadrilla del Huerto",
+   "lugar": "Guardapasos de Semana Santa (C/ Quevedo, 14, Ciudad Real)",
+   "capataz": "Julián Villaseñor Coello",
+   "fuente": "https://www.oracionenelhuertocr.es/2026/10/02/calendario-de-la-cuadrilla-de-costaleros-2027/",
+   "fuente_nombre": "Web oficial de la Real y Muy Ilustre Hdad. de la Oración en el Huerto de los Olivos",
+   "nota": null,
+   "añadido": "2026-10-30"
   },
   {
    "provincia": "sevilla",
@@ -429,6 +541,22 @@
   {
    "fecha": "2027-02-21",
    "hora": "10:00",
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Santa Cena",
+   "paso": "Misterio y palio (no especificado)",
+   "tipo": "ensayo",
+   "titulo": "Segundo ensayo de costaleros",
+   "lugar": "Casa de Hermandad",
+   "capataz": null,
+   "fuente": "https://santacenadealmeria.org/calendario-de-ensayos-de-la-cuadrilla-de-costaleros-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. de la Santa Cena de Almería",
+   "nota": "Calendario 2027 publicado el 20/10/2026 (domingo 21 de febrero).",
+   "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2027-02-21",
+   "hora": "10:00",
    "provincia": "cordoba",
    "localidad": "Córdoba",
    "hermandad": "Rescatado",
@@ -508,6 +636,22 @@
    "añadido": "2026-10-29"
   },
   {
+   "fecha": "2027-02-26",
+   "hora": "21:00",
+   "provincia": "ciudadreal",
+   "localidad": "Ciudad Real",
+   "hermandad": "Oración en el Huerto",
+   "paso": "Misterio de Nuestro Padre Jesús Orando en el Huerto",
+   "tipo": "ensayo",
+   "titulo": "3er ensayo cuadrilla del Huerto",
+   "lugar": "Guardapasos de Semana Santa (C/ Quevedo, 14, Ciudad Real)",
+   "capataz": "Julián Villaseñor Coello",
+   "fuente": "https://www.oracionenelhuertocr.es/2026/10/02/calendario-de-la-cuadrilla-de-costaleros-2027/",
+   "fuente_nombre": "Web oficial de la Real y Muy Ilustre Hdad. de la Oración en el Huerto de los Olivos",
+   "nota": null,
+   "añadido": "2026-10-30"
+  },
+  {
    "fecha": "2027-02-28",
    "hora": "09:00",
    "provincia": "sevilla",
@@ -539,6 +683,38 @@
    "fuente": "https://lacenadesevilla.es/convocatoria-de-igualas-ensayos-y-retranqueos-para-las-cuadrillas-de-costaleros/",
    "fuente_nombre": "Web oficial de la Hdad. de la Sagrada Cena",
    "añadido": "2026-10-29"
+  },
+  {
+   "fecha": "2027-03-05",
+   "hora": "21:00",
+   "provincia": "ciudadreal",
+   "localidad": "Ciudad Real",
+   "hermandad": "Oración en el Huerto",
+   "paso": "Misterio de Nuestro Padre Jesús Orando en el Huerto",
+   "tipo": "ensayo",
+   "titulo": "4º ensayo cuadrilla del Huerto",
+   "lugar": "Guardapasos de Semana Santa (C/ Quevedo, 14, Ciudad Real)",
+   "capataz": "Julián Villaseñor Coello",
+   "fuente": "https://www.oracionenelhuertocr.es/2026/10/02/calendario-de-la-cuadrilla-de-costaleros-2027/",
+   "fuente_nombre": "Web oficial de la Real y Muy Ilustre Hdad. de la Oración en el Huerto de los Olivos",
+   "nota": null,
+   "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2027-03-06",
+   "hora": null,
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Santa Cena",
+   "paso": "Palio de María Stma. de Fe y Caridad",
+   "tipo": "mudá",
+   "titulo": "Mudá del paso de palio (cuadrilla baja)",
+   "lugar": "Casa de Hermandad",
+   "capataz": null,
+   "fuente": "https://santacenadealmeria.org/calendario-de-ensayos-de-la-cuadrilla-de-costaleros-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. de la Santa Cena de Almería",
+   "nota": "Sábado 6 de marzo, hora por determinar. El lugar figura como Casa de Hermandad para todas las citas del calendario.",
+   "añadido": "2026-10-30"
   },
   {
    "fecha": "2027-03-07",
@@ -590,6 +766,38 @@
    "añadido": "2026-10-29"
   },
   {
+   "fecha": "2027-03-12",
+   "hora": "21:00",
+   "provincia": "ciudadreal",
+   "localidad": "Ciudad Real",
+   "hermandad": "Oración en el Huerto",
+   "paso": "Misterio de Nuestro Padre Jesús Orando en el Huerto",
+   "tipo": "ensayo",
+   "titulo": "5º ensayo cuadrilla del Huerto",
+   "lugar": "Guardapasos de Semana Santa (C/ Quevedo, 14, Ciudad Real)",
+   "capataz": "Julián Villaseñor Coello",
+   "fuente": "https://www.oracionenelhuertocr.es/2026/10/02/calendario-de-la-cuadrilla-de-costaleros-2027/",
+   "fuente_nombre": "Web oficial de la Real y Muy Ilustre Hdad. de la Oración en el Huerto de los Olivos",
+   "nota": null,
+   "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2027-03-13",
+   "hora": null,
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Santa Cena",
+   "paso": "Misterio de la Santa Cena",
+   "tipo": "mudá",
+   "titulo": "Mudá del paso de misterio (cuadrilla alta)",
+   "lugar": "Casa de Hermandad",
+   "capataz": null,
+   "fuente": "https://santacenadealmeria.org/calendario-de-ensayos-de-la-cuadrilla-de-costaleros-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. de la Santa Cena de Almería",
+   "nota": "Sábado 13 de marzo, hora por determinar.",
+   "añadido": "2026-10-30"
+  },
+  {
    "fecha": "2027-03-14",
    "hora": null,
    "provincia": "cordoba",
@@ -604,6 +812,22 @@
    "fuente_nombre": "Web oficial de la Hdad. del Rescatado",
    "nota": "Calendario publicado el 06/10/2026 \"de cara a la Semana Santa de 2027\". Calzado negro de salida obligatorio. Es ensayo DE RESERVA; la web no da hora para los de reserva.",
    "añadido": "2026-10-29"
+  },
+  {
+   "fecha": "2027-03-15",
+   "hora": "21:00",
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Santa Cena",
+   "paso": "Misterio y palio",
+   "tipo": "retranqueo",
+   "titulo": "Retranqueo (cuadrilla baja del misterio y cuadrilla alta del palio)",
+   "lugar": "Casa de Hermandad",
+   "capataz": null,
+   "fuente": "https://santacenadealmeria.org/calendario-de-ensayos-de-la-cuadrilla-de-costaleros-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. de la Santa Cena de Almería",
+   "nota": "Lunes 15 de marzo.",
+   "añadido": "2026-10-30"
   },
   {
    "provincia": "sevilla",
@@ -652,6 +876,22 @@
    "fuente": "https://lacenadesevilla.es/convocatoria-de-igualas-ensayos-y-retranqueos-para-las-cuadrillas-de-costaleros/",
    "fuente_nombre": "Web oficial de la Hdad. de la Sagrada Cena",
    "añadido": "2026-10-29"
+  },
+  {
+   "fecha": "2027-03-20",
+   "hora": "16:30",
+   "provincia": "ciudadreal",
+   "localidad": "Ciudad Real",
+   "hermandad": "Oración en el Huerto",
+   "paso": "Misterio de Nuestro Padre Jesús Orando en el Huerto",
+   "tipo": "retranqueo",
+   "titulo": "Retranqueo y traslado del paso a San Pedro",
+   "lugar": null,
+   "capataz": "Julián Villaseñor Coello",
+   "fuente": "https://www.oracionenelhuertocr.es/2026/10/02/calendario-de-la-cuadrilla-de-costaleros-2027/",
+   "fuente_nombre": "Web oficial de la Real y Muy Ilustre Hdad. de la Oración en el Huerto de los Olivos",
+   "nota": "El cartel dice 'Retranqueo y traslado del paso a San Pedro' (Parroquia de San Pedro), sin indicar lugar de salida",
+   "añadido": "2026-10-30"
   }
  ]
 }
