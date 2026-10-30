@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-10-30",
- "total": 68,
+ "total": 75,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -349,6 +349,23 @@
   {
    "provincia": "sevilla",
    "localidad": "Sevilla",
+   "hermandad": "La Sed",
+   "paso": "Cristo",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "fecha": "2027-01-10",
+   "hora": "10:00",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla del Stmo. Cristo de la Sed",
+   "lugar": "Colegio Cruz del Campo, junto a la Parroquia",
+   "añadido": "2026-10-30"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
    "hermandad": "Señor de la Luz Despojado (Campos de Soria)",
    "paso": "Misterio",
    "lugar": "Oratorio del Señor de la Luz (C/ Rafi Herencia 1)",
@@ -577,6 +594,23 @@
    "nota": "De 15:00 a 20:00. Cita facilitada por Manuel (29/10/2026)."
   },
   {
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "La Sed",
+   "paso": "Cristo",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "fecha": "2027-02-03",
+   "hora": "21:00",
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo de la cuadrilla del Stmo. Cristo de la Sed",
+   "lugar": "Casa Hermandad",
+   "añadido": "2026-10-30"
+  },
+  {
    "fecha": "2027-02-05",
    "hora": "21:00",
    "provincia": "ciudadreal",
@@ -674,6 +708,23 @@
    "fuente": "https://lacenadesevilla.es/convocatoria-de-igualas-ensayos-y-retranqueos-para-las-cuadrillas-de-costaleros/",
    "fuente_nombre": "Web oficial de la Hdad. de la Sagrada Cena",
    "añadido": "2026-10-29"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "La Sed",
+   "paso": "Cristo",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "fecha": "2027-02-10",
+   "hora": "21:00",
+   "tipo": "ensayo",
+   "titulo": "Segundo ensayo de la cuadrilla del Stmo. Cristo de la Sed",
+   "lugar": "Casa Hermandad",
+   "añadido": "2026-10-30"
   },
   {
    "fecha": "2027-02-14",
@@ -853,6 +904,23 @@
    "fuente": "https://lacenadesevilla.es/convocatoria-de-igualas-ensayos-y-retranqueos-para-las-cuadrillas-de-costaleros/",
    "fuente_nombre": "Web oficial de la Hdad. de la Sagrada Cena",
    "añadido": "2026-10-29"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "La Sed",
+   "paso": "Cristo",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "fecha": "2027-02-24",
+   "hora": "21:00",
+   "tipo": "ensayo",
+   "titulo": "Tercer ensayo de la cuadrilla del Stmo. Cristo de la Sed",
+   "lugar": "Almacén",
+   "añadido": "2026-10-30"
   },
   {
    "fecha": "2027-02-26",
@@ -1051,6 +1119,23 @@
   {
    "provincia": "sevilla",
    "localidad": "Sevilla",
+   "hermandad": "La Sed",
+   "paso": "Cristo",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Cuadrilla baja",
+   "fecha": "2027-03-17",
+   "hora": "21:00",
+   "tipo": "mudá",
+   "titulo": "Mudá de ida del paso del Stmo. Cristo de la Sed",
+   "lugar": "Almacén",
+   "añadido": "2026-10-30"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
    "hora": "21:30",
    "paso": "Cristo",
    "lugar": null,
@@ -1097,6 +1182,23 @@
    "añadido": "2026-10-29"
   },
   {
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "La Sed",
+   "paso": "Cristo",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Cuadrilla alta. Viernes de Dolores",
+   "fecha": "2027-03-19",
+   "hora": "21:00",
+   "tipo": "retranqueo",
+   "titulo": "Retranqueo del paso del Stmo. Cristo de la Sed",
+   "lugar": "Parroquia",
+   "añadido": "2026-10-30"
+  },
+  {
    "fecha": "2027-03-20",
    "hora": "16:30",
    "provincia": "ciudadreal",
@@ -1110,6 +1212,23 @@
    "fuente": "https://www.oracionenelhuertocr.es/2026/10/02/calendario-de-la-cuadrilla-de-costaleros-2027/",
    "fuente_nombre": "Web oficial de la Real y Muy Ilustre Hdad. de la Oración en el Huerto de los Olivos",
    "nota": "El cartel dice 'Retranqueo y traslado del paso a San Pedro' (Parroquia de San Pedro), sin indicar lugar de salida",
+   "añadido": "2026-10-30"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "La Sed",
+   "paso": "Cristo",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "fecha": "2027-03-31",
+   "hora": "21:00",
+   "tipo": "mudá",
+   "titulo": "Mudá de vuelta del paso del Stmo. Cristo de la Sed",
+   "lugar": "Parroquia",
    "añadido": "2026-10-30"
   }
  ]
