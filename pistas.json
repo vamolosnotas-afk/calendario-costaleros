@@ -1,1 +1,29 @@
-[]
+[
+ {
+  "fecha": "2027-01-30",
+  "hora": null,
+  "hermandad": "La Yedra",
+  "localidad": "Jerez de la Frontera",
+  "tipo": "ensayo",
+  "detectada": "2026-10-30",
+  "origen": "agenda de terceros"
+ },
+ {
+  "fecha": "2027-02-17",
+  "hora": null,
+  "hermandad": "La Yedra",
+  "localidad": "Jerez de la Frontera",
+  "tipo": "ensayo",
+  "detectada": "2026-10-30",
+  "origen": "agenda de terceros"
+ },
+ {
+  "fecha": "2027-02-28",
+  "hora": null,
+  "hermandad": "La Yedra",
+  "localidad": "Jerez de la Frontera",
+  "tipo": "ensayo",
+  "detectada": "2026-10-30",
+  "origen": "agenda de terceros"
+ }
+]

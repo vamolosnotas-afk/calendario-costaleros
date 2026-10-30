@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-10-30",
- "total": 67,
+ "total": 68,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -246,6 +246,22 @@
    "tipo": "igualá",
    "titulo": "Igualá de costaleros y aspirantes del paso de misterio de Ntro. Padre Jesús de la Luz Despojado de sus Vestiduras",
    "nota": "Sale el Domingo de Pasión (14/3/2027). Calzado negro de salida obligatorio. Después, convivencia.",
+   "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2026-11-28",
+   "hora": "10:00",
+   "provincia": "jaen",
+   "localidad": "Andújar",
+   "hermandad": "Esperanza",
+   "paso": null,
+   "tipo": "ensayo",
+   "titulo": "Ensayo Solidario 2026 (a favor de Cáritas) de las cuadrillas de costaleros, costaleras y aspirantes",
+   "lugar": "Salida desde la Parroquia de Santa María",
+   "capataz": null,
+   "fuente": "https://esperanzaandujar.com/cultos/calendario-de-cultos",
+   "fuente_nombre": "Web oficial de la Cofradía de la Esperanza de Andújar",
+   "nota": "Horario 10:00-13:00 según el calendario de cultos. Convocatoria: https://esperanzaandujar.com/publicaciones/ensayo-solidario-2026 (sábado 28/11/2026). Sábado verificado.",
    "añadido": "2026-10-30"
   },
   {
