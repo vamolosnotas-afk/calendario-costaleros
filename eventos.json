@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-10-30",
- "total": 82,
+ "total": 83,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -49,6 +49,23 @@
    "fuente": "https://www.hermandaddelasoledad.org/events/ensayo-de-la-cuadrilla-de-costaleros/",
    "fuente_nombre": "Web oficial de la Hdad. de la Soledad de San Lorenzo",
    "añadido": "2026-10-29"
+  },
+  {
+   "fecha": "2026-10-25",
+   "hora": "10:00",
+   "provincia": "sevilla",
+   "localidad": "Guillena",
+   "hermandad": "El Nazareno (Guillena)",
+   "paso": "Virgen",
+   "tipo": "igualá",
+   "titulo": "Igualá de costaleros de Ntra. Sra. de la Esperanza",
+   "lugar": "Capilla de la hermandad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Ya celebrada. Calzado blanco. Según el cartel, la salida es el Sábado de Pasión.",
+   "añadido": "2026-10-30"
   },
   {
    "provincia": "sevilla",
