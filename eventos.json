@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-10-30",
- "total": 55,
+ "total": 56,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -49,6 +49,22 @@
    "fuente": "https://www.hermandaddelasoledad.org/events/ensayo-de-la-cuadrilla-de-costaleros/",
    "fuente_nombre": "Web oficial de la Hdad. de la Soledad de San Lorenzo",
    "añadido": "2026-10-29"
+  },
+  {
+   "fecha": "2026-11-06",
+   "hora": "21:00",
+   "provincia": "jerez",
+   "localidad": "Jerez de la Frontera",
+   "hermandad": "La Candelaria",
+   "paso": "Virgen",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de María Stma. de la Candelaria",
+   "lugar": "Parroquia de Santa Ana",
+   "capataz": null,
+   "fuente": "https://www.instagram.com/p/DeZKMYNKC9H/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Candelaria (Jerez)",
+   "nota": "Publicación conjunta con el perfil oficial de la hermandad. Acudir con calzado blanco de salida.",
+   "añadido": "2026-10-30"
   },
   {
    "fecha": "2026-11-07",
