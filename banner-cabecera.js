@@ -14,7 +14,7 @@
     "#vln-cab .h{display:block;font-size:21px;font-weight:700;line-height:1.15;margin:2px 0;color:#faf3e7!important}" +
     "#vln-cab .s{display:block;font:13px Arial,sans-serif;color:#faf3e7!important;opacity:.9}" +
     "#vln-cab .b{flex:0 0 auto;background:#d4a574;color:#4A2818!important;font:700 14px Arial,sans-serif;padding:9px 13px;border-radius:10px;white-space:nowrap}" +
-    "#vln-cab.abs{position:absolute;z-index:50;width:560px;max-width:calc(100% - 32px)}" +
+    "#vln-cab.abs{position:absolute;z-index:50;width:620px;max-width:calc(100% - 32px)}" +
     "#vln-cab.mov{margin:10px 12px;padding:10px 12px;gap:10px;border-radius:12px}" +
     "#vln-cab.mov svg{flex-basis:40px;width:40px;height:40px}" +
     "#vln-cab.mov .h{font-size:17px}#vln-cab.mov .s{display:none}#vln-cab.mov .b{padding:8px 10px;font-size:13px}" +
@@ -42,7 +42,7 @@
       if (a.parentNode !== h) h.appendChild(a);
       var hr = h.getBoundingClientRect();
       var links = [].slice.call(h.querySelectorAll("nav a, a")).filter(function (x) {
-        var r = x.getBoundingClientRect(); return x.offsetParent && r.width > 30 && r.height > 20 && r.top > hr.top && r.top < hr.top + hr.height * 0.6 && x.id !== "vln-cab";
+        var r = x.getBoundingClientRect(); return x.offsetParent && !x.querySelector("img,svg,picture") && (x.textContent || "").trim().length > 2 && r.width > 30 && r.height > 20 && r.top > hr.top && r.top < hr.top + hr.height * 0.6 && x.id !== "vln-cab" && !x.closest("#vln-cab");
       });
       var izq = Infinity, abajo = 0;
       links.forEach(function (x) { var r = x.getBoundingClientRect(); izq = Math.min(izq, r.left); abajo = Math.max(abajo, r.bottom); });
