@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-10-30",
- "total": 75,
+ "total": 76,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -49,6 +49,23 @@
    "fuente": "https://www.hermandaddelasoledad.org/events/ensayo-de-la-cuadrilla-de-costaleros/",
    "fuente_nombre": "Web oficial de la Hdad. de la Soledad de San Lorenzo",
    "añadido": "2026-10-29"
+  },
+  {
+   "fecha": "2026-10-30",
+   "hora": "21:00",
+   "provincia": "jerez",
+   "localidad": "Guadalcacín (Jerez de la Frontera)",
+   "hermandad": "La Entrega",
+   "paso": "Misterio",
+   "tipo": "igualá",
+   "titulo": "Igualá de costaleros del paso de misterio para la Procesión Rural de Acción de Gracias",
+   "lugar": "Colegio Tomasa Pinilla",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Llevar el calzado negro de salida. Quien quiera puede aportar un litro de leche para las Hermanas Clarisas.",
+   "añadido": "2026-10-30"
   },
   {
    "provincia": "jerez",
