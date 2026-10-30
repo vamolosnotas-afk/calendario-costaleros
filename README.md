@@ -3,8 +3,9 @@
 Datos del calendario de cuadrillas a costal (Sevilla, Huelva, Granada y Córdoba), temporada 2026-2027,
 publicado en https://www.vamolosnota.es/calendario-de-igualas-y-ensayos/
 
-Solo se recogen convocatorias publicadas por las propias hermandades y agrupaciones (webs y redes oficiales)
-o carteles oficiales facilitados directamente por VamoLosNota. Cada cita indica su fuente.
+Se recogen convocatorias de webs y redes oficiales de las hermandades (con su fuente) y también citas
+conocidas por VamoLosNota por otras vías (carteles, grupos de costaleros, capataces, agendas cofrades),
+que se publican sin fuente.
 
 - eventos.json: las citas
 - fuentes_oficiales.json: webs y redes oficiales que se revisan
