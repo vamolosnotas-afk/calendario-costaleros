@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-10-31",
- "total": 175,
+ "total": 183,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -931,6 +931,22 @@
    "añadido": "2026-10-31"
   },
   {
+   "provincia": "sevilla",
+   "localidad": "Sevilla (Torreblanca)",
+   "hermandad": "Dolores de Torreblanca",
+   "capataz": null,
+   "lugar": null,
+   "fuente": "https://www.instagram.com/p/De6XPJ3DetU/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de los Dolores de Torreblanca (Sevilla)",
+   "nota": null,
+   "fecha": "2027-01-16",
+   "hora": "21:00",
+   "paso": "Cristo",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de Ntro. Padre Jesús Cautivo ante Pilato",
+   "añadido": "2026-10-31"
+  },
+  {
    "fecha": "2027-01-17",
    "hora": "10:00",
    "provincia": "granada",
@@ -994,6 +1010,22 @@
    "fuente_nombre": "Web oficial de la Hdad. del Rescatado",
    "nota": "Calendario publicado el 06/10/2026 \"de cara a la Semana Santa de 2027\". Calzado negro de salida obligatorio.",
    "añadido": "2026-10-29"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Sevilla (Torreblanca)",
+   "hermandad": "Dolores de Torreblanca",
+   "capataz": null,
+   "lugar": null,
+   "fuente": "https://www.instagram.com/p/De6XPJ3DetU/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de los Dolores de Torreblanca (Sevilla)",
+   "nota": null,
+   "fecha": "2027-01-17",
+   "hora": "12:00",
+   "paso": "Virgen",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de María Stma. de los Dolores",
+   "añadido": "2026-10-31"
   },
   {
    "provincia": "sevilla",
@@ -1106,6 +1138,38 @@
    "hora": "21:00",
    "tipo": "igualá",
    "titulo": "Igualá de la cuadrilla del Stmo. Cristo de la Fe",
+   "añadido": "2026-10-31"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Sevilla (Torreblanca)",
+   "hermandad": "Dolores de Torreblanca",
+   "capataz": null,
+   "lugar": null,
+   "fuente": "https://www.instagram.com/p/De6XPJ3DetU/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de los Dolores de Torreblanca (Sevilla)",
+   "nota": null,
+   "fecha": "2027-01-23",
+   "hora": "21:00",
+   "paso": "Cristo",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de Ntro. Padre Jesús Cautivo ante Pilato",
+   "añadido": "2026-10-31"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Sevilla (Torreblanca)",
+   "hermandad": "Dolores de Torreblanca",
+   "capataz": null,
+   "lugar": null,
+   "fuente": "https://www.instagram.com/p/De6XPJ3DetU/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de los Dolores de Torreblanca (Sevilla)",
+   "nota": null,
+   "fecha": "2027-01-23",
+   "hora": "21:00",
+   "paso": "Virgen",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de María Stma. de los Dolores",
    "añadido": "2026-10-31"
   },
   {
@@ -1695,6 +1759,22 @@
    "añadido": "2026-10-31"
   },
   {
+   "provincia": "sevilla",
+   "localidad": "Sevilla (Torreblanca)",
+   "hermandad": "Dolores de Torreblanca",
+   "capataz": null,
+   "lugar": null,
+   "fuente": "https://www.instagram.com/p/De6XPJ3DetU/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de los Dolores de Torreblanca (Sevilla)",
+   "nota": null,
+   "fecha": "2027-02-13",
+   "hora": "21:00",
+   "paso": "Cristo",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de Ntro. Padre Jesús Cautivo ante Pilato",
+   "añadido": "2026-10-31"
+  },
+  {
    "fecha": "2027-02-14",
    "hora": "10:00",
    "provincia": "cordoba",
@@ -1902,6 +1982,22 @@
    "tipo": "ensayo",
    "lugar": "Almacén González Barba",
    "titulo": "Ensayo de la cuadrilla de la Oración en el Huerto",
+   "añadido": "2026-10-31"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Sevilla (Torreblanca)",
+   "hermandad": "Dolores de Torreblanca",
+   "capataz": null,
+   "lugar": null,
+   "fuente": "https://www.instagram.com/p/De6XPJ3DetU/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de los Dolores de Torreblanca (Sevilla)",
+   "nota": null,
+   "fecha": "2027-02-20",
+   "hora": "21:00",
+   "paso": "Virgen",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de María Stma. de los Dolores",
    "añadido": "2026-10-31"
   },
   {
@@ -2324,6 +2420,38 @@
    "hora": "21:00",
    "tipo": "ensayo",
    "titulo": "Ensayo de la cuadrilla del Stmo. Cristo de la Fe",
+   "añadido": "2026-10-31"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Sevilla (Torreblanca)",
+   "hermandad": "Dolores de Torreblanca",
+   "capataz": null,
+   "lugar": null,
+   "fuente": "https://www.instagram.com/p/De6XPJ3DetU/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de los Dolores de Torreblanca (Sevilla)",
+   "nota": null,
+   "fecha": "2027-03-06",
+   "hora": "21:00",
+   "paso": "Cristo",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de Ntro. Padre Jesús Cautivo ante Pilato",
+   "añadido": "2026-10-31"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Sevilla (Torreblanca)",
+   "hermandad": "Dolores de Torreblanca",
+   "capataz": null,
+   "lugar": null,
+   "fuente": "https://www.instagram.com/p/De6XPJ3DetU/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de los Dolores de Torreblanca (Sevilla)",
+   "nota": null,
+   "fecha": "2027-03-06",
+   "hora": "21:00",
+   "paso": "Virgen",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de María Stma. de los Dolores",
    "añadido": "2026-10-31"
   },
   {
