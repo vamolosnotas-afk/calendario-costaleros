@@ -2,7 +2,9 @@
    Se carga desde "Código personalizado en el head" de IONOS. */
 (function () {
   var URL_CAL = "https://www.vamolosnota.es/calendario-de-igualas-y-ensayos/";
-  if (location.pathname.indexOf("/calendario-de-igualas-y-ensayos") === 0) return; // en su propia página no hace falta
+  var URL_CANAL = "https://whatsapp.com/channel/0029Vb8ycPC2Jl8Ha70KSP2Z";
+  // En la propia página del calendario, en vez del enlace al calendario sale el del canal de WhatsApp
+  var EN_CAL = location.pathname.indexOf("/calendario-de-igualas-y-ensayos") === 0;
 
   var CSS =
     "#vln-cab{display:flex;align-items:center;gap:14px;box-sizing:border-box;background:#4A2818;border:2px solid #d4a574;border-radius:14px;padding:12px 16px;text-decoration:none!important;color:#faf3e7!important;font-family:Georgia,'Times New Roman',serif;box-shadow:0 6px 18px rgba(40,20,10,.35);transition:transform .15s ease,box-shadow .15s ease}" +
@@ -14,6 +16,7 @@
     "#vln-cab .h{display:block;font-size:21px;font-weight:700;line-height:1.15;margin:2px 0;color:#faf3e7!important}" +
     "#vln-cab .s{display:block;font:13px Arial,sans-serif;color:#faf3e7!important;opacity:.9}" +
     "#vln-cab .b{flex:0 0 auto;background:#d4a574;color:#4A2818!important;font:700 14px Arial,sans-serif;padding:9px 13px;border-radius:10px;white-space:nowrap}" +
+    "#vln-cab.wa .b{background:#25D366;color:#0b3d1f!important}" +
     "#vln-cab.abs{position:absolute;z-index:50;width:620px;max-width:calc(100% - 32px)}" +
     "#vln-cab.mov{margin:10px 12px;padding:10px 12px;gap:10px;border-radius:12px}" +
     "#vln-cab.mov svg{flex-basis:40px;width:40px;height:40px}" +
@@ -22,11 +25,21 @@
 
   var ICONO = '<svg width="50" height="50" viewBox="0 0 58 58" aria-hidden="true"><rect x="3" y="8" width="52" height="47" rx="7" fill="#faf3e7"/><rect x="3" y="8" width="52" height="14" rx="7" fill="#6b2c1a"/><rect x="3" y="16" width="52" height="6" fill="#6b2c1a"/><rect x="15" y="3" width="5" height="11" rx="2.5" fill="#d4a574"/><rect x="38" y="3" width="5" height="11" rx="2.5" fill="#d4a574"/><circle cx="16" cy="33" r="5" fill="#c0392b"/><circle cx="29" cy="33" r="5" fill="#1f5fa8"/><circle cx="42" cy="33" r="5" fill="#2e8b57"/><circle cx="16" cy="46" r="5" fill="#7b3fa0"/><circle cx="29" cy="46" r="5" fill="#e6d9c4"/><circle cx="42" cy="46" r="5" fill="#c0392b"/></svg>';
 
+  var ICONO_WA = '<svg width="50" height="50" viewBox="0 0 58 58" aria-hidden="true"><circle cx="29" cy="29" r="26" fill="#25D366"/><path d="M17 18h24a5 5 0 0 1 5 5v12a5 5 0 0 1-5 5H27l-8 7v-7h-2a5 5 0 0 1-5-5V23a5 5 0 0 1 5-5z" fill="#faf3e7"/><circle cx="22" cy="29" r="2.6" fill="#4A2818"/><circle cx="29" cy="29" r="2.6" fill="#4A2818"/><circle cx="36" cy="29" r="2.6" fill="#4A2818"/></svg>';
+
   function crear() {
     var a = document.createElement("a");
-    a.id = "vln-cab"; a.href = URL_CAL;
-    a.setAttribute("aria-label", "Calendario de igualás y ensayos 2026-2027");
-    a.innerHTML = ICONO + '<span class="t"><span class="e">TEMPORADA 2026 · 2027</span><span class="h">Calendario de igualás y ensayos</span><span class="s">Andalucía, Madrid, Castilla y Cataluña · se actualiza cada día</span></span><span class="b">Ver fechas ›</span>';
+    a.id = "vln-cab";
+    if (EN_CAL) {
+      a.href = URL_CANAL; a.target = "_blank"; a.rel = "noopener";
+      a.setAttribute("data-wa", "1");
+      a.setAttribute("aria-label", "Únete al canal de WhatsApp de ensayos e igualás");
+      a.innerHTML = ICONO_WA + '<span class="t"><span class="e">CANAL DE WHATSAPP · GRATIS</span><span class="h">Únete al canal de WhatsApp de ensayos e igualás</span><span class="s">Te avisamos de cada nueva fecha en tu móvil</span></span><span class="b">Unirme ›</span>';
+    } else {
+      a.href = URL_CAL;
+      a.setAttribute("aria-label", "Calendario de igualás y ensayos 2026-2027");
+      a.innerHTML = ICONO + '<span class="t"><span class="e">TEMPORADA 2026 · 2027</span><span class="h">Calendario de igualás y ensayos</span><span class="s">Andalucía, Madrid, Castilla y Cataluña · se actualiza cada día</span></span><span class="b">Ver fechas ›</span>';
+    }
     return a;
   }
 
@@ -37,7 +50,7 @@
     var ancho = document.documentElement.clientWidth;
     if (ancho >= 1000) {
       // Ordenador: dentro de la cabecera, en el hueco bajo el menú
-      a.className = "abs";
+      a.className = "abs" + (EN_CAL ? " wa" : "");
       if (getComputedStyle(h).position === "static") h.style.position = "relative";
       if (a.parentNode !== h) h.appendChild(a);
       var hr = h.getBoundingClientRect();
@@ -53,7 +66,7 @@
       a.style.top = Math.round(top + Math.max(0, (hueco - a.offsetHeight) / 2)) + "px";
     } else {
       // Móvil/tablet: tira compacta justo debajo de la cabecera
-      a.className = "mov"; a.style.left = a.style.top = "";
+      a.className = "mov" + (EN_CAL ? " wa" : ""); a.style.left = a.style.top = "";
       if (a.previousElementSibling !== h) h.parentNode.insertBefore(a, h.nextSibling);
     }
   }
