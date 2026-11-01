@@ -1,6 +1,6 @@
 {
- "actualizado": "2026-10-31",
- "total": 183,
+ "actualizado": "2026-11-01",
+ "total": 187,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -1337,6 +1337,22 @@
   },
   {
    "fecha": "2027-01-30",
+   "hora": "16:30",
+   "provincia": "huelva",
+   "localidad": "Huelva",
+   "hermandad": "La Salud",
+   "paso": "Señor de la Sentencia",
+   "lugar": "Casa Hermandad",
+   "capataz": null,
+   "fuente": "https://www.instagram.com/p/DfKbNlXuFeU/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Salud (Huelva)",
+   "tipo": "igualá",
+   "titulo": "Igualá cuadrilla del Señor de la Sentencia",
+   "nota": "Calendario de iguala y ensayos 2027 publicado el 31/10/2026. Puntualidad y calzado de salida.",
+   "añadido": "2026-11-01"
+  },
+  {
+   "fecha": "2027-01-30",
    "hora": "19:00",
    "provincia": "sevilla",
    "localidad": "Sevilla",
@@ -1528,6 +1544,22 @@
    "fuente": "https://lacenadesevilla.es/convocatoria-de-igualas-ensayos-y-retranqueos-para-las-cuadrillas-de-costaleros/",
    "fuente_nombre": "Web oficial de la Hdad. de la Sagrada Cena",
    "añadido": "2026-10-29"
+  },
+  {
+   "fecha": "2027-02-06",
+   "hora": "16:30",
+   "provincia": "huelva",
+   "localidad": "Huelva",
+   "hermandad": "La Salud",
+   "paso": "Señor de la Sentencia",
+   "lugar": "Casa Hermandad",
+   "capataz": null,
+   "fuente": "https://www.instagram.com/p/DfKbNlXuFeU/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Salud (Huelva)",
+   "tipo": "ensayo",
+   "titulo": "1.er ensayo cuadrilla del Señor de la Sentencia",
+   "nota": "Calendario de iguala y ensayos 2027 publicado el 31/10/2026. Puntualidad y calzado de salida.",
+   "añadido": "2026-11-01"
   },
   {
    "fecha": "2027-02-06",
@@ -1757,6 +1789,22 @@
    "lugar": "Nave González Barba",
    "titulo": "Ensayo de la cuadrilla de Mª Stma. de la Amargura",
    "añadido": "2026-10-31"
+  },
+  {
+   "fecha": "2027-02-13",
+   "hora": "16:30",
+   "provincia": "huelva",
+   "localidad": "Huelva",
+   "hermandad": "La Salud",
+   "paso": "Señor de la Sentencia",
+   "lugar": "Casa Hermandad",
+   "capataz": null,
+   "fuente": "https://www.instagram.com/p/DfKbNlXuFeU/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Salud (Huelva)",
+   "tipo": "ensayo",
+   "titulo": "2.º ensayo cuadrilla del Señor de la Sentencia",
+   "nota": "Calendario de iguala y ensayos 2027 publicado el 31/10/2026. Puntualidad y calzado de salida.",
+   "añadido": "2026-11-01"
   },
   {
    "provincia": "sevilla",
@@ -2405,6 +2453,22 @@
    "lugar": "Nave González Barba",
    "titulo": "Ensayo de la cuadrilla de Mª Stma. de la Amargura",
    "añadido": "2026-10-31"
+  },
+  {
+   "fecha": "2027-03-06",
+   "hora": "16:30",
+   "provincia": "huelva",
+   "localidad": "Huelva",
+   "hermandad": "La Salud",
+   "paso": "Señor de la Sentencia",
+   "lugar": "Casa Hermandad",
+   "capataz": null,
+   "fuente": "https://www.instagram.com/p/DfKbNlXuFeU/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Salud (Huelva)",
+   "tipo": "ensayo",
+   "titulo": "3.er ensayo cuadrilla del Señor de la Sentencia",
+   "nota": "Calendario de iguala y ensayos 2027 publicado el 31/10/2026. Puntualidad y calzado de salida.",
+   "añadido": "2026-11-01"
   },
   {
    "provincia": "huelva",
