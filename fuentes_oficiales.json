@@ -1156,12 +1156,15 @@
   "localidad": "Córdoba",
   "hermandad": "Santo Sepulcro",
   "nombre_completo": "Hermandad de la Inmaculada Concepción y Muy Antigua Cofradía de Nazarenos de Nuestro Señor Jesucristo del Santo Sepulcro y Nuestra Señora del Desconsuelo en su Soledad",
-  "costal": null,
+  "costal": true,
   "web": "https://hermandadsepulcro.com/",
   "instagram": "https://instagram.com/santosepulcro/",
   "facebook": "https://www.facebook.com/HdadSantoSepulcro/",
   "x": "https://x.com/H_SantoSepulcro/",
-  "verificado_como": "Listada por la Agrupación de Hermandades y Cofradías de Córdoba (https://www.hermandadesdecordoba.es/viernes-santo/viernes-santo-hermandad-del-santo-sepulcro/). Web oficial enlazada desde esa ficha. Redes enlazadas desde la propia web de la hermandad."
+  "verificado_como": "Listada por la Agrupación de Hermandades y Cofradías de Córdoba (https://www.hermandadesdecordoba.es/viernes-santo/viernes-santo-hermandad-del-santo-sepulcro/). Web oficial enlazada desde esa ficha. Redes enlazadas desde la propia web de la hermandad. Costal: Instagram oficial (2026-10-21) convoca igualá de costaleros del Niño Jesús de la Compañía.",
+  "pasos_costal": [
+   "Niño Jesús de la Compañía"
+  ]
  },
  {
   "provincia": "cordoba",
