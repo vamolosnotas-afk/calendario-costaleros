@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-02",
- "total": 237,
+ "total": 236,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -196,27 +196,11 @@
    "titulo": "Igualá de costaleros del Niño Jesús de la Compañía",
    "lugar": "Parroquia del Salvador y Santo Domingo de Silos",
    "capataz": null,
-   "fuente": null,
-   "fuente_nombre": null,
+   "fuente": "https://www.instagram.com/santosepulcro/p/DexASaXCCil/",
+   "fuente_nombre": "Instagram oficial de la Hdad. del Santo Sepulcro (Córdoba)",
    "verificado_por": "manuel",
    "nota": null,
    "añadido": "2026-10-30"
-  },
-  {
-   "provincia": "cordoba",
-   "localidad": "Córdoba",
-   "hermandad": "Santo Sepulcro",
-   "paso": "Niño Jesús de la Compañía",
-   "capataz": null,
-   "fuente": "https://www.instagram.com/santosepulcro/p/DexASaXCCil/",
-   "fuente_nombre": "Instagram oficial de la Hdad. del Santo Sepulcro (Córdoba)",
-   "fecha": "2026-11-07",
-   "hora": "17:00",
-   "tipo": "igualá",
-   "titulo": "Igualá de costaleros del Niño Jesús de la Compañía",
-   "lugar": "Parroquia del Salvador y Santo Domingo de Silos",
-   "nota": "Calzado negro de salida.",
-   "añadido": "2026-11-02"
   },
   {
    "fecha": "2026-11-07",
@@ -518,8 +502,8 @@
   {
    "provincia": "cordoba",
    "localidad": "Córdoba",
-   "hermandad": "Santo Sepulcro",
-   "paso": "Niño Jesús de la Compañía",
+   "hermandad": "Niño Jesús de la Compañía",
+   "paso": null,
    "capataz": null,
    "fuente": "https://www.instagram.com/santosepulcro/p/DexASaXCCil/",
    "fuente_nombre": "Instagram oficial de la Hdad. del Santo Sepulcro (Córdoba)",
@@ -528,7 +512,7 @@
    "tipo": "ensayo",
    "titulo": "Ensayo de costaleros del Niño Jesús de la Compañía",
    "lugar": null,
-   "nota": "Calzado negro de salida.",
+   "nota": "Hdad. del Santo Sepulcro. Calzado negro de salida.",
    "añadido": "2026-11-02"
   },
   {
@@ -650,8 +634,8 @@
   {
    "provincia": "cordoba",
    "localidad": "Córdoba",
-   "hermandad": "Santo Sepulcro",
-   "paso": "Niño Jesús de la Compañía",
+   "hermandad": "Niño Jesús de la Compañía",
+   "paso": null,
    "capataz": null,
    "fuente": "https://www.instagram.com/santosepulcro/p/DexASaXCCil/",
    "fuente_nombre": "Instagram oficial de la Hdad. del Santo Sepulcro (Córdoba)",
@@ -660,7 +644,7 @@
    "tipo": "ensayo",
    "titulo": "Ensayo de costaleros del Niño Jesús de la Compañía",
    "lugar": null,
-   "nota": "Calzado negro de salida.",
+   "nota": "Hdad. del Santo Sepulcro. Calzado negro de salida.",
    "añadido": "2026-11-02"
   },
   {
@@ -797,8 +781,8 @@
   {
    "provincia": "cordoba",
    "localidad": "Córdoba",
-   "hermandad": "Santo Sepulcro",
-   "paso": "Niño Jesús de la Compañía",
+   "hermandad": "Niño Jesús de la Compañía",
+   "paso": null,
    "capataz": null,
    "fuente": "https://www.instagram.com/santosepulcro/p/DexASaXCCil/",
    "fuente_nombre": "Instagram oficial de la Hdad. del Santo Sepulcro (Córdoba)",
@@ -807,7 +791,7 @@
    "tipo": "ensayo",
    "titulo": "Ensayo de costaleros del Niño Jesús de la Compañía",
    "lugar": null,
-   "nota": "Calzado negro de salida.",
+   "nota": "Hdad. del Santo Sepulcro. Calzado negro de salida.",
    "añadido": "2026-11-02"
   },
   {
