@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-03",
- "total": 249,
+ "total": 250,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -267,6 +267,22 @@
    "titulo": "Igualá de la cuadrilla de Ntro. Padre Jesús en su Prendimiento",
    "lugar": "Casa Hermandad",
    "añadido": "2026-11-02"
+  },
+  {
+   "fecha": "2026-11-13",
+   "hora": "21:30",
+   "provincia": "jerez",
+   "localidad": "Jerez de la Frontera",
+   "hermandad": "El Transporte",
+   "paso": "Misterio",
+   "tipo": "igualá",
+   "titulo": "Convocatoria (igualá) de costaleros del paso de misterio de Ntro. Padre Jesús del Consuelo",
+   "lugar": "Basílica de la Merced",
+   "capataz": null,
+   "fuente": "https://hermandaddeltransporte.com/2026/10/19/convoc-costaleros-misterio27/",
+   "fuente_nombre": "Web oficial de la Hdad. del Transporte (Jerez)",
+   "nota": "Calzado blanco de salida y molía.",
+   "añadido": "2026-11-03"
   },
   {
    "fecha": "2026-11-13",
@@ -632,6 +648,22 @@
    "añadido": "2026-10-30"
   },
   {
+   "provincia": "madrid",
+   "localidad": "Madrid",
+   "hermandad": "El Silencio",
+   "paso": "Misterio",
+   "fecha": "2026-11-28",
+   "hora": "17:00",
+   "tipo": "igualá",
+   "titulo": "Igualá del paso de misterio de Ntro. Padre Jesús del Perdón",
+   "lugar": "Iglesia del Santísimo Cristo de la Fe",
+   "capataz": "José María Gallardo Guardado",
+   "fuente": "https://www.instagram.com/p/Dd6bQsxuaZ5/",
+   "fuente_nombre": "Instagram oficial de la Hdad. del Silencio (Madrid)",
+   "nota": "Calzado negro de salida. Abierta a aspirantes.",
+   "añadido": "2026-10-31"
+  },
+  {
    "fecha": "2026-11-28",
    "hora": "17:00",
    "provincia": "sevilla",
@@ -662,22 +694,6 @@
    "lugar": null,
    "nota": "Hdad. del Santo Sepulcro. Calzado negro de salida.",
    "añadido": "2026-11-02"
-  },
-  {
-   "provincia": "madrid",
-   "localidad": "Madrid",
-   "hermandad": "El Silencio",
-   "paso": "Misterio",
-   "fecha": "2026-11-28",
-   "hora": null,
-   "tipo": "igualá",
-   "titulo": "Igualá del paso de misterio de Ntro. Padre Jesús del Perdón",
-   "lugar": "Iglesia del Santísimo Cristo de la Fe",
-   "capataz": "José María Gallardo Guardado",
-   "fuente": "https://www.instagram.com/p/Dd6bQsxuaZ5/",
-   "fuente_nombre": "Instagram oficial de la Hdad. del Silencio (Madrid)",
-   "nota": "Calzado negro de salida. Abierta a aspirantes.",
-   "añadido": "2026-10-31"
   },
   {
    "provincia": "jaen",
