@@ -2,8 +2,8 @@
    Se carga desde "Código personalizado en el head" de IONOS. */
 (function () {
   var URL_CAL = "https://www.vamolosnota.es/calendario-de-igualas-y-ensayos/";
-  var URL_CANAL = "https://whatsapp.com/channel/0029Vb8ycPC2Jl8Ha70KSP2Z";
-  // En la propia página del calendario, en vez del enlace al calendario sale el del canal de WhatsApp
+  var URL_COSTAL = "https://www.vamolosnota.es/tienda-costales/Costal-Personalizado-a-Medida-en-Sevilla-p718578854/";
+  // En la propia página del calendario, en vez del enlace al calendario sale el del Costal Personalizado a Medida
   var EN_CAL = location.pathname.indexOf("/calendario-de-igualas-y-ensayos") === 0;
 
   var CSS =
@@ -25,16 +25,15 @@
 
   var ICONO = '<svg width="50" height="50" viewBox="0 0 58 58" aria-hidden="true"><rect x="3" y="8" width="52" height="47" rx="7" fill="#faf3e7"/><rect x="3" y="8" width="52" height="14" rx="7" fill="#6b2c1a"/><rect x="3" y="16" width="52" height="6" fill="#6b2c1a"/><rect x="15" y="3" width="5" height="11" rx="2.5" fill="#d4a574"/><rect x="38" y="3" width="5" height="11" rx="2.5" fill="#d4a574"/><circle cx="16" cy="33" r="5" fill="#c0392b"/><circle cx="29" cy="33" r="5" fill="#1f5fa8"/><circle cx="42" cy="33" r="5" fill="#2e8b57"/><circle cx="16" cy="46" r="5" fill="#7b3fa0"/><circle cx="29" cy="46" r="5" fill="#e6d9c4"/><circle cx="42" cy="46" r="5" fill="#c0392b"/></svg>';
 
-  var ICONO_WA = '<svg width="50" height="50" viewBox="0 0 58 58" aria-hidden="true"><circle cx="29" cy="29" r="26" fill="#25D366"/><path d="M17 18h24a5 5 0 0 1 5 5v12a5 5 0 0 1-5 5H27l-8 7v-7h-2a5 5 0 0 1-5-5V23a5 5 0 0 1 5-5z" fill="#faf3e7"/><circle cx="22" cy="29" r="2.6" fill="#4A2818"/><circle cx="29" cy="29" r="2.6" fill="#4A2818"/><circle cx="36" cy="29" r="2.6" fill="#4A2818"/></svg>';
+  var ICONO_TIENDA = '<svg width="50" height="50" viewBox="0 0 58 58" aria-hidden="true"><circle cx="29" cy="29" r="26" fill="#d4a574"/><path d="M19 24h20l-2 20a3 3 0 0 1-3 3H24a3 3 0 0 1-3-3z" fill="#faf3e7"/><path d="M23 25v-4a6 6 0 0 1 12 0v4" fill="none" stroke="#4A2818" stroke-width="2.6" stroke-linecap="round"/><path d="M24 33h10M24 38h10" stroke="#6b2c1a" stroke-width="2.4" stroke-linecap="round"/></svg>';
 
   function crear() {
     var a = document.createElement("a");
     a.id = "vln-cab";
     if (EN_CAL) {
-      a.href = URL_CANAL; a.target = "_blank"; a.rel = "noopener";
-      a.setAttribute("data-wa", "1");
-      a.setAttribute("aria-label", "Únete al canal de WhatsApp de ensayos e igualás");
-      a.innerHTML = ICONO_WA + '<span class="t"><span class="e">CANAL DE WHATSAPP · GRATIS</span><span class="h">Únete al canal de WhatsApp de ensayos e igualás</span><span class="s">Te avisamos de cada nueva fecha en tu móvil</span></span><span class="b">Unirme ›</span>';
+      a.href = URL_COSTAL;
+      a.setAttribute("aria-label", "Costal Personalizado a Medida en Sevilla, desde 43 euros");
+      a.innerHTML = ICONO_TIENDA + '<span class="t"><span class="e">COSTAL A MEDIDA · DESDE 43€</span><span class="h">¿Vas a alguna igualá este año? Hazte tu costal personalizado</span><span class="s">Hecho a mano en Sevilla · tú eliges la saca y la tela</span></span><span class="b">Ver costal ›</span>';
     } else {
       a.href = URL_CAL;
       a.setAttribute("aria-label", "Calendario de igualás y ensayos 2026-2027");
@@ -50,7 +49,7 @@
     var ancho = document.documentElement.clientWidth;
     if (ancho >= 1000) {
       // Ordenador: dentro de la cabecera, en el hueco bajo el menú
-      a.className = "abs" + (EN_CAL ? " wa" : "");
+      a.className = "abs";
       if (getComputedStyle(h).position === "static") h.style.position = "relative";
       if (a.parentNode !== h) h.appendChild(a);
       var hr = h.getBoundingClientRect();
@@ -66,7 +65,7 @@
       a.style.top = Math.round(top + Math.max(0, (hueco - a.offsetHeight) / 2)) + "px";
     } else {
       // Móvil/tablet: tira compacta justo debajo de la cabecera
-      a.className = "mov" + (EN_CAL ? " wa" : ""); a.style.left = a.style.top = "";
+      a.className = "mov"; a.style.left = a.style.top = "";
       if (a.previousElementSibling !== h) h.parentNode.insertBefore(a, h.nextSibling);
     }
   }
