@@ -1,6 +1,6 @@
 {
- "actualizado": "2026-11-02",
- "total": 236,
+ "actualizado": "2026-11-03",
+ "total": 249,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -500,6 +500,22 @@
    "añadido": "2026-10-30"
   },
   {
+   "provincia": "jaen",
+   "hora": "17:00",
+   "lugar": "Parroquia de Santa Isabel",
+   "capataz": null,
+   "nota": null,
+   "localidad": "Jaén",
+   "hermandad": "Cautivo y Trinidad",
+   "fuente": "https://cautivoytrinidadjaen.com/calendario-de-iguala-y-ensayos/",
+   "fuente_nombre": "Web oficial de la Hdad. Cautivo y Trinidad de Jaén",
+   "fecha": "2026-11-21",
+   "paso": "María Stma. de la Trinidad",
+   "tipo": "igualá",
+   "titulo": "Igualá María Stma. de la Trinidad",
+   "añadido": "2026-11-03"
+  },
+  {
    "provincia": "cordoba",
    "localidad": "Córdoba",
    "hermandad": "Niño Jesús de la Compañía",
@@ -662,6 +678,22 @@
    "fuente_nombre": "Instagram oficial de la Hdad. del Silencio (Madrid)",
    "nota": "Calzado negro de salida. Abierta a aspirantes.",
    "añadido": "2026-10-31"
+  },
+  {
+   "provincia": "jaen",
+   "hora": "17:00",
+   "lugar": "Parroquia de Santa Isabel",
+   "capataz": null,
+   "nota": null,
+   "localidad": "Jaén",
+   "hermandad": "Cautivo y Trinidad",
+   "fuente": "https://cautivoytrinidadjaen.com/calendario-de-iguala-y-ensayos/",
+   "fuente_nombre": "Web oficial de la Hdad. Cautivo y Trinidad de Jaén",
+   "fecha": "2026-11-29",
+   "paso": "Jesús Cautivo",
+   "tipo": "igualá",
+   "titulo": "Igualá Jesús Cautivo",
+   "añadido": "2026-11-03"
   },
   {
    "provincia": "jerez",
@@ -1317,6 +1349,22 @@
    "añadido": "2026-10-31"
   },
   {
+   "provincia": "jaen",
+   "hora": "17:00",
+   "lugar": "Parroquia de Santa Isabel",
+   "capataz": null,
+   "nota": null,
+   "localidad": "Jaén",
+   "hermandad": "Cautivo y Trinidad",
+   "fuente": "https://cautivoytrinidadjaen.com/calendario-de-iguala-y-ensayos/",
+   "fuente_nombre": "Web oficial de la Hdad. Cautivo y Trinidad de Jaén",
+   "fecha": "2027-01-23",
+   "paso": "Jesús Cautivo",
+   "tipo": "ensayo",
+   "titulo": "Ensayo Jesús Cautivo",
+   "añadido": "2026-11-03"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "Vera+Cruz y Oración en el Huerto",
@@ -1590,6 +1638,22 @@
    "titulo": "Igualá cuadrilla del Señor de la Sentencia",
    "nota": "Calendario de iguala y ensayos 2027 publicado el 31/10/2026. Puntualidad y calzado de salida.",
    "añadido": "2026-11-01"
+  },
+  {
+   "provincia": "jaen",
+   "hora": "17:00",
+   "lugar": "Parroquia de Santa Isabel",
+   "capataz": null,
+   "nota": null,
+   "localidad": "Jaén",
+   "hermandad": "Cautivo y Trinidad",
+   "fuente": "https://cautivoytrinidadjaen.com/calendario-de-iguala-y-ensayos/",
+   "fuente_nombre": "Web oficial de la Hdad. Cautivo y Trinidad de Jaén",
+   "fecha": "2027-01-30",
+   "paso": "María Stma. de la Trinidad",
+   "tipo": "ensayo",
+   "titulo": "Ensayo María Stma. de la Trinidad",
+   "añadido": "2026-11-03"
   },
   {
    "fecha": "2027-01-30",
@@ -1912,6 +1976,22 @@
    "titulo": "1.er ensayo cuadrilla del Señor de la Sentencia",
    "nota": "Calendario de iguala y ensayos 2027 publicado el 31/10/2026. Puntualidad y calzado de salida.",
    "añadido": "2026-11-01"
+  },
+  {
+   "provincia": "jaen",
+   "hora": "17:00",
+   "lugar": "Parroquia de Santa Isabel",
+   "capataz": null,
+   "nota": null,
+   "localidad": "Jaén",
+   "hermandad": "Cautivo y Trinidad",
+   "fuente": "https://cautivoytrinidadjaen.com/calendario-de-iguala-y-ensayos/",
+   "fuente_nombre": "Web oficial de la Hdad. Cautivo y Trinidad de Jaén",
+   "fecha": "2027-02-06",
+   "paso": "Jesús Cautivo",
+   "tipo": "ensayo",
+   "titulo": "Ensayo Jesús Cautivo",
+   "añadido": "2026-11-03"
   },
   {
    "fecha": "2027-02-06",
@@ -2368,6 +2448,38 @@
    "añadido": "2026-10-31"
   },
   {
+   "provincia": "jaen",
+   "hora": "17:00",
+   "lugar": "Parroquia de Santa Isabel",
+   "capataz": null,
+   "nota": null,
+   "localidad": "Jaén",
+   "hermandad": "Cautivo y Trinidad",
+   "fuente": "https://cautivoytrinidadjaen.com/calendario-de-iguala-y-ensayos/",
+   "fuente_nombre": "Web oficial de la Hdad. Cautivo y Trinidad de Jaén",
+   "fecha": "2027-02-14",
+   "paso": "Jesús Cautivo",
+   "tipo": "ensayo",
+   "titulo": "Ensayo Jesús Cautivo",
+   "añadido": "2026-11-03"
+  },
+  {
+   "provincia": "jaen",
+   "hora": "17:00",
+   "lugar": "Parroquia de Santa Isabel",
+   "capataz": null,
+   "nota": null,
+   "localidad": "Jaén",
+   "hermandad": "Cautivo y Trinidad",
+   "fuente": "https://cautivoytrinidadjaen.com/calendario-de-iguala-y-ensayos/",
+   "fuente_nombre": "Web oficial de la Hdad. Cautivo y Trinidad de Jaén",
+   "fecha": "2027-02-14",
+   "paso": "María Stma. de la Trinidad",
+   "tipo": "ensayo",
+   "titulo": "Ensayo María Stma. de la Trinidad",
+   "añadido": "2026-11-03"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "Lanzada",
@@ -2495,6 +2607,38 @@
    "verificado_por": "manuel",
    "nota": "Hora por confirmar.",
    "añadido": "2026-10-30"
+  },
+  {
+   "provincia": "jaen",
+   "hora": "17:00",
+   "lugar": "Parroquia de Santa Isabel",
+   "capataz": null,
+   "nota": null,
+   "localidad": "Jaén",
+   "hermandad": "Cautivo y Trinidad",
+   "fuente": "https://cautivoytrinidadjaen.com/calendario-de-iguala-y-ensayos/",
+   "fuente_nombre": "Web oficial de la Hdad. Cautivo y Trinidad de Jaén",
+   "fecha": "2027-02-20",
+   "paso": "Jesús Cautivo",
+   "tipo": "ensayo",
+   "titulo": "Ensayo Jesús Cautivo",
+   "añadido": "2026-11-03"
+  },
+  {
+   "provincia": "jaen",
+   "hora": "17:00",
+   "lugar": "Parroquia de Santa Isabel",
+   "capataz": null,
+   "nota": null,
+   "localidad": "Jaén",
+   "hermandad": "Cautivo y Trinidad",
+   "fuente": "https://cautivoytrinidadjaen.com/calendario-de-iguala-y-ensayos/",
+   "fuente_nombre": "Web oficial de la Hdad. Cautivo y Trinidad de Jaén",
+   "fecha": "2027-02-20",
+   "paso": "María Stma. de la Trinidad",
+   "tipo": "ensayo",
+   "titulo": "Ensayo María Stma. de la Trinidad",
+   "añadido": "2026-11-03"
   },
   {
    "fecha": "2027-02-20",
@@ -3013,6 +3157,38 @@
    "lugar": "Casa de Hermandad",
    "titulo": "Ensayo de la cuadrilla de Ntra. Sra. de la Esperanza Coronada",
    "añadido": "2026-10-31"
+  },
+  {
+   "provincia": "jaen",
+   "hora": "21:00",
+   "lugar": "Parroquia de Santa Isabel",
+   "capataz": null,
+   "nota": null,
+   "localidad": "Jaén",
+   "hermandad": "Cautivo y Trinidad",
+   "fuente": "https://cautivoytrinidadjaen.com/calendario-de-iguala-y-ensayos/",
+   "fuente_nombre": "Web oficial de la Hdad. Cautivo y Trinidad de Jaén",
+   "fecha": "2027-03-05",
+   "paso": "Jesús Cautivo",
+   "tipo": "mudá",
+   "titulo": "Mudá Jesús Cautivo",
+   "añadido": "2026-11-03"
+  },
+  {
+   "provincia": "jaen",
+   "hora": "21:00",
+   "lugar": "Parroquia de Santa Isabel",
+   "capataz": null,
+   "nota": null,
+   "localidad": "Jaén",
+   "hermandad": "Cautivo y Trinidad",
+   "fuente": "https://cautivoytrinidadjaen.com/calendario-de-iguala-y-ensayos/",
+   "fuente_nombre": "Web oficial de la Hdad. Cautivo y Trinidad de Jaén",
+   "fecha": "2027-03-05",
+   "paso": "María Stma. de la Trinidad",
+   "tipo": "mudá",
+   "titulo": "Mudá María Stma. de la Trinidad",
+   "añadido": "2026-11-03"
   },
   {
    "provincia": "huelva",
@@ -3722,6 +3898,38 @@
    "titulo": "Mudá del paso del Señor del Prendimiento",
    "lugar": "Casa Hermandad",
    "añadido": "2026-11-02"
+  },
+  {
+   "provincia": "jaen",
+   "hora": null,
+   "lugar": "Parroquia de Santa Isabel",
+   "capataz": null,
+   "nota": "Hora por determinar. Calzado negro de salida obligatorio",
+   "localidad": "Jaén",
+   "hermandad": "Cautivo y Trinidad",
+   "fuente": "https://cautivoytrinidadjaen.com/calendario-de-iguala-y-ensayos/",
+   "fuente_nombre": "Web oficial de la Hdad. Cautivo y Trinidad de Jaén",
+   "fecha": "2027-03-17",
+   "paso": "Jesús Cautivo",
+   "tipo": "retranqueo",
+   "titulo": "Retranqueo Jesús Cautivo",
+   "añadido": "2026-11-03"
+  },
+  {
+   "provincia": "jaen",
+   "hora": null,
+   "lugar": "Parroquia de Santa Isabel",
+   "capataz": null,
+   "nota": "Hora por determinar. Calzado blanco de salida obligatorio",
+   "localidad": "Jaén",
+   "hermandad": "Cautivo y Trinidad",
+   "fuente": "https://cautivoytrinidadjaen.com/calendario-de-iguala-y-ensayos/",
+   "fuente_nombre": "Web oficial de la Hdad. Cautivo y Trinidad de Jaén",
+   "fecha": "2027-03-17",
+   "paso": "María Stma. de la Trinidad",
+   "tipo": "retranqueo",
+   "titulo": "Retranqueo María Stma. de la Trinidad",
+   "añadido": "2026-11-03"
   },
   {
    "provincia": "almeria",
