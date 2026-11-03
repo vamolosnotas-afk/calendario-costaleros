@@ -25,5 +25,55 @@
   "tipo": "ensayo",
   "detectada": "2026-10-30",
   "origen": "agenda de terceros"
+ },
+ {
+  "fecha": "2026-11-22",
+  "hora": "10:30",
+  "hermandad": "Divino Maestro",
+  "localidad": "Jaén",
+  "tipo": "igualá",
+  "detalle": "palio (costaleras), Colegio Divino Maestro",
+  "detectada": "2026-11-03",
+  "origen": "blog La Mirada Cofrade de Jaén (no oficial)"
+ },
+ {
+  "fecha": "2026-11-22",
+  "hora": "18:00",
+  "hermandad": "Divino Maestro",
+  "localidad": "Jaén",
+  "tipo": "igualá",
+  "detalle": "misterio, Colegio Divino Maestro",
+  "detectada": "2026-11-03",
+  "origen": "blog La Mirada Cofrade de Jaén (no oficial)"
+ },
+ {
+  "fecha": "2026-12-13",
+  "hora": "20:00",
+  "hermandad": "Caridad y Salud",
+  "localidad": "Jaén",
+  "tipo": "igualá",
+  "detalle": "costaleras, parroquia",
+  "detectada": "2026-11-03",
+  "origen": "blog La Mirada Cofrade de Jaén (no oficial)"
+ },
+ {
+  "fecha": "2026-12-14",
+  "hora": "20:30",
+  "hermandad": "Caridad y Salud",
+  "localidad": "Jaén",
+  "tipo": "igualá",
+  "detalle": "costaleros, parroquia",
+  "detectada": "2026-11-03",
+  "origen": "blog La Mirada Cofrade de Jaén (no oficial)"
+ },
+ {
+  "fecha": "2026-11-15",
+  "hora": "18:00",
+  "hermandad": "Vera Cruz",
+  "localidad": "Jaén",
+  "tipo": "igualá",
+  "detalle": "igualá solidaria palio Desamparados, casa de hermandad",
+  "detectada": "2026-11-03",
+  "origen": "blog La Mirada Cofrade de Jaén (no oficial)"
  }
 ]
