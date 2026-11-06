@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-06",
- "total": 284,
+ "total": 285,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -762,6 +762,23 @@
    "lugar": null,
    "nota": "Hdad. del Santo Sepulcro. Calzado negro de salida.",
    "añadido": "2026-11-02"
+  },
+  {
+   "fecha": "2026-11-29",
+   "hora": "11:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "Consuelo de Sevilla Este",
+   "paso": "Misterio",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla del paso de misterio de Ntro. Padre Jesús del Consuelo",
+   "lugar": "Plaza Olimpia (Patio Oratorio)",
+   "capataz": "Hermanos Portillo y Auxiliares",
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Calzado negro de salida. Mayores de 18 años.",
+   "añadido": "2026-11-06"
   },
   {
    "provincia": "jaen",
