@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-06",
- "total": 283,
+ "total": 284,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -184,6 +184,23 @@
    "fuente_nombre": "Instagram oficial de la Hdad. de la Candelaria (Jerez)",
    "nota": "Publicación conjunta con el perfil oficial de la hermandad. Acudir con calzado blanco de salida.",
    "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2026-11-06",
+   "hora": "21:00",
+   "provincia": "sevilla",
+   "localidad": "Benacazón",
+   "hermandad": "Soledad de Benacazón",
+   "paso": "Cristo",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla del Stmo. Cristo Yacente (salida extraordinaria)",
+   "lugar": "Casa Hermandad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Calzado negro. Salida extraordinaria el 22/11/2026.",
+   "añadido": "2026-11-06"
   },
   {
    "fecha": "2026-11-07",
