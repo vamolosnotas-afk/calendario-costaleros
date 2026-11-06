@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-06",
- "total": 280,
+ "total": 283,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -253,6 +253,23 @@
    "añadido": "2026-10-30"
   },
   {
+   "fecha": "2026-11-13",
+   "hora": "20:30",
+   "provincia": "sevilla",
+   "localidad": "Morón de la Frontera",
+   "hermandad": "Inmaculada Concepción, Patrona de Morón",
+   "paso": "Virgen",
+   "tipo": "mudá",
+   "titulo": "Traslado del paso del Polígono Industrial Juan Macho a la Iglesia de San Miguel",
+   "lugar": "Del Polígono Industrial \"Juan Macho\" a la Iglesia de San Miguel",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "A las 21:00, oración ante la Patrona.",
+   "añadido": "2026-11-06"
+  },
+  {
    "provincia": "almeria",
    "localidad": "Almería",
    "hermandad": "Prendimiento",
@@ -267,6 +284,23 @@
    "titulo": "Igualá de la cuadrilla de Ntro. Padre Jesús en su Prendimiento",
    "lugar": "Casa Hermandad",
    "añadido": "2026-11-02"
+  },
+  {
+   "fecha": "2026-11-13",
+   "hora": "21:15",
+   "provincia": "sevilla",
+   "localidad": "Morón de la Frontera",
+   "hermandad": "Inmaculada Concepción, Patrona de Morón",
+   "paso": "Virgen",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de la Inmaculada Concepción, Patrona de Morón",
+   "lugar": "Casa Hermandad de la Soledad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Asoc. de Fieles de la Inmaculada Concepción, Patrona de Morón y San Fernando Rey.",
+   "añadido": "2026-11-06"
   },
   {
    "fecha": "2026-11-13",
@@ -580,6 +614,23 @@
    "titulo": "Igualá de costaleros y aspirantes del paso de misterio de Ntro. Padre Jesús de la Luz Despojado de sus Vestiduras",
    "nota": "Sale el Domingo de Pasión (14/3/2027). Calzado negro de salida obligatorio. Después, convivencia.",
    "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2026-11-22",
+   "hora": "11:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "Humildad y Reposo",
+   "paso": null,
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de la A.C.C. Humildad y Reposo (Domingo Laetare 2027)",
+   "lugar": "C/ Santa María del Reposo, Sevilla (Parque)",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Calzado negro. Edad mínima: 17 años.",
+   "añadido": "2026-11-06"
   },
   {
    "provincia": "almeria",
