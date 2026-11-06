@@ -1072,12 +1072,14 @@
   "localidad": "Córdoba",
   "hermandad": "Nazareno",
   "nombre_completo": "Real e Ilustre Cofradía de Nuestro Padre Jesús Nazareno, María Santísima Nazarena (nombre truncado en la ficha de la Agrupación)",
-  "costal": null,
+  "costal": true,
   "web": "https://nazarenocordoba.es/",
   "instagram": null,
   "facebook": null,
   "x": null,
-  "verificado_como": "Listada por la Agrupación de Hermandades y Cofradías de Córdoba (https://www.hermandadesdecordoba.es/jueves-santo/jueves-santo-hermandad-del-nazareno/). Web oficial enlazada desde esa ficha. Costal: Los iconos sociales de su web apuntan a páginas genéricas."
+  "verificado_como": "Listada por la Agrupación de Hermandades y Cofradías de Córdoba (https://www.hermandadesdecordoba.es/jueves-santo/jueves-santo-hermandad-del-nazareno/). Web oficial enlazada desde esa ficha. Costal: Los iconos sociales de su web apuntan a páginas genéricas.",
+  "pasos_costal": "Jesús Nazareno, María Stma. Nazarena y Beato P. Cristóbal de Sta. Catalina (cuadrillas de costaleros)",
+  "costal_comprobado": "https://nazarenocordoba.es/ensayos-costaleros/ (publicación 'Ensayos Costaleros' con igualás y ensayos de las tres cuadrillas, 02/11/2026)"
  },
  {
   "provincia": "cordoba",

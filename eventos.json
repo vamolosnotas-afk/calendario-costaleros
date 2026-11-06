@@ -1,6 +1,6 @@
 {
- "actualizado": "2026-11-03",
- "total": 256,
+ "actualizado": "2026-11-06",
+ "total": 280,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -827,6 +827,22 @@
    "añadido": "2026-10-31"
   },
   {
+   "fecha": "2026-12-16",
+   "hora": "21:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Nazareno",
+   "paso": "Beato P. Cristóbal de Sta. Catalina",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla del Beato P. Cristóbal de Santa Catalina",
+   "lugar": "Iglesia-Hospital de Jesús Nazareno",
+   "capataz": null,
+   "fuente": "https://nazarenocordoba.es/ensayos-costaleros/",
+   "fuente_nombre": "Web oficial de la Cofradía del Nazareno (Córdoba)",
+   "nota": "Procesión del Beato el 6 de febrero de 2027.",
+   "añadido": "2026-11-06"
+  },
+  {
    "provincia": "cordoba",
    "localidad": "Córdoba",
    "hermandad": "Niño Jesús de la Compañía",
@@ -1139,6 +1155,22 @@
    "añadido": "2026-11-02"
   },
   {
+   "fecha": "2027-01-15",
+   "hora": "21:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Merced",
+   "paso": "Virgen (Merced)",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de Ntra. Madre y Señora Santa María de la Merced",
+   "lugar": "Casa Hermandad",
+   "capataz": null,
+   "fuente": "https://www.hermandaddelamerced.org/calendario-de-igualas-y-ensayos-de-las-cuadrillas-de-costaleros-para-el-lunes-santo-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. de la Merced (Córdoba)",
+   "nota": "Obligatorio calzado blanco de salida.",
+   "añadido": "2026-11-06"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "Lanzada",
@@ -1185,6 +1217,22 @@
    "tipo": "igualá",
    "titulo": "Igualá de costaleros del Santo Cristo de la Preciosa Sangre",
    "añadido": "2026-10-31"
+  },
+  {
+   "fecha": "2027-01-16",
+   "hora": "17:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Nazareno",
+   "paso": "María Stma. Nazarena",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de María Stma. Nazarena",
+   "lugar": "Iglesia-Hospital de Jesús Nazareno",
+   "capataz": null,
+   "fuente": "https://nazarenocordoba.es/ensayos-costaleros/",
+   "fuente_nombre": "Web oficial de la Cofradía del Nazareno (Córdoba)",
+   "nota": null,
+   "añadido": "2026-11-06"
   },
   {
    "provincia": "sevilla",
@@ -1269,6 +1317,22 @@
   },
   {
    "fecha": "2027-01-17",
+   "hora": "11:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Nazareno",
+   "paso": "Jesús Nazareno",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de N.P. Jesús Nazareno",
+   "lugar": "Iglesia-Hospital de Jesús Nazareno",
+   "capataz": null,
+   "fuente": "https://nazarenocordoba.es/ensayos-costaleros/",
+   "fuente_nombre": "Web oficial de la Cofradía del Nazareno (Córdoba)",
+   "nota": null,
+   "añadido": "2026-11-06"
+  },
+  {
+   "fecha": "2027-01-17",
    "hora": "12:00",
    "provincia": "cordoba",
    "localidad": "Córdoba",
@@ -1315,6 +1379,22 @@
    "titulo": "Ensayo del paso de misterio (cuadrilla alta)",
    "nota": "Ensayo de cuadrilla alta. Calzado negro.",
    "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2027-01-17",
+   "hora": "17:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Nazareno",
+   "paso": "Beato P. Cristóbal de Sta. Catalina",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla del Beato P. Cristóbal",
+   "lugar": "Iglesia-Hospital de Jesús Nazareno",
+   "capataz": null,
+   "fuente": "https://nazarenocordoba.es/ensayos-costaleros/",
+   "fuente_nombre": "Web oficial de la Cofradía del Nazareno (Córdoba)",
+   "nota": null,
+   "añadido": "2026-11-06"
   },
   {
    "provincia": "huelva",
@@ -1379,6 +1459,22 @@
    "lugar": "Casa Hermandad",
    "titulo": "Igualá de la cuadrilla de Ntro. Padre Jesús Nazareno",
    "añadido": "2026-10-31"
+  },
+  {
+   "fecha": "2027-01-23",
+   "hora": "16:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Merced",
+   "paso": "Cristo (Jesús Humilde)",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de N.P. Jesús Humilde en la Coronación de Espinas",
+   "lugar": "Casa Hermandad",
+   "capataz": null,
+   "fuente": "https://www.hermandaddelamerced.org/calendario-de-igualas-y-ensayos-de-las-cuadrillas-de-costaleros-para-el-lunes-santo-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. de la Merced (Córdoba)",
+   "nota": "Obligatorio calzado negro de salida.",
+   "añadido": "2026-11-06"
   },
   {
    "provincia": "jaen",
@@ -1559,6 +1655,22 @@
    "añadido": "2026-11-02"
   },
   {
+   "fecha": "2027-01-24",
+   "hora": null,
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Nazareno",
+   "paso": "Beato P. Cristóbal de Sta. Catalina",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla del Beato P. Cristóbal",
+   "lugar": "Iglesia-Hospital de Jesús Nazareno",
+   "capataz": null,
+   "fuente": "https://nazarenocordoba.es/ensayos-costaleros/",
+   "fuente_nombre": "Web oficial de la Cofradía del Nazareno (Córdoba)",
+   "nota": "Ensayo de reserva; el cartel no da hora.",
+   "añadido": "2026-11-06"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "Los Estudiantes",
@@ -1592,6 +1704,22 @@
    "añadido": "2026-10-30"
   },
   {
+   "fecha": "2027-01-28",
+   "hora": "21:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Nazareno",
+   "paso": "Jesús Nazareno",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de N.P. Jesús Nazareno",
+   "lugar": "Iglesia-Hospital de Jesús Nazareno",
+   "capataz": null,
+   "fuente": "https://nazarenocordoba.es/ensayos-costaleros/",
+   "fuente_nombre": "Web oficial de la Cofradía del Nazareno (Córdoba)",
+   "nota": null,
+   "añadido": "2026-11-06"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "La Borriquita",
@@ -1606,6 +1734,22 @@
    "lugar": "Almacén Hdad.",
    "titulo": "Ensayo de la cuadrilla de Ntra. Sra. de los Ángeles",
    "añadido": "2026-10-31"
+  },
+  {
+   "fecha": "2027-01-29",
+   "hora": "21:00",
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Angustias",
+   "paso": "Cristo (Buena Muerte)",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla del Stmo. Cristo de la Buena Muerte",
+   "lugar": "Colegio Compañía de María",
+   "capataz": "Celestino Moreno Fernández",
+   "fuente": "https://www.hermandaddelasangustias.es/2026/11/04/calendario-de-la-cuadrilla-del-santisimo-cristo-de-la-buena-muerte-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. de las Angustias (Almería)",
+   "nota": null,
+   "añadido": "2026-11-06"
   },
   {
    "fecha": "2027-01-29",
@@ -2271,6 +2415,22 @@
    "añadido": "2026-11-02"
   },
   {
+   "fecha": "2027-02-11",
+   "hora": "21:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Nazareno",
+   "paso": "Jesús Nazareno",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de N.P. Jesús Nazareno",
+   "lugar": "Iglesia-Hospital de Jesús Nazareno",
+   "capataz": null,
+   "fuente": "https://nazarenocordoba.es/ensayos-costaleros/",
+   "fuente_nombre": "Web oficial de la Cofradía del Nazareno (Córdoba)",
+   "nota": "Ensayo de reserva.",
+   "añadido": "2026-11-06"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "La Borriquita",
@@ -2317,6 +2477,54 @@
    "tipo": "ensayo",
    "titulo": "1.er ensayo de las cuadrillas",
    "añadido": "2026-11-02"
+  },
+  {
+   "fecha": "2027-02-12",
+   "hora": "21:00",
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Angustias",
+   "paso": "Cristo (Buena Muerte)",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla del Cristo de la Buena Muerte",
+   "lugar": "Colegio Compañía de María",
+   "capataz": "Celestino Moreno Fernández",
+   "fuente": "https://www.hermandaddelasangustias.es/2026/11/04/calendario-de-la-cuadrilla-del-santisimo-cristo-de-la-buena-muerte-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. de las Angustias (Almería)",
+   "nota": null,
+   "añadido": "2026-11-06"
+  },
+  {
+   "fecha": "2027-02-12",
+   "hora": "21:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Merced",
+   "paso": "Cristo (Jesús Humilde)",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de Jesús Humilde",
+   "lugar": null,
+   "capataz": null,
+   "fuente": "https://www.hermandaddelamerced.org/calendario-de-igualas-y-ensayos-de-las-cuadrillas-de-costaleros-para-el-lunes-santo-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. de la Merced (Córdoba)",
+   "nota": null,
+   "añadido": "2026-11-06"
+  },
+  {
+   "fecha": "2027-02-12",
+   "hora": "21:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Merced",
+   "paso": "Virgen (Merced)",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de la Virgen de la Merced",
+   "lugar": null,
+   "capataz": null,
+   "fuente": "https://www.hermandaddelamerced.org/calendario-de-igualas-y-ensayos-de-las-cuadrillas-de-costaleros-para-el-lunes-santo-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. de la Merced (Córdoba)",
+   "nota": null,
+   "añadido": "2026-11-06"
   },
   {
    "provincia": "huelva",
@@ -2560,6 +2768,22 @@
    "añadido": "2026-11-02"
   },
   {
+   "fecha": "2027-02-18",
+   "hora": "21:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Nazareno",
+   "paso": "Jesús Nazareno",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de N.P. Jesús Nazareno",
+   "lugar": "Iglesia-Hospital de Jesús Nazareno",
+   "capataz": null,
+   "fuente": "https://nazarenocordoba.es/ensayos-costaleros/",
+   "fuente_nombre": "Web oficial de la Cofradía del Nazareno (Córdoba)",
+   "nota": null,
+   "añadido": "2026-11-06"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "La Borriquita",
@@ -2606,6 +2830,22 @@
    "titulo": "Ensayo de la cuadrilla del Señor del Prendimiento",
    "lugar": "Local de los Pasos (C/ Almedina)",
    "añadido": "2026-11-02"
+  },
+  {
+   "fecha": "2027-02-19",
+   "hora": "21:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Nazareno",
+   "paso": "María Stma. Nazarena",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de María Stma. Nazarena",
+   "lugar": "Iglesia-Hospital de Jesús Nazareno",
+   "capataz": null,
+   "fuente": "https://nazarenocordoba.es/ensayos-costaleros/",
+   "fuente_nombre": "Web oficial de la Cofradía del Nazareno (Córdoba)",
+   "nota": null,
+   "añadido": "2026-11-06"
   },
   {
    "provincia": "huelva",
@@ -3029,6 +3269,22 @@
    "añadido": "2026-10-30"
   },
   {
+   "fecha": "2027-02-25",
+   "hora": "21:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Nazareno",
+   "paso": "Jesús Nazareno",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de N.P. Jesús Nazareno",
+   "lugar": "Iglesia-Hospital de Jesús Nazareno",
+   "capataz": null,
+   "fuente": "https://nazarenocordoba.es/ensayos-costaleros/",
+   "fuente_nombre": "Web oficial de la Cofradía del Nazareno (Córdoba)",
+   "nota": "Ensayo de reserva.",
+   "añadido": "2026-11-06"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "La Borriquita",
@@ -3092,6 +3348,38 @@
    "fuente_nombre": "Web oficial de la Real y Muy Ilustre Hdad. de la Oración en el Huerto de los Olivos",
    "nota": null,
    "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2027-02-26",
+   "hora": "21:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Merced",
+   "paso": "Virgen (Merced)",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de la Virgen de la Merced",
+   "lugar": null,
+   "capataz": null,
+   "fuente": "https://www.hermandaddelamerced.org/calendario-de-igualas-y-ensayos-de-las-cuadrillas-de-costaleros-para-el-lunes-santo-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. de la Merced (Córdoba)",
+   "nota": null,
+   "añadido": "2026-11-06"
+  },
+  {
+   "fecha": "2027-02-26",
+   "hora": "21:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Nazareno",
+   "paso": "María Stma. Nazarena",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de María Stma. Nazarena",
+   "lugar": "Iglesia-Hospital de Jesús Nazareno",
+   "capataz": null,
+   "fuente": "https://nazarenocordoba.es/ensayos-costaleros/",
+   "fuente_nombre": "Web oficial de la Cofradía del Nazareno (Córdoba)",
+   "nota": "Ensayo de reserva.",
+   "añadido": "2026-11-06"
   },
   {
    "fecha": "2027-02-28",
@@ -3223,6 +3511,38 @@
    "añadido": "2026-10-30"
   },
   {
+   "fecha": "2027-03-05",
+   "hora": "21:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Merced",
+   "paso": "Virgen (Merced)",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de la Virgen de la Merced",
+   "lugar": null,
+   "capataz": null,
+   "fuente": "https://www.hermandaddelamerced.org/calendario-de-igualas-y-ensayos-de-las-cuadrillas-de-costaleros-para-el-lunes-santo-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. de la Merced (Córdoba)",
+   "nota": null,
+   "añadido": "2026-11-06"
+  },
+  {
+   "fecha": "2027-03-05",
+   "hora": "21:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Nazareno",
+   "paso": "María Stma. Nazarena",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de María Stma. Nazarena",
+   "lugar": "Iglesia-Hospital de Jesús Nazareno",
+   "capataz": null,
+   "fuente": "https://nazarenocordoba.es/ensayos-costaleros/",
+   "fuente_nombre": "Web oficial de la Cofradía del Nazareno (Córdoba)",
+   "nota": null,
+   "añadido": "2026-11-06"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "La Esperanza",
@@ -3301,6 +3621,38 @@
    "lugar": "Nave González Barba",
    "titulo": "Ensayo de la cuadrilla de Mª Stma. de la Amargura",
    "añadido": "2026-10-31"
+  },
+  {
+   "fecha": "2027-03-06",
+   "hora": "16:00",
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Angustias",
+   "paso": "Cristo (Buena Muerte)",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla del Cristo de la Buena Muerte",
+   "lugar": "Colegio Compañía de María",
+   "capataz": "Celestino Moreno Fernández",
+   "fuente": "https://www.hermandaddelasangustias.es/2026/11/04/calendario-de-la-cuadrilla-del-santisimo-cristo-de-la-buena-muerte-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. de las Angustias (Almería)",
+   "nota": null,
+   "añadido": "2026-11-06"
+  },
+  {
+   "fecha": "2027-03-06",
+   "hora": "16:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Merced",
+   "paso": "Cristo (Jesús Humilde)",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de Jesús Humilde",
+   "lugar": null,
+   "capataz": null,
+   "fuente": "https://www.hermandaddelamerced.org/calendario-de-igualas-y-ensayos-de-las-cuadrillas-de-costaleros-para-el-lunes-santo-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. de la Merced (Córdoba)",
+   "nota": null,
+   "añadido": "2026-11-06"
   },
   {
    "fecha": "2027-03-06",
@@ -3493,6 +3845,22 @@
    "fuente": "https://www.instagram.com/hdadlanzada/p/DfMZY_EghoF/",
    "nota": "",
    "añadido": "2026-11-02"
+  },
+  {
+   "fecha": "2027-03-07",
+   "hora": "10:30",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Nazareno",
+   "paso": "Jesús Nazareno",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de N.P. Jesús Nazareno",
+   "lugar": "Iglesia-Hospital de Jesús Nazareno",
+   "capataz": null,
+   "fuente": "https://nazarenocordoba.es/ensayos-costaleros/",
+   "fuente_nombre": "Web oficial de la Cofradía del Nazareno (Córdoba)",
+   "nota": "Ensayo y convivencia.",
+   "añadido": "2026-11-06"
   },
   {
    "provincia": "huelva",
@@ -3833,6 +4201,22 @@
    "titulo": "Tercer ensayo de la cuadrilla de Ntra. Sra. de las Angustias",
    "lugar": "Casa Hermandad",
    "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2027-03-14",
+   "hora": "10:00",
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Angustias",
+   "paso": "Cristo (Buena Muerte)",
+   "tipo": "mudá",
+   "titulo": "Mudá del paso del Stmo. Cristo de la Buena Muerte",
+   "lugar": "Casa de Hermandad (C/ Alborán 15)",
+   "capataz": "Celestino Moreno Fernández",
+   "fuente": "https://www.hermandaddelasangustias.es/2026/11/04/calendario-de-la-cuadrilla-del-santisimo-cristo-de-la-buena-muerte-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. de las Angustias (Almería)",
+   "nota": null,
+   "añadido": "2026-11-06"
   },
   {
    "provincia": "jaen",
