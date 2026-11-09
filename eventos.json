@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-09",
- "total": 337,
+ "total": 344,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -486,6 +486,23 @@
    "añadido": "2026-10-30"
   },
   {
+   "fecha": "2026-11-15",
+   "hora": "17:00",
+   "provincia": "sevilla",
+   "localidad": "La Rinconada",
+   "hermandad": "Grupo de fieles El Cautivo",
+   "paso": "Cristo",
+   "tipo": "igualá",
+   "titulo": "Igualá y primer ensayo de la cuadrilla de Ntro. Padre Jesús del Soberano Poder",
+   "lugar": "Calle Virgen de las Flores 9, La Rinconada",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Igualá para la salida de 2027 abierta a todo el que quiera presentarse. Tras la igualá, ensayo: obligatorio calzado negro de salida, costal y faja.",
+   "añadido": "2026-11-09"
+  },
+  {
    "fecha": "2026-11-20",
    "hora": "12:00",
    "provincia": "granada",
@@ -714,6 +731,23 @@
    "fuente_nombre": "Web oficial de la Cofradía de la Esperanza de Andújar",
    "nota": "Horario 10:00-13:00 según el calendario de cultos. Convocatoria: https://esperanzaandujar.com/publicaciones/ensayo-solidario-2026 (sábado 28/11/2026). Sábado verificado.",
    "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2026-11-28",
+   "hora": "16:30",
+   "provincia": "ciudadreal",
+   "localidad": "Bolaños de Calatrava",
+   "hermandad": "Sagrada Cena",
+   "paso": "Misterio",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de la Sagrada Cena",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-09"
   },
   {
    "provincia": "madrid",
@@ -1204,6 +1238,23 @@
    "titulo": "Igualá de la cuadrilla del Stmo. Cristo de la Sed",
    "lugar": "Colegio Cruz del Campo, junto a la Parroquia",
    "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2027-01-10",
+   "hora": "10:30",
+   "provincia": "ciudadreal",
+   "localidad": "Bolaños de Calatrava",
+   "hermandad": "Sagrada Cena",
+   "paso": "Misterio",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de la Sagrada Cena",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-09"
   },
   {
    "fecha": "2027-01-10",
@@ -1832,6 +1883,23 @@
    "fuente": "https://www.instagram.com/hdadlanzada/p/DfMZY_EghoF/",
    "nota": "",
    "añadido": "2026-11-02"
+  },
+  {
+   "fecha": "2027-01-24",
+   "hora": "10:30",
+   "provincia": "ciudadreal",
+   "localidad": "Bolaños de Calatrava",
+   "hermandad": "Sagrada Cena",
+   "paso": "Misterio",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de la Sagrada Cena",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-09"
   },
   {
    "fecha": "2027-01-24",
@@ -3235,6 +3303,23 @@
    "verificado_por": "manuel",
    "nota": "Segundo ensayo.",
    "añadido": "2026-10-29"
+  },
+  {
+   "fecha": "2027-02-14",
+   "hora": "16:30",
+   "provincia": "ciudadreal",
+   "localidad": "Bolaños de Calatrava",
+   "hermandad": "Sagrada Cena",
+   "paso": "Misterio",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de la Sagrada Cena",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-09"
   },
   {
    "provincia": "huelva",
@@ -4702,6 +4787,23 @@
   {
    "fecha": "2027-03-07",
    "hora": "10:30",
+   "provincia": "ciudadreal",
+   "localidad": "Bolaños de Calatrava",
+   "hermandad": "Sagrada Cena",
+   "paso": "Misterio",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de la Sagrada Cena",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-09"
+  },
+  {
+   "fecha": "2027-03-07",
+   "hora": "10:30",
    "provincia": "cordoba",
    "localidad": "Córdoba",
    "hermandad": "Nazareno",
@@ -5118,6 +5220,23 @@
    "tipo": "ensayo",
    "titulo": "Ensayo de costaleras de Ntra. Sra. de la Consolación y convivencia",
    "añadido": "2026-11-03"
+  },
+  {
+   "fecha": "2027-03-14",
+   "hora": "16:00",
+   "provincia": "ciudadreal",
+   "localidad": "Bolaños de Calatrava",
+   "hermandad": "Sagrada Cena",
+   "paso": "Misterio",
+   "tipo": "retranqueo",
+   "titulo": "Retranqueo de la cuadrilla de la Sagrada Cena",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-09"
   },
   {
    "provincia": "almeria",
