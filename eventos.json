@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-09",
- "total": 348,
+ "total": 349,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -251,6 +251,23 @@
    "verificado_por": "manuel",
    "nota": null,
    "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2026-11-08",
+   "hora": "10:00",
+   "provincia": "sevilla",
+   "localidad": "Pilas",
+   "hermandad": "Gran Poder (ASC del Gran Poder)",
+   "paso": "Cristo",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de Ntro. Padre Jesús del Gran Poder",
+   "lugar": "Taller Hnos. Valladares",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Calzado negro. Salida prevista el 20/02/2027 (probabilidad alta).",
+   "añadido": "2026-11-09"
   },
   {
    "provincia": "jerez",
