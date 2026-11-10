@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-10",
- "total": 402,
+ "total": 406,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -2000,6 +2000,23 @@
   },
   {
    "fecha": "2027-01-22",
+   "hora": "20:00",
+   "provincia": "sevilla",
+   "localidad": "Morón de la Frontera",
+   "hermandad": "Cautivo (Morón)",
+   "paso": "Cristo",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de Ntro. Padre Jesús Cautivo",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Ir con el calzado de salida.",
+   "añadido": "2026-11-10"
+  },
+  {
+   "fecha": "2027-01-22",
    "hora": "21:00",
    "provincia": "almeria",
    "localidad": "Almería",
@@ -3085,6 +3102,23 @@
    "añadido": "2026-10-31"
   },
   {
+   "fecha": "2027-02-06",
+   "hora": "09:30",
+   "provincia": "sevilla",
+   "localidad": "Morón de la Frontera",
+   "hermandad": "Cautivo (Morón)",
+   "paso": "Cristo",
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo de la cuadrilla de Ntro. Padre Jesús Cautivo",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
+  },
+  {
    "provincia": "sevilla",
    "localidad": "Sevilla",
    "hora": "12:00",
@@ -3738,6 +3772,23 @@
   },
   {
    "fecha": "2027-02-13",
+   "hora": "09:30",
+   "provincia": "sevilla",
+   "localidad": "Morón de la Frontera",
+   "hermandad": "Cautivo (Morón)",
+   "paso": "Cristo",
+   "tipo": "ensayo",
+   "titulo": "Segundo ensayo de la cuadrilla de Ntro. Padre Jesús Cautivo",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
+  },
+  {
+   "fecha": "2027-02-13",
    "hora": "16:30",
    "provincia": "huelva",
    "localidad": "Huelva",
@@ -4221,6 +4272,23 @@
    "verificado_por": "manuel",
    "nota": "Hora por confirmar.",
    "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2027-02-20",
+   "hora": "09:30",
+   "provincia": "sevilla",
+   "localidad": "Morón de la Frontera",
+   "hermandad": "Cautivo (Morón)",
+   "paso": "Cristo",
+   "tipo": "ensayo",
+   "titulo": "Tercer ensayo de la cuadrilla de Ntro. Padre Jesús Cautivo",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Este ensayo depende de cómo salgan por el tiempo los dos primeros.",
+   "añadido": "2026-11-10"
   },
   {
    "fecha": "2027-02-20",
