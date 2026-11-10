@@ -19,7 +19,8 @@
     toledo:     { n: "Toledo",      c: "#5d4037" },
     salamanca:  { n: "Salamanca",   c: "#455a64" },
     barcelona:  { n: "Barcelona",   c: "#283593" },
-    tarragona:  { n: "Tarragona",   c: "#d84315" }
+    tarragona:  { n: "Tarragona",   c: "#d84315" },
+    badajoz:    { n: "Badajoz",     c: "#2e7d32" }
   };
   var MESES = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
   var DIAS = ["L","M","X","J","V","S","D"];
@@ -77,7 +78,7 @@
 
     caja.appendChild(el("div", "text-align:center;font-size:13px;letter-spacing:3px;color:" + BURDEOS + ";font-family:Arial,sans-serif;font-weight:bold", "TEMPORADA 2026 · 2027"));
     caja.appendChild(el("h2", "text-align:center;margin:6px 0 4px;font-size:28px;line-height:1.15;color:" + MARRON + " !important;text-transform:none;letter-spacing:0", "Calendario de igualás y ensayos"));
-    caja.appendChild(el("div", "text-align:center;font-size:15px;margin-bottom:14px;font-style:italic", "Cuadrillas a costal de Andalucía, Madrid, Castilla y Cataluña · pulsa tu provincia"));
+    caja.appendChild(el("div", "text-align:center;font-size:15px;margin-bottom:14px;font-style:italic", "Cuadrillas a costal de Andalucía, Extremadura, Madrid, Castilla y Cataluña · pulsa tu provincia"));
 
     // leyenda / filtro por provincia (una o todas)
     var ley = el("div", "display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-bottom:16px");

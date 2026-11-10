@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-10",
- "total": 363,
+ "total": 367,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -2284,6 +2284,23 @@
    "añadido": "2026-11-09"
   },
   {
+   "provincia": "badajoz",
+   "localidad": "Zafra",
+   "hermandad": "El Amarrao",
+   "paso": "Cristo",
+   "lugar": "Local de ensayos",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "fecha": "2027-01-29",
+   "hora": "20:30",
+   "tipo": "igualá",
+   "titulo": "Igualá y primer ensayo de la cuadrilla de Ntro. Padre Amarrado a la Columna",
+   "nota": "Para entrar en la cuadrilla: contactar con la Junta de Gobierno o con el capataz (650 404 131).",
+   "añadido": "2026-11-10"
+  },
+  {
    "fecha": "2027-01-29",
    "hora": "21:00",
    "provincia": "almeria",
@@ -3300,6 +3317,23 @@
    "titulo": "Ensayo de la cuadrilla del Señor del Prendimiento",
    "lugar": "Local de los Pasos (C/ Almedina)",
    "añadido": "2026-11-02"
+  },
+  {
+   "provincia": "badajoz",
+   "localidad": "Zafra",
+   "hermandad": "El Amarrao",
+   "paso": "Cristo",
+   "lugar": "Local de ensayos",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "fecha": "2027-02-12",
+   "hora": "20:30",
+   "tipo": "ensayo",
+   "titulo": "Segundo ensayo de la cuadrilla del Amarrao",
+   "nota": null,
+   "añadido": "2026-11-10"
   },
   {
    "provincia": "almeria",
@@ -4432,6 +4466,23 @@
    "añadido": "2026-11-02"
   },
   {
+   "provincia": "badajoz",
+   "localidad": "Zafra",
+   "hermandad": "El Amarrao",
+   "paso": "Cristo",
+   "lugar": "Local de ensayos",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "fecha": "2027-02-26",
+   "hora": "20:30",
+   "tipo": "ensayo",
+   "titulo": "Tercer ensayo de la cuadrilla del Amarrao",
+   "nota": null,
+   "añadido": "2026-11-10"
+  },
+  {
    "fecha": "2027-02-26",
    "hora": "21:00",
    "provincia": "ciudadreal",
@@ -5413,6 +5464,23 @@
    "lugar": "Nave González Barba",
    "titulo": "Ensayo de la cuadrilla de Mª Stma. de la Amargura",
    "añadido": "2026-10-31"
+  },
+  {
+   "provincia": "badajoz",
+   "localidad": "Zafra",
+   "hermandad": "El Amarrao",
+   "paso": "Cristo",
+   "lugar": "Local de ensayos",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "fecha": "2027-03-12",
+   "hora": null,
+   "tipo": "mudá",
+   "titulo": "Mudá del paso del Amarrao",
+   "nota": null,
+   "añadido": "2026-11-10"
   },
   {
    "provincia": "huelva",
