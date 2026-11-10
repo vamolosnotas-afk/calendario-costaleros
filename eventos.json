@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-10",
- "total": 368,
+ "total": 376,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -1784,6 +1784,23 @@
   },
   {
    "fecha": "2027-01-17",
+   "hora": "11:00",
+   "provincia": "sevilla",
+   "localidad": "La Algaba",
+   "hermandad": "La Soledad",
+   "paso": "Cristo",
+   "tipo": "igualá",
+   "titulo": "Igualá general de la cuadrilla del Cristo",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
+  },
+  {
+   "fecha": "2027-01-17",
    "hora": "12:00",
    "provincia": "cordoba",
    "localidad": "Córdoba",
@@ -1813,6 +1830,23 @@
    "tipo": "igualá",
    "titulo": "Igualá de la cuadrilla de María Stma. de los Dolores",
    "añadido": "2026-10-31"
+  },
+  {
+   "fecha": "2027-01-17",
+   "hora": "12:00",
+   "provincia": "sevilla",
+   "localidad": "La Algaba",
+   "hermandad": "La Soledad",
+   "paso": "Virgen",
+   "tipo": "igualá",
+   "titulo": "Igualá general de la cuadrilla del palio",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
   },
   {
    "provincia": "sevilla",
@@ -3497,6 +3531,23 @@
    "añadido": "2026-10-31"
   },
   {
+   "fecha": "2027-02-13",
+   "hora": "21:00",
+   "provincia": "sevilla",
+   "localidad": "La Algaba",
+   "hermandad": "La Soledad",
+   "paso": "Virgen",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla del palio",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
+  },
+  {
    "provincia": "cordoba",
    "localidad": "Córdoba",
    "hermandad": "Amor",
@@ -4011,6 +4062,23 @@
    "tipo": "ensayo",
    "titulo": "Ensayo de la cuadrilla de María Stma. de los Dolores",
    "añadido": "2026-10-31"
+  },
+  {
+   "fecha": "2027-02-20",
+   "hora": "21:00",
+   "provincia": "sevilla",
+   "localidad": "La Algaba",
+   "hermandad": "La Soledad",
+   "paso": "Cristo",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla del Cristo",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
   },
   {
    "provincia": "huelva",
@@ -4966,6 +5034,23 @@
    "añadido": "2026-11-03"
   },
   {
+   "fecha": "2027-03-06",
+   "hora": "20:00",
+   "provincia": "sevilla",
+   "localidad": "La Algaba",
+   "hermandad": "La Soledad",
+   "paso": "Cristo y Virgen",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de las cuadrillas del Cristo y del palio",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "La Fe",
@@ -5435,6 +5520,23 @@
    "añadido": "2026-10-30"
   },
   {
+   "fecha": "2027-03-11",
+   "hora": "21:00",
+   "provincia": "sevilla",
+   "localidad": "La Algaba",
+   "hermandad": "La Soledad",
+   "paso": "Virgen",
+   "tipo": "mudá",
+   "titulo": "Mudá del paso de palio",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
+  },
+  {
    "fecha": "2027-03-12",
    "hora": "21:00",
    "provincia": "ciudadreal",
@@ -5776,6 +5878,23 @@
    "añadido": "2026-10-30"
   },
   {
+   "fecha": "2027-03-17",
+   "hora": "21:00",
+   "provincia": "sevilla",
+   "localidad": "La Algaba",
+   "hermandad": "La Soledad",
+   "paso": "Cristo",
+   "tipo": "mudá",
+   "titulo": "Mudá de los Cristos",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "El Nazareno",
@@ -5967,6 +6086,23 @@
    "fuente_nombre": "Web oficial de la Real y Muy Ilustre Hdad. de la Oración en el Huerto de los Olivos",
    "nota": "El cartel dice 'Retranqueo y traslado del paso a San Pedro' (Parroquia de San Pedro), sin indicar lugar de salida",
    "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2027-03-30",
+   "hora": "21:00",
+   "provincia": "sevilla",
+   "localidad": "La Algaba",
+   "hermandad": "La Soledad",
+   "paso": null,
+   "tipo": "otro",
+   "titulo": "Desarmá de los pasos",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
   },
   {
    "provincia": "sevilla",
