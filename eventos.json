@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-10",
- "total": 378,
+ "total": 385,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -1574,6 +1574,23 @@
    "añadido": "2026-11-09"
   },
   {
+   "fecha": "2027-01-15",
+   "hora": "20:45",
+   "provincia": "granada",
+   "localidad": "Granada",
+   "hermandad": "La Borriquilla (Entrada y Paz)",
+   "paso": "Cristo",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de Jesús de la Entrada en Jerusalén (Borriquilla)",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
+  },
+  {
    "provincia": "almeria",
    "localidad": "Almería",
    "hermandad": "Estudiantes",
@@ -1668,6 +1685,23 @@
    "fuente_nombre": "Instagram oficial de la Hdad. del Prado (Huelva)",
    "nota": null,
    "añadido": "2026-11-09"
+  },
+  {
+   "fecha": "2027-01-15",
+   "hora": "21:45",
+   "provincia": "granada",
+   "localidad": "Granada",
+   "hermandad": "La Borriquilla (Entrada y Paz)",
+   "paso": "Virgen",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de Ntra. Sra. de la Paz",
+   "lugar": "Parroquia de San Andrés",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
   },
   {
    "fecha": "2027-01-16",
@@ -3308,6 +3342,23 @@
   },
   {
    "fecha": "2027-02-11",
+   "hora": "20:45",
+   "provincia": "granada",
+   "localidad": "Granada",
+   "hermandad": "La Borriquilla (Entrada y Paz)",
+   "paso": "Cristo",
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo de la cuadrilla de la Borriquilla",
+   "lugar": "CH Rocío",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
+  },
+  {
+   "fecha": "2027-02-11",
    "hora": "21:00",
    "provincia": "cordoba",
    "localidad": "Córdoba",
@@ -3789,6 +3840,23 @@
    "fuente": "https://www.instagram.com/hdadlanzada/p/DfMY6qKgOA5/",
    "nota": "",
    "añadido": "2026-11-02"
+  },
+  {
+   "fecha": "2027-02-18",
+   "hora": "20:45",
+   "provincia": "granada",
+   "localidad": "Granada",
+   "hermandad": "La Borriquilla (Entrada y Paz)",
+   "paso": "Virgen",
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo de la cuadrilla de Ntra. Sra. de la Paz",
+   "lugar": "CH Rocío",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
   },
   {
    "fecha": "2027-02-18",
@@ -4780,6 +4848,23 @@
   },
   {
    "fecha": "2027-03-04",
+   "hora": "20:45",
+   "provincia": "granada",
+   "localidad": "Granada",
+   "hermandad": "La Borriquilla (Entrada y Paz)",
+   "paso": "Cristo",
+   "tipo": "ensayo",
+   "titulo": "Segundo ensayo de la cuadrilla de la Borriquilla",
+   "lugar": "CH Rocío",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
+  },
+  {
+   "fecha": "2027-03-04",
    "hora": "21:00",
    "provincia": "huelva",
    "localidad": "Huelva",
@@ -5521,6 +5606,23 @@
    "añadido": "2026-11-02"
   },
   {
+   "fecha": "2027-03-11",
+   "hora": "20:45",
+   "provincia": "granada",
+   "localidad": "Granada",
+   "hermandad": "La Borriquilla (Entrada y Paz)",
+   "paso": "Virgen",
+   "tipo": "ensayo",
+   "titulo": "Segundo ensayo de la cuadrilla de Ntra. Sra. de la Paz",
+   "lugar": "CH Rocío",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "La Fe",
@@ -5796,6 +5898,23 @@
    "fuente_nombre": "Web oficial de la Hdad. del Rescatado",
    "nota": "Calendario publicado el 06/10/2026 \"de cara a la Semana Santa de 2027\". Calzado negro de salida obligatorio. Es ensayo DE RESERVA; la web no da hora para los de reserva.",
    "añadido": "2026-10-29"
+  },
+  {
+   "fecha": "2027-03-15",
+   "hora": "20:45",
+   "provincia": "granada",
+   "localidad": "Granada",
+   "hermandad": "La Borriquilla (Entrada y Paz)",
+   "paso": "Cristo y Virgen",
+   "tipo": "retranqueo",
+   "titulo": "Retranqueo y ensayo de salida de ambas cuadrillas",
+   "lugar": "Parroquia de San Andrés",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "El cartel dice 15 o 16 de marzo, día por confirmar. A puerta cerrada.",
+   "añadido": "2026-11-10"
   },
   {
    "fecha": "2027-03-15",
