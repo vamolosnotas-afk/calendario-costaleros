@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-10",
- "total": 387,
+ "total": 394,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -1346,6 +1346,23 @@
    "añadido": "2026-11-09"
   },
   {
+   "fecha": "2027-01-09",
+   "hora": "17:00",
+   "provincia": "granada",
+   "localidad": "Granada",
+   "hermandad": "Oración en el Huerto",
+   "paso": "Misterio (Oración en el Huerto)",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla del Señor de la Oración en el Huerto",
+   "lugar": "Casa de hermandad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Calzado negro.",
+   "añadido": "2026-11-10"
+  },
+  {
    "provincia": "jaen",
    "localidad": "Linares",
    "hermandad": "Estudiantes (Siete Palabras)",
@@ -2452,6 +2469,23 @@
    "añadido": "2026-10-30"
   },
   {
+   "fecha": "2027-01-29",
+   "hora": "21:00",
+   "provincia": "granada",
+   "localidad": "Granada",
+   "hermandad": "Oración en el Huerto",
+   "paso": "Virgen (Amargura)",
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo de la cuadrilla de María Stma. de la Amargura",
+   "lugar": "Casa de hermandad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "La Esperanza",
@@ -3162,6 +3196,23 @@
    "añadido": "2026-11-02"
   },
   {
+   "fecha": "2027-02-07",
+   "hora": "10:00",
+   "provincia": "granada",
+   "localidad": "Granada",
+   "hermandad": "Oración en el Huerto",
+   "paso": "Misterio (Oración en el Huerto)",
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo de la cuadrilla del Huerto",
+   "lugar": "Casa de hermandad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "Lanzada",
@@ -3536,6 +3587,23 @@
    "añadido": "2026-11-06"
   },
   {
+   "fecha": "2027-02-12",
+   "hora": "21:00",
+   "provincia": "granada",
+   "localidad": "Granada",
+   "hermandad": "Oración en el Huerto",
+   "paso": "Virgen (Amargura)",
+   "tipo": "ensayo",
+   "titulo": "Segundo ensayo de la cuadrilla de María Stma. de la Amargura",
+   "lugar": "Casa de hermandad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Vía Crucis obligatorio el sábado 13 de febrero.",
+   "añadido": "2026-11-10"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "La Esperanza",
@@ -3550,6 +3618,23 @@
    "lugar": "Casa de Hermandad",
    "titulo": "Ensayo de la cuadrilla de Ntra. Sra. de la Esperanza Coronada",
    "añadido": "2026-10-31"
+  },
+  {
+   "fecha": "2027-02-12",
+   "hora": "21:30",
+   "provincia": "granada",
+   "localidad": "Granada",
+   "hermandad": "Oración en el Huerto",
+   "paso": "Misterio (Oración en el Huerto)",
+   "tipo": "ensayo",
+   "titulo": "Segundo ensayo de la cuadrilla del Huerto",
+   "lugar": "Casa de hermandad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Vía Crucis obligatorio el sábado 13 de febrero.",
+   "añadido": "2026-11-10"
   },
   {
    "provincia": "huelva",
@@ -5268,6 +5353,23 @@
   },
   {
    "fecha": "2027-03-07",
+   "hora": "09:00",
+   "provincia": "granada",
+   "localidad": "Granada",
+   "hermandad": "Oración en el Huerto",
+   "paso": "Misterio (Oración en el Huerto)",
+   "tipo": "ensayo",
+   "titulo": "Tercer ensayo de la cuadrilla del Huerto",
+   "lugar": "Casa de hermandad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
+  },
+  {
+   "fecha": "2027-03-07",
    "hora": "09:45",
    "provincia": "almeria",
    "localidad": "Almería",
@@ -5329,6 +5431,23 @@
    "titulo": "Ensayo de costaleros del Santísimo Cristo del Amor",
    "fuente": "https://www.instagram.com/hermandadamor/p/DfICRAethbx/",
    "añadido": "2026-11-02"
+  },
+  {
+   "fecha": "2027-03-07",
+   "hora": "10:00",
+   "provincia": "granada",
+   "localidad": "Granada",
+   "hermandad": "Oración en el Huerto",
+   "paso": "Virgen (Amargura)",
+   "tipo": "ensayo",
+   "titulo": "Tercer ensayo de la cuadrilla de María Stma. de la Amargura",
+   "lugar": "Casa de hermandad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
   },
   {
    "provincia": "huelva",
