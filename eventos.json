@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-10",
- "total": 394,
+ "total": 397,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -1800,6 +1800,23 @@
    "lugar": "Iglesia",
    "titulo": "Igualá de la cuadrilla del Stmo. Cristo de la Expiración",
    "añadido": "2026-10-31"
+  },
+  {
+   "fecha": "2027-01-17",
+   "hora": "10:00",
+   "provincia": "sevilla",
+   "localidad": "Écija",
+   "hermandad": "Santiago (Expiración)",
+   "paso": "Virgen",
+   "tipo": "igualá",
+   "titulo": "Igualá y primer ensayo de la cuadrilla de Ntra. Sra. de los Dolores",
+   "lugar": "Local de ensayos",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Con zapatillas de salida",
+   "añadido": "2026-11-10"
   },
   {
    "fecha": "2027-01-17",
@@ -3796,6 +3813,23 @@
    "lugar": "Calle Sta. María",
    "titulo": "Ensayo de la cuadrilla del Stmo. Cristo de la Expiración",
    "añadido": "2026-10-31"
+  },
+  {
+   "fecha": "2027-02-14",
+   "hora": "10:00",
+   "provincia": "sevilla",
+   "localidad": "Écija",
+   "hermandad": "Santiago (Expiración)",
+   "paso": "Virgen",
+   "tipo": "ensayo",
+   "titulo": "Segundo ensayo de la cuadrilla de Ntra. Sra. de los Dolores",
+   "lugar": "Local de ensayos",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Con zapatillas de salida",
+   "añadido": "2026-11-10"
   },
   {
    "fecha": "2027-02-14",
@@ -6279,6 +6313,23 @@
    "tipo": "retranqueo",
    "titulo": "Retranqueo María Stma. de la Trinidad",
    "añadido": "2026-11-03"
+  },
+  {
+   "fecha": "2027-03-18",
+   "hora": "20:00",
+   "provincia": "sevilla",
+   "localidad": "Écija",
+   "hermandad": "Santiago (Expiración)",
+   "paso": "Virgen",
+   "tipo": "retranqueo",
+   "titulo": "Retranqueo de la cuadrilla de Ntra. Sra. de los Dolores",
+   "lugar": "Local de ensayos",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Con zapatillas de salida",
+   "añadido": "2026-11-10"
   },
   {
    "provincia": "almeria",
