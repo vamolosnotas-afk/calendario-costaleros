@@ -5,6 +5,9 @@
   var URL_COSTAL = "https://www.vamolosnota.es/tienda-costales/Costal-Personalizado-a-Medida-en-Sevilla-p718578854/";
   // En la propia página del calendario, en vez del enlace al calendario sale el del Costal Personalizado a Medida
   var EN_CAL = location.pathname.indexOf("/calendario-de-igualas-y-ensayos") === 0;
+  // En la tienda, en el móvil: sin banner del calendario y logo más pequeño, para que el costal y el botón de comprar salgan antes
+  function enTienda() { return location.pathname.indexOf("/tienda-costales") === 0; }
+  var CSS_TIENDA_MOVIL = "@media (max-width:999px){header .logo-image-container{width:84px!important;padding-bottom:84px!important;margin:0 auto 0 0!important}header .logo-image{width:84px!important;height:84px!important;max-height:84px!important}}";
 
   var CSS =
     "#vln-cab{display:flex;align-items:center;gap:14px;box-sizing:border-box;background:#4A2818;border:2px solid #d4a574;border-radius:14px;padding:12px 16px;text-decoration:none!important;color:#faf3e7!important;font-family:Georgia,'Times New Roman',serif;box-shadow:0 6px 18px rgba(40,20,10,.35);transition:transform .15s ease,box-shadow .15s ease}" +
@@ -64,6 +67,15 @@
       a.style.left = Math.round(izq - hr.left) + "px";
       a.style.top = Math.round(top + Math.max(0, (hueco - a.offsetHeight) / 2)) + "px";
     } else {
+      // Móvil/tablet en la tienda: no se pone el banner y se achica el logo
+      if (enTienda()) {
+        if (a.parentNode) a.parentNode.removeChild(a);
+        if (!document.getElementById("vln-tienda-css")) {
+          var st2 = document.createElement("style"); st2.id = "vln-tienda-css"; st2.textContent = CSS_TIENDA_MOVIL; document.head.appendChild(st2);
+        }
+        return;
+      }
+      var st3 = document.getElementById("vln-tienda-css"); if (st3) st3.parentNode.removeChild(st3);
       // Móvil/tablet: tira compacta justo debajo de la cabecera
       a.className = "mov"; a.style.left = a.style.top = "";
       if (a.previousElementSibling !== h) h.parentNode.insertBefore(a, h.nextSibling);
@@ -79,4 +91,61 @@
     var t; window.addEventListener("resize", function () { clearTimeout(t); t = setTimeout(colocar, 150); });
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciar); else iniciar();
+
+  // En las fichas de la tienda: enlace "Ver telas y referencias" justo debajo de la casilla donde se escribe la tela
+  var URL_TELAS = "https://www.vamolosnota.es/telas/";
+  function enlaceTelas() {
+    if (!enTienda()) return;
+    var cajas = document.querySelectorAll(".details-product-option--textfield");
+    for (var i = 0; i < cajas.length; i++) {
+      var c = cajas[i];
+      var tit = c.querySelector(".details-product-option__title");
+      if (!tit || !/^\s*Tela\b/i.test(tit.textContent || "")) continue;
+      if (c.querySelector(".vln-telas")) continue;
+      var a = document.createElement("a");
+      a.className = "vln-telas"; a.href = URL_TELAS; a.target = "_blank"; a.rel = "noopener";
+      a.textContent = "Ver telas y sus referencias ›";
+      a.style.cssText = "display:inline-block;margin-top:8px;padding:8px 12px;border-radius:8px;background:#d4a574;color:#4A2818;font:700 14px Arial,sans-serif;text-decoration:none";
+      var ayuda = document.createElement("div");
+      ayuda.className = "vln-telas-ayuda";
+      ayuda.textContent = "Elige tu tela y escribe aquí su referencia (por ejemplo STOCK_0056) o el color si es lisa.";
+      ayuda.style.cssText = "margin-top:6px;font:13px Arial,sans-serif;opacity:.85";
+      c.appendChild(ayuda); c.appendChild(a);
+    }
+  }
+  var pend;
+  function vigilar() {
+    enlaceTelas();
+    if (!window.MutationObserver) return;
+    new MutationObserver(function () { clearTimeout(pend); pend = setTimeout(enlaceTelas, 300); })
+      .observe(document.body, { childList: true, subtree: true });
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", vigilar); else vigilar();
+
+  // Cookies: pasa a la tienda (Ecwid) lo que la persona eligió en el aviso de cookies de la web (Acepto / Rechazo).
+  // Solo tiene efecto si en la tienda está activado el "banner de consentimiento de cookies".
+  function respuestaWeb() {
+    var m = document.cookie.match(/(?:^|; )gox_cookie_consent=([^;]*)/);
+    if (!m) return null; // todavía no ha contestado
+    var v = decodeURIComponent(m[1] || "");
+    var analitica = v.indexOf("analytics") >= 0, tienda = v.indexOf("shops") >= 0;
+    if (analitica && tienda) return "ACCEPTED";
+    if (analitica) return "ANALYTICS_ONLY";
+    return "DECLINED";
+  }
+  function sincronizar() {
+    try {
+      if (!window.Ecwid || !Ecwid.setTrackingConsent || !Ecwid.getTrackingConsent) return;
+      var r = respuestaWeb(); if (!r) return;
+      var actual = Ecwid.getTrackingConsent();
+      if (!actual || !actual.askConsent) return; // la tienda no pide consentimiento: no se toca nada
+      if (actual.userResponse !== r) Ecwid.setTrackingConsent(r);
+    } catch (e) {}
+  }
+  function prepararConsentimiento() {
+    if (window.Ecwid && Ecwid.OnAPILoaded) Ecwid.OnAPILoaded.add(sincronizar);
+    document.addEventListener("click", function () { setTimeout(sincronizar, 600); }, true);
+    var n = 0, t = setInterval(function () { sincronizar(); if (++n > 20) clearInterval(t); }, 1500);
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", prepararConsentimiento); else prepararConsentimiento();
 })();
