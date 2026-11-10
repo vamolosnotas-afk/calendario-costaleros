@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-10",
- "total": 367,
+ "total": 368,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -301,6 +301,23 @@
    "fuente_nombre": null,
    "verificado_por": "manuel",
    "nota": "Ir con calzado negro. Salida procesional el sábado 21/11/2026.",
+   "añadido": "2026-11-10"
+  },
+  {
+   "fecha": "2026-11-13",
+   "hora": "20:00",
+   "provincia": "sevilla",
+   "localidad": "La Campana",
+   "hermandad": "Santo Entierro de La Campana",
+   "paso": "Cristo",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla del Stmo. Cristo Yacente",
+   "lugar": "Casa Hermandad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Calzado negro. Salida el Sábado Santo.",
    "añadido": "2026-11-10"
   },
   {
