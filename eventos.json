@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-10",
- "total": 357,
+ "total": 358,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -285,6 +285,23 @@
    "hermandad": "El Consuelo",
    "titulo": "Igualá de costaleros",
    "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2026-11-12",
+   "hora": "21:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "Ntra. Sra. del Prado (El Salvador)",
+   "paso": "Virgen",
+   "tipo": "igualá",
+   "titulo": "Igualá y ensayo de la cuadrilla de Ntra. Sra. del Prado del Salvador",
+   "lugar": "Iglesia del Salvador",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Ir con calzado negro. Salida procesional el sábado 21/11/2026.",
+   "añadido": "2026-11-10"
   },
   {
    "fecha": "2026-11-13",
