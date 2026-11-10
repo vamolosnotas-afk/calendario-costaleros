@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-10",
- "total": 397,
+ "total": 402,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -1140,6 +1140,23 @@
    "tipo": "igualá",
    "titulo": "Igualá de la cuadrilla de costaleras",
    "lugar": "Parroquia de Santa María Madre de la Iglesia",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
+  },
+  {
+   "fecha": "2026-12-13",
+   "hora": null,
+   "provincia": "ciudadreal",
+   "localidad": "Alcázar de San Juan",
+   "hermandad": "Perdón y Salud",
+   "paso": "Virgen",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de María Stma. de la Salud",
+   "lugar": null,
    "capataz": null,
    "fuente": null,
    "fuente_nombre": null,
@@ -2841,6 +2858,23 @@
    "añadido": "2026-11-09"
   },
   {
+   "fecha": "2027-01-31",
+   "hora": null,
+   "provincia": "ciudadreal",
+   "localidad": "Alcázar de San Juan",
+   "hermandad": "Perdón y Salud",
+   "paso": "Virgen",
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo de la cuadrilla de María Stma. de la Salud",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "Los Estudiantes",
@@ -3359,6 +3393,23 @@
    "titulo": "Primer ensayo de la cuadrilla de Ntro. Padre Jesús de la Bendición",
    "lugar": "Antiguo González Barba",
    "añadido": "2026-11-09"
+  },
+  {
+   "fecha": "2027-02-07",
+   "hora": null,
+   "provincia": "ciudadreal",
+   "localidad": "Alcázar de San Juan",
+   "hermandad": "Perdón y Salud",
+   "paso": "Virgen",
+   "tipo": "ensayo",
+   "titulo": "Segundo ensayo de la cuadrilla de María Stma. de la Salud",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
   },
   {
    "provincia": "sevilla",
@@ -4919,6 +4970,23 @@
    "añadido": "2026-10-29"
   },
   {
+   "fecha": "2027-02-28",
+   "hora": null,
+   "provincia": "ciudadreal",
+   "localidad": "Alcázar de San Juan",
+   "hermandad": "Perdón y Salud",
+   "paso": "Virgen",
+   "tipo": "ensayo",
+   "titulo": "Tercer ensayo de la cuadrilla de María Stma. de la Salud",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "La Fe",
@@ -5613,6 +5681,23 @@
    "titulo": "Tercer ensayo y mudá de la cuadrilla de Ntro. Padre Jesús de la Bendición",
    "lugar": "Antiguo González Barba",
    "añadido": "2026-11-09"
+  },
+  {
+   "fecha": "2027-03-07",
+   "hora": null,
+   "provincia": "ciudadreal",
+   "localidad": "Alcázar de San Juan",
+   "hermandad": "Perdón y Salud",
+   "paso": "Virgen",
+   "tipo": "mudá",
+   "titulo": "Mudá solidaria de la cuadrilla de María Stma. de la Salud",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
   },
   {
    "fecha": "2027-03-07",
