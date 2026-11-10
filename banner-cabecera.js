@@ -59,9 +59,9 @@
       var links = [].slice.call(h.querySelectorAll("nav a, a")).filter(function (x) {
         var r = x.getBoundingClientRect(); return x.offsetParent && !x.querySelector("img,svg,picture") && (x.textContent || "").trim().length > 2 && r.width > 30 && r.height > 20 && r.top > hr.top && r.top < hr.top + hr.height * 0.6 && x.id !== "vln-cab" && !x.closest("#vln-cab");
       });
-      var izq = Infinity, abajo = 0;
+      var izq = Infinity, abajo = -Infinity; // -Infinity: si la página carga ya bajada, los enlaces quedan por encima de 0
       links.forEach(function (x) { var r = x.getBoundingClientRect(); izq = Math.min(izq, r.left); abajo = Math.max(abajo, r.bottom); });
-      if (!isFinite(izq)) { izq = hr.left + hr.width * 0.3; abajo = hr.top + hr.height * 0.4; }
+      if (!isFinite(izq) || !isFinite(abajo)) { izq = hr.left + hr.width * 0.3; abajo = hr.top + hr.height * 0.4; }
       var top = abajo - hr.top + 18;
       var hueco = hr.height - top - 12;
       a.style.left = Math.round(izq - hr.left) + "px";
@@ -121,31 +121,4 @@
       .observe(document.body, { childList: true, subtree: true });
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", vigilar); else vigilar();
-
-  // Cookies: pasa a la tienda (Ecwid) lo que la persona eligió en el aviso de cookies de la web (Acepto / Rechazo).
-  // Solo tiene efecto si en la tienda está activado el "banner de consentimiento de cookies".
-  function respuestaWeb() {
-    var m = document.cookie.match(/(?:^|; )gox_cookie_consent=([^;]*)/);
-    if (!m) return null; // todavía no ha contestado
-    var v = decodeURIComponent(m[1] || "");
-    var analitica = v.indexOf("analytics") >= 0, tienda = v.indexOf("shops") >= 0;
-    if (analitica && tienda) return "ACCEPTED";
-    if (analitica) return "ANALYTICS_ONLY";
-    return "DECLINED";
-  }
-  function sincronizar() {
-    try {
-      if (!window.Ecwid || !Ecwid.setTrackingConsent || !Ecwid.getTrackingConsent) return;
-      var r = respuestaWeb(); if (!r) return;
-      var actual = Ecwid.getTrackingConsent();
-      if (!actual || !actual.askConsent) return; // la tienda no pide consentimiento: no se toca nada
-      if (actual.userResponse !== r) Ecwid.setTrackingConsent(r);
-    } catch (e) {}
-  }
-  function prepararConsentimiento() {
-    if (window.Ecwid && Ecwid.OnAPILoaded) Ecwid.OnAPILoaded.add(sincronizar);
-    document.addEventListener("click", function () { setTimeout(sincronizar, 600); }, true);
-    var n = 0, t = setInterval(function () { sincronizar(); if (++n > 20) clearInterval(t); }, 1500);
-  }
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", prepararConsentimiento); else prepararConsentimiento();
 })();
