@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-10",
- "total": 358,
+ "total": 363,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -1879,6 +1879,23 @@
    "añadido": "2026-10-30"
   },
   {
+   "fecha": "2027-01-22",
+   "hora": "21:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Cristo de la Confianza",
+   "paso": "Cristo",
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo de costaleros del Stmo. Cristo de la Confianza",
+   "lugar": "Parroquia de la Inmaculada Concepción y San Alberto Magno",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "La Redención",
@@ -2812,6 +2829,23 @@
    "fuente_nombre": "Web oficial de la Real y Muy Ilustre Hdad. de la Oración en el Huerto de los Olivos",
    "nota": null,
    "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2027-02-05",
+   "hora": "21:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Cristo de la Confianza",
+   "paso": "Cristo",
+   "tipo": "ensayo",
+   "titulo": "Segundo ensayo de costaleros del Stmo. Cristo de la Confianza",
+   "lugar": "Parroquia de la Inmaculada Concepción y San Alberto Magno",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
   },
   {
    "provincia": "huelva",
@@ -3815,6 +3849,23 @@
    "añadido": "2026-10-30"
   },
   {
+   "fecha": "2027-02-20",
+   "hora": "17:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Cristo de la Confianza",
+   "paso": "Cristo",
+   "tipo": "ensayo",
+   "titulo": "Tercer ensayo de costaleros del Stmo. Cristo de la Confianza",
+   "lugar": "Parroquia de la Inmaculada Concepción y San Alberto Magno",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
+  },
+  {
    "provincia": "jaen",
    "hora": "17:00",
    "lugar": "Parroquia de Santa Isabel",
@@ -4427,6 +4478,23 @@
    "fuente_nombre": "Web oficial de la Cofradía del Nazareno (Córdoba)",
    "nota": "Ensayo de reserva.",
    "añadido": "2026-11-06"
+  },
+  {
+   "fecha": "2027-02-26",
+   "hora": "21:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Cristo de la Confianza",
+   "paso": "Cristo",
+   "tipo": "ensayo",
+   "titulo": "Cuarto ensayo de costaleros del Stmo. Cristo de la Confianza",
+   "lugar": "Parroquia de la Inmaculada Concepción y San Alberto Magno",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
   },
   {
    "fecha": "2027-02-27",
@@ -5523,6 +5591,23 @@
    "fuente_nombre": "Web oficial de la Hdad. de la Santa Cena de Almería",
    "nota": "Lunes 15 de marzo.",
    "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2027-03-15",
+   "hora": "21:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Cristo de la Confianza",
+   "paso": "Cristo",
+   "tipo": "retranqueo",
+   "titulo": "Retranqueo del paso del Stmo. Cristo de la Confianza",
+   "lugar": "Parroquia de la Inmaculada Concepción y San Alberto Magno",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-10"
   },
   {
    "fecha": "2027-03-15",
