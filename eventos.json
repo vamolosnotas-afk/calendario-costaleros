@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-10",
- "total": 376,
+ "total": 378,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -2025,6 +2025,23 @@
    "tipo": "ensayo",
    "titulo": "Ensayo Jesús Cautivo",
    "añadido": "2026-11-03"
+  },
+  {
+   "fecha": "2027-01-23",
+   "hora": "17:00",
+   "provincia": "sevilla",
+   "localidad": "Carmona",
+   "hermandad": "Humildad y Paciencia",
+   "paso": "Cristo",
+   "tipo": "igualá",
+   "titulo": "Igualá y primer ensayo de la cuadrilla de Ntro. Padre Jesús de la Humildad",
+   "lugar": "C/ Bulerías 33",
+   "capataz": "Miguel Pérez",
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Acudir con calzado negro de salida",
+   "añadido": "2026-11-10"
   },
   {
    "provincia": "jaen",
@@ -5016,6 +5033,23 @@
    "titulo": "3.er ensayo cuadrilla del Señor de la Sentencia",
    "nota": "Calendario de iguala y ensayos 2027 publicado el 31/10/2026. Puntualidad y calzado de salida.",
    "añadido": "2026-11-01"
+  },
+  {
+   "fecha": "2027-03-06",
+   "hora": "17:00",
+   "provincia": "sevilla",
+   "localidad": "Carmona",
+   "hermandad": "Humildad y Paciencia",
+   "paso": "Cristo",
+   "tipo": "ensayo",
+   "titulo": "Segundo ensayo de la cuadrilla de Ntro. Padre Jesús de la Humildad",
+   "lugar": "C/ Bulerías 33",
+   "capataz": "Miguel Pérez",
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Acudir con calzado negro de salida",
+   "añadido": "2026-11-10"
   },
   {
    "provincia": "jaen",
