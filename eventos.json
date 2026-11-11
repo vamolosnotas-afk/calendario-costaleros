@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-11",
- "total": 421,
+ "total": 426,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -2035,6 +2035,23 @@
    "añadido": "2026-11-06"
   },
   {
+   "fecha": "2027-01-18",
+   "hora": null,
+   "provincia": "huelva",
+   "localidad": "Moguer",
+   "hermandad": "Vera+Cruz",
+   "paso": "Cristo",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla del Cristo",
+   "lugar": "Capilla del Corpus Christi",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-11"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "La Borriquita",
@@ -2524,6 +2541,23 @@
    "verificado_por": "manuel",
    "nota": "Aspirantes a las 23:00 en la Capilla.",
    "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2027-01-25",
+   "hora": null,
+   "provincia": "huelva",
+   "localidad": "Moguer",
+   "hermandad": "Vera+Cruz",
+   "paso": "Cristo",
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo de la cuadrilla del Cristo",
+   "lugar": "Patio de la iglesia de la Vera+Cruz",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-11"
   },
   {
    "fecha": "2027-01-27",
@@ -3613,6 +3647,23 @@
    "fuente": "https://lacenadesevilla.es/convocatoria-de-igualas-ensayos-y-retranqueos-para-las-cuadrillas-de-costaleros/",
    "fuente_nombre": "Web oficial de la Hdad. de la Sagrada Cena",
    "añadido": "2026-10-29"
+  },
+  {
+   "fecha": "2027-02-08",
+   "hora": null,
+   "provincia": "huelva",
+   "localidad": "Moguer",
+   "hermandad": "Vera+Cruz",
+   "paso": "Cristo",
+   "tipo": "ensayo",
+   "titulo": "Segundo ensayo de la cuadrilla del Cristo",
+   "lugar": "Patio de la iglesia de la Vera+Cruz",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-11"
   },
   {
    "fecha": "2027-02-10",
@@ -5177,6 +5228,23 @@
    "añadido": "2026-11-11"
   },
   {
+   "fecha": "2027-02-26",
+   "hora": null,
+   "provincia": "huelva",
+   "localidad": "Moguer",
+   "hermandad": "Vera+Cruz",
+   "paso": "Cristo",
+   "tipo": "ensayo",
+   "titulo": "Tercer ensayo de la cuadrilla del Cristo",
+   "lugar": "Patio de la iglesia de la Vera+Cruz",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-11"
+  },
+  {
    "fecha": "2027-02-27",
    "hora": "16:30",
    "provincia": "cordoba",
@@ -5530,6 +5598,23 @@
    "lugar": "Nave González Barba",
    "titulo": "Ensayo de la cuadrilla de Mª Stma. de la Amargura",
    "añadido": "2026-10-31"
+  },
+  {
+   "fecha": "2027-03-05",
+   "hora": null,
+   "provincia": "huelva",
+   "localidad": "Moguer",
+   "hermandad": "Vera+Cruz",
+   "paso": "Cristo",
+   "tipo": "ensayo",
+   "titulo": "Cuarto ensayo de la cuadrilla del Cristo",
+   "lugar": "Patio de la iglesia de la Vera+Cruz",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-11"
   },
   {
    "fecha": "2027-03-06",
