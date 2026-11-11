@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-11",
- "total": 415,
+ "total": 420,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -1740,6 +1740,23 @@
    "añadido": "2026-10-29"
   },
   {
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Prendimiento",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "fecha": "2027-01-15",
+   "hora": "21:30",
+   "paso": "Virgen",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de Nuestra Señora de la Piedad",
+   "lugar": "Casa de Hermandad (C/ Golondrina, 3)",
+   "nota": "Único requisito: tener cumplida la mayoría de edad el día de la igualá.",
+   "añadido": "2026-11-11"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "La Redención",
@@ -2114,6 +2131,23 @@
    "fuente_nombre": null,
    "verificado_por": "manuel",
    "nota": "Traer el calzado que se usará en la procesión.",
+   "añadido": "2026-11-11"
+  },
+  {
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Prendimiento",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "fecha": "2027-01-22",
+   "hora": "21:30",
+   "paso": "Misterio",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de Ntro. Padre Jesús, Divino Salvador, en su Prendimiento",
+   "lugar": "Casa de Hermandad (C/ Golondrina, 3)",
+   "nota": "Único requisito: tener cumplida la mayoría de edad el día de la igualá.",
    "añadido": "2026-11-11"
   },
   {
@@ -2668,6 +2702,23 @@
    "fuente_nombre": "Instagram oficial de la Hdad. de la Soledad (Almería)",
    "nota": null,
    "añadido": "2026-11-09"
+  },
+  {
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Prendimiento",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "fecha": "2027-01-29",
+   "hora": "21:30",
+   "paso": "Ambos pasos",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de las cuadrillas del Prendimiento y de Ntra. Sra. de la Piedad",
+   "lugar": null,
+   "nota": "Fechas opcionales en caso de lluvia: sábado 13 de febrero y sábado 6 de marzo.",
+   "añadido": "2026-11-11"
   },
   {
    "provincia": "huelva",
@@ -3822,6 +3873,23 @@
    "lugar": "Casa de Hermandad",
    "titulo": "Ensayo de la cuadrilla de Ntra. Sra. de la Esperanza Coronada",
    "añadido": "2026-10-31"
+  },
+  {
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Prendimiento",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "fecha": "2027-02-12",
+   "hora": "21:30",
+   "paso": "Ambos pasos",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de las cuadrillas del Prendimiento y de Ntra. Sra. de la Piedad",
+   "lugar": null,
+   "nota": "Fechas opcionales en caso de lluvia: sábado 13 de febrero y sábado 6 de marzo.",
+   "añadido": "2026-11-11"
   },
   {
    "fecha": "2027-02-12",
@@ -5090,6 +5158,23 @@
    "verificado_por": "manuel",
    "nota": null,
    "añadido": "2026-11-10"
+  },
+  {
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Prendimiento",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "fecha": "2027-02-26",
+   "hora": "21:30",
+   "paso": "Ambos pasos",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de las cuadrillas del Prendimiento y de Ntra. Sra. de la Piedad",
+   "lugar": null,
+   "nota": "Fechas opcionales en caso de lluvia: sábado 13 de febrero y sábado 6 de marzo.",
+   "añadido": "2026-11-11"
   },
   {
    "fecha": "2027-02-27",
