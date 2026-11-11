@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-11",
- "total": 414,
+ "total": 415,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -6440,6 +6440,23 @@
    "fuente_nombre": "Instagram oficial de la Hdad. de la Buena Muerte (Huelva)",
    "nota": null,
    "añadido": "2026-11-09"
+  },
+  {
+   "fecha": "2027-03-15",
+   "hora": "21:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla (Torreblanca)",
+   "hermandad": "Dolores de Torreblanca",
+   "paso": "Cristo",
+   "tipo": "retranqueo",
+   "titulo": "Retranqueo del paso de Ntro. Padre Jesús Cautivo ante Pilato",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-11"
   },
   {
    "provincia": "huelva",
