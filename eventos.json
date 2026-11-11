@@ -1,6 +1,6 @@
 {
- "actualizado": "2026-11-10",
- "total": 406,
+ "actualizado": "2026-11-11",
+ "total": 413,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -305,6 +305,23 @@
   },
   {
    "fecha": "2026-11-13",
+   "hora": "19:30",
+   "provincia": "sevilla",
+   "localidad": "El Viso del Alcor",
+   "hermandad": "Dulce Nombre de Jesús (El Viso)",
+   "paso": "Niño Jesús",
+   "tipo": "igualá",
+   "titulo": "Ensayo e igualá de la cuadrilla joven del Dulce Nombre de Jesús",
+   "lugar": "C/ Tocina 31",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Para jóvenes de 14 a 21 años. Calzado blanco. Salida el 03/01/2027.",
+   "añadido": "2026-11-11"
+  },
+  {
+   "fecha": "2026-11-13",
    "hora": "20:00",
    "provincia": "sevilla",
    "localidad": "La Campana",
@@ -385,6 +402,23 @@
    "fuente_nombre": "Web oficial de la Hdad. del Transporte (Jerez)",
    "nota": "Calzado blanco de salida y molía.",
    "añadido": "2026-11-03"
+  },
+  {
+   "fecha": "2026-11-13",
+   "hora": "21:30",
+   "provincia": "sevilla",
+   "localidad": "Benacazón",
+   "hermandad": "Inmaculada de Benacazón",
+   "paso": "Virgen",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de la Pura Inmaculada",
+   "lugar": "La Soledad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Calzado blanco. Salida el 28/03/2027.",
+   "añadido": "2026-11-11"
   },
   {
    "fecha": "2026-11-13",
@@ -2049,6 +2083,23 @@
    "añadido": "2026-11-10"
   },
   {
+   "fecha": "2027-01-22",
+   "hora": "21:30",
+   "provincia": "ciudadreal",
+   "localidad": "Ciudad Real",
+   "hermandad": "Prendimiento",
+   "paso": "Virgen",
+   "tipo": "igualá",
+   "titulo": "Igualá del paso de palio de María Stma. de la Salud",
+   "lugar": "Casa Hermandad (Residencial Ronda, 11)",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Traer el calzado que se usará en la procesión.",
+   "añadido": "2026-11-11"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "La Redención",
@@ -2241,6 +2292,23 @@
    "tipo": "ensayo",
    "titulo": "Ensayo de la cuadrilla de María Stma. de los Dolores",
    "añadido": "2026-10-31"
+  },
+  {
+   "fecha": "2027-01-24",
+   "hora": "10:00",
+   "provincia": "ciudadreal",
+   "localidad": "Ciudad Real",
+   "hermandad": "Prendimiento",
+   "paso": "Virgen",
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo del paso de palio de María Stma. de la Salud",
+   "lugar": "Guardapasos (C/ Quevedo)",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Traer el calzado que se usará en la procesión.",
+   "añadido": "2026-11-11"
   },
   {
    "provincia": "huelva",
@@ -2679,6 +2747,23 @@
    "fuente_nombre": "Web oficial de la Hdad. de la Santa Cena de Almería",
    "nota": "Calendario 2027 publicado el 20/10/2026 (domingo 31 de enero).",
    "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2027-01-31",
+   "hora": "10:00",
+   "provincia": "ciudadreal",
+   "localidad": "Ciudad Real",
+   "hermandad": "Prendimiento",
+   "paso": "Virgen",
+   "tipo": "ensayo",
+   "titulo": "Segundo ensayo del paso de palio de María Stma. de la Salud",
+   "lugar": "Guardapasos (C/ Quevedo)",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Traer el calzado que se usará en la procesión.",
+   "añadido": "2026-11-11"
   },
   {
    "fecha": "2027-01-31",
@@ -4488,6 +4573,23 @@
   {
    "fecha": "2027-02-21",
    "hora": "10:00",
+   "provincia": "ciudadreal",
+   "localidad": "Ciudad Real",
+   "hermandad": "Prendimiento",
+   "paso": "Virgen",
+   "tipo": "ensayo",
+   "titulo": "Tercer ensayo del paso de palio de María Stma. de la Salud",
+   "lugar": "Guardapasos (C/ Quevedo)",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Traer el calzado que se usará en la procesión.",
+   "añadido": "2026-11-11"
+  },
+  {
+   "fecha": "2027-02-21",
+   "hora": "10:00",
    "provincia": "cordoba",
    "localidad": "Córdoba",
    "hermandad": "Rescatado",
@@ -5569,6 +5671,23 @@
    "tipo": "ensayo",
    "titulo": "2.º ensayo del paso de María Stma. del Consuelo",
    "añadido": "2026-11-02"
+  },
+  {
+   "fecha": "2027-03-07",
+   "hora": "10:00",
+   "provincia": "ciudadreal",
+   "localidad": "Ciudad Real",
+   "hermandad": "Prendimiento",
+   "paso": "Virgen",
+   "tipo": "ensayo",
+   "titulo": "Cuarto ensayo del paso de palio de María Stma. de la Salud",
+   "lugar": "Guardapasos (C/ Quevedo)",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Traer el calzado que se usará en la procesión.",
+   "añadido": "2026-11-11"
   },
   {
    "fecha": "2027-03-07",
