@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-11",
- "total": 413,
+ "total": 414,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -999,6 +999,23 @@
    "verificado_por": "manuel",
    "nota": null,
    "añadido": "2026-11-10"
+  },
+  {
+   "fecha": "2026-11-30",
+   "hora": "21:00",
+   "provincia": "sevilla",
+   "localidad": "Dos Hermanas",
+   "hermandad": "Santa Cruz",
+   "paso": "Misterio",
+   "tipo": "igualá",
+   "titulo": "Toma de contacto e igualá de la cuadrilla de Ntro. Padre Jesús en la Presentación al Pueblo",
+   "lugar": "Parroquia de Ntra. Sra. de la Oliva",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Costaleros y aspirantes",
+   "añadido": "2026-11-11"
   },
   {
    "provincia": "jerez",
