@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-11",
- "total": 420,
+ "total": 421,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -6280,6 +6280,23 @@
    "lugar": "Nave González Barba",
    "titulo": "Ensayo de la cuadrilla de Mª Stma. de la Amargura",
    "añadido": "2026-10-31"
+  },
+  {
+   "fecha": "2027-03-12",
+   "hora": "22:30",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Prendimiento",
+   "paso": "Ambos pasos",
+   "tipo": "mudá",
+   "titulo": "Mudá de los pasos del Prendimiento y de Ntra. Sra. de la Piedad",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-11"
   },
   {
    "provincia": "badajoz",
