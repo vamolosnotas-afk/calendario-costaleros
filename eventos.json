@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-12",
- "total": 434,
+ "total": 436,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -1233,6 +1233,23 @@
    "añadido": "2026-11-10"
   },
   {
+   "fecha": "2026-12-15",
+   "hora": "21:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "Pasión",
+   "paso": "Virgen (palio)",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla del paso de palio de Ntra. Madre y Señora de la Merced",
+   "lugar": "Iglesia Colegial del Divino Salvador",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-12"
+  },
+  {
    "fecha": "2026-12-16",
    "hora": "21:00",
    "provincia": "cordoba",
@@ -1247,6 +1264,23 @@
    "fuente_nombre": "Web oficial de la Cofradía del Nazareno (Córdoba)",
    "nota": "Procesión del Beato el 6 de febrero de 2027.",
    "añadido": "2026-11-06"
+  },
+  {
+   "fecha": "2026-12-17",
+   "hora": "21:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "Pasión",
+   "paso": "Cristo",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla del paso de Ntro. Padre Jesús de la Pasión",
+   "lugar": "Iglesia Colegial del Divino Salvador",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-12"
   },
   {
    "provincia": "cordoba",
