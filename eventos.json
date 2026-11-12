@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-12",
- "total": 433,
+ "total": 434,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -1543,6 +1543,23 @@
    "fuente_nombre": "Instagram oficial de la Hdad. de la Paz (Sevilla)",
    "nota": null,
    "añadido": "2026-11-09"
+  },
+  {
+   "fecha": "2027-01-10",
+   "hora": "11:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "La Soledad",
+   "paso": "Virgen",
+   "tipo": "igualá",
+   "titulo": "Igualá de costaleros de María Santísima en su Soledad",
+   "lugar": "Patio del Colegio Sta. Mª de Guadalupe",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Acudir con calzado de salida. Viernes Santo 2027.",
+   "añadido": "2026-11-12"
   },
   {
    "provincia": "sevilla",
