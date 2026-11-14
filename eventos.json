@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-14",
- "total": 575,
+ "total": 579,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -1539,6 +1539,23 @@
    "verificado_por": "manuel",
    "nota": "Calzado negro. Nueva ubicación de la Casa Hermandad: Avenida Sánchez Pizjuán, 1",
    "añadido": "2026-11-13"
+  },
+  {
+   "fecha": "2027-01-08",
+   "hora": "21:00",
+   "provincia": "alicante",
+   "localidad": "Elche",
+   "hermandad": "Pasión y Merced",
+   "paso": null,
+   "tipo": "igualá",
+   "titulo": "Igualá abierta de costaleros",
+   "lugar": "Parroquia de San Juan Bautista",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Calzado blanco de salida.",
+   "añadido": "2026-11-14"
   },
   {
    "fecha": "2027-01-08",
@@ -3556,6 +3573,23 @@
   {
    "fecha": "2027-01-29",
    "hora": "21:00",
+   "provincia": "alicante",
+   "localidad": "Elche",
+   "hermandad": "Pasión y Merced",
+   "paso": null,
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo de costaleros",
+   "lugar": "Parroquia de San Juan Bautista",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-14"
+  },
+  {
+   "fecha": "2027-01-29",
+   "hora": "21:00",
    "provincia": "almeria",
    "localidad": "Almería",
    "hermandad": "Angustias",
@@ -5140,6 +5174,23 @@
    "añadido": "2026-11-10"
   },
   {
+   "fecha": "2027-02-12",
+   "hora": "21:00",
+   "provincia": "alicante",
+   "localidad": "Elche",
+   "hermandad": "Pasión y Merced",
+   "paso": null,
+   "tipo": "ensayo",
+   "titulo": "Segundo ensayo de costaleros",
+   "lugar": "Parroquia de San Juan Bautista",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-14"
+  },
+  {
    "provincia": "almeria",
    "localidad": "Almería",
    "hermandad": "Estudiantes",
@@ -6033,6 +6084,23 @@
    "nota": null,
    "añadido": "2026-11-13",
    "origen": "terceros"
+  },
+  {
+   "fecha": "2027-02-19",
+   "hora": "21:00",
+   "provincia": "alicante",
+   "localidad": "Elche",
+   "hermandad": "Pasión y Merced",
+   "paso": null,
+   "tipo": "ensayo",
+   "titulo": "Tercer ensayo de costaleros",
+   "lugar": "Parroquia de San Juan Bautista",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-14"
   },
   {
    "fecha": "2027-02-19",

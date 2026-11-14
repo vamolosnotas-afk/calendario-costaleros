@@ -20,7 +20,8 @@
     salamanca:  { n: "Salamanca",   c: "#455a64" },
     barcelona:  { n: "Barcelona",   c: "#283593" },
     tarragona:  { n: "Tarragona",   c: "#d84315" },
-    badajoz:    { n: "Badajoz",     c: "#2e7d32" }
+    badajoz:    { n: "Badajoz",     c: "#2e7d32" },
+    alicante:   { n: "Alicante",    c: "#6a1b9a" }
   };
   var MESES = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
   var DIAS = ["L","M","X","J","V","S","D"];
