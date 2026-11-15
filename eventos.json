@@ -1,6 +1,6 @@
 {
- "actualizado": "2026-11-14",
- "total": 579,
+ "actualizado": "2026-11-15",
+ "total": 584,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -552,6 +552,23 @@
    "fuente_nombre": "Web oficial de la Hermandad de la Milagrosa",
    "nota": "Costaleros actuales y aspirantes. Calzado negro.",
    "añadido": "2026-10-30"
+  },
+  {
+   "hora": "10:00",
+   "paso": "Cristo (Ntro. Padre Jesús de la Salud)",
+   "lugar": "Casa de hermandad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Calzado negro. Salida procesional prevista el 14/03/2027",
+   "fecha": "2026-11-15",
+   "provincia": "sevilla",
+   "localidad": "Castilleja de la Cuesta (Nueva Sevilla)",
+   "hermandad": "Salud (Nueva Sevilla)",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de Ntro. Padre Jesús de la Salud",
+   "añadido": "2026-11-15"
   },
   {
    "fecha": "2026-11-15",
@@ -1906,6 +1923,23 @@
    "verificado_por": null,
    "nota": null,
    "añadido": "2026-11-14"
+  },
+  {
+   "hora": "11:00",
+   "paso": "Virgen (María Stma. de Gracia y Amparo)",
+   "lugar": "Casa de Hermandad (Carrera del Mamí, 34)",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Imprescindible calzado negro de salida en todas las citas",
+   "fecha": "2027-01-10",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de María Stma. de Gracia y Amparo",
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Coronación",
+   "añadido": "2026-11-15"
   },
   {
    "fecha": "2027-01-10",
@@ -3375,6 +3409,23 @@
    "añadido": "2026-10-29"
   },
   {
+   "hora": "12:00",
+   "paso": "Palio (María Stma. del Perpetuo Socorro)",
+   "lugar": "Ermita de Guía",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Calzado negro de salida",
+   "fecha": "2027-01-24",
+   "provincia": "jerez",
+   "localidad": "Jerez de la Frontera",
+   "hermandad": "El Perdón",
+   "tipo": "igualá",
+   "titulo": "Igualá y convivencia de la cuadrilla de María Stma. del Perpetuo Socorro",
+   "añadido": "2026-11-15"
+  },
+  {
    "provincia": "sevilla",
    "localidad": "Sevilla",
    "hermandad": "Abnegación de San Bernardo",
@@ -4842,6 +4893,23 @@
    "verificado_por": "manuel",
    "nota": "Calzado negro",
    "añadido": "2026-11-13"
+  },
+  {
+   "hora": "16:00",
+   "paso": "Virgen (María Stma. de Gracia y Amparo)",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Calzado negro de salida",
+   "fecha": "2027-02-07",
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo de la cuadrilla de María Stma. de Gracia y Amparo",
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Coronación",
+   "añadido": "2026-11-15"
   },
   {
    "provincia": "sevilla",
@@ -8364,6 +8432,23 @@
    "titulo": "Tercer ensayo y mudá de la cuadrilla de Ntro. Padre Jesús de la Bendición",
    "lugar": "Antiguo González Barba",
    "añadido": "2026-11-09"
+  },
+  {
+   "hora": "16:00",
+   "paso": "Virgen (María Stma. de Gracia y Amparo)",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Calzado negro de salida",
+   "fecha": "2027-03-07",
+   "tipo": "ensayo",
+   "titulo": "Segundo ensayo de la cuadrilla de María Stma. de Gracia y Amparo",
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Coronación",
+   "añadido": "2026-11-15"
   },
   {
    "fecha": "2027-03-07",
