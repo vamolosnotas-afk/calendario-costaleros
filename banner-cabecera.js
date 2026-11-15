@@ -121,4 +121,89 @@
       .observe(document.body, { childList: true, subtree: true });
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", vigilar); else vigilar();
+
+  // Botón flotante de WhatsApp en todas las páginas (abajo a la derecha)
+  var WA_TEL = "34692942182";
+  function textoWA() {
+    var t = "Hola, quiero información sobre un costal";
+    if (enTienda()) {
+      var h1 = document.querySelector("h1");
+      var nom = h1 && (h1.textContent || "").trim();
+      if (nom && nom.length < 90) t = "Hola, tengo una duda sobre el " + nom;
+    }
+    return t;
+  }
+  function urlWA() { return "https://wa.me/" + WA_TEL + "?text=" + encodeURIComponent(textoWA()); }
+  function marcarClic(donde) {
+    try { if (window.gtag) window.gtag("event", "click_whatsapp", { lugar: donde, pagina: location.pathname }); } catch (e) {}
+  }
+  var ICONO_WA = '<svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path fill="#fff" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.3.6 4.5 1.8 6.4L3 29l7-1.8c1.8 1 3.9 1.5 6 1.5 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.2 1.1 1.1-4-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.2 9.9 10 5.2 16 5.2s10.8 4.7 10.8 10.6S22 26.4 16 26.4zm5.9-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.8 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>';
+  function botonWA() {
+    if (document.getElementById("vln-wa")) return;
+    var st = document.createElement("style"); st.id = "vln-wa-css";
+    st.textContent =
+      "#vln-wa{position:fixed;right:16px;bottom:18px;z-index:2147483000;display:flex;align-items:center;gap:8px;background:#25D366;color:#fff!important;text-decoration:none!important;border-radius:999px;padding:12px 16px 12px 13px;font:700 15px Arial,sans-serif;box-shadow:0 6px 18px rgba(0,0,0,.28);transition:transform .15s ease}" +
+      "#vln-wa:hover{transform:scale(1.05)}#vln-wa:focus-visible{outline:3px solid #4A2818;outline-offset:2px}" +
+      "@media (max-width:600px){#vln-wa{right:12px;bottom:14px;padding:11px 14px 11px 11px;font-size:14px}}" +
+      "@media print{#vln-wa{display:none}}";
+    document.head.appendChild(st);
+    var a = document.createElement("a");
+    a.id = "vln-wa"; a.target = "_blank"; a.rel = "noopener";
+    a.setAttribute("aria-label", "Escríbenos por WhatsApp");
+    a.innerHTML = ICONO_WA + "<span>¿Dudas? WhatsApp</span>";
+    a.href = urlWA();
+    a.addEventListener("click", function () { a.href = urlWA(); marcarClic("flotante"); });
+    document.body.appendChild(a);
+    ocultarConCookies();
+    var n = 0, iv = setInterval(function () { ocultarConCookies(); if (++n > 300) clearInterval(iv); }, 1000);
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener("resize", ocultarConCookies);
+      window.visualViewport.addEventListener("scroll", ocultarConCookies);
+    }
+    window.addEventListener("resize", ocultarConCookies);
+    window.addEventListener("scroll", ocultarConCookies, { passive: true });
+  }
+  // Coloca el botón en la esquina de lo que se VE en pantalla (aunque la página sea más ancha que el móvil)
+  // y, si está el aviso de cookies abajo, lo sube encima para no taparlo
+  function ocultarConCookies() {
+    var a = document.getElementById("vln-wa"); if (!a) return;
+    var vv = window.visualViewport;
+    var vLeft = vv ? vv.offsetLeft : 0, vTop = vv ? vv.offsetTop : 0;
+    var vW = vv ? vv.width : document.documentElement.clientWidth, vH = vv ? vv.height : window.innerHeight;
+    var margen = vW <= 600 ? 12 : 16;
+    var limite = vTop + vH;
+    var c = document.querySelector(".consent-banner-root");
+    if (c) {
+      var cs = getComputedStyle(c), r = c.getBoundingClientRect();
+      if (cs.display !== "none" && cs.visibility !== "hidden" && r.height > 0 && r.top < limite) limite = r.top;
+    }
+    a.style.right = "auto"; a.style.bottom = "auto";
+    a.style.left = Math.round(vLeft + vW - a.offsetWidth - margen) + "px";
+    a.style.top = Math.round(limite - a.offsetHeight - margen) + "px";
+  }
+  // En las fichas: aviso de WhatsApp junto a la casilla de la tela
+  function ayudaTelaWA() {
+    if (!enTienda()) return;
+    var enl = document.querySelectorAll(".vln-telas");
+    for (var i = 0; i < enl.length; i++) {
+      var c = enl[i].parentNode;
+      if (c.querySelector(".vln-tela-wa")) continue;
+      var w = document.createElement("a");
+      w.className = "vln-tela-wa"; w.target = "_blank"; w.rel = "noopener";
+      w.textContent = "¿No lo tienes claro? Te ayudamos a elegir por WhatsApp ›";
+      w.href = urlWA();
+      w.addEventListener("click", function (ev) { ev.currentTarget.href = urlWA(); marcarClic("tela"); });
+      w.style.cssText = "display:block;margin-top:8px;color:#25D366;font:700 14px Arial,sans-serif;text-decoration:underline";
+      c.appendChild(w);
+    }
+  }
+  function iniciarWA() {
+    botonWA(); ayudaTelaWA();
+    if (window.MutationObserver) {
+      var p2;
+      new MutationObserver(function () { clearTimeout(p2); p2 = setTimeout(function () { ayudaTelaWA(); ocultarConCookies(); }, 300); })
+        .observe(document.body, { childList: true, subtree: true });
+    }
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciarWA); else iniciarWA();
 })();
