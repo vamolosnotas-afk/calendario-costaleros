@@ -82,6 +82,14 @@
     }
   }
 
+  // Las animaciones de entrada de IONOS meten los bloques 50px por la derecha antes de aparecer
+  // y eso hace la página más ancha que el móvil (se mueve de lado). Se recorta lo que sobresale.
+  if (!document.getElementById("vln-anchura-css")) {
+    var sa = document.createElement("style"); sa.id = "vln-anchura-css";
+    sa.textContent = "html,body{overflow-x:clip!important}@supports not (overflow-x:clip){body{overflow-x:hidden!important}}";
+    (document.head || document.documentElement).appendChild(sa);
+  }
+
   function iniciar() {
     if (!document.getElementById("vln-cab-css")) {
       var st = document.createElement("style"); st.id = "vln-cab-css"; st.textContent = CSS; document.head.appendChild(st);
