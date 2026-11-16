@@ -1,6 +1,6 @@
 {
- "actualizado": "2026-11-15",
- "total": 584,
+ "actualizado": "2026-11-16",
+ "total": 585,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -906,6 +906,23 @@
    "nota": null,
    "añadido": "2026-11-13",
    "origen": "terceros"
+  },
+  {
+   "fecha": "2026-11-22",
+   "hora": "10:30",
+   "provincia": "sevilla",
+   "localidad": "Sevilla (Alcosa)",
+   "hermandad": "Divino Perdón",
+   "paso": "Cristo y Virgen",
+   "tipo": "igualá",
+   "titulo": "Igualá de las cuadrillas de Ntro. Padre Jesús del Divino Perdón y María Stma. de la Purísima Concepción",
+   "lugar": "Plaza Maestro Sánchez Rosa",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-16"
   },
   {
    "provincia": "sevilla",
