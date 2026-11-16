@@ -116,7 +116,7 @@
       a.style.cssText = "display:inline-block;margin-top:8px;padding:8px 12px;border-radius:8px;background:#d4a574;color:#4A2818;font:700 14px Arial,sans-serif;text-decoration:none";
       var ayuda = document.createElement("div");
       ayuda.className = "vln-telas-ayuda";
-      ayuda.textContent = "Elige tu tela y escribe aquí su referencia (por ejemplo STOCK_0056) o el color si es lisa.";
+      ayuda.textContent = "Elige tu tela y escribe aquí su referencia (por ejemplo STOCK_0056) o el color si es lisa. Si no lo tienes claro, déjalo en blanco: te escribimos para elegirla contigo.";
       ayuda.style.cssText = "margin-top:6px;font:13px Arial,sans-serif;opacity:.85";
       c.appendChild(ayuda); c.appendChild(a);
     }
@@ -214,4 +214,35 @@
     }
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciarWA); else iniciarWA();
+
+  // En las fichas de producto: valoración de Google justo debajo del precio (solo ahí, para no saturar)
+  var RESENAS = { nota: "5,0", total: 103, url: "https://maps.app.goo.gl/heTVCES96z8JMJCPA" };
+  function resenasFicha() {
+    if (!enTienda()) return;
+    if (!document.querySelector(".ec-store__product-page")) return;
+    var precio = document.querySelector(".product-details__product-price");
+    if (!precio || document.querySelector(".vln-resenas")) return;
+    var a = document.createElement("a");
+    a.className = "vln-resenas"; a.href = RESENAS.url; a.target = "_blank"; a.rel = "noopener";
+    a.innerHTML = '<span style="color:#f5b301;letter-spacing:1px" aria-hidden="true">★★★★★</span> ' +
+      '<b>' + RESENAS.nota + '</b> en Google · ' + RESENAS.total + ' reseñas ›';
+    a.setAttribute("aria-label", "Valoración " + RESENAS.nota + " en Google con " + RESENAS.total + " reseñas");
+    a.style.cssText = "display:inline-block;margin:6px 0 4px;font:14px Arial,sans-serif;color:inherit;text-decoration:none;opacity:.95";
+    a.addEventListener("click", function () { marcarClic("resenas-ficha"); });
+    precio.parentNode.insertBefore(a, precio.nextSibling);
+  }
+  // En la cesta: casilla de "Estoy de acuerdo con Términos" más grande en el móvil (es muy pequeña para el dedo)
+  var CSS_CHECK = "@media (max-width:999px){.ec-store .form-control--checkbox .form-control__checkbox-wrap{transform:scale(1.35);transform-origin:left center;margin-right:6px}}";
+  function iniciarFichas() {
+    if (!document.getElementById("vln-check-css")) {
+      var sc = document.createElement("style"); sc.id = "vln-check-css"; sc.textContent = CSS_CHECK; document.head.appendChild(sc);
+    }
+    resenasFicha();
+    if (window.MutationObserver) {
+      var p3;
+      new MutationObserver(function () { clearTimeout(p3); p3 = setTimeout(resenasFicha, 300); })
+        .observe(document.body, { childList: true, subtree: true });
+    }
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciarFichas); else iniciarFichas();
 })();
