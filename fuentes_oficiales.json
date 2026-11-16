@@ -8042,5 +8042,22 @@
   "x": null,
   "costal_comprobado": true,
   "verificado_como": "La web oficial dice que fue la primera hermandad de Elche en adoptar la carga a costal (año 2000). Instagram visto en captura de Manuel (14/11/2026)."
+ },
+ {
+  "provincia": "sevilla",
+  "localidad": "Sevilla (Parque Alcosa)",
+  "hermandad": "Desamparados (Parque Alcosa)",
+  "nombre_completo": "Hermandad de Nuestra Señora de los Desamparados",
+  "dia": "Gloria (mayo)",
+  "tipo_hermandad": "gloria",
+  "web": "https://www.desamparadosalcosa.es/",
+  "instagram": "https://www.instagram.com/hdesamparados/",
+  "facebook": "https://www.facebook.com/HDesamparados/",
+  "x": "https://twitter.com/HDesamparados",
+  "pasos_costal": [
+   "Ntra. Sra. de los Desamparados"
+  ],
+  "costal_comprobado": true,
+  "verificado_como": "Indicada por Manuel (16/11/2026). Web oficial con redes enlazadas en su HTML; costal confirmado por la noticia de su web 'Igualá de costaleros de Nuestra Señora de los Desamparados' (09/04/2026)."
  }
 ]
