@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-16",
- "total": 585,
+ "total": 586,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -1326,6 +1326,23 @@
    "verificado_por": "manuel",
    "nota": null,
    "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2026-12-12",
+   "hora": "17:00",
+   "provincia": "sevilla",
+   "localidad": "Camas",
+   "hermandad": "La Humillación (Camas)",
+   "paso": "Virgen",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla del palio de María Stma. de la Humillación (costaleros y aspirantes)",
+   "lugar": "Casa Hermandad",
+   "capataz": "José Antonio Vázquez Marín",
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Obligatorio acudir con calzado blanco",
+   "añadido": "2026-11-16"
   },
   {
    "fecha": "2026-12-13",
