@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-17",
- "total": 602,
+ "total": 609,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -960,6 +960,23 @@
   },
   {
    "fecha": "2026-11-22",
+   "hora": "11:30",
+   "provincia": "jaen",
+   "localidad": "Andújar",
+   "hermandad": "La Soledad (Andújar)",
+   "paso": "Virgen",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de Ntra. Sra. de la Victoria en su Soledad",
+   "lugar": "Asociación de Vecinos San Bartolomé",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Obligatorio calzado negro de salida.",
+   "añadido": "2026-11-17"
+  },
+  {
+   "fecha": "2026-11-22",
    "hora": "18:00",
    "provincia": "jaen",
    "localidad": "Jaén",
@@ -1423,6 +1440,23 @@
    "titulo": "Igualá del paso de Ntra. Sra. del Pilar en su Mayor Dolor",
    "nota": "Calzado blanco de salida",
    "añadido": "2026-10-31"
+  },
+  {
+   "fecha": "2026-12-13",
+   "hora": "10:30",
+   "provincia": "sevilla",
+   "localidad": "Camas",
+   "hermandad": "La Humillación (Camas)",
+   "paso": "Misterio",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla del misterio de Jesús del Soberano Poder (costaleros y aspirantes)",
+   "lugar": "Casa Hermandad",
+   "capataz": "Juan Antonio Fernández López",
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Obligatorio calzado negro.",
+   "añadido": "2026-11-17"
   },
   {
    "fuente": null,
@@ -3543,6 +3577,23 @@
    "verificado_por": "manuel",
    "nota": "Cartel 'Calendario 2027' de la cuadrilla de María Stma. de la Paz, enviado por Manuel el 29/10/2026.",
    "añadido": "2026-10-29"
+  },
+  {
+   "fecha": "2027-01-24",
+   "hora": "12:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Calvario",
+   "paso": "Cristo",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de Ntro. Padre Jesús del Calvario",
+   "lugar": "Casa de Hermandad (C/ Prolongación Escañuela 1, local)",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Se ruega asistir con el calzado de salida.",
+   "añadido": "2026-11-17"
   },
   {
    "hora": "12:00",
@@ -5866,6 +5917,23 @@
   {
    "fecha": "2027-02-14",
    "hora": "09:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Calvario",
+   "paso": "Cristo",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de Ntro. Padre Jesús del Calvario",
+   "lugar": "Casa de Hermandad (C/ Prolongación Escañuela 1, local)",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Se ruega asistir con el calzado de salida.",
+   "añadido": "2026-11-17"
+  },
+  {
+   "fecha": "2027-02-14",
+   "hora": "09:00",
    "provincia": "granada",
    "localidad": "Granada",
    "hermandad": "Trabajo y Luz",
@@ -7052,6 +7120,23 @@
    "verificado_por": "manuel",
    "nota": null,
    "añadido": "2026-11-14"
+  },
+  {
+   "fecha": "2027-02-21",
+   "hora": "16:30",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Calvario",
+   "paso": "Cristo",
+   "tipo": "ensayo",
+   "titulo": "Ensayo opcional de la cuadrilla de Ntro. Padre Jesús del Calvario",
+   "lugar": "Casa de Hermandad (C/ Prolongación Escañuela 1, local)",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Ensayo opcional.",
+   "añadido": "2026-11-17"
   },
   {
    "provincia": "huelva",
@@ -9354,6 +9439,23 @@
   },
   {
    "fecha": "2027-03-14",
+   "hora": "12:30",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Calvario",
+   "paso": "Cristo",
+   "tipo": "mudá",
+   "titulo": "Mudá del paso de Ntro. Padre Jesús del Calvario",
+   "lugar": "Casa de Hermandad (C/ Prolongación Escañuela 1, local)",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-17"
+  },
+  {
+   "fecha": "2027-03-14",
    "hora": "16:00",
    "provincia": "ciudadreal",
    "localidad": "Bolaños de Calatrava",
@@ -9983,6 +10085,23 @@
    "verificado_por": "manuel",
    "nota": null,
    "añadido": "2026-11-10"
+  },
+  {
+   "fecha": "2027-03-31",
+   "hora": "21:00",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Calvario",
+   "paso": "Cristo",
+   "tipo": "otro",
+   "titulo": "Desarmá del paso de Ntro. Padre Jesús del Calvario",
+   "lugar": "Casa de Hermandad (C/ Prolongación Escañuela 1, local)",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-17"
   },
   {
    "provincia": "sevilla",
