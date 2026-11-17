@@ -1,6 +1,6 @@
 {
- "actualizado": "2026-11-16",
- "total": 586,
+ "actualizado": "2026-11-17",
+ "total": 602,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -1425,6 +1425,23 @@
    "añadido": "2026-10-31"
   },
   {
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "capataz": null,
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Calvario",
+   "paso": null,
+   "lugar": "Local de ensayo, calle Sales (Pescadería)",
+   "fecha": "2026-12-13",
+   "hora": "11:00",
+   "tipo": "igualá",
+   "titulo": "Igualá general de los costaleros de Pescadería (Calvario)",
+   "nota": null,
+   "añadido": "2026-11-17"
+  },
+  {
    "fecha": "2026-12-13",
    "hora": "16:30",
    "provincia": "jaen",
@@ -1691,6 +1708,23 @@
    "verificado_por": "manuel",
    "nota": "Zapatillas blancas.",
    "añadido": "2026-11-14"
+  },
+  {
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "capataz": "José Manuel Salas Campos",
+   "provincia": "sevilla",
+   "localidad": "Coria del Río",
+   "hermandad": "Cautivo (Coria)",
+   "paso": "Ntro. Padre Jesús Cautivo",
+   "lugar": "Casa Hermandad",
+   "fecha": "2027-01-08",
+   "hora": "21:00",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de Ntro. Padre Jesús Cautivo",
+   "nota": null,
+   "añadido": "2026-11-17"
   },
   {
    "provincia": "sevilla",
@@ -2158,6 +2192,23 @@
    "añadido": "2026-11-09"
   },
   {
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "capataz": null,
+   "provincia": "jerez",
+   "localidad": "Jerez de la Frontera",
+   "hermandad": "El Perdón",
+   "paso": "Cristo del Perdón",
+   "fecha": "2027-01-14",
+   "hora": "21:00",
+   "tipo": "igualá",
+   "lugar": "Ermita de Guía",
+   "titulo": "Igualá de la cuadrilla del Cristo del Perdón",
+   "nota": null,
+   "añadido": "2026-11-17"
+  },
+  {
    "fecha": "2027-01-15",
    "hora": "20:00",
    "provincia": "almeria",
@@ -2357,6 +2408,23 @@
    "añadido": "2026-11-14"
   },
   {
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "capataz": "José Manuel Salas Campos",
+   "provincia": "sevilla",
+   "localidad": "Coria del Río",
+   "hermandad": "Cautivo (Coria)",
+   "paso": "Ntro. Padre Jesús Cautivo",
+   "lugar": "Casa Hermandad",
+   "fecha": "2027-01-16",
+   "hora": "16:30",
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo de la cuadrilla de Jesús Cautivo",
+   "nota": null,
+   "añadido": "2026-11-17"
+  },
+  {
    "fecha": "2027-01-16",
    "hora": "17:00",
    "provincia": "cordoba",
@@ -2440,6 +2508,23 @@
    "verificado_por": "manuel",
    "nota": null,
    "añadido": "2026-11-14"
+  },
+  {
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "capataz": null,
+   "provincia": "jerez",
+   "localidad": "Jerez de la Frontera",
+   "hermandad": "La Salvación",
+   "paso": "Stmo. Cristo de la Salvación",
+   "fecha": "2027-01-16",
+   "hora": "21:00",
+   "tipo": "igualá",
+   "lugar": "Parroquia del Perpetuo Socorro",
+   "titulo": "Igualá de la cuadrilla del Stmo. Cristo de la Salvación",
+   "nota": "Calzado negro de salida.",
+   "añadido": "2026-11-17"
   },
   {
    "provincia": "sevilla",
@@ -2789,6 +2874,23 @@
    "verificado_por": null,
    "nota": null,
    "añadido": "2026-11-14"
+  },
+  {
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "capataz": null,
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Calvario",
+   "paso": null,
+   "lugar": "Local de ensayo, calle Sales (Pescadería)",
+   "fecha": "2027-01-17",
+   "hora": null,
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo de los costaleros del Calvario",
+   "nota": null,
+   "añadido": "2026-11-17"
   },
   {
    "fecha": "2027-01-18",
@@ -4250,6 +4352,23 @@
    "añadido": "2026-11-09"
   },
   {
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "capataz": null,
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Calvario",
+   "paso": null,
+   "lugar": "Local de ensayo, calle Sales (Pescadería)",
+   "fecha": "2027-01-31",
+   "hora": null,
+   "tipo": "ensayo",
+   "titulo": "Segundo ensayo de los costaleros del Calvario",
+   "nota": null,
+   "añadido": "2026-11-17"
+  },
+  {
    "fecha": "2027-01-31",
    "hora": null,
    "provincia": "ciudadreal",
@@ -4626,6 +4745,23 @@
    "titulo": "1.er ensayo cuadrilla del Señor de la Sentencia",
    "nota": "Calendario de iguala y ensayos 2027 publicado el 31/10/2026. Puntualidad y calzado de salida.",
    "añadido": "2026-11-01"
+  },
+  {
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "capataz": "José Manuel Salas Campos",
+   "provincia": "sevilla",
+   "localidad": "Coria del Río",
+   "hermandad": "Cautivo (Coria)",
+   "paso": "Ntro. Padre Jesús Cautivo",
+   "lugar": "Casa Hermandad",
+   "fecha": "2027-02-06",
+   "hora": "16:30",
+   "tipo": "ensayo",
+   "titulo": "Segundo ensayo de la cuadrilla de Jesús Cautivo",
+   "nota": null,
+   "añadido": "2026-11-17"
   },
   {
    "fecha": "2027-02-06",
@@ -5127,6 +5263,23 @@
    "titulo": "Segundo ensayo de la cuadrilla del Stmo. Cristo de la Sed",
    "lugar": "Casa Hermandad",
    "añadido": "2026-10-30"
+  },
+  {
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "capataz": null,
+   "provincia": "huelva",
+   "localidad": "Huelva",
+   "hermandad": "Judíos (Merced)",
+   "paso": "Ntro. Padre Jesús de las Cadenas",
+   "fecha": "2027-02-10",
+   "hora": "21:30",
+   "tipo": "igualá",
+   "lugar": "Plaza Miguel Raya",
+   "titulo": "Igualá de la cuadrilla de Ntro. Padre Jesús de las Cadenas",
+   "nota": null,
+   "añadido": "2026-11-17"
   },
   {
    "provincia": "huelva",
@@ -6041,6 +6194,23 @@
    "añadido": "2026-11-09"
   },
   {
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "capataz": null,
+   "provincia": "huelva",
+   "localidad": "Huelva",
+   "hermandad": "Judíos (Merced)",
+   "paso": "Ntro. Padre Jesús de las Cadenas",
+   "fecha": "2027-02-17",
+   "hora": "21:30",
+   "tipo": "ensayo",
+   "lugar": "Almacén González Barba",
+   "titulo": "Ensayo de la cuadrilla de Jesús de las Cadenas",
+   "nota": null,
+   "añadido": "2026-11-17"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "Lanzada",
@@ -6303,6 +6473,23 @@
    "lugar": "Nave González Barba",
    "titulo": "Ensayo de la cuadrilla de Mª Stma. de la Amargura",
    "añadido": "2026-10-31"
+  },
+  {
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "capataz": null,
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Calvario",
+   "paso": null,
+   "lugar": "Local de ensayo, calle Sales (Pescadería)",
+   "fecha": "2027-02-19",
+   "hora": null,
+   "tipo": "ensayo",
+   "titulo": "Tercer ensayo de los costaleros del Calvario",
+   "nota": null,
+   "añadido": "2026-11-17"
   },
   {
    "fecha": "2027-02-19",
@@ -7114,6 +7301,23 @@
    "añadido": "2026-10-30"
   },
   {
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "capataz": null,
+   "provincia": "huelva",
+   "localidad": "Huelva",
+   "hermandad": "Judíos (Merced)",
+   "paso": "Ntro. Padre Jesús de las Cadenas",
+   "fecha": "2027-02-24",
+   "hora": "21:30",
+   "tipo": "mudá",
+   "lugar": "Almacén calle Trigueros",
+   "titulo": "Mudá del paso de Jesús de las Cadenas",
+   "nota": null,
+   "añadido": "2026-11-17"
+  },
+  {
    "fecha": "2027-02-25",
    "hora": "21:00",
    "provincia": "cordoba",
@@ -7577,6 +7781,23 @@
    "fuente_nombre": "Instagram oficial de la Hdad. de la Fe (Huelva)",
    "nota": null,
    "añadido": "2026-11-09"
+  },
+  {
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "capataz": null,
+   "provincia": "huelva",
+   "localidad": "Huelva",
+   "hermandad": "Judíos (Merced)",
+   "paso": "Ntro. Padre Jesús de las Cadenas",
+   "fecha": "2027-03-03",
+   "hora": "21:30",
+   "tipo": "ensayo",
+   "lugar": "Almacén González Barba",
+   "titulo": "Ensayo de reserva de la cuadrilla de Jesús de las Cadenas",
+   "nota": "Ensayo de reserva.",
+   "añadido": "2026-11-17"
   },
   {
    "fecha": "2027-03-04",
@@ -8501,6 +8722,23 @@
    "añadido": "2026-11-12"
   },
   {
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "capataz": null,
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Calvario",
+   "paso": null,
+   "lugar": "Local de ensayo, calle Sales (Pescadería)",
+   "fecha": "2027-03-07",
+   "hora": null,
+   "tipo": "ensayo",
+   "titulo": "Cuarto ensayo de los costaleros del Calvario",
+   "nota": null,
+   "añadido": "2026-11-17"
+  },
+  {
    "fecha": "2027-03-07",
    "hora": null,
    "provincia": "ciudadreal",
@@ -8983,6 +9221,23 @@
    "añadido": "2026-10-31"
   },
   {
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "capataz": "José Manuel Salas Campos",
+   "provincia": "sevilla",
+   "localidad": "Coria del Río",
+   "hermandad": "Cautivo (Coria)",
+   "paso": "Ntro. Padre Jesús Cautivo",
+   "lugar": "Casa Hermandad",
+   "fecha": "2027-03-13",
+   "hora": "16:30",
+   "tipo": "ensayo",
+   "titulo": "Tercer ensayo de la cuadrilla de Jesús Cautivo",
+   "nota": null,
+   "añadido": "2026-11-17"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "Vera+Cruz y Oración en el Huerto",
@@ -9129,6 +9384,23 @@
    "tipo": "mudá",
    "titulo": "Mudá del paso de María Stma. del Consuelo",
    "añadido": "2026-11-02"
+  },
+  {
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "capataz": null,
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Calvario",
+   "paso": null,
+   "lugar": "Local de ensayo, calle Sales (Pescadería)",
+   "fecha": "2027-03-14",
+   "hora": null,
+   "tipo": "mudá",
+   "titulo": "Mudá del paso del Calvario",
+   "nota": null,
+   "añadido": "2026-11-17"
   },
   {
    "fecha": "2027-03-14",
