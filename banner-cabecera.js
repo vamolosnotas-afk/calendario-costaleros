@@ -245,4 +245,53 @@
     }
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciarFichas); else iniciarFichas();
+
+  // Cabecera más baja en el móvil (todas las páginas): logo más pequeño y carrito a la altura del menú
+  var CSS_CAB_MOVIL = "@media (max-width:999px){" +
+    "header .logo-image-container{width:84px!important;padding-bottom:84px!important;margin:0 auto 0 0!important}" +
+    "header .logo-image{width:84px!important;height:84px!important;max-height:84px!important}" +
+    "header .grid-row-top-level>.grid-row-root>.grid-column-root{padding-top:8px!important;padding-bottom:8px!important}" +
+    "header .grid-row-top-level>.grid-row-root:nth-child(2){margin-top:-72px!important;pointer-events:none}" +
+    "header .grid-row-top-level>.grid-row-root:nth-child(2)>.grid-column-root{padding-right:64px!important}" +
+    "header .grid-row-top-level>.grid-row-root:nth-child(2) a,header .grid-row-top-level>.grid-row-root:nth-child(2) button{pointer-events:auto}}";
+  (function () {
+    if (document.getElementById("vln-cabmovil-css")) return;
+    var s = document.createElement("style"); s.id = "vln-cabmovil-css"; s.textContent = CSS_CAB_MOVIL;
+    (document.head || document.documentElement).appendChild(s);
+  })();
+
+  // Página de inicio: dos botones grandes justo debajo del título (Comprar / Presupuesto por WhatsApp)
+  var CSS_CTA =
+    "#vln-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:8px auto 24px;max-width:620px;padding:0 12px;box-sizing:border-box}" +
+    "#vln-cta a{flex:1 1 240px;display:flex;align-items:center;justify-content:center;gap:8px;min-height:54px;padding:14px 18px;border-radius:12px;font:700 17px Arial,sans-serif;text-decoration:none!important;box-sizing:border-box;box-shadow:0 6px 16px rgba(0,0,0,.25);transition:transform .15s ease}" +
+    "#vln-cta a:hover{transform:translateY(-2px)}#vln-cta a:focus-visible{outline:3px solid #faf3e7;outline-offset:2px}" +
+    "#vln-cta .c{background:#d4a574;color:#4A2818!important}" +
+    "#vln-cta .w{background:#25D366;color:#fff!important}" +
+    "@media (prefers-reduced-motion:reduce){#vln-cta a{transition:none}#vln-cta a:hover{transform:none}}";
+  function botonesInicio() {
+    if (location.pathname !== "/" || document.getElementById("vln-cta")) return;
+    var sub = [].slice.call(document.querySelectorAll("main p, main h2, main div")).filter(function (e) {
+      return /^Hechos a mano y a medida/.test((e.textContent || "").trim()) && e.children.length < 4;
+    }).pop();
+    var mod = sub && sub.closest(".module-container-root");
+    if (!mod) return;
+    if (!document.getElementById("vln-cta-css")) {
+      var st = document.createElement("style"); st.id = "vln-cta-css"; st.textContent = CSS_CTA; document.head.appendChild(st);
+    }
+    var d = document.createElement("div"); d.id = "vln-cta";
+    var c = document.createElement("a");
+    c.className = "c"; c.href = "https://www.vamolosnota.es/tienda-costales/"; c.textContent = "Comprar mi costal ›";
+    c.addEventListener("click", function () { marcarClic("inicio-comprar"); });
+    var w = document.createElement("a");
+    w.className = "w"; w.target = "_blank"; w.rel = "noopener";
+    w.href = "https://wa.me/" + WA_TEL + "?text=" + encodeURIComponent("Hola, quiero pedir presupuesto para un costal");
+    w.innerHTML = ICONO_WA.replace('width="30" height="30"', 'width="24" height="24"') + "<span>Pedir presupuesto por WhatsApp</span>";
+    w.addEventListener("click", function () { marcarClic("inicio-presupuesto"); });
+    d.appendChild(c); d.appendChild(w);
+    mod.parentNode.insertBefore(d, mod.nextSibling);
+  }
+  function iniciarInicio() {
+    botonesInicio(); setTimeout(botonesInicio, 1000); setTimeout(botonesInicio, 3000);
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciarInicio); else iniciarInicio();
 })();
