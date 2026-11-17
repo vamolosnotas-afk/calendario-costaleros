@@ -290,8 +290,28 @@
     d.appendChild(c); d.appendChild(w);
     mod.parentNode.insertBefore(d, mod.nextSibling);
   }
+  // Página de inicio: textos que se quedan viejos
+  // - número de reseñas de Google: sale de RESENAS.total (el mismo de las fichas), así solo se cambia en un sitio
+  // - "por 6 €": mientras dure el envío gratis (misma fecha que la cinta de arriba) pone "gratis"
+  var FIN_ENVIO_GRATIS = new Date("2026-12-01T00:00:00+01:00");
+  function textosInicio() {
+    if (location.pathname !== "/") return;
+    var els = document.querySelectorAll("main strong, main div");
+    for (var i = 0; i < els.length; i++) {
+      var e = els[i];
+      if (e.children.length) continue;
+      var t = e.textContent || "";
+      if (/^\s*\d+ opiniones\s*$/.test(t) && e.parentNode && /Basado en/.test(e.parentNode.textContent || "")) {
+        e.textContent = RESENAS.total + " opiniones";
+      } else if (new Date() < FIN_ENVIO_GRATIS && /en 48\/72h por 6 €/.test(t)) {
+        e.textContent = t.replace("en 48/72h por 6 €", "en 48/72h con envío GRATIS");
+      }
+    }
+  }
   function iniciarInicio() {
-    botonesInicio(); setTimeout(botonesInicio, 1000); setTimeout(botonesInicio, 3000);
+    botonesInicio(); textosInicio();
+    setTimeout(function () { botonesInicio(); textosInicio(); }, 1000);
+    setTimeout(function () { botonesInicio(); textosInicio(); }, 3000);
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciarInicio); else iniciarInicio();
 })();
