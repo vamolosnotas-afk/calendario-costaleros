@@ -240,7 +240,7 @@
     if (h1 && /tarjeta regalo/i.test(h1.textContent || "")) return;
     var d = document.createElement("div");
     d.className = "vln-plazo";
-    d.textContent = "🧵 Lo hacemos a mano en 2-3 días y te llega en 48/72h";
+    d.innerHTML = "Lo hacemos a mano en <b>2-3 días</b> y te llega en <b>48/72h</b>";
     d.style.cssText = "margin:4px 0 6px;font:14px Arial,sans-serif;opacity:.95";
     var tras = precio.parentNode.querySelector(".vln-resenas") || precio;
     tras.parentNode.insertBefore(d, tras.nextSibling);
