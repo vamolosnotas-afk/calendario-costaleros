@@ -231,16 +231,50 @@
     a.addEventListener("click", function () { marcarClic("resenas-ficha"); });
     precio.parentNode.insertBefore(a, precio.nextSibling);
   }
+  // En las fichas: cuánto tarda en llegar, debajo del precio (no en la tarjeta regalo)
+  function plazoFicha() {
+    if (!enTienda() || !document.querySelector(".ec-store__product-page")) return;
+    var precio = document.querySelector(".product-details__product-price");
+    if (!precio || precio.parentNode.querySelector(".vln-plazo")) return;
+    var h1 = document.querySelector("h1");
+    if (h1 && /tarjeta regalo/i.test(h1.textContent || "")) return;
+    var d = document.createElement("div");
+    d.className = "vln-plazo";
+    d.textContent = "🧵 Lo hacemos a mano en 2-3 días y te llega en 48/72h";
+    d.style.cssText = "margin:4px 0 6px;font:14px Arial,sans-serif;opacity:.95";
+    var tras = precio.parentNode.querySelector(".vln-resenas") || precio;
+    tras.parentNode.insertBefore(d, tras.nextSibling);
+  }
+  // En las fichas: si la tienda no tiene reseñas propias, se oculta el bloque "Aún no hay reseñas"
+  function ocultarResenasVacias() {
+    if (!enTienda()) return;
+    var bl = document.querySelectorAll(".review-block");
+    for (var i = 0; i < bl.length; i++) {
+      if (/Aún no hay reseñas/i.test(bl[i].textContent || "")) bl[i].style.display = "none";
+    }
+  }
+  // En las galerías de productos (página de inicio): quitar el código " | 00002" del final del nombre
+  function quitarCodigos() {
+    var t = document.querySelectorAll(".product-gallery-text-detail");
+    for (var i = 0; i < t.length; i++) {
+      var e = t[i];
+      if (e.children.length) continue;
+      var s = e.textContent || "";
+      var n = s.replace(/\s*\|\s*\d{4,6}\s*$/, "");
+      if (n !== s && n.trim()) e.textContent = n;
+    }
+  }
   // En la cesta: casilla de "Estoy de acuerdo con Términos" más grande en el móvil (es muy pequeña para el dedo)
   var CSS_CHECK = "@media (max-width:999px){.ec-store .form-control--checkbox .form-control__checkbox-wrap{transform:scale(1.35);transform-origin:left center;margin-right:6px}}";
   function iniciarFichas() {
     if (!document.getElementById("vln-check-css")) {
       var sc = document.createElement("style"); sc.id = "vln-check-css"; sc.textContent = CSS_CHECK; document.head.appendChild(sc);
     }
-    resenasFicha();
+    var todo = function () { resenasFicha(); plazoFicha(); ocultarResenasVacias(); quitarCodigos(); };
+    todo();
     if (window.MutationObserver) {
       var p3;
-      new MutationObserver(function () { clearTimeout(p3); p3 = setTimeout(resenasFicha, 300); })
+      new MutationObserver(function () { clearTimeout(p3); p3 = setTimeout(todo, 300); })
         .observe(document.body, { childList: true, subtree: true });
     }
   }
