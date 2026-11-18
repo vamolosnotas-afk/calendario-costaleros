@@ -209,7 +209,7 @@
     sel.addEventListener("vln-reset", function () { telaElegida = ""; pintar(""); ponerValorTela(inp, ""); });
 
     var ph = caja.querySelector(".form-control__placeholder-inner");
-    if (ph) ph.textContent = "Escribe la referencia o el color de la tela";
+    if (ph) ph.textContent = "Escribe referencia o color";
     for (var n = tit.firstChild; n; n = n.nextSibling) {
       if (n.nodeType === 3 && /\S/.test(n.nodeValue)) { n.nodeValue = "Selecciona tela"; break; }
     }
