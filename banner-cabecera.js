@@ -34,7 +34,9 @@
     "#vln-cab2 .s{display:block;font:13px Arial,sans-serif;color:#faf3e7!important;opacity:.9}" +
     "#vln-cab2 .b{flex:0 0 auto;background:#e8a832;color:#1c0e02!important;font:700 14px Arial,sans-serif;padding:9px 12px;border-radius:10px;white-space:nowrap}" +
     "#vln-cab2.abs{position:absolute;z-index:50}" +
-    "#vln-cab2.estrecho .s,#vln-cab.estrecho .s{display:none}#vln-cab2.estrecho .b{display:none}" +
+    "#vln-cab2 .h,#vln-cab2 .e{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}" +
+    "#vln-cab2.estrecho .s,#vln-cab.estrecho .s,#vln-cab2.sin-s .s{display:none}#vln-cab2.sin-b .b{display:none}" +
+    "#vln-cab2.estrecho .b .l{display:none}#vln-cab2 .b .c{display:none}#vln-cab2.estrecho .b .c{display:inline}" +
     "#vln-cab2.mov{margin:0 12px 10px;padding:10px 12px;gap:10px;border-radius:12px}" +
     "#vln-cab2.mov svg{flex-basis:40px;width:40px;height:40px}" +
     "#vln-cab2.mov .h{font-size:16px}#vln-cab2.mov .s,#vln-cab2.mov .e{display:none}#vln-cab2.mov .b{padding:8px 10px;font-size:13px}" +
@@ -48,7 +50,7 @@
     var a = document.createElement("a");
     a.id = "vln-cab2"; a.href = URL_CUAD;
     a.setAttribute("aria-label", "Costales para cuadrillas y hermandades: pide presupuesto");
-    a.innerHTML = ICONO_CUAD + '<span class="t"><span class="e">NUEVO · HERMANDADES</span><span class="h">Costales para cuadrillas</span><span class="s">Todos iguales · presupuesto sin compromiso</span></span><span class="b">Pedir presupuesto ›</span>';
+    a.innerHTML = ICONO_CUAD + '<span class="t"><span class="e">NUEVO · PARA HERMANDADES</span><span class="h">Costales para cuadrillas</span><span class="s">Todos iguales · presupuesto sin compromiso</span></span><span class="b"><span class="l">Pedir presupuesto ›</span><span class="c">Presupuesto ›</span></span>';
     a.addEventListener("click", function () { try { if (window.gtag) window.gtag("event", "click_banner_cuadrillas", { pagina: location.pathname }); } catch (e) {} });
     return a;
   }
@@ -97,8 +99,9 @@
       if (b) {
         b.className = "abs";
         if (b.parentNode !== h) h.appendChild(b);
-        var wCal = 620, wCua = Math.min(480, total - wCal - 14);
-        if (wCua < 480) { wCal = Math.round((total - 14) * 0.58); wCua = total - 14 - wCal; a.classList.add("estrecho"); b.classList.add("estrecho"); }
+        var wCal = 620, wCua = total - wCal - 14;
+        if (wCua >= 470) { wCua = Math.min(600, wCua); if (wCua < 560) b.classList.add("sin-s"); }
+        else { wCal = Math.round((total - 14) * 0.56); wCua = total - 14 - wCal; a.classList.add("estrecho"); b.classList.add("estrecho"); if (wCua < 400) b.classList.add("sin-b"); }
         a.style.width = wCal + "px"; b.style.width = wCua + "px";
       }
       a.style.left = x0 + "px";
