@@ -12,4 +12,4 @@ que se publican sin fuente.
 - calendario.js: el calendario que carga la web
 - banner_enlace_calendario.html: banner de enlace para otras páginas
 - fusionar.py: añade citas nuevas sin duplicados
-- cuadrillas/: página "Costales para cuadrillas y hermandades" (cuadrillas.js, fondo y plantilla Excel)
+- cuadrillas/: página "Costales para cuadrillas y hermandades" (pagina-cuadrillas.js, fondo y plantilla Excel)
