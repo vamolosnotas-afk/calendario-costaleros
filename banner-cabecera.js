@@ -576,3 +576,21 @@
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciar); else iniciar();
 })();
+
+// El banner antiguo "Calendario de igualás y ensayos" metido como módulo HTML en las páginas sobra:
+// ya está el de la cabecera. Se quita (el módulo sigue en IONOS, solo no se muestra).
+(function () {
+  function quitar() {
+    var ms = document.querySelectorAll(".html-code-module-root");
+    for (var i = 0; i < ms.length; i++) {
+      var m = ms[i];
+      if (m.closest("header") || m.querySelector("#vln-cab,#vln-cab2,#vln-cal")) continue;
+      if (m.querySelector('a[href*="calendario-de-igualas"]') && /TEMPORADA\s+2026/i.test(m.textContent || "")) {
+        var c = m.closest(".module-container-root") || m;
+        c.style.display = "none";
+      }
+    }
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", quitar); else quitar();
+  setTimeout(quitar, 1000);
+})();
