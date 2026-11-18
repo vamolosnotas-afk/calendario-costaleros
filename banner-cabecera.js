@@ -120,6 +120,102 @@
       ayuda.style.cssText = "margin-top:6px;font:13px Arial,sans-serif;opacity:.85";
       c.appendChild(ayuda); c.appendChild(a);
     }
+    try { selectorTela(); } catch (e) { /* si falla, queda la casilla de texto normal */ }
+  }
+
+  // Costal Personalizado a Medida: desplegable con las telas de stock (como el de Tela Lisa del Costal Clásico).
+  // La primera opción es "Otra tela", que abre la casilla para escribirla. Lo elegido se guarda en la casilla
+  // de texto original de la tienda, que es la que llega al pedido.
+  // La lista se actualiza sola desde /telas/; REFS_STOCK solo se usa mientras carga o si /telas/ falla.
+  var RE_FICHA_TELA = /-p718578854(\/|$)/, OTRA_TELA = "Otra tela", telaElegida = "", telasPedidas = false;
+  var REFS_STOCK = (function () {
+    var r = [], n;
+    function p(x) { return "STOCK_" + ("000" + x).slice(-4); }
+    for (n = 51; n <= 87; n++) r.push(p(n));
+    for (n = 88; n <= 97; n++) r.push(p(n) + "K");
+    for (n = 98; n <= 102; n++) r.push(p(n) + "M");
+    for (n = 103; n <= 105; n++) r.push(p(n) + "K");
+    return r;
+  })();
+  function ponerValorTela(inp, v) {
+    Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, "value").set.call(inp, v);
+    inp.dispatchEvent(new Event("input", { bubbles: true }));
+    inp.dispatchEvent(new Event("change", { bubbles: true }));
+  }
+  function llenarSelectTela(sel, val) {
+    sel.innerHTML = "";
+    ["", OTRA_TELA].concat(REFS_STOCK).forEach(function (r) {
+      var o = document.createElement("option");
+      o.value = r; o.textContent = r || "Por favor, seleccione";
+      sel.appendChild(o);
+    });
+    sel.value = val || "";
+  }
+  function pedirTelas() {
+    if (telasPedidas || !window.fetch) return;
+    telasPedidas = true;
+    fetch("/telas/").then(function (r) { return r.ok ? r.text() : ""; }).then(function (h) {
+      var m = h.replace(/por ejemplo\s+STOCK_\d+/gi, "").match(/STOCK_\d{4}[A-Z]?/g) || [], vistas = {}, l = [];
+      m.forEach(function (x) { if (!vistas[x]) { vistas[x] = 1; l.push(x); } });
+      if (l.length < 20) return;
+      REFS_STOCK = l.sort();
+      var w = document.querySelector(".vln-sel-tela select");
+      if (!w) return;
+      var v = w.value;
+      if (v && v !== OTRA_TELA && !vistas[v]) { v = ""; w.dispatchEvent(new Event("vln-reset")); }
+      llenarSelectTela(w, v);
+    }).catch(function () {});
+  }
+  function selectorTela() {
+    if (!RE_FICHA_TELA.test(location.pathname)) { telaElegida = ""; return; }
+    var c = document.querySelector('.details-product-option--textfield[class*="details-product-option--Tela"]');
+    if (!c || c.querySelector(".vln-sel-tela")) return;
+    var modelo = document.querySelector(".details-product-option--select .form-control--select");
+    var caja = c.querySelector(".product-details-module__content");
+    var inp = caja && caja.querySelector("input");
+    var tit = c.querySelector(".details-product-option__title");
+    if (!modelo || !inp || !tit) return;
+
+    var ctl = modelo.cloneNode(true);
+    ctl.removeAttribute("id");
+    ctl.className = "form-control form-control--flexible form-control--empty form-control--select";
+    var vis = ctl.querySelector("input"), sel = ctl.querySelector("select");
+    vis.removeAttribute("name"); vis.value = ""; vis.setAttribute("aria-label", "Selecciona tela");
+    sel.setAttribute("aria-label", "Selecciona tela");
+    var w = document.createElement("div");
+    w.className = "vln-sel-tela";
+    w.appendChild(ctl);
+    c.insertBefore(w, caja);
+
+    function pintar(v) {
+      vis.value = v;
+      ctl.classList.toggle("form-control--empty", !v);
+      var otra = v === OTRA_TELA;
+      caja.style.display = otra ? "" : "none";
+      caja.style.marginTop = otra ? "8px" : "";
+    }
+    var actual = inp.value || "", ini = "";
+    if (REFS_STOCK.indexOf(actual) >= 0) ini = actual;
+    else if (actual || telaElegida === OTRA_TELA) ini = OTRA_TELA;
+    llenarSelectTela(sel, ini);
+    pintar(ini);
+    sel.addEventListener("change", function () {
+      var v = sel.value;
+      telaElegida = v;
+      pintar(v);
+      ponerValorTela(inp, v === OTRA_TELA ? "" : v);
+      if (v === OTRA_TELA) inp.focus();
+    });
+    sel.addEventListener("vln-reset", function () { telaElegida = ""; pintar(""); ponerValorTela(inp, ""); });
+
+    var ph = caja.querySelector(".form-control__placeholder-inner");
+    if (ph) ph.textContent = "Escribe la referencia o el color de la tela";
+    for (var n = tit.firstChild; n; n = n.nextSibling) {
+      if (n.nodeType === 3 && /\S/.test(n.nodeValue)) { n.nodeValue = "Selecciona tela"; break; }
+    }
+    var ayuda = c.querySelector(".vln-telas-ayuda");
+    if (ayuda) ayuda.textContent = "Elige la referencia de tu tela. Si quieres una lisa u otra distinta, pulsa «Otra tela» y escríbela. Si no lo tienes claro, déjalo sin elegir: te escribimos para elegirla contigo.";
+    pedirTelas();
   }
   var pend;
   function vigilar() {
