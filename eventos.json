@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-18",
- "total": 610,
+ "total": 620,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -891,6 +891,22 @@
   },
   {
    "fecha": "2026-11-22",
+   "hora": "10:00",
+   "provincia": "madrid",
+   "localidad": "Madrid",
+   "hermandad": "Tres Caídas y Esperanza",
+   "paso": "Stmo. Cristo de las Tres Caídas",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de costaleros y costaleras del Stmo. Cristo de las Tres Caídas",
+   "lugar": "Santiago y San Juan",
+   "capataz": null,
+   "fuente": "https://hermandadtrescaidasyesperanzad.godaddysites.com/inicio-1",
+   "fuente_nombre": "Web oficial de la Hdad. de las Tres Caídas y Esperanza (Madrid)",
+   "nota": null,
+   "añadido": "2026-11-18"
+  },
+  {
+   "fecha": "2026-11-22",
    "hora": "10:30",
    "provincia": "jaen",
    "localidad": "Jaén",
@@ -918,8 +934,8 @@
    "titulo": "Igualá de las cuadrillas de Ntro. Padre Jesús del Divino Perdón y María Stma. de la Purísima Concepción",
    "lugar": "Plaza Maestro Sánchez Rosa",
    "capataz": null,
-   "fuente": null,
-   "fuente_nombre": null,
+   "fuente": "https://www.instagram.com/p/Dfk-GEJRHQt/",
+   "fuente_nombre": "Instagram oficial de la Hdad. del Divino Perdón (Sevilla Este-Alcosa)",
    "verificado_por": "manuel",
    "nota": null,
    "añadido": "2026-11-16"
@@ -1054,12 +1070,10 @@
    "titulo": "Igualá de la cuadrilla de la Virgen de la Concepción Coronada",
    "lugar": "Casa de Hermandad",
    "capataz": null,
-   "fuente": null,
-   "fuente_nombre": null,
-   "verificado_por": "manuel",
-   "nota": null,
-   "añadido": "2026-11-13",
-   "origen": "terceros"
+   "fuente": "https://www.instagram.com/p/Dfxlu0MF89d/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Exaltación - Las Viñas (Jerez)",
+   "nota": "Convocados también los aspirantes.",
+   "añadido": "2026-11-13"
   },
   {
    "fecha": "2026-11-27",
@@ -1278,6 +1292,22 @@
    "añadido": "2026-11-11"
   },
   {
+   "fecha": "2026-12-11",
+   "hora": "21:00",
+   "provincia": "huelva",
+   "localidad": "Huelva",
+   "hermandad": "Perdón",
+   "paso": "Stmo. Cristo del Perdón",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla del Stmo. Cristo del Perdón",
+   "lugar": "Parroquia de Santa Teresa de Jesús",
+   "capataz": null,
+   "fuente": "https://www.instagram.com/p/Df22uw7jF8p/",
+   "fuente_nombre": "Instagram oficial de la Hdad. Sacramental del Perdón (Huelva)",
+   "nota": "Acudir con calzado de salida y con puntualidad.",
+   "añadido": "2026-11-18"
+  },
+  {
    "provincia": "jerez",
    "localidad": "Jerez de la Frontera",
    "paso": null,
@@ -1355,8 +1385,8 @@
    "titulo": "Igualá de la cuadrilla del palio de María Stma. de la Humillación (costaleros y aspirantes)",
    "lugar": "Casa Hermandad",
    "capataz": "José Antonio Vázquez Marín",
-   "fuente": null,
-   "fuente_nombre": null,
+   "fuente": "https://www.instagram.com/p/DfzUJpjxCKp/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Humillación (Camas)",
    "verificado_por": "manuel",
    "nota": "Obligatorio acudir con calzado blanco",
    "añadido": "2026-11-16"
@@ -1452,8 +1482,8 @@
    "titulo": "Igualá de la cuadrilla del misterio de Jesús del Soberano Poder (costaleros y aspirantes)",
    "lugar": "Casa Hermandad",
    "capataz": "Juan Antonio Fernández López",
-   "fuente": null,
-   "fuente_nombre": null,
+   "fuente": "https://www.instagram.com/p/Df16H42u0kM/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Humillación (Camas)",
    "verificado_por": "manuel",
    "nota": "Obligatorio calzado negro.",
    "añadido": "2026-11-17"
@@ -1554,8 +1584,8 @@
    "titulo": "Igualá de la cuadrilla del paso de palio de Ntra. Madre y Señora de la Merced",
    "lugar": "Iglesia Colegial del Divino Salvador",
    "capataz": null,
-   "fuente": null,
-   "fuente_nombre": null,
+   "fuente": "https://www.hermandaddepasion.org/noticias/igualas-para-la-semana-santa-de-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. de Pasión (Sevilla)",
    "verificado_por": "manuel",
    "nota": null,
    "añadido": "2026-11-12"
@@ -1587,8 +1617,8 @@
    "titulo": "Igualá de la cuadrilla del paso de Ntro. Padre Jesús de la Pasión",
    "lugar": "Iglesia Colegial del Divino Salvador",
    "capataz": null,
-   "fuente": null,
-   "fuente_nombre": null,
+   "fuente": "https://www.hermandaddepasion.org/noticias/igualas-para-la-semana-santa-de-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. de Pasión (Sevilla)",
    "verificado_por": "manuel",
    "nota": null,
    "añadido": "2026-11-12"
@@ -1744,8 +1774,8 @@
    "añadido": "2026-11-14"
   },
   {
-   "fuente": null,
-   "fuente_nombre": null,
+   "fuente": "https://www.instagram.com/p/Df16-KgA84E/",
+   "fuente_nombre": "Instagram oficial de la Hdad. del Cautivo (Coria del Río)",
    "verificado_por": "manuel",
    "capataz": "José Manuel Salas Campos",
    "provincia": "sevilla",
@@ -2459,8 +2489,8 @@
    "añadido": "2026-11-18"
   },
   {
-   "fuente": null,
-   "fuente_nombre": null,
+   "fuente": "https://www.instagram.com/p/Df16-KgA84E/",
+   "fuente_nombre": "Instagram oficial de la Hdad. del Cautivo (Coria del Río)",
    "verificado_por": "manuel",
    "capataz": "José Manuel Salas Campos",
    "provincia": "sevilla",
@@ -2945,6 +2975,22 @@
   },
   {
    "fecha": "2027-01-18",
+   "hora": "21:00",
+   "provincia": "huelva",
+   "localidad": "Huelva",
+   "hermandad": "Perdón",
+   "paso": "Ntra. Sra. de los Dolores",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de Ntra. Sra. de los Dolores",
+   "lugar": "Parroquia de Santa Teresa de Jesús",
+   "capataz": null,
+   "fuente": "https://www.instagram.com/p/Df22uw7jF8p/",
+   "fuente_nombre": "Instagram oficial de la Hdad. Sacramental del Perdón (Huelva)",
+   "nota": "Acudir con calzado de salida y con puntualidad.",
+   "añadido": "2026-11-18"
+  },
+  {
+   "fecha": "2027-01-18",
    "hora": null,
    "provincia": "huelva",
    "localidad": "Moguer",
@@ -3293,6 +3339,22 @@
    "tipo": "ensayo",
    "titulo": "Ensayo de costaleras de Ntra. Sra. de la Consolación",
    "añadido": "2026-11-03"
+  },
+  {
+   "fecha": "2027-01-23",
+   "hora": "19:00",
+   "provincia": "huelva",
+   "localidad": "Huelva",
+   "hermandad": "Perdón",
+   "paso": "Stmo. Cristo del Perdón",
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo de la cuadrilla del Stmo. Cristo del Perdón",
+   "lugar": "Almacén de la Parroquia de Santa Teresa de Jesús",
+   "capataz": null,
+   "fuente": "https://www.instagram.com/p/Df22uw7jF8p/",
+   "fuente_nombre": "Instagram oficial de la Hdad. Sacramental del Perdón (Huelva)",
+   "nota": "Acudir con calzado de salida y con puntualidad.",
+   "añadido": "2026-11-18"
   },
   {
    "fecha": "2027-01-23",
@@ -4472,6 +4534,22 @@
   {
    "fecha": "2027-02-01",
    "hora": "21:00",
+   "provincia": "huelva",
+   "localidad": "Huelva",
+   "hermandad": "Perdón",
+   "paso": "Ntra. Sra. de los Dolores",
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo de la cuadrilla de Ntra. Sra. de los Dolores",
+   "lugar": "Almacén de la Parroquia de Santa Teresa de Jesús",
+   "capataz": null,
+   "fuente": "https://www.instagram.com/p/Df22uw7jF8p/",
+   "fuente_nombre": "Instagram oficial de la Hdad. Sacramental del Perdón (Huelva)",
+   "nota": "Acudir con calzado de salida y con puntualidad.",
+   "añadido": "2026-11-18"
+  },
+  {
+   "fecha": "2027-02-01",
+   "hora": "21:00",
    "provincia": "sevilla",
    "localidad": "Sevilla",
    "hermandad": "La Paz",
@@ -4815,8 +4893,8 @@
    "añadido": "2026-11-01"
   },
   {
-   "fuente": null,
-   "fuente_nombre": null,
+   "fuente": "https://www.instagram.com/p/Df16-KgA84E/",
+   "fuente_nombre": "Instagram oficial de la Hdad. del Cautivo (Coria del Río)",
    "verificado_por": "manuel",
    "capataz": "José Manuel Salas Campos",
    "provincia": "sevilla",
@@ -5267,6 +5345,22 @@
    "origen": "terceros"
   },
   {
+   "fecha": "2027-02-08",
+   "hora": "21:00",
+   "provincia": "huelva",
+   "localidad": "Huelva",
+   "hermandad": "Perdón",
+   "paso": "Ntra. Sra. de los Dolores",
+   "tipo": "ensayo",
+   "titulo": "Segundo ensayo de la cuadrilla de Ntra. Sra. de los Dolores",
+   "lugar": "Almacén de la Parroquia de Santa Teresa de Jesús",
+   "capataz": null,
+   "fuente": "https://www.instagram.com/p/Df22uw7jF8p/",
+   "fuente_nombre": "Instagram oficial de la Hdad. Sacramental del Perdón (Huelva)",
+   "nota": "Acudir con calzado de salida y con puntualidad.",
+   "añadido": "2026-11-18"
+  },
+  {
    "provincia": "sevilla",
    "localidad": "Sevilla",
    "hora": "21:00",
@@ -5333,8 +5427,8 @@
    "añadido": "2026-10-30"
   },
   {
-   "fuente": null,
-   "fuente_nombre": null,
+   "fuente": "https://www.instagram.com/p/Df0Kk6xgXuL/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Merced - Judíos (Huelva)",
    "verificado_por": "manuel",
    "capataz": null,
    "provincia": "huelva",
@@ -5849,6 +5943,22 @@
   {
    "fecha": "2027-02-13",
    "hora": "17:00",
+   "provincia": "huelva",
+   "localidad": "Huelva",
+   "hermandad": "Perdón",
+   "paso": "Stmo. Cristo del Perdón",
+   "tipo": "ensayo",
+   "titulo": "Segundo ensayo de la cuadrilla del Stmo. Cristo del Perdón",
+   "lugar": "Almacén de la Parroquia de Santa Teresa de Jesús",
+   "capataz": null,
+   "fuente": "https://www.instagram.com/p/Df22uw7jF8p/",
+   "fuente_nombre": "Instagram oficial de la Hdad. Sacramental del Perdón (Huelva)",
+   "nota": "Acudir con calzado de salida y con puntualidad.",
+   "añadido": "2026-11-18"
+  },
+  {
+   "fecha": "2027-02-13",
+   "hora": "17:00",
    "provincia": "jerez",
    "localidad": "Jerez de la Frontera",
    "hermandad": "La Soledad (Jerez)",
@@ -6233,6 +6343,22 @@
   {
    "fecha": "2027-02-15",
    "hora": "21:00",
+   "provincia": "huelva",
+   "localidad": "Huelva",
+   "hermandad": "Perdón",
+   "paso": "Ntra. Sra. de los Dolores",
+   "tipo": "ensayo",
+   "titulo": "Tercer ensayo de la cuadrilla de Ntra. Sra. de los Dolores",
+   "lugar": "Almacén de la Parroquia de Santa Teresa de Jesús",
+   "capataz": null,
+   "fuente": "https://www.instagram.com/p/Df22uw7jF8p/",
+   "fuente_nombre": "Instagram oficial de la Hdad. Sacramental del Perdón (Huelva)",
+   "nota": "Acudir con calzado de salida y con puntualidad.",
+   "añadido": "2026-11-18"
+  },
+  {
+   "fecha": "2027-02-15",
+   "hora": "21:00",
    "provincia": "sevilla",
    "localidad": "Sevilla",
    "hermandad": "La Paz",
@@ -6279,8 +6405,8 @@
    "añadido": "2026-11-09"
   },
   {
-   "fuente": null,
-   "fuente_nombre": null,
+   "fuente": "https://www.instagram.com/p/Df0Kk6xgXuL/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Merced - Judíos (Huelva)",
    "verificado_por": "manuel",
    "capataz": null,
    "provincia": "huelva",
@@ -7290,6 +7416,22 @@
    "añadido": "2026-10-31"
   },
   {
+   "fecha": "2027-02-22",
+   "hora": "21:00",
+   "provincia": "huelva",
+   "localidad": "Huelva",
+   "hermandad": "Perdón",
+   "paso": "Ntra. Sra. de los Dolores",
+   "tipo": "ensayo",
+   "titulo": "Cuarto ensayo de la cuadrilla de Ntra. Sra. de los Dolores",
+   "lugar": "Almacén de la Parroquia de Santa Teresa de Jesús",
+   "capataz": null,
+   "fuente": "https://www.instagram.com/p/Df22uw7jF8p/",
+   "fuente_nombre": "Instagram oficial de la Hdad. Sacramental del Perdón (Huelva)",
+   "nota": "Acudir con calzado de salida y con puntualidad.",
+   "añadido": "2026-11-18"
+  },
+  {
    "provincia": "sevilla",
    "localidad": "Sevilla",
    "hora": "21:00",
@@ -7403,8 +7545,8 @@
    "añadido": "2026-10-30"
   },
   {
-   "fuente": null,
-   "fuente_nombre": null,
+   "fuente": "https://www.instagram.com/p/Df0Kk6xgXuL/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Merced - Judíos (Huelva)",
    "verificado_por": "manuel",
    "capataz": null,
    "provincia": "huelva",
@@ -7885,8 +8027,8 @@
    "añadido": "2026-11-09"
   },
   {
-   "fuente": null,
-   "fuente_nombre": null,
+   "fuente": "https://www.instagram.com/p/Df0Kk6xgXuL/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Merced - Judíos (Huelva)",
    "verificado_por": "manuel",
    "capataz": null,
    "provincia": "huelva",
@@ -8791,6 +8933,22 @@
    "añadido": "2026-11-09"
   },
   {
+   "fecha": "2027-03-07",
+   "hora": "12:00",
+   "provincia": "huelva",
+   "localidad": "Huelva",
+   "hermandad": "Perdón",
+   "paso": "Stmo. Cristo del Perdón",
+   "tipo": "mudá",
+   "titulo": "Mudá solidaria del Stmo. Cristo del Perdón",
+   "lugar": null,
+   "capataz": null,
+   "fuente": "https://www.instagram.com/p/Df22uw7jF8p/",
+   "fuente_nombre": "Instagram oficial de la Hdad. Sacramental del Perdón (Huelva)",
+   "nota": "Con acompañamiento musical de la Agrupación Musical Santa Cruz.",
+   "añadido": "2026-11-18"
+  },
+  {
    "hora": "16:00",
    "paso": "Virgen (María Stma. de Gracia y Amparo)",
    "lugar": null,
@@ -9323,8 +9481,8 @@
    "añadido": "2026-10-31"
   },
   {
-   "fuente": null,
-   "fuente_nombre": null,
+   "fuente": "https://www.instagram.com/p/Df16-KgA84E/",
+   "fuente_nombre": "Instagram oficial de la Hdad. del Cautivo (Coria del Río)",
    "verificado_por": "manuel",
    "capataz": "José Manuel Salas Campos",
    "provincia": "sevilla",
