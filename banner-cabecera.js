@@ -24,7 +24,34 @@
     "#vln-cab.mov{margin:10px 12px;padding:10px 12px;gap:10px;border-radius:12px}" +
     "#vln-cab.mov svg{flex-basis:40px;width:40px;height:40px}" +
     "#vln-cab.mov .h{font-size:17px}#vln-cab.mov .s,#vln-cab.mov .e{display:none}#vln-cab.mov .b{padding:8px 10px;font-size:13px}" +
-    "@media (prefers-reduced-motion:reduce){#vln-cab{transition:none}#vln-cab:hover{transform:none}}";
+    "@media (prefers-reduced-motion:reduce){#vln-cab{transition:none}#vln-cab:hover{transform:none}}" +
+    "#vln-cab2{display:flex;align-items:center;gap:12px;box-sizing:border-box;background:#1c0e02;border:2px solid #e8a832;border-radius:14px;padding:12px 14px;text-decoration:none!important;color:#faf3e7!important;font-family:Georgia,'Times New Roman',serif;box-shadow:0 6px 18px rgba(40,20,10,.35);transition:transform .15s ease,box-shadow .15s ease}" +
+    "#vln-cab2:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(40,20,10,.45)}" +
+    "#vln-cab2:focus-visible{outline:3px solid #faf3e7;outline-offset:2px}" +
+    "#vln-cab2 svg{flex:0 0 46px}#vln-cab2 .t{flex:1 1 auto;min-width:0}" +
+    "#vln-cab2 .e{display:block;font:700 11px Arial,sans-serif;letter-spacing:2px;color:#e8a832!important}" +
+    "#vln-cab2 .h{display:block;font-size:19px;font-weight:700;line-height:1.15;margin:2px 0;color:#faf3e7!important}" +
+    "#vln-cab2 .s{display:block;font:13px Arial,sans-serif;color:#faf3e7!important;opacity:.9}" +
+    "#vln-cab2 .b{flex:0 0 auto;background:#e8a832;color:#1c0e02!important;font:700 14px Arial,sans-serif;padding:9px 12px;border-radius:10px;white-space:nowrap}" +
+    "#vln-cab2.abs{position:absolute;z-index:50}" +
+    "#vln-cab2.estrecho .s,#vln-cab.estrecho .s{display:none}#vln-cab2.estrecho .b{display:none}" +
+    "#vln-cab2.mov{margin:0 12px 10px;padding:10px 12px;gap:10px;border-radius:12px}" +
+    "#vln-cab2.mov svg{flex-basis:40px;width:40px;height:40px}" +
+    "#vln-cab2.mov .h{font-size:16px}#vln-cab2.mov .s,#vln-cab2.mov .e{display:none}#vln-cab2.mov .b{padding:8px 10px;font-size:13px}" +
+    "@media (prefers-reduced-motion:reduce){#vln-cab2{transition:none}#vln-cab2:hover{transform:none}}" +
+    "@media print{#vln-cab,#vln-cab2{display:none!important}}";
+  // Banner "Cuadrillas y hermandades" (a la derecha del calendario en ordenador, debajo en el móvil)
+  var URL_CUAD = "https://www.vamolosnota.es/costales-para-cuadrillas/";
+  var EN_CUAD = location.pathname.indexOf("/costales-para-cuadrillas") === 0;
+  var ICONO_CUAD = '<svg width="46" height="46" viewBox="0 0 58 58" aria-hidden="true"><circle cx="29" cy="29" r="27" fill="#e8a832"/><g fill="#1c0e02"><circle cx="17" cy="22" r="5"/><circle cx="29" cy="20" r="5.5"/><circle cx="41" cy="22" r="5"/><path d="M9 42c0-6 4-10 8-10s8 4 8 10z"/><path d="M33 42c0-6 4-10 8-10s8 4 8 10z"/><path d="M20 44c0-7 4-12 9-12s9 5 9 12z"/></g></svg>';
+  function crear2() {
+    var a = document.createElement("a");
+    a.id = "vln-cab2"; a.href = URL_CUAD;
+    a.setAttribute("aria-label", "Costales para cuadrillas y hermandades: pide presupuesto");
+    a.innerHTML = ICONO_CUAD + '<span class="t"><span class="e">NUEVO · HERMANDADES</span><span class="h">Costales para cuadrillas</span><span class="s">Todos iguales · presupuesto sin compromiso</span></span><span class="b">Pedir presupuesto ›</span>';
+    a.addEventListener("click", function () { try { if (window.gtag) window.gtag("event", "click_banner_cuadrillas", { pagina: location.pathname }); } catch (e) {} });
+    return a;
+  }
 
   var ICONO = '<svg width="50" height="50" viewBox="0 0 58 58" aria-hidden="true"><rect x="3" y="8" width="52" height="47" rx="7" fill="#faf3e7"/><rect x="3" y="8" width="52" height="14" rx="7" fill="#6b2c1a"/><rect x="3" y="16" width="52" height="6" fill="#6b2c1a"/><rect x="15" y="3" width="5" height="11" rx="2.5" fill="#d4a574"/><rect x="38" y="3" width="5" height="11" rx="2.5" fill="#d4a574"/><circle cx="16" cy="33" r="5" fill="#c0392b"/><circle cx="29" cy="33" r="5" fill="#1f5fa8"/><circle cx="42" cy="33" r="5" fill="#2e8b57"/><circle cx="16" cy="46" r="5" fill="#7b3fa0"/><circle cx="29" cy="46" r="5" fill="#e6d9c4"/><circle cx="42" cy="46" r="5" fill="#c0392b"/></svg>';
 
@@ -64,12 +91,25 @@
       if (!isFinite(izq) || !isFinite(abajo)) { izq = hr.left + hr.width * 0.3; abajo = hr.top + hr.height * 0.4; }
       var top = abajo - hr.top + 18;
       var hueco = hr.height - top - 12;
-      a.style.left = Math.round(izq - hr.left) + "px";
-      a.style.top = Math.round(top + Math.max(0, (hueco - a.offsetHeight) / 2)) + "px";
+      var b = EN_CUAD ? null : (document.getElementById("vln-cab2") || crear2());
+      var x0 = Math.round(izq - hr.left), total = Math.round(hr.width - x0 - 80);
+      a.style.width = ""; a.classList.remove("estrecho");
+      if (b) {
+        b.className = "abs";
+        if (b.parentNode !== h) h.appendChild(b);
+        var wCal = 620, wCua = Math.min(400, total - wCal - 14);
+        if (wCua < 300) { wCal = Math.round((total - 14) * 0.58); wCua = total - 14 - wCal; a.classList.add("estrecho"); b.classList.add("estrecho"); }
+        a.style.width = wCal + "px"; b.style.width = wCua + "px";
+      }
+      a.style.left = x0 + "px";
+      var yTop = Math.round(top + Math.max(0, (hueco - a.offsetHeight) / 2));
+      a.style.top = yTop + "px";
+      if (b) { b.style.left = (x0 + a.offsetWidth + 14) + "px"; b.style.top = (yTop + Math.round((a.offsetHeight - b.offsetHeight) / 2)) + "px"; }
     } else {
       // Móvil/tablet en la tienda: no se pone el banner y se achica el logo
       if (enTienda()) {
         if (a.parentNode) a.parentNode.removeChild(a);
+        var bx = document.getElementById("vln-cab2"); if (bx && bx.parentNode) bx.parentNode.removeChild(bx);
         if (!document.getElementById("vln-tienda-css")) {
           var st2 = document.createElement("style"); st2.id = "vln-tienda-css"; st2.textContent = CSS_TIENDA_MOVIL; document.head.appendChild(st2);
         }
@@ -79,6 +119,12 @@
       // Móvil/tablet: tira compacta justo debajo de la cabecera
       a.className = "mov"; a.style.left = a.style.top = "";
       if (a.previousElementSibling !== h) h.parentNode.insertBefore(a, h.nextSibling);
+      a.style.width = ""; a.classList.remove("estrecho");
+      if (!EN_CUAD) {
+        var b2 = document.getElementById("vln-cab2") || crear2();
+        b2.className = "mov"; b2.style.left = b2.style.top = b2.style.width = "";
+        if (b2.previousElementSibling !== a) a.parentNode.insertBefore(b2, a.nextSibling);
+      }
     }
   }
 

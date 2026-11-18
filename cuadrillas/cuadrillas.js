@@ -50,7 +50,23 @@
     "#vln-cuadrillas .file:hover{background:rgba(245,230,200,.1)}" +
     "#vln-cuadrillas .file input{display:block;width:100%;margin-top:8px;color:#d9c7a3;font:13px Arial,sans-serif}" +
     "#vln-cuadrillas .plant{display:flex;gap:14px;align-items:center;background:rgba(212,165,116,.12);border:1px solid rgba(212,165,116,.4);border-radius:10px;padding:12px 14px;font:14px/1.45 Arial,sans-serif;color:#f5e6c8}" +
-    "#vln-cuadrillas .plant a{flex:0 0 auto;background:#d4a574;color:#1c0e02!important;text-decoration:none!important;font:700 13px Arial,sans-serif;padding:9px 12px;border-radius:8px;white-space:nowrap}" +
+    "#vln-cuadrillas .pbtns{display:flex;flex-direction:column;gap:8px;flex:0 0 auto}" +
+    "#vln-cuadrillas .pb,#vln-lista .pb{border:0;cursor:pointer;background:#d4a574;color:#1c0e02;font:700 13px Arial,sans-serif;padding:10px 12px;border-radius:8px;white-space:nowrap}" +
+    "#vln-cuadrillas .pb2,#vln-lista .pb2{background:transparent;color:#f5e6c8;border:1.5px solid #d4a574}" +
+    "#vln-lista{position:fixed;inset:0;z-index:2147483600;background:rgba(15,7,1,.75);display:flex;align-items:flex-start;justify-content:center;overflow:auto;padding:24px 10px}" +
+    "#vln-lista .mod{background:#1c0e02;color:#f5e6c8;border-radius:10px;width:100%;max-width:1100px;box-shadow:0 20px 50px rgba(0,0,0,.5);font-family:Arial,sans-serif;overflow:hidden}" +
+    "#vln-lista .mod::before{content:'';display:block;height:4px;background:repeating-linear-gradient(90deg,#c8860a 0 20px,#8b5c00 20px 40px)}" +
+    "#vln-lista .mh{padding:18px 22px 6px}#vln-lista h3{font:normal 24px Georgia,serif;color:#faf3e7;margin:0 0 4px}#vln-lista .mh p{font-size:13px;color:#d9c7a3;margin:0}" +
+    "#vln-lista .cab3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;padding:12px 22px}" +
+    "#vln-lista label{display:block;font:700 12px Arial,sans-serif;color:#d9c7a3;margin-bottom:4px}" +
+    "#vln-lista input,#vln-lista select{width:100%;box-sizing:border-box;font:14px Arial,sans-serif;color:#2a1608;background:#f5e6c8;border:1px solid #f5e6c8;border-radius:6px;padding:8px}" +
+    "#vln-lista .tw{overflow-x:auto;padding:0 22px}#vln-lista table{border-collapse:collapse;width:100%;min-width:900px}" +
+    "#vln-lista th{font:700 11px Arial,sans-serif;letter-spacing:.5px;text-transform:uppercase;color:#e8a832;text-align:left;padding:6px 4px;border-bottom:1px solid rgba(200,134,10,.4)}" +
+    "#vln-lista td{padding:4px}#vln-lista td.n{color:#9a7a50;width:26px;text-align:right;font-size:13px}#vln-lista td.x button{background:none;border:0;color:#c0392b;font-size:18px;cursor:pointer}" +
+    "#vln-lista .pie{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:14px 22px 20px}#vln-lista .pie .sp{flex:1}" +
+    "#vln-lista .ok{background:#e8a832;color:#1c0e02;font-size:15px;padding:12px 16px}" +
+    "@media (max-width:640px){#vln-lista .cab3{grid-template-columns:1fr}#vln-lista{padding:0}#vln-lista .mod{border-radius:0;min-height:100%}}" +
+    "@media print{body>*:not(#vln-lista){display:none!important}#vln-lista{position:static;background:#fff;padding:0;overflow:visible}#vln-lista .mod{box-shadow:none;color:#000;background:#fff;max-width:none}#vln-lista .mod::before,#vln-lista .pie,#vln-lista td.x,#vln-lista .mh p{display:none}#vln-lista h3{color:#000}#vln-lista label,#vln-lista th{color:#000}#vln-lista input,#vln-lista select{background:#fff;border:0;border-bottom:1px solid #999;border-radius:0;color:#000;-webkit-appearance:none;appearance:none}#vln-lista table{min-width:0}}" +
     "#vln-cuadrillas .priv{display:flex;gap:10px;align-items:flex-start;font:13px/1.45 Arial,sans-serif;color:#d9c7a3}" +
     "#vln-cuadrillas .priv input{margin-top:3px;accent-color:#e8a832;width:17px;height:17px;flex:0 0 auto}" +
     "#vln-cuadrillas .priv a{color:#e8a832}" +
@@ -114,7 +130,7 @@
         campo("email", 'Correo electrónico', "email", 'autocomplete="email" placeholder="Opcional"') +
       '</div></div>' +
 
-      '<div class="sec"><p class="st">2 · El pedido</p><div class="g">' +
+      '<div class="sec"><p class="st">2 · ¿Qué necesitáis?</p><div class="g">' +
         campo("Numero de costaleros", 'Número de costaleros <i>*</i>', "number", 'required min="2" max="300" inputmode="numeric" placeholder="Ej.: 35"') +
         '<div><label class="l" for="vlc-saco">Tipo de saco</label><select id="vlc-saco" name="Tipo de saco">' +
           '<option>Aún no lo sé, aconsejadme</option>' +
@@ -135,8 +151,9 @@
       '</div></div>' +
 
       '<div class="sec"><p class="st">3 · Lista de la cuadrilla (opcional)</p>' +
-        '<div class="plant"><span>¿Tenéis ya la lista? Descarga nuestra <b>plantilla</b>, apunta nombre, medidas, tela, bordado y forma de pago de cada costalero, y adjúntala aquí. Si no, no pasa nada: lo vemos por teléfono.</span>' +
-          '<a href="' + PLANTILLA + '" download>⬇ Descargar plantilla</a></div>' +
+        '<div class="plant"><span>¿Tenéis ya la lista? Rellénala aquí mismo o descarga la <b>plantilla en Excel</b>: apunta nombre, medidas, tela, bordado y forma de pago de cada costalero, y adjúntala. Si no, no pasa nada: lo vemos por teléfono.</span>' +
+          '<span class="pbtns"><button type="button" class="pb" id="vlc-online">✏️ Rellenar la lista aquí</button><button type="button" class="pb pb2" id="vlc-xlsx">⬇ Descargar Excel</button></span></div>' +
+        '<p class="ayuda" id="vlc-lista-ok" style="display:none;color:#7ee2a0"></p>' +
         '<label class="file" for="vlc-adj2" style="margin-top:12px">📎 <b>Adjuntar lista o foto</b> (Excel, PDF o foto de un costal que os guste)<input type="file" id="vlc-adj2" name="attachment2" accept="image/*,.pdf,.xls,.xlsx,.csv,.doc,.docx"></label>' +
         '<div style="margin-top:14px"><label class="l" for="vlc-com">Comentarios</label><textarea id="vlc-com" name="Comentarios" placeholder="Cualquier cosa que debamos saber"></textarea></div>' +
       '</div>' +
@@ -200,4 +217,90 @@
     b.disabled = true; b.textContent = "Enviando…";
     try { if (window.gtag) window.gtag("event", "generate_lead", { form: "cuadrillas" }); } catch (x) {}
   });
+
+  // ── Plantilla: descargar el Excel sin salir de la página ──
+  document.getElementById("vlc-xlsx").addEventListener("click", function () {
+    var bt = this, t = bt.textContent; bt.textContent = "Descargando…";
+    fetch(PLANTILLA).then(function (r) { return r.blob(); }).then(function (b) {
+      var u = URL.createObjectURL(b), a = document.createElement("a");
+      a.href = u; a.download = "plantilla-cuadrilla-vamolosnota.xlsx"; document.body.appendChild(a); a.click();
+      setTimeout(function () { URL.revokeObjectURL(u); a.remove(); }, 1500); bt.textContent = t;
+    }).catch(function () { bt.textContent = t; window.open(PLANTILLA, "_blank"); });
+  });
+
+  // ── Plantilla online: se rellena en la web, se imprime / descarga o se adjunta al formulario ──
+  var COLS = ["Nombre del costalero", "Teléfono", "Medidas / talla", "Saco", "Tela (color o ref.)", "Bordado", "Forma de pago"];
+  var PAGO = ["", "Efectivo", "Tarjeta", "Bizum", "Transferencia", "Lo paga la hermandad"];
+  function esc(v) { return String(v == null ? "" : v).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;"); }
+  function fila(i, d) {
+    d = d || [];
+    var h = '<tr><td class="n">' + i + '</td>';
+    for (var c = 0; c < COLS.length; c++) {
+      if (c === 6) { h += '<td><select aria-label="' + COLS[c] + '">' + PAGO.map(function (p) { return '<option' + (p === d[c] ? " selected" : "") + ">" + p + "</option>"; }).join("") + "</select></td>"; }
+      else h += '<td><input type="text" aria-label="' + COLS[c] + '" value="' + esc(d[c]) + '"></td>';
+    }
+    return h + '<td class="x"><button type="button" title="Quitar fila" aria-label="Quitar fila">×</button></td></tr>';
+  }
+  var guardado = null;
+  function abrirLista() {
+    var m = document.getElementById("vln-lista");
+    if (m) { m.style.display = "flex"; return; }
+    var n = parseInt(form.querySelector('[name="Numero de costaleros"]').value, 10);
+    if (!(n > 0)) n = 10; n = Math.min(n, 200);
+    var herm = form.querySelector('[name="Hermandad o cuadrilla"]').value, nom = form.querySelector("#vlc-Nombre").value, tel = form.querySelector("#vlc-Telefono").value;
+    var filas = ""; for (var i = 1; i <= n; i++) filas += fila(i);
+    m = document.createElement("div"); m.id = "vln-lista";
+    m.innerHTML = '<div class="mod" role="dialog" aria-modal="true" aria-label="Lista de la cuadrilla">' +
+      '<div class="mh"><h3>Lista de la cuadrilla · VamoLosNota</h3><p>Rellena lo que sepáis; lo que falte lo vemos por teléfono. Al terminar, pulsa <b>Añadir al formulario</b>, o imprímela / descárgala.</p></div>' +
+      '<div class="cab3"><div><label>Hermandad / cuadrilla</label><input id="vll-h" value="' + esc(herm) + '"></div><div><label>Capataz o contacto</label><input id="vll-c" value="' + esc(nom) + '"></div><div><label>Teléfono</label><input id="vll-t" value="' + esc(tel) + '"></div></div>' +
+      '<div class="tw"><table><thead><tr><th>Nº</th>' + COLS.map(function (c) { return "<th>" + c + "</th>"; }).join("") + '<th></th></tr></thead><tbody id="vll-b">' + filas + '</tbody></table></div>' +
+      '<div class="pie"><button type="button" class="pb pb2" id="vll-mas">+ Añadir costalero</button><span class="sp"></span>' +
+      '<button type="button" class="pb pb2" id="vll-imp">🖨 Imprimir / PDF</button><button type="button" class="pb pb2" id="vll-desc">⬇ Descargar Excel</button>' +
+      '<button type="button" class="pb ok" id="vll-ok">✓ Añadir al formulario</button><button type="button" class="pb pb2" id="vll-cerrar">Cerrar</button></div></div>';
+    document.body.appendChild(m);
+    var tb = document.getElementById("vll-b");
+    function renumerar() { var t = tb.querySelectorAll("td.n"); for (var i = 0; i < t.length; i++) t[i].textContent = i + 1; }
+    tb.addEventListener("click", function (e) { if (e.target.closest("td.x button")) { e.target.closest("tr").remove(); renumerar(); } });
+    document.getElementById("vll-mas").onclick = function () { tb.insertAdjacentHTML("beforeend", fila(tb.children.length + 1)); };
+    document.getElementById("vll-cerrar").onclick = function () { m.style.display = "none"; };
+    m.addEventListener("click", function (e) { if (e.target === m) m.style.display = "none"; });
+    document.getElementById("vll-imp").onclick = function () { window.print(); };
+    document.getElementById("vll-desc").onclick = function () { bajar(csv(), nombreArchivo()); };
+    document.getElementById("vll-ok").onclick = function () {
+      var c = csv(), ok = false;
+      try {
+        var f = new File([c], nombreArchivo(), { type: "text/csv" }), dt = new DataTransfer(); dt.items.add(f);
+        var inp = document.getElementById("vlc-adj2"); inp.files = dt.files; ok = inp.files.length === 1;
+      } catch (e) {}
+      var aviso = document.getElementById("vlc-lista-ok");
+      if (ok) { aviso.textContent = "✓ Lista de " + filasLlenas().length + " costaleros añadida al formulario."; aviso.style.color = "#7ee2a0"; m.style.display = "none"; }
+      else { bajar(c, nombreArchivo()); aviso.textContent = "Tu navegador no deja adjuntarla sola: te la hemos descargado, adjúntala con el botón de abajo."; aviso.style.color = "#f0b84a"; m.style.display = "none"; }
+      aviso.style.display = "block";
+    };
+  }
+  function filasLlenas() {
+    var r = [], trs = document.querySelectorAll("#vll-b tr");
+    for (var i = 0; i < trs.length; i++) {
+      var v = [].map.call(trs[i].querySelectorAll("input,select"), function (x) { return x.value.trim(); });
+      if (v.join("")) r.push(v);
+    }
+    return r;
+  }
+  function nombreArchivo() {
+    var h = (document.getElementById("vll-h").value || "cuadrilla").normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/gi, "-").replace(/^-|-$/g, "").toLowerCase();
+    return "lista-" + (h || "cuadrilla") + ".csv";
+  }
+  function csv() {
+    function q(v) { v = String(v); return /[;"\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; }
+    var l = ["Hermandad / cuadrilla;" + q(document.getElementById("vll-h").value), "Capataz o contacto;" + q(document.getElementById("vll-c").value), "Teléfono;" + q(document.getElementById("vll-t").value), "", "Nº;" + COLS.join(";")];
+    filasLlenas().forEach(function (v, i) { l.push((i + 1) + ";" + v.map(q).join(";")); });
+    return "﻿" + l.join("\r\n");
+  }
+  function bajar(texto, nombre) {
+    var u = URL.createObjectURL(new Blob([texto], { type: "text/csv;charset=utf-8" })), a = document.createElement("a");
+    a.href = u; a.download = nombre; document.body.appendChild(a); a.click();
+    setTimeout(function () { URL.revokeObjectURL(u); a.remove(); }, 1500);
+  }
+  document.getElementById("vlc-online").addEventListener("click", abrirLista);
+  document.addEventListener("keydown", function (e) { var m = document.getElementById("vln-lista"); if (e.key === "Escape" && m) m.style.display = "none"; });
 })();
