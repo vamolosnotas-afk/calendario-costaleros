@@ -231,13 +231,13 @@
   // ── Plantilla online: se rellena en la web, se imprime / descarga o se adjunta al formulario ──
   var COLS = ["Nombre del costalero", "Teléfono", "Medidas / talla", "Saco", "Tela (color o ref.)", "Bordado", "Forma de pago"];
   var PAGO = ["", "Efectivo", "Tarjeta", "Bizum", "Transferencia", "Lo paga la hermandad"];
-  function esc(v) { return String(v == null ? "" : v).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;"); }
+  function escH(v) { return String(v == null ? "" : v).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;"); }
   function fila(i, d) {
     d = d || [];
     var h = '<tr><td class="n">' + i + '</td>';
     for (var c = 0; c < COLS.length; c++) {
       if (c === 6) { h += '<td><select aria-label="' + COLS[c] + '">' + PAGO.map(function (p) { return '<option' + (p === d[c] ? " selected" : "") + ">" + p + "</option>"; }).join("") + "</select></td>"; }
-      else h += '<td><input type="text" aria-label="' + COLS[c] + '" value="' + esc(d[c]) + '"></td>';
+      else h += '<td><input type="text" aria-label="' + COLS[c] + '" value="' + escH(d[c]) + '"></td>';
     }
     return h + '<td class="x"><button type="button" title="Quitar fila" aria-label="Quitar fila">×</button></td></tr>';
   }
@@ -252,7 +252,7 @@
     m = document.createElement("div"); m.id = "vln-lista";
     m.innerHTML = '<div class="mod" role="dialog" aria-modal="true" aria-label="Lista de la cuadrilla">' +
       '<div class="mh"><h3>Lista de la cuadrilla · VamoLosNota</h3><p>Rellena lo que sepáis; lo que falte lo vemos por teléfono. Al terminar, pulsa <b>Añadir al formulario</b>, o imprímela / descárgala.</p></div>' +
-      '<div class="cab3"><div><label>Hermandad / cuadrilla</label><input id="vll-h" value="' + esc(herm) + '"></div><div><label>Capataz o contacto</label><input id="vll-c" value="' + esc(nom) + '"></div><div><label>Teléfono</label><input id="vll-t" value="' + esc(tel) + '"></div></div>' +
+      '<div class="cab3"><div><label>Hermandad / cuadrilla</label><input id="vll-h" value="' + escH(herm) + '"></div><div><label>Capataz o contacto</label><input id="vll-c" value="' + escH(nom) + '"></div><div><label>Teléfono</label><input id="vll-t" value="' + escH(tel) + '"></div></div>' +
       '<div class="tw"><table><thead><tr><th>Nº</th>' + COLS.map(function (c) { return "<th>" + c + "</th>"; }).join("") + '<th></th></tr></thead><tbody id="vll-b">' + filas + '</tbody></table></div>' +
       '<div class="pie"><button type="button" class="pb pb2" id="vll-mas">+ Añadir costalero</button><span class="sp"></span>' +
       '<button type="button" class="pb pb2" id="vll-imp">🖨 Imprimir / PDF</button><button type="button" class="pb pb2" id="vll-desc">⬇ Descargar Excel</button>' +
