@@ -4,7 +4,7 @@
 (function () {
   var BASE = "https://cdn.jsdelivr.net/gh/vamolosnotas-afk/calendario-costaleros@main/cuadrillas/";
   var FONDO = BASE + "fondo-cuadrilla.jpg";
-  var PLANTILLA = BASE + "plantilla-cuadrilla-vamolosnota.xlsx";
+  var PLANTILLA = "https://raw.githubusercontent.com/vamolosnotas-afk/calendario-costaleros/main/cuadrillas/plantilla-cuadrilla-vamolosnota.xlsx";
   var DESTINO = "https://formsubmit.co/info@vamolosnota.es";
   var WHATSAPP = "https://wa.me/34692942182?text=" + encodeURIComponent("Hola, quiero presupuesto de costales para una cuadrilla completa.");
   var MAX_MB = 9;
@@ -221,7 +221,9 @@
   // ── Plantilla: descargar el Excel sin salir de la página ──
   document.getElementById("vlc-xlsx").addEventListener("click", function () {
     var bt = this, t = bt.textContent; bt.textContent = "Descargando…";
-    fetch(PLANTILLA).then(function (r) { return r.blob(); }).then(function (b) {
+    fetch(PLANTILLA).then(function (r) { if (!r.ok) throw new Error("http " + r.status); return r.blob(); }).then(function (b) {
+      if (b.size < 1000) throw new Error("archivo vacío");
+      b = new Blob([b], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" });
       var u = URL.createObjectURL(b), a = document.createElement("a");
       a.href = u; a.download = "plantilla-cuadrilla-vamolosnota.xlsx"; document.body.appendChild(a); a.click();
       setTimeout(function () { URL.revokeObjectURL(u); a.remove(); }, 1500); bt.textContent = t;
