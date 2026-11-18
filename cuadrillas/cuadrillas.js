@@ -15,7 +15,7 @@
   var vuelta = location.origin + location.pathname + "?enviado=1#vln-cuadrillas";
 
   var CSS =
-    "#vln-cuadrillas{position:relative;box-sizing:border-box;width:100vw;margin-left:calc(50% - 50vw);font-family:Georgia,'Times New Roman',serif;color:#f5e6c8;overflow:hidden}" +
+    "#vln-cuadrillas{position:relative;box-sizing:border-box;width:100%;margin:0;border-radius:6px;font-family:Georgia,'Times New Roman',serif;color:#f5e6c8;overflow:hidden}" +
     "#vln-cuadrillas *,#vln-cuadrillas *::before,#vln-cuadrillas *::after{box-sizing:border-box}" +
     "#vln-cuadrillas .fondo{position:absolute;inset:0;background:#b48a61 url('" + FONDO + "') center top/cover no-repeat;filter:blur(3px);transform:scale(1.04)}" +
     "#vln-cuadrillas .velo{position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,14,2,.32) 0%,rgba(74,40,24,.45) 38%,rgba(180,138,97,.92) 78%,#b48a61 100%)}" +
@@ -26,7 +26,7 @@
     "#vln-cuadrillas h1 em,#vln-cuadrillas h2.t em{color:#f0b84a}" +
     "#vln-cuadrillas .lead{font:17px/1.55 Arial,sans-serif;color:#faf3e7;max-width:640px;margin:0 auto}" +
     "#vln-cuadrillas .pts{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:26px 0 0;padding:0;list-style:none}" +
-    "#vln-cuadrillas .pts li{background:rgba(28,14,2,.62);border:1px solid rgba(212,165,116,.55);border-radius:12px;padding:12px 14px;font:14px/1.35 Arial,sans-serif;color:#faf3e7;flex:1 1 190px;max-width:260px;text-shadow:none}" +
+    "#vln-cuadrillas .pts li{background:rgba(28,14,2,.62);border:1px solid rgba(212,165,116,.55);border-radius:12px;padding:12px 14px;font:14px/1.35 Arial,sans-serif;color:#faf3e7;flex:1 1 180px;max-width:205px;text-shadow:none}" +
     "#vln-cuadrillas .pts b{display:block;font:700 15px Georgia,serif;color:#f0b84a;margin-bottom:3px}" +
     "#vln-cuadrillas .card{background:#1c0e02;border-radius:4px;box-shadow:0 18px 40px rgba(28,14,2,.45);overflow:hidden}" +
     "#vln-cuadrillas .card::before{content:'';display:block;height:4px;background:repeating-linear-gradient(90deg,#c8860a 0 20px,#8b5c00 20px 40px)}" +
@@ -66,7 +66,7 @@
     "#vln-cuadrillas .ok p{font:16px/1.6 Arial,sans-serif;color:#f5e6c8;max-width:520px;margin:0 auto 10px}" +
     "#vln-cuadrillas .hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}" +
     "#vln-cuadrillas .oculto{display:none}" +
-    "@media (max-width:640px){#vln-cuadrillas .in{padding:30px 10px 40px}#vln-cuadrillas h1,#vln-cuadrillas h2.t{font-size:29px}#vln-cuadrillas .lead{font-size:15.5px}#vln-cuadrillas .sec{padding:20px 18px}#vln-cuadrillas .g{grid-template-columns:1fr}#vln-cuadrillas .btns{flex-direction:column}#vln-cuadrillas .plant{flex-direction:column;align-items:flex-start}#vln-cuadrillas .pts li{max-width:none}}";
+    "@media (max-width:640px){#vln-cuadrillas .in{padding:30px 10px 40px}#vln-cuadrillas h1,#vln-cuadrillas h2.t{font-size:29px}#vln-cuadrillas .lead{font-size:15.5px}#vln-cuadrillas .sec{padding:20px 18px}#vln-cuadrillas .g{grid-template-columns:1fr}#vln-cuadrillas .btns{flex-direction:column}#vln-cuadrillas .plant{flex-direction:column;align-items:flex-start}#vln-cuadrillas .pts li{max-width:none}#vln-cuadrillas{border-radius:0}}";
 
   var st = document.createElement("style");
   st.textContent = CSS;
@@ -92,6 +92,7 @@
       '<ul class="pts">' +
         '<li><b>Todos iguales</b>Elegís saco y tela una sola vez y la cuadrilla va uniformada.</li>' +
         '<li><b>Hecho a mano</b>Cada costal se cose en nuestro taller de Sevilla.</li>' +
+        '<li><b>Envío gratis a la hermandad</b>Todos los costales de la cuadrilla, en un solo paquete.</li>' +
         '<li><b>Os llamamos</b>Sin compromiso: hablamos por teléfono y cerramos los detalles.</li>' +
       '</ul>' +
     '</div>';
