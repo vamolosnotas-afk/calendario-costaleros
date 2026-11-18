@@ -97,8 +97,8 @@
       if (b) {
         b.className = "abs";
         if (b.parentNode !== h) h.appendChild(b);
-        var wCal = 620, wCua = Math.min(400, total - wCal - 14);
-        if (wCua < 400) { wCal = Math.round((total - 14) * 0.58); wCua = total - 14 - wCal; a.classList.add("estrecho"); b.classList.add("estrecho"); }
+        var wCal = 620, wCua = Math.min(480, total - wCal - 14);
+        if (wCua < 480) { wCal = Math.round((total - 14) * 0.58); wCua = total - 14 - wCal; a.classList.add("estrecho"); b.classList.add("estrecho"); }
         a.style.width = wCal + "px"; b.style.width = wCua + "px";
       }
       a.style.left = x0 + "px";
