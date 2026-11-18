@@ -363,7 +363,10 @@
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciarWA); else iniciarWA();
 
   // En las fichas de producto: valoración de Google justo debajo del precio (solo ahí, para no saturar)
-  var RESENAS = { nota: "5,0", total: 103, url: "https://maps.app.goo.gl/heTVCES96z8JMJCPA" };
+  // RESEÑAS DE GOOGLE: este es el ÚNICO sitio donde hay que cambiar el número (lo revisa una tarea automática cada mes).
+  // Se aplica solo en toda la web: valoración de las fichas, recuadros "Opiniones en Google" y datos para Google (JSON-LD).
+  var RESENAS = { nota: "5,0", total: 103, url: "https://maps.app.goo.gl/heTVCES96z8JMJCPA", revisado: "2026-11-18" };
+  window.VLN_RESENAS = RESENAS;
   function resenasFicha() {
     if (!enTienda()) return;
     if (!document.querySelector(".ec-store__product-page")) return;
@@ -528,5 +531,48 @@
     return true;
   }
   function iniciar() { if (poner()) return; var n = 0, iv = setInterval(function () { if (poner() || ++n > 40) clearInterval(iv); }, 250); }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciar); else iniciar();
+})();
+
+
+// Recuadros "Opiniones en Google" (Basado en N opiniones / 5,0) y datos estructurados: se ponen al día con RESENAS
+(function () {
+  var NOTA = "5,0", TOTAL = 103; // se sobreescribe abajo con RESENAS si existe
+  function valores() {
+    var t = (window.VLN_RESENAS && window.VLN_RESENAS.total) || TOTAL, n = (window.VLN_RESENAS && window.VLN_RESENAS.nota) || NOTA;
+    return { t: t, n: n };
+  }
+  function actualizar() {
+    var v = valores();
+    // 1) Texto visible: "Basado en <strong>97 opiniones</strong>" y la nota grande
+    var cajas = document.querySelectorAll(".html-code-module-root div");
+    for (var i = 0; i < cajas.length; i++) {
+      var c = cajas[i];
+      if (c.children.length > 3) continue;
+      var tx = c.textContent || "";
+      if (/^\s*Basado en\s+\d+\s+opiniones/i.test(tx)) {
+        var st = c.querySelector("strong");
+        if (st && /^\d+\s+opiniones$/i.test(st.textContent.trim())) { if (st.textContent !== v.t + " opiniones") st.textContent = v.t + " opiniones"; }
+        else c.textContent = tx.replace(/\d+(\s+opiniones)/i, v.t + "$1");
+      }
+    }
+    var spans = document.querySelectorAll(".html-code-module-root span");
+    for (var j = 0; j < spans.length; j++) {
+      var s = spans[j], p = s.parentNode && s.parentNode.parentNode;
+      if (/^\d,\d$/.test((s.textContent || "").trim()) && p && /opiniones en google/i.test(p.textContent || "") && s.textContent.trim() !== v.n) s.textContent = v.n;
+    }
+    // 2) Datos para Google (JSON-LD): reviewCount / ratingCount
+    var ld = document.querySelectorAll('script[type="application/ld+json"]');
+    for (var k = 0; k < ld.length; k++) {
+      var src = ld[k].textContent || "";
+      if (!/aggregateRating/.test(src)) continue;
+      var nuevo = src.replace(/("reviewCount"\s*:\s*)"?\d+"?/g, '$1"' + v.t + '"').replace(/("ratingCount"\s*:\s*)"?\d+"?/g, '$1"' + v.t + '"');
+      if (nuevo !== src) ld[k].textContent = nuevo;
+    }
+  }
+  function iniciar() {
+    actualizar();
+    var n = 0, iv = setInterval(function () { actualizar(); if (++n > 20) clearInterval(iv); }, 500);
+  }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciar); else iniciar();
 })();
