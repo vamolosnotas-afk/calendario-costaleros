@@ -1,6 +1,6 @@
 {
- "actualizado": "2026-11-17",
- "total": 609,
+ "actualizado": "2026-11-18",
+ "total": 610,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -2440,6 +2440,23 @@
    "verificado_por": "manuel",
    "nota": "Hora por confirmar.",
    "añadido": "2026-11-14"
+  },
+  {
+   "fecha": "2027-01-16",
+   "hora": "11:00",
+   "provincia": "granada",
+   "localidad": "Granada",
+   "hermandad": "Sentencia y Maravillas",
+   "paso": "Ambos pasos",
+   "tipo": "igualá",
+   "titulo": "Igualá de costaleros de ambos pasos",
+   "lugar": "Casa de Hermandad del Rocío",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-18"
   },
   {
    "fuente": null,
