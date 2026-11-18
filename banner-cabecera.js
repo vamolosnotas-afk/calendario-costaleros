@@ -39,7 +39,7 @@
     "#vln-cab2.estrecho .b .l{display:none}#vln-cab2 .b .c{display:none}#vln-cab2.estrecho .b .c{display:inline}" +
     "#vln-cab2.mov{margin:0 12px 10px;padding:10px 12px;gap:10px;border-radius:12px}" +
     "#vln-cab2.mov svg{flex-basis:40px;width:40px;height:40px}" +
-    "#vln-cab2.mov .h{font-size:16px}#vln-cab2.mov .s,#vln-cab2.mov .e{display:none}#vln-cab2.mov .b{padding:8px 10px;font-size:13px}" +
+    "#vln-cab2.mov .h{font-size:16px;white-space:normal}#vln-cab2.mov .s,#vln-cab2.mov .e{display:none}#vln-cab2.mov .b{padding:8px 10px;font-size:13px}" +
     "@media (prefers-reduced-motion:reduce){#vln-cab2{transition:none}#vln-cab2:hover{transform:none}}" +
     "@media print{#vln-cab,#vln-cab2{display:none!important}}";
   // Banner "Cuadrillas y hermandades" (a la derecha del calendario en ordenador, debajo en el móvil)
