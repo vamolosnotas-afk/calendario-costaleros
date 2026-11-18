@@ -50,7 +50,7 @@
     var a = document.createElement("a");
     a.id = "vln-cab2"; a.href = URL_CUAD;
     a.setAttribute("aria-label", "Costales para cuadrillas y hermandades: pide presupuesto");
-    a.innerHTML = ICONO_CUAD + '<span class="t"><span class="e">NUEVO · PARA HERMANDADES</span><span class="h">Costales para cuadrillas</span><span class="s">Todos iguales · presupuesto sin compromiso</span></span><span class="b"><span class="l">Pedir presupuesto ›</span><span class="c">Presupuesto ›</span></span>';
+    a.innerHTML = ICONO_CUAD + '<span class="t"><span class="e">NUEVO · HERMANDADES</span><span class="h">Costales para cuadrillas</span></span><span class="b"><span class="l">Pedir presupuesto ›</span><span class="c">Presupuesto ›</span></span>';
     a.addEventListener("click", function () { try { if (window.gtag) window.gtag("event", "click_banner_cuadrillas", { pagina: location.pathname }); } catch (e) {} });
     return a;
   }
@@ -95,19 +95,21 @@
       var hueco = hr.height - top - 12;
       var b = EN_CUAD ? null : (document.getElementById("vln-cab2") || crear2());
       var x0 = Math.round(izq - hr.left), total = Math.round(hr.width - x0 - 80);
-      a.style.width = ""; a.classList.remove("estrecho");
+      a.style.width = a.style.height = ""; a.classList.remove("estrecho");
       if (b) {
         b.className = "abs";
         if (b.parentNode !== h) h.appendChild(b);
-        var wCal = 620, wCua = total - wCal - 14;
-        if (wCua >= 470) { wCua = Math.min(600, wCua); if (wCua < 560) b.classList.add("sin-s"); }
-        else { wCal = Math.round((total - 14) * 0.56); wCua = total - 14 - wCal; a.classList.add("estrecho"); b.classList.add("estrecho"); if (wCua < 400) b.classList.add("sin-b"); }
+        // Los dos banners con el mismo ancho y la misma altura
+        var wCal = Math.min(620, Math.floor((total - 14) / 2)), wCua = wCal;
+        if (wCal < 600) a.classList.add("estrecho");
+        if (wCua < 470) b.classList.add("estrecho");
+        if (wCua < 430) b.classList.add("sin-b");
         a.style.width = wCal + "px"; b.style.width = wCua + "px";
       }
       a.style.left = x0 + "px";
       var yTop = Math.round(top + Math.max(0, (hueco - a.offsetHeight) / 2));
       a.style.top = yTop + "px";
-      if (b) { b.style.left = (x0 + a.offsetWidth + 14) + "px"; b.style.top = (yTop + Math.round((a.offsetHeight - b.offsetHeight) / 2)) + "px"; }
+      if (b) { b.style.height = ""; var hh = Math.max(a.offsetHeight, b.offsetHeight); a.style.height = b.style.height = hh + "px"; b.style.left = (x0 + a.offsetWidth + 14) + "px"; b.style.top = yTop + "px"; }
     } else {
       // Móvil/tablet en la tienda: no se pone el banner y se achica el logo
       if (enTienda()) {
@@ -122,10 +124,10 @@
       // Móvil/tablet: tira compacta justo debajo de la cabecera
       a.className = "mov"; a.style.left = a.style.top = "";
       if (a.previousElementSibling !== h) h.parentNode.insertBefore(a, h.nextSibling);
-      a.style.width = ""; a.classList.remove("estrecho");
+      a.style.width = a.style.height = ""; a.classList.remove("estrecho");
       if (!EN_CUAD) {
         var b2 = document.getElementById("vln-cab2") || crear2();
-        b2.className = "mov"; b2.style.left = b2.style.top = b2.style.width = "";
+        b2.className = "mov"; b2.style.left = b2.style.top = b2.style.width = b2.style.height = "";
         if (b2.previousElementSibling !== a) a.parentNode.insertBefore(b2, a.nextSibling);
       }
     }
