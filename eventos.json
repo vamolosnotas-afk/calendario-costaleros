@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-18",
- "total": 620,
+ "total": 631,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -993,6 +993,23 @@
   },
   {
    "fecha": "2026-11-22",
+   "hora": "13:00",
+   "hermandad": "Afligidos de Las Maravillas",
+   "paso": null,
+   "tipo": "igualá",
+   "titulo": "Igualá de costaleros de Afligidos de Las Maravillas",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "añadido": "2026-11-18"
+  },
+  {
+   "fecha": "2026-11-22",
    "hora": "18:00",
    "provincia": "jaen",
    "localidad": "Jaén",
@@ -1091,6 +1108,23 @@
    "verificado_por": null,
    "nota": "Asistir con calzado de salida y molía.",
    "añadido": "2026-11-14"
+  },
+  {
+   "fecha": "2026-11-27",
+   "hora": "21:00",
+   "hermandad": "Inmaculada del Corpus Christi",
+   "paso": null,
+   "tipo": "igualá",
+   "titulo": "Igualá de costaleros de la Inmaculada del Corpus Christi",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "añadido": "2026-11-18"
   },
   {
    "fecha": "2026-11-27",
@@ -1791,6 +1825,23 @@
    "añadido": "2026-11-17"
   },
   {
+   "fecha": "2027-01-09",
+   "hora": "10:30",
+   "hermandad": "San Benito",
+   "paso": "Cristo de la Sangre",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla del Stmo. Cristo de la Sangre",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "añadido": "2026-11-18"
+  },
+  {
    "provincia": "sevilla",
    "localidad": "Sevilla",
    "hora": "12:00",
@@ -2008,6 +2059,23 @@
   },
   {
    "fecha": "2027-01-10",
+   "hora": "10:00",
+   "hermandad": "Monte-Sión",
+   "paso": "Misterio (Oración en el Huerto)",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de la Oración en el Huerto",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "añadido": "2026-11-18"
+  },
+  {
+   "fecha": "2027-01-10",
    "hora": "10:30",
    "provincia": "ciudadreal",
    "localidad": "Bolaños de Calatrava",
@@ -2157,6 +2225,23 @@
    "hermandad": "Señor del Amparo",
    "titulo": "Igualá de costaleros",
    "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2027-01-10",
+   "hora": null,
+   "hermandad": "Pino Montano",
+   "paso": "Misterio",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla del paso de misterio",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Hora por confirmar.",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "añadido": "2026-11-18"
   },
   {
    "fecha": "2027-01-12",
@@ -2575,6 +2660,23 @@
   },
   {
    "fecha": "2027-01-16",
+   "hora": "20:00",
+   "hermandad": "San Benito",
+   "paso": "Misterio (Sagrada Presentación)",
+   "tipo": "igualá",
+   "titulo": "Igualá de aspirantes al paso de la Sagrada Presentación",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Convocatoria para aspirantes.",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "añadido": "2026-11-18"
+  },
+  {
+   "fecha": "2027-01-16",
    "hora": "21:00",
    "provincia": "cordoba",
    "localidad": "Córdoba",
@@ -2806,6 +2908,23 @@
    "verificado_por": "manuel",
    "nota": null,
    "añadido": "2026-11-10"
+  },
+  {
+   "fecha": "2027-01-17",
+   "hora": "11:30",
+   "hermandad": "San Benito",
+   "paso": "Virgen de la Encarnación",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de la Virgen de la Encarnación",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "añadido": "2026-11-18"
   },
   {
    "fecha": "2027-01-17",
@@ -3276,6 +3395,23 @@
   },
   {
    "fecha": "2027-01-23",
+   "hora": "16:30",
+   "hermandad": "Las Aguas",
+   "paso": "Virgen (Guadalupe)",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de María Stma. de Guadalupe",
+   "lugar": "Atrio de la Capilla de Ntra. Sra. del Rosario",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Calzado blanco.",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "añadido": "2026-11-18"
+  },
+  {
+   "fecha": "2027-01-23",
    "hora": "17:00",
    "provincia": "granada",
    "localidad": "Granada",
@@ -3406,6 +3542,23 @@
    "añadido": "2026-10-31"
   },
   {
+   "fecha": "2027-01-23",
+   "hora": "21:00",
+   "hermandad": "Las Tres Caídas",
+   "paso": "Virgen (María Stma. de los Dolores)",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de María Stma. de los Dolores",
+   "lugar": "Santuario de San Lucas",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Calzado negro de salida.",
+   "provincia": "jerez",
+   "localidad": "Jerez de la Frontera",
+   "añadido": "2026-11-18"
+  },
+  {
    "provincia": "sevilla",
    "localidad": "Sevilla (Torreblanca)",
    "hermandad": "Dolores de Torreblanca",
@@ -3487,6 +3640,23 @@
    "verificado_por": "manuel",
    "nota": null,
    "añadido": "2026-11-14"
+  },
+  {
+   "fecha": "2027-01-24",
+   "hora": "09:30",
+   "hermandad": "Las Aguas",
+   "paso": "Cristo de las Aguas",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla del Stmo. Cristo de las Aguas",
+   "lugar": "Atrio de la Capilla de Ntra. Sra. del Rosario",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Calzado negro.",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "añadido": "2026-11-18"
   },
   {
    "fecha": "2027-01-24",
@@ -10243,6 +10413,23 @@
    "fuente_nombre": "Web oficial de la Real y Muy Ilustre Hdad. de la Oración en el Huerto de los Olivos",
    "nota": "El cartel dice 'Retranqueo y traslado del paso a San Pedro' (Parroquia de San Pedro), sin indicar lugar de salida",
    "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2027-03-27",
+   "hora": "12:00",
+   "hermandad": "Judíos (Merced)",
+   "paso": "Ntro. Padre Jesús de las Cadenas",
+   "tipo": "otro",
+   "titulo": "Desarmá del paso de Jesús de las Cadenas",
+   "lugar": "S.I. Catedral",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "provincia": "huelva",
+   "localidad": "Huelva",
+   "añadido": "2026-11-18"
   },
   {
    "fecha": "2027-03-30",
