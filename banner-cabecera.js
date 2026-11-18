@@ -494,3 +494,37 @@
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciarInicio); else iniciarInicio();
 })();
+
+// Página de presupuesto: debajo del banner "Pide tu presupuesto", otro para cuadrillas
+(function () {
+  if (location.pathname.indexOf("/pidenos-presupuesto") !== 0) return;
+  var CSS_PC =
+    "#vln-pres-cuad{display:block;box-sizing:border-box;margin:16px 0 0;background:#1c0e02;color:#f5e6c8!important;text-decoration:none!important;overflow:hidden;font-family:Georgia,'Times New Roman',serif;transition:transform .15s ease,box-shadow .15s ease}" +
+    "#vln-pres-cuad::before{content:'';display:block;height:4px;background:repeating-linear-gradient(90deg,#c8860a 0 20px,#8b5c00 20px 40px)}" +
+    "#vln-pres-cuad:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(40,20,10,.35)}" +
+    "#vln-pres-cuad .in{display:flex;align-items:center;gap:18px;padding:22px 48px}" +
+    "#vln-pres-cuad .bd{display:inline-block;font:700 10px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;color:#c8860a;border:1px solid rgba(200,134,10,.4);padding:3px 10px;border-radius:3px;margin-bottom:10px}" +
+    "#vln-pres-cuad .tt{display:block;font-size:24px;line-height:1.25;color:#f5e6c8}#vln-pres-cuad .tt em{color:#e8a832}" +
+    "#vln-pres-cuad .sb{display:block;font:13px/1.5 Arial,sans-serif;color:#9a7a50;margin-top:6px}" +
+    "#vln-pres-cuad .tx{flex:1 1 auto;min-width:0}" +
+    "#vln-pres-cuad .bt{flex:0 0 auto;background:#e8a832;color:#1c0e02!important;font:700 14px Arial,sans-serif;padding:13px 16px;border-radius:10px;white-space:nowrap}" +
+    "@media (max-width:640px){#vln-pres-cuad .in{flex-direction:column;align-items:flex-start;padding:20px 22px}#vln-pres-cuad .tt{font-size:21px}#vln-pres-cuad .bt{align-self:stretch;text-align:center}}" +
+    "@media (prefers-reduced-motion:reduce){#vln-pres-cuad{transition:none}#vln-pres-cuad:hover{transform:none}}";
+  function poner() {
+    var ban = document.querySelector(".html-code-module-root .banner");
+    if (!ban || document.getElementById("vln-pres-cuad")) return !!ban;
+    if (!document.getElementById("vln-pres-cuad-css")) { var s = document.createElement("style"); s.id = "vln-pres-cuad-css"; s.textContent = CSS_PC; document.head.appendChild(s); }
+    var a = document.createElement("a");
+    a.id = "vln-pres-cuad"; a.href = "https://www.vamolosnota.es/costales-para-cuadrillas/";
+    a.innerHTML = '<span class="in"><span class="tx"><span class="bd">Cuadrillas · Hermandades</span>' +
+      '<span class="tt">¿Sois una cuadrilla? Pide tu presupuesto <em>sin compromiso</em></span>' +
+      '<span class="sb">Costales iguales para todos, con el nombre o el escudo de la hermandad bordado. Te llamamos por teléfono.</span></span>' +
+      '<span class="bt">Presupuesto para cuadrillas ›</span></span>';
+    a.addEventListener("click", function () { try { if (window.gtag) window.gtag("event", "click_banner_cuadrillas", { pagina: location.pathname, lugar: "presupuesto" }); } catch (e) {} });
+    try { var ft = ban.querySelector(".banner-title"); if (ft) a.querySelector(".tt").style.fontFamily = getComputedStyle(ft).fontFamily; } catch (e) {}
+    ban.parentNode.insertBefore(a, ban.nextSibling);
+    return true;
+  }
+  function iniciar() { if (poner()) return; var n = 0, iv = setInterval(function () { if (poner() || ++n > 40) clearInterval(iv); }, 250); }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciar); else iniciar();
+})();
