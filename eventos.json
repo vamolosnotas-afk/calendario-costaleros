@@ -1,6 +1,6 @@
 {
- "actualizado": "2026-11-18",
- "total": 635,
+ "actualizado": "2026-11-19",
+ "total": 638,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -3495,6 +3495,23 @@
   },
   {
    "fecha": "2027-01-23",
+   "hora": "18:00",
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Resucitado",
+   "paso": "Cristo",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de Jesucristo Resucitado, Señor de la Vida",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-19"
+  },
+  {
+   "fecha": "2027-01-23",
    "hora": "19:00",
    "provincia": "huelva",
    "localidad": "Huelva",
@@ -6333,6 +6350,23 @@
   {
    "fecha": "2027-02-14",
    "hora": "10:00",
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Resucitado",
+   "paso": "Cristo",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de Jesucristo Resucitado, Señor de la Vida",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-19"
+  },
+  {
+   "fecha": "2027-02-14",
+   "hora": "10:00",
    "provincia": "cordoba",
    "localidad": "Córdoba",
    "hermandad": "Rescatado",
@@ -8972,6 +9006,23 @@
    "verificado_por": null,
    "nota": null,
    "añadido": "2026-11-14"
+  },
+  {
+   "fecha": "2027-03-07",
+   "hora": "10:00",
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Resucitado",
+   "paso": "Cristo",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de Jesucristo Resucitado, Señor de la Vida",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-19"
   },
   {
    "fecha": "2027-03-07",
