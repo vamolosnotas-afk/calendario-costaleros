@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-19",
- "total": 644,
+ "total": 650,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -3260,6 +3260,40 @@
    "añadido": "2026-11-10"
   },
   {
+   "provincia": "sevilla",
+   "localidad": "Morón de la Frontera",
+   "hermandad": "Soberano (Morón)",
+   "lugar": "Casa Hermandad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "hora": "20:30",
+   "fecha": "2027-01-22",
+   "paso": "Misterio",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de Ntro. Padre Jesús de la Salud y el Perdón",
+   "añadido": "2026-11-19"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Morón de la Frontera",
+   "hermandad": "Soberano (Morón)",
+   "lugar": "Casa Hermandad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "hora": "20:30",
+   "fecha": "2027-01-22",
+   "paso": "Palio",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de María Stma. de los Ángeles y de la Cruz",
+   "añadido": "2026-11-19"
+  },
+  {
    "fecha": "2027-01-22",
    "hora": "21:00",
    "provincia": "almeria",
@@ -5880,6 +5914,23 @@
    "añadido": "2026-11-10"
   },
   {
+   "provincia": "sevilla",
+   "localidad": "Morón de la Frontera",
+   "hermandad": "Soberano (Morón)",
+   "lugar": "Casa Hermandad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "hora": "20:30",
+   "fecha": "2027-02-12",
+   "paso": "Palio",
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo de la cuadrilla de María Stma. de los Ángeles y de la Cruz",
+   "añadido": "2026-11-19"
+  },
+  {
    "fecha": "2027-02-12",
    "hora": "21:00",
    "provincia": "alicante",
@@ -6872,6 +6923,23 @@
    "titulo": "Ensayo de la cuadrilla del Señor del Prendimiento",
    "lugar": "Local de los Pasos (C/ Almedina)",
    "añadido": "2026-11-02"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Morón de la Frontera",
+   "hermandad": "Soberano (Morón)",
+   "lugar": "Casa Hermandad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "hora": "20:30",
+   "fecha": "2027-02-19",
+   "paso": "Misterio",
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo de la cuadrilla de Ntro. Padre Jesús de la Salud y el Perdón",
+   "añadido": "2026-11-19"
   },
   {
    "fecha": "2027-02-19",
@@ -10052,6 +10120,40 @@
    "tipo": "mudá",
    "titulo": "Mudá del paso de María Stma. del Consuelo",
    "añadido": "2026-11-02"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Morón de la Frontera",
+   "hermandad": "Soberano (Morón)",
+   "lugar": "Casa Hermandad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "hora": "20:30",
+   "fecha": "2027-03-14",
+   "paso": "Misterio",
+   "tipo": "retranqueo",
+   "titulo": "Retranqueo de la cuadrilla de Ntro. Padre Jesús de la Salud y el Perdón",
+   "añadido": "2026-11-19"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Morón de la Frontera",
+   "hermandad": "Soberano (Morón)",
+   "lugar": "Casa Hermandad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "hora": "20:30",
+   "fecha": "2027-03-14",
+   "paso": "Palio",
+   "tipo": "retranqueo",
+   "titulo": "Retranqueo de la cuadrilla de María Stma. de los Ángeles y de la Cruz",
+   "añadido": "2026-11-19"
   },
   {
    "fuente": null,
