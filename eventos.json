@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-19",
- "total": 638,
+ "total": 642,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -2488,6 +2488,23 @@
    "lugar": "Casa de Hermandad (C/ Golondrina, 3)",
    "nota": "Único requisito: tener cumplida la mayoría de edad el día de la igualá.",
    "añadido": "2026-11-11"
+  },
+  {
+   "hora": "21:30",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Misericordia",
+   "paso": "Virgen",
+   "lugar": "Basílica Menor de San Pedro",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "fecha": "2027-01-15",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de Ntra. Sra. de las Lágrimas en su Desamparo",
+   "añadido": "2026-11-19"
   },
   {
    "provincia": "huelva",
@@ -4982,6 +4999,23 @@
    "origen": "terceros"
   },
   {
+   "hora": "21:30",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Misericordia",
+   "paso": "Virgen",
+   "lugar": "Basílica Menor de San Pedro",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "fecha": "2027-02-05",
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo de la cuadrilla de Ntra. Sra. de las Lágrimas en su Desamparo",
+   "añadido": "2026-11-19"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "El Nazareno",
@@ -6909,6 +6943,23 @@
    "origen": "terceros"
   },
   {
+   "hora": "21:30",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Misericordia",
+   "paso": "Virgen",
+   "lugar": "Basílica Menor de San Pedro",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "fecha": "2027-02-19",
+   "tipo": "ensayo",
+   "titulo": "Segundo ensayo de la cuadrilla de Ntra. Sra. de las Lágrimas en su Desamparo",
+   "añadido": "2026-11-19"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "El Nazareno",
@@ -8577,6 +8628,23 @@
    "nota": null,
    "añadido": "2026-11-13",
    "origen": "terceros"
+  },
+  {
+   "hora": "21:30",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Misericordia",
+   "paso": "Virgen",
+   "lugar": "Basílica Menor de San Pedro",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "fecha": "2027-03-05",
+   "tipo": "ensayo",
+   "titulo": "Tercer ensayo de la cuadrilla de Ntra. Sra. de las Lágrimas en su Desamparo",
+   "añadido": "2026-11-19"
   },
   {
    "provincia": "huelva",
