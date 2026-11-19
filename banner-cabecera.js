@@ -594,3 +594,54 @@
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", quitar); else quitar();
   setTimeout(quitar, 1000);
 })();
+
+// Barra azul "Colabora con la Asociación Andaluza Síndrome de Angelman" (1 € por pedido),
+// en todas las páginas, justo debajo de la cabecera, con su logo redondo al final. Al pinchar: su Instagram.
+(function () {
+  var URL_ANG = "https://www.instagram.com/asansa.angelman/";
+  var LOGO_ANG = "https://cdn.jsdelivr.net/gh/vamolosnotas-afk/calendario-costaleros@main/colaboraciones/logo-angelman.webp";
+  var CSS_ANG =
+    "#vln-ang{position:relative;z-index:40;display:flex;align-items:center;justify-content:center;gap:22px;box-sizing:border-box;min-height:46px;margin:0;background:#084FA9;color:#fff!important;text-decoration:none!important;font-family:Arial,Helvetica,sans-serif;padding:6px 20px;box-shadow:0 3px 10px rgba(0,0,0,.25)}" +
+    "#vln-ang .l,#vln-ang .r{min-width:0;font-size:16px;line-height:1.25;color:#fff!important;font-weight:700;letter-spacing:1px}" +
+    "#vln-ang .l{flex:1.4 1 0;text-align:right}#vln-ang .r{flex:1 1 0;text-align:left}" +
+    "#vln-ang .o{position:relative;flex:0 0 76px;width:76px;height:76px;margin:-21px 0;border-radius:50%;background:#fff;border:5px solid #084FA9;box-sizing:border-box;overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,.3);transition:transform .15s ease}" +
+    "#vln-ang .o img{display:block;width:100%;height:100%;object-fit:cover}" +
+    "#vln-ang .tip{display:none;position:absolute;left:50%;top:calc(100% + 34px);width:340px;margin-left:-60px;box-sizing:border-box;background:#fff;color:#1c1c1c!important;border:2px solid #084FA9;border-radius:12px;padding:11px 14px;font-size:14px;line-height:1.4;text-align:left;font-weight:400;letter-spacing:0;box-shadow:0 8px 22px rgba(8,79,169,.35)}" +
+    "#vln-ang .tip strong{color:#084FA9}#vln-ang .tip small{display:block;margin-top:2px;font-size:12px;color:#555}" +
+    "#vln-ang:hover .o{transform:scale(1.08)}#vln-ang:hover .tip,#vln-ang:focus-visible .tip{display:block}" +
+    "#vln-ang:focus-visible{outline:3px solid #faf3e7;outline-offset:-3px}" +
+    "@media (max-width:1199px){#vln-ang .l,#vln-ang .r{font-size:14px;letter-spacing:.5px}}" +
+    "@media (max-width:999px){#vln-ang{gap:10px;padding:7px 10px;min-height:52px}#vln-ang .l,#vln-ang .r{font-size:12px;letter-spacing:0}#vln-ang .l{flex:1 1 0}" +
+    "#vln-ang .o{flex-basis:54px;width:54px;height:54px;margin:-8px 0;border-width:4px}#vln-ang .tip{display:none!important}}" +
+    "@media (prefers-reduced-motion:reduce){#vln-ang .o{transition:none}#vln-ang:hover .o{transform:none}}" +
+    "@media print{#vln-ang{display:none!important}}";
+
+  function crear() {
+    var a = document.createElement("a");
+    a.id = "vln-ang"; a.href = URL_ANG; a.target = "_blank"; a.rel = "noopener";
+    a.setAttribute("aria-label", "Colabora con la Asociación Andaluza Síndrome de Angelman: por cada pedido donamos 1 euro. Ver su Instagram");
+    a.innerHTML = '<span class="l">¡COLABORA! Ahora con tu pedido donas 1 €</span>' +
+      '<span class="o"><img src="' + LOGO_ANG + '" alt="" width="76" height="76" loading="lazy"></span>' +
+      '<span class="r">Asociación Andaluza Síndrome de Angelman</span>' +
+      '<span class="tip"><strong>Con cada pedido ayudas con 1 €</strong> a la Asociación Andaluza Síndrome de Angelman.<small>Pincha y conócelos en Instagram (@asansa.angelman) ›</small></span>';
+    a.addEventListener("click", function () { try { if (window.gtag) window.gtag("event", "click_banner_angelman", { pagina: location.pathname }); } catch (e) {} });
+    return a;
+  }
+  function colocar() {
+    var h = document.querySelector("header");
+    if (!h || !h.parentNode) return;
+    var a = document.getElementById("vln-ang") || crear();
+    // Detrás de la cabecera y de los banners que en el móvil van justo debajo de ella
+    var ref = h;
+    while (ref.nextElementSibling && /^vln-cab2?$/.test(ref.nextElementSibling.id)) ref = ref.nextElementSibling;
+    if (a.previousElementSibling !== ref) ref.parentNode.insertBefore(a, ref.nextSibling);
+  }
+  function iniciar() {
+    if (!document.getElementById("vln-ang-css")) {
+      var st = document.createElement("style"); st.id = "vln-ang-css"; st.textContent = CSS_ANG; document.head.appendChild(st);
+    }
+    colocar(); setTimeout(colocar, 900); setTimeout(colocar, 2700);
+    var t; window.addEventListener("resize", function () { clearTimeout(t); t = setTimeout(colocar, 300); });
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciar); else iniciar();
+})();
