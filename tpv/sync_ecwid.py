@@ -57,17 +57,20 @@ def leer_jsonl(path):
 
 # ---------------- correspondencias ----------------
 SIT_A_ECWID = {"Nuevo": "AWAITING_PROCESSING", "En proceso": "PROCESSING", "Listo": "READY_FOR_PICKUP",
-               "Para recoger": "READY_FOR_PICKUP", "En mensajería": "READY_FOR_PICKUP",
-               "Enviado": "SHIPPED", "Entregado": "DELIVERED"}
+               "Para recoger": "READY_FOR_PICKUP",
+               "Enviado": "SHIPPED", "En tránsito": "SHIPPED", "Entregado": "DELIVERED"}
+# "Registrado en Correos" no se pasa a la tienda: el paquete aún no está en Correos
 PAGO_DE_ECWID = {"AWAITING_PAYMENT": "Pendiente", "INCOMPLETE": "Pendiente", "PAID": "Pagado",
                  "PARTIALLY_REFUNDED": "Pagado", "CANCELLED": "Cancelado", "REFUNDED": "Cancelado"}
 
 def sit_de_ecwid(f, actual):
+    if actual in ("Registrado en Correos", "En mensajería") and f in ("AWAITING_PROCESSING", "PROCESSING", "READY_FOR_PICKUP"):
+        return "Registrado en Correos"
     if f == "AWAITING_PROCESSING": return "Nuevo"
     if f == "PROCESSING": return "En proceso"
-    if f == "READY_FOR_PICKUP": return actual if actual in ("Listo", "Para recoger", "En mensajería") else "Para recoger"
-    if f == "OUT_FOR_DELIVERY": return "En mensajería"
-    if f == "SHIPPED": return "Enviado"
+    if f == "READY_FOR_PICKUP": return actual if actual in ("Listo", "Para recoger") else "Para recoger"
+    if f == "OUT_FOR_DELIVERY": return "En tránsito"
+    if f == "SHIPPED": return actual if actual in ("Enviado", "En tránsito") else "Enviado"
     if f == "DELIVERED": return "Entregado"
     return actual or "Nuevo"   # WILL_NOT_DELIVER, RETURNED, personalizados: se deja como esté
 
