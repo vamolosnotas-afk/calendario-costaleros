@@ -5,6 +5,7 @@ Uso (la clave va en la variable de entorno ECWID_TOKEN, nunca en archivos):
   python3 sync_ecwid.py push PEND.jsonl            -> pasa a la tienda los cambios hechos en el TPV
   python3 sync_ecwid.py pull DESDE_UNIX            -> descarga los pedidos cambiados en la tienda desde esa fecha
   python3 sync_ecwid.py build EXIST.jsonl [STOCK.jsonl] -> prepara las escrituras para la base de datos del TPV
+  python3 sync_ecwid.py catalogo                   -> catálogo de la tienda y telas de la web para el TPV (tienda.json)
 
 Los .jsonl son las líneas que devuelven db_query/db_list del TPV ({"data":…,"id":…,"version":…}).
 Todo se deja en /tmp/vln_sync/.
@@ -311,10 +312,47 @@ def cmd_build(exist_path, stock_path=None):
     if falta_stock: print("material que no existe en el stock del TPV (no se toca):", falta_stock)
     if errores: print("errores al pasar a la tienda:", json.dumps([e for e in errores], ensure_ascii=False)[:800])
 
+def cmd_catalogo():
+    """Catálogo de la tienda (productos con opciones y suplementos) y referencias de /telas/ para el TPV.
+    Escribe /tmp/vln_sync/tienda.json con {"hash", "act", "productos", "telas"}; imprime HASH: <hash>."""
+    import hashlib, html as _html
+    prods = []
+    for p in (api("GET", "/products", {"limit": 100, "enabled": "true"}).get("items") or []):
+        ops = []
+        for o in p.get("options") or []:
+            ops.append({"tipo": o.get("type"), "nombre": o.get("name"), "obligatoria": bool(o.get("required")),
+                        "opciones": [{"t": c.get("text"), "p": c.get("priceModifier") or 0, "pt": c.get("priceModifierType") or "ABSOLUTE"}
+                                     for c in (o.get("choices") or [])]})
+        prods.append({"id": p["id"], "sku": p.get("sku") or "", "nombre": p.get("name"), "precio": p.get("price") or 0,
+                      "mayor": [{"q": w["quantity"], "p": w["price"]} for w in (p.get("wholesalePrices") or [])],
+                      "opciones": ops})
+    telas = []
+    try:
+        req = urllib.request.Request("https://www.vamolosnota.es/telas/", headers={"User-Agent": "Mozilla/5.0"})
+        h = urllib.request.urlopen(req, timeout=40).read().decode("utf-8", "ignore")
+        vistas = set()
+        for m in re.finditer(r'alt="([^"]*?)ref\.\s*((?:STOCK|LISOS)_\d{3,4}[A-Z]?)', h):
+            ref = m.group(2)
+            if ref in vistas: continue
+            vistas.add(ref)
+            d = _html.unescape(m.group(1))
+            d = re.sub(r"^\s*Tela\s+(de\s+)?", "", d, flags=re.I)
+            d = re.sub(r"\s*para costal,?\s*$", "", d, flags=re.I).strip(" ,")
+            telas.append({"ref": ref, "d": d})
+    except Exception as e:
+        print("AVISO telas:", e)
+    telas.sort(key=lambda t: (0 if t["ref"].startswith("STOCK") else 1, t["ref"]))
+    cuerpo = {"productos": prods, "telas": telas}
+    hsh = hashlib.sha1(json.dumps(cuerpo, sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:16]
+    cuerpo.update({"hash": hsh, "act": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")})
+    json.dump(cuerpo, open(f"{DIR}/tienda.json", "w"), ensure_ascii=False)
+    print(f"HASH: {hsh}  ({len(prods)} productos, {len(telas)} telas)")
+
 if __name__ == "__main__":
     if len(sys.argv) < 2: sys.exit(__doc__)
     c = sys.argv[1]
     if c == "push": cmd_push(sys.argv[2])
     elif c == "pull": cmd_pull(sys.argv[2])
+    elif c == "catalogo": cmd_catalogo()
     elif c == "build": cmd_build(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None)
     else: sys.exit(__doc__)
