@@ -1,5 +1,7 @@
 /* Banner "Calendario de igualás y ensayos" en la cabecera de vamolosnota.es
    Se carga desde "Código personalizado en el head" de IONOS. */
+// Envío gratis a partir de este importe (€). Se usa en la cinta de arriba, la página de inicio y las fichas de producto
+var ENVIO_GRATIS_DESDE = 50;
 (function () {
   var URL_CAL = "https://www.vamolosnota.es/calendario-de-igualas-y-ensayos/";
   var URL_COSTAL = "https://www.vamolosnota.es/tienda-costales/Costal-Personalizado-a-Medida-en-Sevilla-p718578854/";
@@ -390,7 +392,7 @@
     if (h1 && /tarjeta regalo/i.test(h1.textContent || "")) return;
     var d = document.createElement("div");
     d.className = "vln-plazo";
-    d.innerHTML = "Lo hacemos a mano en <b>2-3 días</b> y te llega en <b>48/72h</b>";
+    d.innerHTML = "Lo hacemos a mano en <b>2-3 días</b> y te llega en <b>48/72h</b><br>🚚 <b>Envío GRATIS</b> en pedidos a partir de " + ENVIO_GRATIS_DESDE + " €";
     d.style.cssText = "margin:4px 0 6px;font:14px Arial,sans-serif;opacity:.95";
     var tras = precio.parentNode.querySelector(".vln-resenas") || precio;
     tras.parentNode.insertBefore(d, tras.nextSibling);
@@ -476,8 +478,7 @@
   }
   // Página de inicio: textos que se quedan viejos
   // - número de reseñas de Google: sale de RESENAS.total (el mismo de las fichas), así solo se cambia en un sitio
-  // - "por 6 €": mientras dure el envío gratis (misma fecha que la cinta de arriba) pone "gratis"
-  var FIN_ENVIO_GRATIS = new Date("2026-12-01T00:00:00+01:00");
+  // - "por 6 €": pone el envío gratis a partir de ENVIO_GRATIS_DESDE (el mismo importe de la cinta de arriba)
   function textosInicio() {
     if (location.pathname !== "/") return;
     var els = document.querySelectorAll("main strong, main div");
@@ -487,8 +488,8 @@
       var t = e.textContent || "";
       if (/^\s*\d+ opiniones\s*$/.test(t) && e.parentNode && /Basado en/.test(e.parentNode.textContent || "")) {
         e.textContent = RESENAS.total + " opiniones";
-      } else if (new Date() < FIN_ENVIO_GRATIS && /en 48\/72h por 6 €/.test(t)) {
-        e.textContent = t.replace("en 48/72h por 6 €", "en 48/72h con envío GRATIS");
+      } else if (/en 48\/72h por 6 €/.test(t)) {
+        e.textContent = t.replace("en 48/72h por 6 €", "en 48/72h, con envío GRATIS en pedidos a partir de " + ENVIO_GRATIS_DESDE + " €");
       }
     }
   }
@@ -643,5 +644,37 @@
     colocar(); setTimeout(colocar, 900); setTimeout(colocar, 2700);
     var t; window.addEventListener("resize", function () { clearTimeout(t); t = setTimeout(colocar, 300); });
   }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciar); else iniciar();
+})();
+
+// Cinta de arriba que va pasando: envío gratis a partir de ENVIO_GRATIS_DESDE €, en todas las páginas.
+// Sustituye a la cinta antigua ("hasta el 30 de noviembre · sin códigos") si sigue pegada en IONOS
+(function () {
+  var TEXTO = '🚚 <b>ENVÍO GRATIS</b> en pedidos a partir de ' + ENVIO_GRATIS_DESDE + ' € &nbsp;✦&nbsp; Hecho a mano en Sevilla &nbsp;✦&nbsp; Entrega en 48/72h a toda España &nbsp;✦&nbsp; ';
+  var ENLACE = "https://www.vamolosnota.es/tienda-costales/";
+  var CSS_CINTA =
+    "#vln-cinta{position:absolute;top:0;left:0;width:100%;height:40px;overflow:hidden;z-index:9999;background:#6b2c1a;border-bottom:2px solid #d4a574;font:700 17px/40px Georgia,serif;letter-spacing:.5px}" +
+    "body{padding-top:40px!important}" +
+    "#vln-cinta a{color:#faf3e7;text-decoration:none;display:block;height:40px}" +
+    "#vln-cinta b{color:#f6c27a}" +
+    "#vln-cinta .vln-pista{display:inline-flex;white-space:nowrap;animation:vlnPasa 110s linear infinite}" +
+    "#vln-cinta:hover .vln-pista{animation-play-state:paused}" +
+    "@keyframes vlnPasa{from{transform:translateX(0)}to{transform:translateX(-50%)}}" +
+    "@media (max-width:767px){#vln-cinta{height:34px;font-size:15px;line-height:34px}#vln-cinta a{height:34px}body{padding-top:34px!important}}" +
+    "@media (prefers-reduced-motion:reduce){#vln-cinta .vln-pista{animation:none}}" +
+    "@media print{#vln-cinta{display:none!important}body{padding-top:0!important}}";
+  function poner() {
+    if (!document.body) return;
+    if (!document.getElementById("vln-cinta-css")) {
+      var st = document.createElement("style"); st.id = "vln-cinta-css"; st.textContent = CSS_CINTA; document.head.appendChild(st);
+    }
+    var c = document.getElementById("vln-cinta");
+    if (c && c.getAttribute("data-envio") === String(ENVIO_GRATIS_DESDE)) return;
+    if (!c) { c = document.createElement("div"); c.id = "vln-cinta"; document.body.insertBefore(c, document.body.firstChild); }
+    c.setAttribute("data-envio", String(ENVIO_GRATIS_DESDE));
+    var bloque = ""; for (var i = 0; i < 4; i++) bloque += "<span>" + TEXTO + "</span>";
+    c.innerHTML = '<a href="' + ENLACE + '"><div class="vln-pista">' + bloque + bloque + "</div></a>";
+  }
+  function iniciar() { poner(); setTimeout(poner, 800); setTimeout(poner, 2500); }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciar); else iniciar();
 })();
