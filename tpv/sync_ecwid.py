@@ -251,7 +251,10 @@ def cmd_push(pend_path):
     for d in pend:
         p = d.get("data") or {}
         if p.get("ecwidCrear") and not p.get("ecwidId"):
-            # pedido hecho en el TPV que aún no existe en la tienda: se crea (la tienda manda los correos al cliente)
+            # IONOS no deja crear pedidos por la API (403 aunque la clave tenga create_orders).
+            # Estos pedidos los crea el agente del navegador (tarea "Crear en IONOS los pedidos del TPV").
+            if os.environ.get("CREAR_POR_API") != "1":
+                res.append({"id": d["id"], "ok": True, "sinCambios": True, "esperaNavegador": True}); continue
             try:
                 body = pedido_para_tienda(p)
                 if not body["items"]: raise RuntimeError("el pedido no tiene productos")
