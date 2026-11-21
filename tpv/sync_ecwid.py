@@ -318,7 +318,7 @@ def cmd_build(exist_path, stock_path=None):
     for r in push:
         if r.get("ok") and r.get("order") and r["order"].get("id") not in {o.get("id") for o in orders}:
             orders.append(r["order"])
-    ops, delta, nuevos, actualizados, saltados = [], {}, 0, 0, 0
+    items, nuevos, actualizados, saltados, ya_aplicados = [], 0, 0, 0, 0   # items: (op del pedido, su movimiento de stock)
     ahora = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
     for o in orders:
         eid = str(o.get("id") or "").upper()
@@ -327,6 +327,10 @@ def cmd_build(exist_path, stock_path=None):
         if ex and ex["data"].get("ecwidPend") and eid not in pushed_ok:
             saltados += 1; continue  # hay un cambio del TPV pendiente de subir: no se pisa
         cur = ex["data"] if ex else {}
+        if cur.get("borrado"):
+            saltados += 1; continue  # pedido en la papelera del TPV: no se toca
+        if ex and eid not in pushed_ok and o.get("updateDate") and cur.get("ecwidUpd") == o.get("updateDate"):
+            ya_aplicados += 1; continue  # este cambio de la tienda ya está en el TPV (vuelta anterior)
         # pedido hecho en el TPV, o pedido de la web corregido en el TPV (editadoTPV): sus líneas, total, datos del cliente y stock mandan
         del_tpv = cur.get("origen") == "TPV" or bool(cur.get("editadoTPV"))
         fecha, creado = fecha_local(o.get("createDate", ""))
@@ -366,6 +370,7 @@ def cmd_build(exist_path, stock_path=None):
         if pago == "Pagado" and not cur.get("fechaCobro"): f["fechaCobro"] = cur.get("fecha") or fecha
         if ful in ("WILL_NOT_DELIVER", "RETURNED"):
             f["incidencia"] = "No se entregará" if ful == "WILL_NOT_DELIVER" else "Devuelto"
+        delta = {}
         historico = bool(cur.get("historico"))
         comp_total = comp_de(lineas, telas)
         if not historico and not del_tpv:
@@ -377,15 +382,24 @@ def cmd_build(exist_path, stock_path=None):
                 if dlt: delta[k] = delta.get(k, 0) - dlt   # los pedidos restan material
             f["stockComp"] = deseado
         if ex:
-            ops.append({"op": "merge", "path": f"pedidos/{ex['id']}", "ifVersion": ex["version"], "data": f})
+            items.append(({"op": "merge", "path": f"pedidos/{ex['id']}", "ifVersion": ex["version"], "data": f}, delta))
             actualizados += 1
         else:
             f.update({"fecha": fecha, "creado": creado, "canal": "Web", "origen": "Tienda IONOS · " + eid,
                       "porDecidir": any(l["prod"] == "tarjeta" for l in lineas), "iva": 0.21,
                       "notas": " · ".join(x for x in [o.get("orderComments"), o.get("privateAdminNotes")] if x)})
             if pago != "Pagado": f.pop("fechaCobro", None)
-            ops.append({"op": "set", "path": f"pedidos/ec_{re.sub('[^A-Za-z0-9]', '', eid)}", "data": f})
+            items.append(({"op": "set", "path": f"pedidos/ec_{re.sub('[^A-Za-z0-9]', '', eid)}", "data": f}, delta))
             nuevos += 1
+    # UNA sola tanda por vuelta, con cada pedido y SU stock juntos: db_write escribe todo o nada, así nunca
+    # queda un pedido guardado con el stock sin mover. Si sobran pedidos, se repite la vuelta (QUEDAN: n).
+    ops, delta, quedan = [], {}, 0
+    for op, dl in items:
+        claves = set(delta) | {k for k, v in dl.items() if round(v, 2)}
+        if ops and len(ops) + 1 + len(claves) > 45:
+            quedan += 1; continue
+        ops.append(op)
+        for k, v in dl.items(): delta[k] = delta.get(k, 0) + v
     delta = {k: round(v, 2) for k, v in delta.items() if round(v, 2)}
     if delta and not stock:
         print("FALTA_STOCK: hay material que mover (" + json.dumps(delta) + "). Saca el listado de stock (db_list stock) "
@@ -402,14 +416,17 @@ def cmd_build(exist_path, stock_path=None):
                         "data": {"cant": round(float(s["data"].get("cant") or 0) + v, 2), "act": ahora}})
     errores = [r for r in push if not r.get("ok")]
     creados = sum(1 for r in push if r.get("ok") and r.get("creado"))
-    resumen = f"{nuevos} nuevos, {actualizados} actualizados" + (f", {sum(1 for r in push if r.get('ok') and not r.get('sinCambios'))} pasados a la tienda" if push else "") + (f", {creados} creados en la tienda" if creados else "")
+    resumen = f"{nuevos} nuevos, {actualizados} actualizados" + (f" ({quedan} en la siguiente tanda)" if quedan else "") + (f", {sum(1 for r in push if r.get('ok') and not r.get('sinCambios'))} pasados a la tienda" if push else "") + (f", {creados} creados en la tienda" if creados else "")
     json.dump({"ops": ops, "delta": delta, "faltaStock": falta_stock, "resumen": resumen,
                "errores": [f"{r.get('ecwidId')}: {r.get('error')}" for r in errores], "saltados": saltados},
               open(f"{DIR}/build.json", "w"), ensure_ascii=False)
-    for i in range(0, len(ops), 40):
-        json.dump(ops[i:i + 40], open(f"{DIR}/ops_{i // 40}.json", "w"), ensure_ascii=False, separators=(",", ":"))
-    print("build:", resumen, f"| {len(ops)} escrituras en {(len(ops) + 39) // 40} tandas: " +
-          ", ".join(f"{DIR}/ops_{i}.json" for i in range((len(ops) + 39) // 40)))
+    for f_ in os.listdir(DIR):
+        if f_.startswith("ops_") and f_.endswith(".json"): os.remove(f"{DIR}/{f_}")
+    if ops:
+        json.dump(ops, open(f"{DIR}/ops_0.json", "w"), ensure_ascii=False, separators=(",", ":"))
+    print("build:", resumen, f"| {len(ops)} escrituras en {1 if ops else 0} tanda" + (f": {DIR}/ops_0.json" if ops else "") +
+          (f" | ya estaban: {ya_aplicados}" if ya_aplicados else ""))
+    print(f"QUEDAN: {quedan}")
     if delta: print("stock a mover:", json.dumps(delta))
     if falta_stock: print("material que no existe en el stock del TPV (no se toca):", falta_stock)
     if errores: print("errores al pasar a la tienda:", json.dumps([e for e in errores], ensure_ascii=False)[:800])
