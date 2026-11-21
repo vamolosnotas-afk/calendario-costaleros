@@ -1,6 +1,6 @@
 {
- "actualizado": "2026-11-19",
- "total": 650,
+ "actualizado": "2026-11-21",
+ "total": 695,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -1127,6 +1127,23 @@
    "añadido": "2026-11-14"
   },
   {
+   "hora": "21:00",
+   "lugar": "Colegio Tomasa Pinilla",
+   "capataz": null,
+   "nota": "Calzado negro de salida y una cartulina grande para la Acción Social.",
+   "verificado_por": "claude",
+   "provincia": "jerez",
+   "localidad": "Guadalcacín (Jerez de la Frontera)",
+   "hermandad": "La Entrega",
+   "paso": "Misterio (Jesús de la Entrega)",
+   "fuente": "https://www.instagram.com/p/Df8Cx4kBc0x/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Entrega (Guadalcacín)",
+   "fecha": "2026-11-27",
+   "tipo": "igualá",
+   "titulo": "Igualá de costaleros del paso de misterio",
+   "añadido": "2026-11-21"
+  },
+  {
    "fecha": "2026-11-27",
    "hora": "21:00",
    "hermandad": "Inmaculada del Corpus Christi",
@@ -1269,8 +1286,8 @@
    "titulo": "Igualá de la cuadrilla del paso de misterio de Ntro. Padre Jesús del Consuelo",
    "lugar": "Plaza Olimpia (Patio Oratorio)",
    "capataz": "Hermanos Portillo y Auxiliares",
-   "fuente": null,
-   "fuente_nombre": null,
+   "fuente": "https://www.instagram.com/p/DfSDD0_PgvA/",
+   "fuente_nombre": "Instagram oficial de la Hdad. del Consuelo (Sevilla Este)",
    "verificado_por": "manuel",
    "nota": "Calzado negro de salida. Mayores de 18 años.",
    "añadido": "2026-11-06"
@@ -1875,6 +1892,23 @@
    "añadido": "2026-10-29"
   },
   {
+   "hora": "16:00",
+   "lugar": "Templo de San Francisco",
+   "capataz": null,
+   "nota": "Calzado negro de salida. Se ruega puntualidad.",
+   "verificado_por": "claude",
+   "provincia": "huelva",
+   "localidad": "Ayamonte",
+   "hermandad": "Soledad",
+   "paso": "Stmo. Cristo de la Vera-Cruz",
+   "fuente": "https://www.instagram.com/p/Df9oVvJPPu3/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Soledad (Ayamonte)",
+   "fecha": "2027-01-09",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla del Stmo. Cristo de la Vera-Cruz",
+   "añadido": "2026-11-21"
+  },
+  {
    "provincia": "salamanca",
    "localidad": "Peñaranda de Bracamonte",
    "paso": null,
@@ -2425,6 +2459,23 @@
    "añadido": "2026-11-02"
   },
   {
+   "hora": "21:00",
+   "lugar": null,
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Macarena",
+   "paso": "Sentencia y Macarena",
+   "fuente": "https://www.instagram.com/p/Df4PUjNh-EU/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Macarena (Almería)",
+   "fecha": "2027-01-15",
+   "tipo": "igualá",
+   "titulo": "Igualá general de costaleros (Sentencia y Macarena)",
+   "añadido": "2026-11-21"
+  },
+  {
    "fecha": "2027-01-15",
    "hora": "21:00",
    "provincia": "cordoba",
@@ -2556,6 +2607,23 @@
    "añadido": "2026-11-09"
   },
   {
+   "hora": "21:30",
+   "lugar": "Iglesia de San Francisco",
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "huelva",
+   "localidad": "Moguer",
+   "hermandad": "Borriquita",
+   "paso": "Stmo. Cristo del Amor",
+   "fuente": "https://www.instagram.com/p/Df4X-FwjdB_/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Borriquita (Moguer)",
+   "fecha": "2027-01-15",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de costaleras del Stmo. Cristo del Amor",
+   "añadido": "2026-11-21"
+  },
+  {
    "fecha": "2027-01-15",
    "hora": "21:30",
    "provincia": "jerez",
@@ -2606,6 +2674,23 @@
    "verificado_por": "manuel",
    "nota": "Hora por confirmar.",
    "añadido": "2026-11-14"
+  },
+  {
+   "hora": "11:00",
+   "lugar": "Casa de Hermandad (Alarcón López, 4)",
+   "capataz": null,
+   "nota": "Calzado blanco de salida.",
+   "verificado_por": "claude",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Resucitado",
+   "paso": "Ntro. Padre Jesús Resucitado",
+   "fuente": "https://www.instagram.com/p/Df92x90q3IH/",
+   "fuente_nombre": "Instagram oficial de la Hdad. del Resucitado (Córdoba)",
+   "fecha": "2027-01-16",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de Ntro. Padre Jesús Resucitado",
+   "añadido": "2026-11-21"
   },
   {
    "fecha": "2027-01-16",
@@ -3044,6 +3129,23 @@
    "añadido": "2026-11-10"
   },
   {
+   "hora": "13:00",
+   "lugar": "Salones de la Parroquia de la Inmaculada Concepción",
+   "capataz": null,
+   "nota": "Calzado de salida.",
+   "verificado_por": "claude",
+   "provincia": "sevilla",
+   "localidad": "Alcalá de Guadaíra",
+   "hermandad": "Perdón",
+   "tipo": "igualá",
+   "paso": "Stmo. Cristo del Perdón",
+   "fecha": "2027-01-17",
+   "titulo": "Igualá del Stmo. Cristo del Perdón",
+   "fuente": "https://www.instagram.com/p/Df4YXBooLZZ/",
+   "fuente_nombre": "Instagram oficial de la Hdad. del Perdón (Alcalá de Guadaíra)",
+   "añadido": "2026-11-21"
+  },
+  {
    "fecha": "2027-01-17",
    "hora": "15:00",
    "provincia": "sevilla",
@@ -3243,6 +3345,23 @@
    "añadido": "2026-11-09"
   },
   {
+   "hora": "21:30",
+   "lugar": "Iglesia de San Francisco",
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "huelva",
+   "localidad": "Moguer",
+   "hermandad": "Borriquita",
+   "paso": "María Stma. de la Esperanza",
+   "fuente": "https://www.instagram.com/p/Df4YVKUDfr4/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Borriquita (Moguer)",
+   "fecha": "2027-01-21",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de María Stma. de la Esperanza",
+   "añadido": "2026-11-21"
+  },
+  {
    "fecha": "2027-01-22",
    "hora": "20:00",
    "provincia": "sevilla",
@@ -3258,6 +3377,23 @@
    "verificado_por": "manuel",
    "nota": "Ir con el calzado de salida.",
    "añadido": "2026-11-10"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Écija",
+   "hermandad": "El Resucitado",
+   "paso": "María Stma. de la Alegría",
+   "capataz": null,
+   "fuente": "https://www.hermandadresucitadoecija.org/2026/11/20/calendario-de-la-cuadrilla-de-maria-santisima-de-la-alegria-para-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. del Resucitado (Écija)",
+   "verificado_por": "claude",
+   "lugar": "Cuarto Paso, calle Fernando Labrada",
+   "fecha": "2027-01-22",
+   "hora": "20:00",
+   "tipo": "igualá",
+   "titulo": "Igualá y primer ensayo de la cuadrilla de costaleras de María Stma. de la Alegría",
+   "nota": "Abierta a todas las mujeres que quieran ser costaleras, con o sin experiencia. Calzado blanco de salida.",
+   "añadido": "2026-11-21"
   },
   {
    "provincia": "sevilla",
@@ -3308,6 +3444,23 @@
    "fuente_nombre": "Web oficial de la Hdad. de la Santa Cena de Almería",
    "nota": "Publicado el 20/10/2026 en el 'Calendario de ensayos de la cuadrilla de costaleros 2027'; año deducido del título (viernes 22 de enero cuadra con 2027). Calzado de salida negro.",
    "añadido": "2026-10-30"
+  },
+  {
+   "hora": "21:00",
+   "lugar": null,
+   "capataz": null,
+   "nota": "Igualá de aspirantes.",
+   "verificado_por": "claude",
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Macarena",
+   "paso": "Sentencia y Macarena",
+   "fuente": "https://www.instagram.com/p/Df4PUjNh-EU/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Macarena (Almería)",
+   "fecha": "2027-01-22",
+   "tipo": "igualá",
+   "titulo": "Igualá de aspirantes a costalero (Sentencia y Macarena)",
+   "añadido": "2026-11-21"
   },
   {
    "fecha": "2027-01-22",
@@ -3504,8 +3657,8 @@
    "titulo": "Igualá de la cuadrilla de María Stma. de Guadalupe",
    "lugar": "Atrio de la Capilla de Ntra. Sra. del Rosario",
    "capataz": null,
-   "fuente": null,
-   "fuente_nombre": null,
+   "fuente": "https://www.instagram.com/p/Df4P2G1oZfU/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de las Aguas (Sevilla)",
    "verificado_por": "manuel",
    "nota": "Calzado blanco.",
    "provincia": "sevilla",
@@ -3769,8 +3922,8 @@
    "titulo": "Igualá de la cuadrilla del Stmo. Cristo de las Aguas",
    "lugar": "Atrio de la Capilla de Ntra. Sra. del Rosario",
    "capataz": null,
-   "fuente": null,
-   "fuente_nombre": null,
+   "fuente": "https://www.instagram.com/p/Df4P2G1oZfU/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de las Aguas (Sevilla)",
    "verificado_por": "manuel",
    "nota": "Calzado negro.",
    "provincia": "sevilla",
@@ -3979,6 +4132,23 @@
    "tipo": "igualá",
    "titulo": "Igualá y convivencia de la cuadrilla de María Stma. del Perpetuo Socorro",
    "añadido": "2026-11-15"
+  },
+  {
+   "hora": "13:00",
+   "lugar": "Salones de la Parroquia de la Inmaculada Concepción",
+   "capataz": null,
+   "nota": "Calzado de salida.",
+   "verificado_por": "claude",
+   "provincia": "sevilla",
+   "localidad": "Alcalá de Guadaíra",
+   "hermandad": "Perdón",
+   "tipo": "igualá",
+   "paso": "Ntra. Sra. de las Angustias",
+   "fecha": "2027-01-24",
+   "titulo": "Igualá de Ntra. Sra. de las Angustias",
+   "fuente": "https://www.instagram.com/p/Df5GW38DSWN/",
+   "fuente_nombre": "Instagram oficial de la Hdad. del Perdón (Alcalá de Guadaíra)",
+   "añadido": "2026-11-21"
   },
   {
    "provincia": "sevilla",
@@ -4293,6 +4463,23 @@
    "añadido": "2026-10-31"
   },
   {
+   "hora": "21:00",
+   "lugar": "Casa Hermandad (calle San Andrés)",
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "huelva",
+   "localidad": "Huelva",
+   "hermandad": "Buena Muerte",
+   "paso": "Ntra. Madre de Consolación",
+   "fuente": "https://www.instagram.com/p/Df9LV5mkT_M/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Buena Muerte (Huelva)",
+   "fecha": "2027-01-29",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de Ntra. Madre de Consolación",
+   "añadido": "2026-11-21"
+  },
+  {
    "fecha": "2027-01-29",
    "hora": "21:00",
    "provincia": "jerez",
@@ -4409,6 +4596,40 @@
    "lugar": "Iglesia de la Concepción",
    "titulo": "Igualá de la cuadrilla de Mª Stma. de la Amargura",
    "añadido": "2026-10-31"
+  },
+  {
+   "hora": "21:30",
+   "lugar": "Almacén",
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "huelva",
+   "localidad": "Moguer",
+   "hermandad": "Borriquita",
+   "paso": "Stmo. Cristo del Amor",
+   "fuente": "https://www.instagram.com/p/Df4X-FwjdB_/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Borriquita (Moguer)",
+   "fecha": "2027-01-29",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de costaleras del Stmo. Cristo del Amor",
+   "añadido": "2026-11-21"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Écija",
+   "hermandad": "El Resucitado",
+   "paso": "María Stma. de la Alegría",
+   "capataz": null,
+   "fuente": "https://www.hermandadresucitadoecija.org/2026/11/20/calendario-de-la-cuadrilla-de-maria-santisima-de-la-alegria-para-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. del Resucitado (Écija)",
+   "verificado_por": "claude",
+   "lugar": "Cuarto Paso, calle Fernando Labrada",
+   "fecha": "2027-01-29",
+   "hora": null,
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de costaleras de María Stma. de la Alegría",
+   "nota": "En la igualá se fijan 3 ensayos; el resto de fechas quedan de reserva por lluvia.",
+   "añadido": "2026-11-21"
   },
   {
    "fecha": "2027-01-30",
@@ -4984,6 +5205,23 @@
    "añadido": "2026-11-09"
   },
   {
+   "hora": "21:30",
+   "lugar": "Iglesia de San Francisco",
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "huelva",
+   "localidad": "Moguer",
+   "hermandad": "Borriquita",
+   "paso": "María Stma. de la Esperanza",
+   "fuente": "https://www.instagram.com/p/Df4YVKUDfr4/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Borriquita (Moguer)",
+   "fecha": "2027-02-04",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de María Stma. de la Esperanza",
+   "añadido": "2026-11-21"
+  },
+  {
    "provincia": "almeria",
    "localidad": "Almería",
    "hermandad": "Prendimiento",
@@ -5084,6 +5322,23 @@
    "añadido": "2026-11-19"
   },
   {
+   "hora": "21:30",
+   "lugar": "Almacén",
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "huelva",
+   "localidad": "Moguer",
+   "hermandad": "Borriquita",
+   "paso": "Stmo. Cristo del Amor",
+   "fuente": "https://www.instagram.com/p/Df4X-FwjdB_/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Borriquita (Moguer)",
+   "fecha": "2027-02-05",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de costaleras del Stmo. Cristo del Amor",
+   "añadido": "2026-11-21"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "El Nazareno",
@@ -5098,6 +5353,23 @@
    "lugar": "Nave González Barba",
    "titulo": "Ensayo de la cuadrilla de Ntro. Padre Jesús Nazareno",
    "añadido": "2026-10-31"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Écija",
+   "hermandad": "El Resucitado",
+   "paso": "María Stma. de la Alegría",
+   "capataz": null,
+   "fuente": "https://www.hermandadresucitadoecija.org/2026/11/20/calendario-de-la-cuadrilla-de-maria-santisima-de-la-alegria-para-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. del Resucitado (Écija)",
+   "verificado_por": "claude",
+   "lugar": "Cuarto Paso, calle Fernando Labrada",
+   "fecha": "2027-02-05",
+   "hora": null,
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de costaleras de María Stma. de la Alegría",
+   "nota": "En la igualá se fijan 3 ensayos; el resto de fechas quedan de reserva por lluvia.",
+   "añadido": "2026-11-21"
   },
   {
    "fecha": "2027-02-06",
@@ -5331,6 +5603,23 @@
    "fuente_nombre": "Web oficial de la Hermandad de la Milagrosa",
    "nota": null,
    "añadido": "2026-10-30"
+  },
+  {
+   "hora": "20:00",
+   "lugar": null,
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Resucitado",
+   "paso": "Ntro. Padre Jesús Resucitado",
+   "fuente": "https://www.instagram.com/p/Df92x90q3IH/",
+   "fuente_nombre": "Instagram oficial de la Hdad. del Resucitado (Córdoba)",
+   "fecha": "2027-02-06",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de Ntro. Padre Jesús Resucitado",
+   "añadido": "2026-11-21"
   },
   {
    "fecha": "2027-02-06",
@@ -5881,6 +6170,23 @@
    "añadido": "2026-11-09"
   },
   {
+   "hora": "21:30",
+   "lugar": "Iglesia de San Francisco",
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "huelva",
+   "localidad": "Moguer",
+   "hermandad": "Borriquita",
+   "paso": "María Stma. de la Esperanza",
+   "fuente": "https://www.instagram.com/p/Df4YVKUDfr4/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Borriquita (Moguer)",
+   "fecha": "2027-02-11",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de María Stma. de la Esperanza",
+   "añadido": "2026-11-21"
+  },
+  {
    "provincia": "almeria",
    "localidad": "Almería",
    "hermandad": "Prendimiento",
@@ -5978,6 +6284,23 @@
    "fuente_nombre": "Web oficial de la Hdad. de las Angustias (Almería)",
    "nota": null,
    "añadido": "2026-11-06"
+  },
+  {
+   "hora": "21:00",
+   "lugar": null,
+   "capataz": null,
+   "nota": "Altos y bajos.",
+   "verificado_por": "claude",
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Macarena",
+   "paso": "Sentencia y Macarena",
+   "fuente": "https://www.instagram.com/p/Df4PUjNh-EU/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Macarena (Almería)",
+   "fecha": "2027-02-12",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de costaleros (Sentencia y Macarena)",
+   "añadido": "2026-11-21"
   },
   {
    "fecha": "2027-02-12",
@@ -6166,6 +6489,23 @@
    "añadido": "2026-11-14"
   },
   {
+   "hora": "21:30",
+   "lugar": "Almacén",
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "huelva",
+   "localidad": "Moguer",
+   "hermandad": "Borriquita",
+   "paso": "Stmo. Cristo del Amor",
+   "fuente": "https://www.instagram.com/p/Df4X-FwjdB_/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Borriquita (Moguer)",
+   "fecha": "2027-02-12",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de costaleras del Stmo. Cristo del Amor",
+   "añadido": "2026-11-21"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "El Nazareno",
@@ -6196,6 +6536,23 @@
    "lugar": "Nave González Barba",
    "titulo": "Ensayo de la cuadrilla de Mª Stma. de la Amargura",
    "añadido": "2026-10-31"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Écija",
+   "hermandad": "El Resucitado",
+   "paso": "María Stma. de la Alegría",
+   "capataz": null,
+   "fuente": "https://www.hermandadresucitadoecija.org/2026/11/20/calendario-de-la-cuadrilla-de-maria-santisima-de-la-alegria-para-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. del Resucitado (Écija)",
+   "verificado_por": "claude",
+   "lugar": "Cuarto Paso, calle Fernando Labrada",
+   "fecha": "2027-02-12",
+   "hora": null,
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de costaleras de María Stma. de la Alegría",
+   "nota": "En la igualá se fijan 3 ensayos; el resto de fechas quedan de reserva por lluvia.",
+   "añadido": "2026-11-21"
   },
   {
    "fecha": "2027-02-13",
@@ -6909,6 +7266,23 @@
    "añadido": "2026-11-09"
   },
   {
+   "hora": "21:30",
+   "lugar": "Iglesia de San Francisco",
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "huelva",
+   "localidad": "Moguer",
+   "hermandad": "Borriquita",
+   "paso": "María Stma. de la Esperanza",
+   "fuente": "https://www.instagram.com/p/Df4YVKUDfr4/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Borriquita (Moguer)",
+   "fecha": "2027-02-18",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de María Stma. de la Esperanza",
+   "añadido": "2026-11-21"
+  },
+  {
    "provincia": "almeria",
    "localidad": "Almería",
    "hermandad": "Prendimiento",
@@ -6977,6 +7351,23 @@
    "añadido": "2026-11-14"
   },
   {
+   "hora": "21:00",
+   "lugar": null,
+   "capataz": null,
+   "nota": "Altos.",
+   "verificado_por": "claude",
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Macarena",
+   "paso": "Sentencia y Macarena",
+   "fuente": "https://www.instagram.com/p/Df4PUjNh-EU/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Macarena (Almería)",
+   "fecha": "2027-02-19",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de costaleros (Sentencia y Macarena)",
+   "añadido": "2026-11-21"
+  },
+  {
    "fecha": "2027-02-19",
    "hora": "21:00",
    "provincia": "cordoba",
@@ -7007,6 +7398,23 @@
    "lugar": "Casa de Hermandad",
    "titulo": "Ensayo de la cuadrilla de Ntra. Sra. de la Esperanza Coronada",
    "añadido": "2026-10-31"
+  },
+  {
+   "hora": "21:00",
+   "lugar": "Calle Ricardo Velázquez",
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "huelva",
+   "localidad": "Huelva",
+   "hermandad": "Buena Muerte",
+   "paso": "Ntra. Madre de Consolación",
+   "fuente": "https://www.instagram.com/p/Df9LV5mkT_M/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Buena Muerte (Huelva)",
+   "fecha": "2027-02-19",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de Ntra. Madre de Consolación",
+   "añadido": "2026-11-21"
   },
   {
    "fecha": "2027-02-19",
@@ -7311,6 +7719,23 @@
    "añadido": "2026-10-30"
   },
   {
+   "hora": "20:00",
+   "lugar": null,
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Resucitado",
+   "paso": "Ntro. Padre Jesús Resucitado",
+   "fuente": "https://www.instagram.com/p/Df92x90q3IH/",
+   "fuente_nombre": "Instagram oficial de la Hdad. del Resucitado (Córdoba)",
+   "fecha": "2027-02-20",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de Ntro. Padre Jesús Resucitado",
+   "añadido": "2026-11-21"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "Vera+Cruz y Oración en el Huerto",
@@ -7556,6 +7981,23 @@
    "fuente_nombre": "Instagram oficial de la Hdad. de la Fe (Huelva)",
    "nota": "Con Banda de Música de la Consolación",
    "añadido": "2026-11-09"
+  },
+  {
+   "hora": "10:00",
+   "lugar": "Templo de San Francisco",
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "huelva",
+   "localidad": "Ayamonte",
+   "hermandad": "Soledad",
+   "paso": "Stmo. Cristo de la Vera-Cruz",
+   "fuente": "https://www.instagram.com/p/Df9oVvJPPu3/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Soledad (Ayamonte)",
+   "fecha": "2027-02-21",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla del Stmo. Cristo de la Vera-Cruz",
+   "añadido": "2026-11-21"
   },
   {
    "provincia": "sevilla",
@@ -8068,6 +8510,23 @@
    "añadido": "2026-11-09"
   },
   {
+   "hora": "21:30",
+   "lugar": "Iglesia de San Francisco",
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "huelva",
+   "localidad": "Moguer",
+   "hermandad": "Borriquita",
+   "paso": "María Stma. de la Esperanza",
+   "fuente": "https://www.instagram.com/p/Df4YVKUDfr4/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Borriquita (Moguer)",
+   "fecha": "2027-02-25",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de María Stma. de la Esperanza",
+   "añadido": "2026-11-21"
+  },
+  {
    "provincia": "almeria",
    "localidad": "Almería",
    "hermandad": "Prendimiento",
@@ -8200,6 +8659,23 @@
    "añadido": "2026-11-14"
   },
   {
+   "hora": "21:30",
+   "lugar": "Almacén",
+   "capataz": null,
+   "nota": "Fecha de reserva.",
+   "verificado_por": "claude",
+   "provincia": "huelva",
+   "localidad": "Moguer",
+   "hermandad": "Borriquita",
+   "paso": "Stmo. Cristo del Amor",
+   "fuente": "https://www.instagram.com/p/Df4X-FwjdB_/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Borriquita (Moguer)",
+   "fecha": "2027-02-26",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de reserva de la cuadrilla del Stmo. Cristo del Amor",
+   "añadido": "2026-11-21"
+  },
+  {
    "fecha": "2027-02-26",
    "hora": null,
    "provincia": "huelva",
@@ -8215,6 +8691,23 @@
    "verificado_por": "manuel",
    "nota": null,
    "añadido": "2026-11-11"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Écija",
+   "hermandad": "El Resucitado",
+   "paso": "María Stma. de la Alegría",
+   "capataz": null,
+   "fuente": "https://www.hermandadresucitadoecija.org/2026/11/20/calendario-de-la-cuadrilla-de-maria-santisima-de-la-alegria-para-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. del Resucitado (Écija)",
+   "verificado_por": "claude",
+   "lugar": "Cuarto Paso, calle Fernando Labrada",
+   "fecha": "2027-02-26",
+   "hora": null,
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de costaleras de María Stma. de la Alegría",
+   "nota": "En la igualá se fijan 3 ensayos; el resto de fechas quedan de reserva por lluvia.",
+   "añadido": "2026-11-21"
   },
   {
    "fecha": "2027-02-27",
@@ -8314,6 +8807,23 @@
    "verificado_por": "manuel",
    "nota": null,
    "añadido": "2026-11-14"
+  },
+  {
+   "hora": "10:00",
+   "lugar": "Templo de San Francisco",
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "huelva",
+   "localidad": "Ayamonte",
+   "hermandad": "Soledad",
+   "paso": "Stmo. Cristo de la Vera-Cruz",
+   "fuente": "https://www.instagram.com/p/Df9oVvJPPu3/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Soledad (Ayamonte)",
+   "fecha": "2027-02-28",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla del Stmo. Cristo de la Vera-Cruz",
+   "añadido": "2026-11-21"
   },
   {
    "fecha": "2027-02-28",
@@ -8569,6 +9079,23 @@
    "añadido": "2026-10-29"
   },
   {
+   "hora": "21:30",
+   "lugar": "Iglesia de San Francisco",
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "huelva",
+   "localidad": "Moguer",
+   "hermandad": "Borriquita",
+   "paso": "María Stma. de la Esperanza",
+   "fuente": "https://www.instagram.com/p/Df4YVKUDfr4/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Borriquita (Moguer)",
+   "fecha": "2027-03-04",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de María Stma. de la Esperanza",
+   "añadido": "2026-11-21"
+  },
+  {
    "provincia": "almeria",
    "localidad": "Almería",
    "hermandad": "Prendimiento",
@@ -8599,6 +9126,23 @@
    "tipo": "ensayo",
    "titulo": "2.º ensayo de las cuadrillas",
    "añadido": "2026-11-02"
+  },
+  {
+   "hora": "21:00",
+   "lugar": null,
+   "capataz": null,
+   "nota": "Bajos.",
+   "verificado_por": "claude",
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Macarena",
+   "paso": "Sentencia y Macarena",
+   "fuente": "https://www.instagram.com/p/Df4PUjNh-EU/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Macarena (Almería)",
+   "fecha": "2027-03-05",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de costaleros (Sentencia y Macarena)",
+   "añadido": "2026-11-21"
   },
   {
    "fecha": "2027-03-05",
@@ -8682,6 +9226,23 @@
    "añadido": "2026-10-31"
   },
   {
+   "hora": "21:00",
+   "lugar": "Calle Ricardo Velázquez",
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "huelva",
+   "localidad": "Huelva",
+   "hermandad": "Buena Muerte",
+   "paso": "Ntra. Madre de Consolación",
+   "fuente": "https://www.instagram.com/p/Df9LV5mkT_M/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Buena Muerte (Huelva)",
+   "fecha": "2027-03-05",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de Ntra. Madre de Consolación",
+   "añadido": "2026-11-21"
+  },
+  {
    "provincia": "jaen",
    "hora": "21:00",
    "lugar": "Parroquia de Santa Isabel",
@@ -8749,6 +9310,23 @@
    "añadido": "2026-11-19"
   },
   {
+   "hora": "21:30",
+   "lugar": "Almacén",
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "huelva",
+   "localidad": "Moguer",
+   "hermandad": "Borriquita",
+   "paso": "Stmo. Cristo del Amor",
+   "fuente": "https://www.instagram.com/p/Df4X-FwjdB_/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Borriquita (Moguer)",
+   "fecha": "2027-03-05",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de costaleras del Stmo. Cristo del Amor",
+   "añadido": "2026-11-21"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "El Nazareno",
@@ -8796,6 +9374,23 @@
    "verificado_por": "manuel",
    "nota": null,
    "añadido": "2026-11-11"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Écija",
+   "hermandad": "El Resucitado",
+   "paso": "María Stma. de la Alegría",
+   "capataz": null,
+   "fuente": "https://www.hermandadresucitadoecija.org/2026/11/20/calendario-de-la-cuadrilla-de-maria-santisima-de-la-alegria-para-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. del Resucitado (Écija)",
+   "verificado_por": "claude",
+   "lugar": "Cuarto Paso, calle Fernando Labrada",
+   "fecha": "2027-03-05",
+   "hora": null,
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de costaleras de María Stma. de la Alegría",
+   "nota": "En la igualá se fijan 3 ensayos; el resto de fechas quedan de reserva por lluvia.",
+   "añadido": "2026-11-21"
   },
   {
    "fecha": "2027-03-06",
@@ -8943,6 +9538,23 @@
    "tipo": "ensayo",
    "titulo": "Ensayo de costaleras de Ntra. Sra. de la Consolación",
    "añadido": "2026-11-03"
+  },
+  {
+   "hora": "20:00",
+   "lugar": null,
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "cordoba",
+   "localidad": "Córdoba",
+   "hermandad": "Resucitado",
+   "paso": "Ntro. Padre Jesús Resucitado",
+   "fuente": "https://www.instagram.com/p/Df92x90q3IH/",
+   "fuente_nombre": "Instagram oficial de la Hdad. del Resucitado (Córdoba)",
+   "fecha": "2027-03-06",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de Ntro. Padre Jesús Resucitado",
+   "añadido": "2026-11-21"
   },
   {
    "fecha": "2027-03-06",
@@ -9293,6 +9905,23 @@
    "añadido": "2026-11-02"
   },
   {
+   "hora": "10:00",
+   "lugar": "Templo de San Francisco",
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "huelva",
+   "localidad": "Ayamonte",
+   "hermandad": "Soledad",
+   "paso": "Stmo. Cristo de la Vera-Cruz",
+   "fuente": "https://www.instagram.com/p/Df9oVvJPPu3/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Soledad (Ayamonte)",
+   "fecha": "2027-03-07",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla del Stmo. Cristo de la Vera-Cruz",
+   "añadido": "2026-11-21"
+  },
+  {
    "fecha": "2027-03-07",
    "hora": "10:00",
    "provincia": "jaen",
@@ -9558,6 +10187,23 @@
    "añadido": "2026-10-30"
   },
   {
+   "hora": null,
+   "lugar": null,
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "huelva",
+   "localidad": "Moguer",
+   "hermandad": "Borriquita",
+   "paso": "Stmo. Cristo del Amor",
+   "fuente": "https://www.instagram.com/p/Df4X-FwjdB_/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Borriquita (Moguer)",
+   "fecha": "2027-03-08",
+   "tipo": "mudá",
+   "titulo": "Mudá del paso del Stmo. Cristo del Amor",
+   "añadido": "2026-11-21"
+  },
+  {
    "fecha": "2027-03-09",
    "hora": "20:30",
    "provincia": "jerez",
@@ -9774,6 +10420,23 @@
    "origen": "terceros"
   },
   {
+   "hora": "21:00",
+   "lugar": null,
+   "capataz": null,
+   "nota": "Altos y bajos.",
+   "verificado_por": "claude",
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Macarena",
+   "paso": "Sentencia y Macarena",
+   "fuente": "https://www.instagram.com/p/Df4PUjNh-EU/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Macarena (Almería)",
+   "fecha": "2027-03-12",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de costaleros (Sentencia y Macarena)",
+   "añadido": "2026-11-21"
+  },
+  {
    "fecha": "2027-03-12",
    "hora": "21:00",
    "provincia": "ciudadreal",
@@ -9805,6 +10468,40 @@
    "verificado_por": "manuel",
    "nota": null,
    "añadido": "2026-11-13"
+  },
+  {
+   "hora": "21:00",
+   "lugar": "Calle Ricardo Velázquez",
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "huelva",
+   "localidad": "Huelva",
+   "hermandad": "Buena Muerte",
+   "paso": "Ntra. Madre de Consolación",
+   "fuente": "https://www.instagram.com/p/Df9LV5mkT_M/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Buena Muerte (Huelva)",
+   "fecha": "2027-03-12",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de Ntra. Madre de Consolación",
+   "añadido": "2026-11-21"
+  },
+  {
+   "hora": "21:00",
+   "lugar": "Templo de San Francisco",
+   "capataz": null,
+   "nota": "Ensayo de reserva.",
+   "verificado_por": "claude",
+   "provincia": "huelva",
+   "localidad": "Ayamonte",
+   "hermandad": "Soledad",
+   "paso": "Stmo. Cristo de la Vera-Cruz",
+   "fuente": "https://www.instagram.com/p/Df9oVvJPPu3/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Soledad (Ayamonte)",
+   "fecha": "2027-03-12",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de reserva de la cuadrilla del Stmo. Cristo de la Vera-Cruz",
+   "añadido": "2026-11-21"
   },
   {
    "provincia": "almeria",
@@ -9888,6 +10585,23 @@
    "verificado_por": "manuel",
    "nota": "Hora por confirmar.",
    "añadido": "2026-11-14"
+  },
+  {
+   "provincia": "sevilla",
+   "localidad": "Écija",
+   "hermandad": "El Resucitado",
+   "paso": "María Stma. de la Alegría",
+   "capataz": null,
+   "fuente": "https://www.hermandadresucitadoecija.org/2026/11/20/calendario-de-la-cuadrilla-de-maria-santisima-de-la-alegria-para-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. del Resucitado (Écija)",
+   "verificado_por": "claude",
+   "lugar": "Cuarto Paso, calle Fernando Labrada",
+   "fecha": "2027-03-12",
+   "hora": null,
+   "tipo": "mudá",
+   "titulo": "Mudá del paso de María Stma. de la Alegría",
+   "nota": null,
+   "añadido": "2026-11-21"
   },
   {
    "fecha": "2027-03-13",
@@ -10356,6 +11070,23 @@
    "añadido": "2026-11-02"
   },
   {
+   "hora": null,
+   "lugar": "Iglesia de San Francisco",
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "huelva",
+   "localidad": "Moguer",
+   "hermandad": "Borriquita",
+   "paso": "María Stma. de la Esperanza",
+   "fuente": "https://www.instagram.com/p/Df4YVKUDfr4/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Borriquita (Moguer)",
+   "fecha": "2027-03-16",
+   "tipo": "retranqueo",
+   "titulo": "Retranqueo del paso de María Stma. de la Esperanza",
+   "añadido": "2026-11-21"
+  },
+  {
    "fecha": "2027-03-17",
    "hora": "20:30",
    "provincia": "almeria",
@@ -10504,6 +11235,23 @@
    "verificado_por": "manuel",
    "nota": "Hora por confirmar.",
    "añadido": "2026-11-14"
+  },
+  {
+   "hora": null,
+   "lugar": null,
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "huelva",
+   "localidad": "Moguer",
+   "hermandad": "Borriquita",
+   "paso": "Stmo. Cristo del Amor",
+   "fuente": "https://www.instagram.com/p/Df4X-FwjdB_/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Borriquita (Moguer)",
+   "fecha": "2027-03-17",
+   "tipo": "retranqueo",
+   "titulo": "Retranqueo del paso del Stmo. Cristo del Amor",
+   "añadido": "2026-11-21"
   },
   {
    "provincia": "jaen",
@@ -10720,6 +11468,23 @@
    "titulo": "Retranqueo del paso del Stmo. Cristo de la Sed",
    "lugar": "Parroquia",
    "añadido": "2026-10-30"
+  },
+  {
+   "hora": "13:00",
+   "lugar": null,
+   "capataz": null,
+   "nota": null,
+   "verificado_por": "claude",
+   "provincia": "almeria",
+   "localidad": "Almería",
+   "hermandad": "Macarena",
+   "paso": "Sentencia y Macarena",
+   "fuente": "https://www.instagram.com/p/Df4PUjNh-EU/",
+   "fuente_nombre": "Instagram oficial de la Hdad. de la Macarena (Almería)",
+   "fecha": "2027-03-20",
+   "tipo": "retranqueo",
+   "titulo": "Retranqueo (Sentencia y Macarena)",
+   "añadido": "2026-11-21"
   },
   {
    "fecha": "2027-03-20",
