@@ -2,6 +2,9 @@
    Se carga desde "Código personalizado en el head" de IONOS. */
 // Envío gratis a partir de este importe (€). Se usa en la cinta de arriba, la página de inicio y las fichas de producto
 var ENVIO_GRATIS_DESDE = 50;
+// Hasta el 30 de noviembre de 2026 el envío es gratis en todo; desde el 1 de diciembre, solo a partir de ENVIO_GRATIS_DESDE €
+var ENVIO_GRATIS_TODO = new Date() < new Date("2026-12-01T00:00:00+01:00");
+var TXT_ENVIO_GRATIS = ENVIO_GRATIS_TODO ? "hasta el 30 de noviembre" : "en pedidos a partir de " + ENVIO_GRATIS_DESDE + " €";
 (function () {
   var URL_CAL = "https://www.vamolosnota.es/calendario-de-igualas-y-ensayos/";
   var URL_COSTAL = "https://www.vamolosnota.es/tienda-costales/Costal-Personalizado-a-Medida-en-Sevilla-p718578854/";
@@ -392,7 +395,7 @@ var ENVIO_GRATIS_DESDE = 50;
     if (h1 && /tarjeta regalo/i.test(h1.textContent || "")) return;
     var d = document.createElement("div");
     d.className = "vln-plazo";
-    d.innerHTML = "Lo hacemos a mano en <b>2-3 días</b> y te llega en <b>48/72h</b><br>🚚 <b>Envío GRATIS</b> en pedidos a partir de " + ENVIO_GRATIS_DESDE + " €";
+    d.innerHTML = "Lo hacemos a mano en <b>2-3 días</b> y te llega en <b>48/72h</b><br>🚚 <b>Envío GRATIS</b> " + TXT_ENVIO_GRATIS;
     d.style.cssText = "margin:4px 0 6px;font:14px Arial,sans-serif;opacity:.95";
     var tras = precio.parentNode.querySelector(".vln-resenas") || precio;
     tras.parentNode.insertBefore(d, tras.nextSibling);
@@ -489,7 +492,7 @@ var ENVIO_GRATIS_DESDE = 50;
       if (/^\s*\d+ opiniones\s*$/.test(t) && e.parentNode && /Basado en/.test(e.parentNode.textContent || "")) {
         e.textContent = RESENAS.total + " opiniones";
       } else if (/en 48\/72h por 6 €/.test(t)) {
-        e.textContent = t.replace("en 48/72h por 6 €", "en 48/72h, con envío GRATIS en pedidos a partir de " + ENVIO_GRATIS_DESDE + " €");
+        e.textContent = t.replace("en 48/72h por 6 €", ENVIO_GRATIS_TODO ? "en 48/72h con envío GRATIS" : "en 48/72h, con envío GRATIS " + TXT_ENVIO_GRATIS);
       }
     }
   }
@@ -647,10 +650,10 @@ var ENVIO_GRATIS_DESDE = 50;
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciar); else iniciar();
 })();
 
-// Cinta de arriba que va pasando: envío gratis a partir de ENVIO_GRATIS_DESDE €, en todas las páginas.
+// Cinta de arriba que va pasando, en todas las páginas: hasta el 30/11 envío gratis en todo; desde el 1/12, a partir de ENVIO_GRATIS_DESDE €.
 // Sustituye a la cinta antigua ("hasta el 30 de noviembre · sin códigos") si sigue pegada en IONOS
 (function () {
-  var TEXTO = '🚚 <b>ENVÍO GRATIS</b> en pedidos a partir de ' + ENVIO_GRATIS_DESDE + ' € &nbsp;✦&nbsp; Hecho a mano en Sevilla &nbsp;✦&nbsp; Entrega en 48/72h a toda España &nbsp;✦&nbsp; ';
+  var TEXTO = '🚚 <b>ENVÍO GRATIS</b> ' + (ENVIO_GRATIS_TODO ? 'en tu costal ' : '') + TXT_ENVIO_GRATIS + ' &nbsp;✦&nbsp; Hecho a mano en Sevilla &nbsp;✦&nbsp; Entrega en 48/72h a toda España &nbsp;✦&nbsp; ';
   var ENLACE = "https://www.vamolosnota.es/tienda-costales/";
   var CSS_CINTA =
     "#vln-cinta{position:absolute;top:0;left:0;width:100%;height:40px;overflow:hidden;z-index:9999;background:#6b2c1a;border-bottom:2px solid #d4a574;font:700 17px/40px Georgia,serif;letter-spacing:.5px}" +
@@ -669,9 +672,9 @@ var ENVIO_GRATIS_DESDE = 50;
       var st = document.createElement("style"); st.id = "vln-cinta-css"; st.textContent = CSS_CINTA; document.head.appendChild(st);
     }
     var c = document.getElementById("vln-cinta");
-    if (c && c.getAttribute("data-envio") === String(ENVIO_GRATIS_DESDE)) return;
+    if (c && c.getAttribute("data-envio") === TXT_ENVIO_GRATIS) return;
     if (!c) { c = document.createElement("div"); c.id = "vln-cinta"; document.body.insertBefore(c, document.body.firstChild); }
-    c.setAttribute("data-envio", String(ENVIO_GRATIS_DESDE));
+    c.setAttribute("data-envio", TXT_ENVIO_GRATIS);
     var bloque = ""; for (var i = 0; i < 4; i++) bloque += "<span>" + TEXTO + "</span>";
     c.innerHTML = '<a href="' + ENLACE + '"><div class="vln-pista">' + bloque + bloque + "</div></a>";
   }
