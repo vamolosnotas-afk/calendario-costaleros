@@ -117,8 +117,13 @@ def saco_de(valor):
     if not n: return ""
     for claves, k in ((("swiss",), "sacoSwiss"), (("holand",), "sacaHolandesa"), (("alem",), "sacaAlemana"),
                       (("harina",), "sacaHarina"), (("sarga",), "sacaSarga"), (("cig",), "sacaCiguena"),
-                      (("espiga",), "sacaEspiga"), (("especial", "vamolosnota", "exclusiv"), "sacoEspecial")):
+                      (("espiga",), "sacaEspiga"), (("especial", "vamolosnota", "exclusiv"), "sacoEspecial"),
+                      (("francesa", "la poste"), "sacaFrancesa"), (("bremen", "brehmen"), "sacoBremen")):
         if any(c in n for c in claves): return k
+    if "honduras" in n and "shg" in n: return "sacoHondurasSHG"
+    if "honduras" in n and "global" in n: return "sacoHondurasGlobal"
+    for c, k in (("nicaragua", "sacoNicaragua"), ("brasil", "sacoBrasil"), ("guatemala", "sacoGuatemala")):
+        if c in n: return k
     return "sacoTrama"
 
 def linea_de(it):
@@ -159,7 +164,8 @@ def comp_de(lineas, telas):
     return {k: (int(v) if float(v).is_integer() else v) for k, v in c.items()}
 
 MATERIAL = {"sacoTrama", "sacoEspecial", "sacaHolandesa", "sacaAlemana", "sacaHarina", "sacaSarga", "sacaCiguena",
-            "sacoSwiss", "sacaEspiga", "morcilla", "fajaTela", "fajaElastica", "fajaNino", "tirantas", "camiseta", "bolsita"}
+            "sacoSwiss", "sacaEspiga", "sacaFrancesa", "sacoBremen", "sacoHondurasSHG", "sacoHondurasGlobal",
+            "sacoNicaragua", "sacoBrasil", "sacoGuatemala", "morcilla", "fajaTela", "fajaElastica", "fajaNino", "tirantas", "camiseta", "bolsita"}
 
 def solo_material(comp, stock_ids):
     return {k: v for k, v in comp.items() if k in MATERIAL or k in stock_ids}
