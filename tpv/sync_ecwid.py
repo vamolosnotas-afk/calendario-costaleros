@@ -177,12 +177,93 @@ def fecha_local(s):
         return datetime.date.today().isoformat(), datetime.datetime.now(datetime.timezone.utc).isoformat()
     return d.astimezone(MAD).date().isoformat(), d.astimezone(datetime.timezone.utc).isoformat()
 
+
+PAGO_A_ECWID = {"Pagado": "PAID", "Pendiente": "AWAITING_PAYMENT", "Cancelado": "CANCELLED"}
+EMAIL_TIENDA = "info@vamolosnota.es"
+_prods = {}
+def producto(pid):
+    if pid not in _prods:
+        try: _prods[pid] = api("GET", f"/products/{pid}")
+        except Exception: _prods[pid] = {}
+    return _prods[pid]
+
+def pedido_para_tienda(p):
+    """Convierte un pedido hecho en el TPV en un pedido de la tienda (para crearlo con POST /orders)."""
+    items, envio = [], None
+    for l in p.get("lineas") or []:
+        if l.get("prod") == "envio":
+            envio = l; continue
+        q = int(l.get("cant") or 1); precio = round(float(l.get("precio") or 0), 2)
+        it = {"name": l.get("nombre") or "Artículo", "quantity": q, "price": precio}
+        ops = []
+        if l.get("web") and l.get("pid"):
+            pr = producto(l["pid"])
+            it["productId"] = int(l["pid"])
+            if pr.get("sku"): it["sku"] = pr["sku"]
+            defs = pr.get("options") or []
+            for j, v in (l.get("sel") or {}).items():
+                j = int(j)
+                if j >= len(defs): continue
+                o = defs[j]; t = o.get("type")
+                if t == "CHECKBOX":
+                    vals = [x for x in (v if isinstance(v, list) else [v]) if x]
+                    if not vals: continue
+                    ch = {c.get("text"): c for c in (o.get("choices") or [])}
+                    ops.append({"name": o.get("name"), "type": "CHOICES", "value": ", ".join(vals),
+                                "selections": [{"selectionTitle": x, "selectionModifier": (ch.get(x) or {}).get("priceModifier", 0),
+                                                "selectionModifierType": (ch.get(x) or {}).get("priceModifierType", "ABSOLUTE")} for x in vals]})
+                else:
+                    val = str(v or "").strip()
+                    if not val: continue
+                    ops.append({"name": o.get("name"), "type": "CHOICE" if t in ("SELECT", "RADIO", "SIZE") else "TEXT", "value": val})
+            if l.get("bordTxt") and not any("bordar" in norm(x["name"]) for x in ops):
+                ops.append({"name": "Bordado", "type": "TEXT", "value": l["bordTxt"]})
+        else:
+            for nom, k in (("Saco", "sacoTxt"), ("Tela", "tela"), ("Medidas", "medidas"), ("Bordado", "bordado"), ("Detalle", "detalle")):
+                if l.get(k): ops.append({"name": nom, "type": "TEXT", "value": str(l[k])})
+            if l.get("morcilla"): ops.append({"name": "Morcilla", "type": "TEXT", "value": "Sí"})
+        if ops: it["selectedOptions"] = ops
+        items.append(it)
+    email = str(p.get("email") or "").strip()
+    persona = {"name": p.get("cliente") or "Cliente", "phone": p.get("telefono") or "", "street": p.get("direccion") or "",
+               "city": p.get("localidad") or "", "stateOrProvinceName": p.get("provincia") or "", "countryCode": "ES"}
+    sub = round(sum(i["price"] * i["quantity"] for i in items), 2)
+    tasa = round(float((envio or {}).get("precio") or 0), 2)
+    notas = []
+    if p.get("fechaCompromiso"): notas.append("Entregar/recoger el " + "/".join(reversed(p["fechaCompromiso"].split("-"))))
+    notas.append("Pedido del TPV " + str(p.get("num") or ""))
+    o = {"email": email or EMAIL_TIENDA, "disableAllCustomerNotifications": not email,
+         "paymentStatus": PAGO_A_ECWID.get(p.get("pago"), "AWAITING_PAYMENT"),
+         "fulfillmentStatus": SIT_A_ECWID.get(p.get("situacion") or "Nuevo", "AWAITING_PROCESSING"),
+         "paymentMethod": p.get("formaPago") or "", "items": items, "subtotal": sub,
+         "total": round(float(p.get("total") or (sub + tasa)), 2),
+         "billingPerson": persona, "shippingPerson": persona,
+         "orderComments": p.get("notas") or "", "privateAdminNotes": " · ".join(notas)}
+    if envio:
+        o["shippingOption"] = {"shippingMethodName": envio.get("nombre") or "Envío", "shippingRate": tasa,
+                               "isPickup": "recog" in norm(envio.get("nombre"))}
+    return o
+
 # ---------------- comandos ----------------
 def cmd_push(pend_path):
     pend = leer_jsonl(pend_path)
     res = []
     for d in pend:
         p = d.get("data") or {}
+        if p.get("ecwidCrear") and not p.get("ecwidId"):
+            # pedido hecho en el TPV que aún no existe en la tienda: se crea (la tienda manda los correos al cliente)
+            try:
+                body = pedido_para_tienda(p)
+                if not body["items"]: raise RuntimeError("el pedido no tiene productos")
+                r = api("POST", "/orders", body=body)
+                nid = str(r.get("orderid") or r.get("id") or "")
+                o = api("GET", f"/orders/{urllib.parse.quote(nid)}")
+                nid = str(o.get("id") or nid)
+                res.append({"id": d["id"], "ecwidId": nid, "ok": True, "creado": True, "sinCorreo": not p.get("email"),
+                            "enviado": {"creado": nid}, "order": o, "doc": d})
+            except Exception as e:
+                res.append({"id": d["id"], "ecwidId": p.get("num"), "ok": False, "error": "crear en la tienda: " + str(e)})
+            continue
         eid = p.get("ecwidId") or p.get("num")
         cambios = dict(p.get("ecwidCambios") or {})
         if not eid or not cambios:
@@ -227,6 +308,9 @@ def cmd_build(exist_path, stock_path=None):
         n = (d["data"].get("ecwidId") or d["data"].get("num") or "").upper()
         if n and n not in por_num: por_num[n] = d
     pushed_ok = {r["ecwidId"] for r in push if r.get("ok") and r.get("ecwidId")}
+    for r in push:
+        if r.get("ok") and r.get("creado") and r.get("doc"):
+            por_num[str(r["ecwidId"]).upper()] = r["doc"]
     # los pedidos recién pasados a la tienda se rellenan con lo que la tienda devolvió
     for r in push:
         if r.get("ok") and r.get("order") and r["order"].get("id") not in {o.get("id") for o in orders}:
@@ -240,6 +324,7 @@ def cmd_build(exist_path, stock_path=None):
         if ex and ex["data"].get("ecwidPend") and eid not in pushed_ok:
             saltados += 1; continue  # hay un cambio del TPV pendiente de subir: no se pisa
         cur = ex["data"] if ex else {}
+        del_tpv = cur.get("origen") == "TPV"   # pedido hecho en el TPV: sus líneas, total y stock mandan
         fecha, creado = fecha_local(o.get("createDate", ""))
         lineas = [linea_de(it) for it in (o.get("items") or [])]
         so = o.get("shippingOption") or {}
@@ -253,15 +338,19 @@ def cmd_build(exist_path, stock_path=None):
         track = str(o.get("trackingNumber") or "").strip().upper()
         situ = sit_de_ecwid(ful, cur.get("situacion"))
         pago = PAGO_DE_ECWID.get(pay, cur.get("pago") or "Pendiente")
-        f = {"ecwidId": eid, "num": cur.get("num") or eid, "ecwidFul": ful, "ecwidPay": pay, "ecwidTrack": track,
+        f = {"ecwidId": eid, "num": eid if str(cur.get("num") or "").startswith("TPV-") else (cur.get("num") or eid), "ecwidFul": ful, "ecwidPay": pay, "ecwidTrack": track,
              "ecwidUpd": o.get("updateDate", ""), "ecwidPend": False, "ecwidCambios": {},
              "situacion": situ, "pago": pago, "ecwidSit": situ, "ecwidPago": pago, "total": round(float(o.get("total") or 0), 2), "lineas": lineas,
              "act": ahora}
-        if sp.get("name"): f["cliente"] = sp["name"].strip()
-        for k, v in (("telefono", sp.get("phone")), ("email", o.get("email")), ("direccion", dirc),
-                     ("localidad", sp.get("city")), ("provincia", sp.get("stateOrProvinceName"))):
+        if del_tpv:
+            for k in ("lineas", "total"): f.pop(k, None)
+            f["ecwidCrear"] = False
+            if str(cur.get("num") or "").startswith("TPV-"): f["numTPV"] = cur["num"]
+        if sp.get("name") and not del_tpv: f["cliente"] = sp["name"].strip()
+        for k, v in ([] if del_tpv else (("telefono", sp.get("phone")), ("email", o.get("email")), ("direccion", dirc),
+                     ("localidad", sp.get("city")), ("provincia", sp.get("stateOrProvinceName")))):
             if v: f[k] = str(v).strip()
-        if o.get("paymentMethod"): f["formaPago"] = forma_pago(o["paymentMethod"])
+        if o.get("paymentMethod") and not del_tpv: f["formaPago"] = forma_pago(o["paymentMethod"])
         if track:
             f["seguimiento"] = track.upper()
             f["empresaEnvio"] = cur.get("empresaEnvio") or "Correos"
@@ -273,7 +362,7 @@ def cmd_build(exist_path, stock_path=None):
             f["incidencia"] = "No se entregará" if ful == "WILL_NOT_DELIVER" else "Devuelto"
         historico = bool(cur.get("historico"))
         comp_total = comp_de(lineas, telas)
-        if not historico:
+        if not historico and not del_tpv:
             f["comp"] = comp_total
             deseado = {} if pago == "Cancelado" else solo_material(comp_total, stock_ids | MATERIAL)
             antes = cur.get("stockComp") or {}
@@ -306,7 +395,8 @@ def cmd_build(exist_path, stock_path=None):
             ops.append({"op": "update", "path": f"stock/{k}", "ifVersion": s["version"],
                         "data": {"cant": round(float(s["data"].get("cant") or 0) + v, 2), "act": ahora}})
     errores = [r for r in push if not r.get("ok")]
-    resumen = f"{nuevos} nuevos, {actualizados} actualizados" + (f", {sum(1 for r in push if r.get('ok') and not r.get('sinCambios'))} pasados a la tienda" if push else "")
+    creados = sum(1 for r in push if r.get("ok") and r.get("creado"))
+    resumen = f"{nuevos} nuevos, {actualizados} actualizados" + (f", {sum(1 for r in push if r.get('ok') and not r.get('sinCambios'))} pasados a la tienda" if push else "") + (f", {creados} creados en la tienda" if creados else "")
     json.dump({"ops": ops, "delta": delta, "faltaStock": falta_stock, "resumen": resumen,
                "errores": [f"{r.get('ecwidId')}: {r.get('error')}" for r in errores], "saltados": saltados},
               open(f"{DIR}/build.json", "w"), ensure_ascii=False)
