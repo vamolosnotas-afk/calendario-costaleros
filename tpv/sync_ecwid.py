@@ -57,7 +57,7 @@ def leer_jsonl(path):
     return out
 
 # ---------------- correspondencias ----------------
-SIT_A_ECWID = {"Nuevo": "AWAITING_PROCESSING", "En proceso": "PROCESSING", "Listo": "READY_FOR_PICKUP",
+SIT_A_ECWID = {"Nuevo": "AWAITING_PROCESSING", "En proceso": "PROCESSING", "Listo": "PROCESSING",
                "Para recoger": "READY_FOR_PICKUP",
                "Enviado": "SHIPPED", "En tránsito": "SHIPPED", "Entregado": "DELIVERED"}
 # "Registrado en Correos" no se pasa a la tienda: el paquete aún no está en Correos
@@ -68,7 +68,7 @@ def sit_de_ecwid(f, actual):
     if actual in ("Registrado en Correos", "En mensajería") and f in ("AWAITING_PROCESSING", "PROCESSING", "READY_FOR_PICKUP"):
         return "Registrado en Correos"
     if f == "AWAITING_PROCESSING": return "Nuevo"
-    if f == "PROCESSING": return "En proceso"
+    if f == "PROCESSING": return "Listo" if actual == "Listo" else "En proceso"   # "Listo" se pasa a la tienda como "En proceso"
     if f == "READY_FOR_PICKUP": return actual if actual in ("Listo", "Para recoger") else "Para recoger"
     if f == "OUT_FOR_DELIVERY": return "En tránsito"
     if f == "SHIPPED": return actual if actual in ("Enviado", "En tránsito") else "Enviado"
@@ -327,7 +327,8 @@ def cmd_build(exist_path, stock_path=None):
         if ex and ex["data"].get("ecwidPend") and eid not in pushed_ok:
             saltados += 1; continue  # hay un cambio del TPV pendiente de subir: no se pisa
         cur = ex["data"] if ex else {}
-        del_tpv = cur.get("origen") == "TPV"   # pedido hecho en el TPV: sus líneas, total y stock mandan
+        # pedido hecho en el TPV, o pedido de la web corregido en el TPV (editadoTPV): sus líneas, total, datos del cliente y stock mandan
+        del_tpv = cur.get("origen") == "TPV" or bool(cur.get("editadoTPV"))
         fecha, creado = fecha_local(o.get("createDate", ""))
         lineas = [linea_de(it) for it in (o.get("items") or [])]
         so = o.get("shippingOption") or {}
@@ -354,6 +355,8 @@ def cmd_build(exist_path, stock_path=None):
                      ("localidad", sp.get("city")), ("provincia", sp.get("stateOrProvinceName")))):
             if v: f[k] = str(v).strip()
         if o.get("paymentMethod") and not del_tpv: f["formaPago"] = forma_pago(o["paymentMethod"])
+        if so.get("shippingMethodName") and not cur.get("entrega"):
+            f["entrega"] = so["shippingMethodName"]   # para saber si es recogida o envío
         if track:
             f["seguimiento"] = track.upper()
             f["empresaEnvio"] = cur.get("empresaEnvio") or "Correos"
