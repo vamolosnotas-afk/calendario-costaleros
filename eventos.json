@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-21",
- "total": 695,
+ "total": 698,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -1042,6 +1042,23 @@
    "nota": null,
    "añadido": "2026-11-13",
    "origen": "terceros"
+  },
+  {
+   "fecha": "2026-11-27",
+   "hora": "18:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "Los Humeros",
+   "paso": "Niño Jesús (Grupo Joven)",
+   "tipo": "igualá",
+   "titulo": "Igualá del paso del Niño Jesús de los Humeros (Grupo Joven)",
+   "lugar": "Plazuela de la Capilla",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Organizada por el Grupo Joven de la Hermandad del Rosario de los Humeros.",
+   "añadido": "2026-11-21"
   },
   {
    "provincia": "almeria",
@@ -4764,6 +4781,23 @@
    "nota": null,
    "añadido": "2026-11-13",
    "origen": "terceros"
+  },
+  {
+   "fecha": "2027-01-30",
+   "hora": "21:00",
+   "provincia": "jerez",
+   "localidad": "Jerez de la Frontera",
+   "hermandad": "El Socorro (Jerez)",
+   "paso": "Ntra. Sra. del Socorro",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla de Ntra. Sra. del Socorro, Copatrona de Jerez",
+   "lugar": "Santa Iglesia Catedral",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": "Calzado negro de salida.",
+   "añadido": "2026-11-21"
   },
   {
    "fecha": "2027-01-31",
@@ -11569,6 +11603,23 @@
    "titulo": "Mudá de vuelta del paso del Stmo. Cristo de la Sed",
    "lugar": "Parroquia",
    "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2027-04-02",
+   "hora": "20:30",
+   "provincia": "sevilla",
+   "localidad": "Morón de la Frontera",
+   "hermandad": "Soberano (Morón)",
+   "paso": "Misterio",
+   "tipo": "otro",
+   "titulo": "Desarmá del paso de Ntro. Padre Jesús de la Salud y el Perdón",
+   "lugar": "Casa Hermandad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-21"
   }
  ]
 }
