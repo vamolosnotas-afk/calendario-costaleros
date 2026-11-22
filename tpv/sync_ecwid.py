@@ -226,7 +226,7 @@ def pedido_para_tienda(p):
         items.append(it)
     email = str(p.get("email") or "").strip()
     persona = {"name": p.get("cliente") or "Cliente", "phone": p.get("telefono") or "", "street": p.get("direccion") or "",
-               "city": p.get("localidad") or "", "stateOrProvinceName": p.get("provincia") or "", "countryCode": "ES"}
+               "city": p.get("localidad") or "", "postalCode": p.get("cp") or "", "stateOrProvinceName": p.get("provincia") or "", "countryCode": "ES"}
     sub = round(sum(i["price"] * i["quantity"] for i in items), 2)
     tasa = round(float((envio or {}).get("precio") or 0), 2)
     notas = []
@@ -356,7 +356,7 @@ def cmd_build(exist_path, stock_path=None):
             if str(cur.get("num") or "").startswith("TPV-"): f["numTPV"] = cur["num"]
         if sp.get("name") and not del_tpv: f["cliente"] = sp["name"].strip()
         for k, v in ([] if del_tpv else (("telefono", sp.get("phone")), ("email", o.get("email")), ("direccion", dirc),
-                     ("localidad", sp.get("city")), ("provincia", sp.get("stateOrProvinceName")))):
+                     ("cp", sp.get("postalCode")), ("localidad", sp.get("city")), ("provincia", sp.get("stateOrProvinceName")))):
             if v: f[k] = str(v).strip()
         if o.get("paymentMethod") and not del_tpv: f["formaPago"] = forma_pago(o["paymentMethod"])
         if so.get("shippingMethodName") and not cur.get("entrega"):
