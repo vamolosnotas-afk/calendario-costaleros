@@ -891,23 +891,6 @@
   },
   {
    "fecha": "2026-11-22",
-   "hora": "09:00",
-   "provincia": "sevilla",
-   "localidad": "Sevilla",
-   "hermandad": "Abnegación de San Bernardo",
-   "paso": null,
-   "tipo": "otro",
-   "titulo": "Prueba",
-   "lugar": null,
-   "capataz": null,
-   "fuente": null,
-   "fuente_nombre": null,
-   "verificado_por": "manuel",
-   "nota": "De 9:00 a 10:00. Cita facilitada por Manuel (29/10/2026).",
-   "añadido": "2026-10-29"
-  },
-  {
-   "fecha": "2026-11-22",
    "hora": "10:00",
    "provincia": "madrid",
    "localidad": "Madrid",
