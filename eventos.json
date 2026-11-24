@@ -1,6 +1,6 @@
 {
- "actualizado": "2026-11-22",
- "total": 710,
+ "actualizado": "2026-11-24",
+ "total": 711,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -1159,6 +1159,23 @@
    "provincia": "sevilla",
    "localidad": "Sevilla",
    "añadido": "2026-11-18"
+  },
+  {
+   "fecha": "2026-11-27",
+   "hora": "21:00",
+   "provincia": "sevilla",
+   "localidad": "Espartinas",
+   "hermandad": "Sacramental (Espartinas)",
+   "paso": "Palio (Virgen de los Dolores)",
+   "tipo": "igualá",
+   "titulo": "Igualá del paso de palio de la Stma. Virgen de los Dolores",
+   "lugar": "Casa Hermandad Sacramental (Av. María Luisa Domínguez y Pérez de Vargas, 3, Espartinas)",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-24"
   },
   {
    "fecha": "2026-11-27",
