@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-24",
- "total": 711,
+ "total": 714,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -1377,6 +1377,23 @@
    "añadido": "2026-11-11"
   },
   {
+   "fecha": "2026-12-09",
+   "hora": "21:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "La Lanzada",
+   "paso": "Misterio (cuadrilla B)",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla B del misterio de la Sagrada Lanzada",
+   "lugar": "Casa Hermandad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-24"
+  },
+  {
    "fecha": "2026-12-11",
    "hora": "21:00",
    "provincia": "huelva",
@@ -1690,6 +1707,23 @@
    "fuente_nombre": "Web oficial de la Cofradía del Nazareno (Córdoba)",
    "nota": "Procesión del Beato el 6 de febrero de 2027.",
    "añadido": "2026-11-06"
+  },
+  {
+   "fecha": "2026-12-16",
+   "hora": "21:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "La Lanzada",
+   "paso": "Misterio (cuadrilla A)",
+   "tipo": "igualá",
+   "titulo": "Igualá de la cuadrilla A del misterio de la Sagrada Lanzada",
+   "lugar": "Casa Hermandad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-24"
   },
   {
    "fecha": "2026-12-17",
@@ -4963,6 +4997,23 @@
    "fuente_nombre": "Instagram oficial de la Hdad. del Prado (Huelva)",
    "nota": null,
    "añadido": "2026-11-09"
+  },
+  {
+   "fecha": "2027-01-31",
+   "hora": "10:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "El Cachorro",
+   "paso": "Cristo (cuadrillas A y B)",
+   "tipo": "igualá",
+   "titulo": "Igualá de las cuadrillas A y B del Cachorro",
+   "lugar": "Casa Hermandad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-24"
   },
   {
    "fecha": "2027-01-31",
