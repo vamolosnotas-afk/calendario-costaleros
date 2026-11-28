@@ -653,17 +653,22 @@ var TXT_ENVIO_GRATIS = ENVIO_GRATIS_TODO ? "hasta el 30 de noviembre" : "en pedi
 // Cinta de arriba que va pasando, en todas las páginas: hasta el 30/11 envío gratis en todo; desde el 1/12, a partir de ENVIO_GRATIS_DESDE €.
 // Sustituye a la cinta antigua ("hasta el 30 de noviembre · sin códigos") si sigue pegada en IONOS
 (function () {
-  var TEXTO = '🚚 <b>ENVÍO GRATIS</b> ' + (ENVIO_GRATIS_TODO ? 'en tu costal ' : '') + TXT_ENVIO_GRATIS + ' &nbsp;✦&nbsp; Hecho a mano en Sevilla &nbsp;✦&nbsp; Entrega en 48/72h a toda España &nbsp;✦&nbsp; ';
-  var ENLACE = "https://www.vamolosnota.es/tienda-costales/";
+  // Black Friday 2026: hasta el 30/11 la cinta va en modo Black Friday y enlaza a WhatsApp. El 1/12 vuelve sola a la cinta normal de envío gratis.
+  var BF_ACTIVO = new Date() < new Date("2026-12-01T00:00:00+01:00");
+  var WA_BF = "https://wa.me/34692942182?text=" + encodeURIComponent("Hola, quiero aprovechar el Black Friday (2ª unidad al 50%). ¿Me informáis?");
+  var TEXTO = BF_ACTIVO
+    ? 'Black Friday · 2ª unidad a <b>mitad de precio</b> &nbsp;✦&nbsp; 🚚 <b>Envío GRATIS</b> ' + TXT_ENVIO_GRATIS + ' &nbsp;✦&nbsp; Black Friday · segunda unidad al <b>50%</b> &nbsp;✦&nbsp; Hecho a mano en Sevilla · 48/72h &nbsp;✦&nbsp; '
+    : '🚚 <b>ENVÍO GRATIS</b> ' + (ENVIO_GRATIS_TODO ? 'en tu costal ' : '') + TXT_ENVIO_GRATIS + ' &nbsp;✦&nbsp; Hecho a mano en Sevilla &nbsp;✦&nbsp; Entrega en 48/72h a toda España &nbsp;✦&nbsp; ';
+  var ENLACE = BF_ACTIVO ? WA_BF : "https://www.vamolosnota.es/tienda-costales/";
   var CSS_CINTA =
-    "#vln-cinta{position:absolute;top:0;left:0;width:100%;height:40px;overflow:hidden;z-index:9999;background:#6b2c1a;border-bottom:2px solid #d4a574;font:700 17px/40px Georgia,serif;letter-spacing:.5px}" +
+    "#vln-cinta{position:absolute;top:0;left:0;width:100%;height:40px;overflow:hidden;z-index:9999;background:#6b2c1a;border-bottom:2px solid #d4a574;font:700 " + (BF_ACTIVO ? "19px" : "17px") + "/40px Georgia,serif;letter-spacing:.5px" + (BF_ACTIVO ? ";text-transform:uppercase" : "") + "}" +
     "body{padding-top:40px!important}" +
     "#vln-cinta a{color:#faf3e7;text-decoration:none;display:block;height:40px}" +
     "#vln-cinta b{color:#f6c27a}" +
-    "#vln-cinta .vln-pista{display:inline-flex;white-space:nowrap;animation:vlnPasa 110s linear infinite}" +
+    "#vln-cinta .vln-pista{display:inline-flex;white-space:nowrap;animation:vlnPasa " + (BF_ACTIVO ? "200s" : "110s") + " linear infinite}" +
     "#vln-cinta:hover .vln-pista{animation-play-state:paused}" +
     "@keyframes vlnPasa{from{transform:translateX(0)}to{transform:translateX(-50%)}}" +
-    "@media (max-width:767px){#vln-cinta{height:34px;font-size:15px;line-height:34px}#vln-cinta a{height:34px}body{padding-top:34px!important}}" +
+    "@media (max-width:767px){#vln-cinta{height:34px;font-size:" + (BF_ACTIVO ? "16px" : "15px") + ";line-height:34px}#vln-cinta a{height:34px}body{padding-top:34px!important}}" +
     "@media (prefers-reduced-motion:reduce){#vln-cinta .vln-pista{animation:none}}" +
     "@media print{#vln-cinta{display:none!important}body{padding-top:0!important}}";
   function poner() {
@@ -672,12 +677,51 @@ var TXT_ENVIO_GRATIS = ENVIO_GRATIS_TODO ? "hasta el 30 de noviembre" : "en pedi
       var st = document.createElement("style"); st.id = "vln-cinta-css"; st.textContent = CSS_CINTA; document.head.appendChild(st);
     }
     var c = document.getElementById("vln-cinta");
-    if (c && c.getAttribute("data-envio") === TXT_ENVIO_GRATIS) return;
+    if (c && c.getAttribute("data-envio") === ((BF_ACTIVO ? "bf-" : "") + TXT_ENVIO_GRATIS)) return;
     if (!c) { c = document.createElement("div"); c.id = "vln-cinta"; document.body.insertBefore(c, document.body.firstChild); }
-    c.setAttribute("data-envio", TXT_ENVIO_GRATIS);
+    c.setAttribute("data-envio", (BF_ACTIVO ? "bf-" : "") + TXT_ENVIO_GRATIS);
     var bloque = ""; for (var i = 0; i < 4; i++) bloque += "<span>" + TEXTO + "</span>";
     c.innerHTML = '<a href="' + ENLACE + '"><div class="vln-pista">' + bloque + bloque + "</div></a>";
   }
   function iniciar() { poner(); setTimeout(poner, 800); setTimeout(poner, 2500); }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciar); else iniciar();
+})();
+
+// Banda diagonal "BLACK FRIDAY · 2ª UNIDAD −50%" cruzando la cabecera, en todas las páginas.
+// Clic → WhatsApp. Se apaga sola el 1 de diciembre de 2026.
+(function () {
+  var BF_ACTIVO = new Date() < new Date("2026-12-01T00:00:00+01:00");
+  if (!BF_ACTIVO) return;
+  var WA_BF = "https://wa.me/34692942182?text=" + encodeURIComponent("Hola, quiero aprovechar el Black Friday (2ª unidad al 50%). ¿Me informáis?");
+  var CSS_BF =
+    "#vln-bf-wrap{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:60}" +
+    "#vln-bf{position:absolute;left:50%;top:58%;width:170%;transform:translate(-50%,-50%) rotate(-6deg);background:linear-gradient(90deg,#140103,#450c13 45%,#450c13 55%,#140103);border-top:2px solid #e2c46e;border-bottom:2px solid #e2c46e;box-shadow:0 10px 26px rgba(0,0,0,.5);pointer-events:auto;text-decoration:none!important;display:block;overflow:hidden}" +
+    "#vln-bf .vln-pbf{display:inline-flex;white-space:nowrap;animation:vlnBF 26s linear infinite;padding:10px 0}" +
+    "#vln-bf .vln-pbf span{font:800 22px/1 Georgia,'Times New Roman',serif;letter-spacing:3px;padding:0 24px;color:#f6d98a;text-transform:uppercase;text-shadow:0 1px 2px rgba(0,0,0,.6)}" +
+    "#vln-bf .vln-pbf b{color:#ff5b5b}" +
+    "#vln-bf:hover{filter:brightness(1.08)}" +
+    "@keyframes vlnBF{from{transform:translateX(0)}to{transform:translateX(-50%)}}" +
+    "@media (max-width:767px){#vln-bf .vln-pbf span{font-size:16px;letter-spacing:2px;padding:0 16px}#vln-bf{top:62%;width:200%}}" +
+    "@media (prefers-reduced-motion:reduce){#vln-bf .vln-pbf{animation:none}}" +
+    "@media print{#vln-bf-wrap{display:none!important}}";
+  function colocar() {
+    var h = document.querySelector("header");
+    if (!h) return;
+    if (document.getElementById("vln-bf-wrap")) return;
+    if (getComputedStyle(h).position === "static") h.style.position = "relative";
+    var wrap = document.createElement("div"); wrap.id = "vln-bf-wrap";
+    var a = document.createElement("a"); a.id = "vln-bf"; a.href = WA_BF; a.target = "_blank"; a.rel = "noopener";
+    a.setAttribute("aria-label", "Black Friday: segunda unidad al 50 por ciento. Pregúntanos por WhatsApp");
+    var uno = "<span>BLACK FRIDAY · 2ª UNIDAD <b>−50%</b> ·</span>";
+    a.innerHTML = '<span class="vln-pbf">' + uno + uno + uno + uno + uno + uno + '</span>';
+    a.addEventListener("click", function () { try { if (window.gtag) window.gtag("event", "click_banner_blackfriday", { pagina: location.pathname }); } catch (e) {} });
+    wrap.appendChild(a); h.appendChild(wrap);
+  }
+  function iniciar() {
+    if (!document.getElementById("vln-bf-css")) {
+      var st = document.createElement("style"); st.id = "vln-bf-css"; st.textContent = CSS_BF; document.head.appendChild(st);
+    }
+    colocar(); setTimeout(colocar, 900); setTimeout(colocar, 2700);
+  }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciar); else iniciar();
 })();
