@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-28",
- "total": 731,
+ "total": 733,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -9421,6 +9421,40 @@
    "tipo": "mudá",
    "titulo": "Mudá del paso del Stmo. Cristo de la Fe",
    "añadido": "2026-10-31"
+  },
+  {
+   "fecha": "2027-03-02",
+   "hora": "21:00",
+   "provincia": "huelva",
+   "localidad": "Huelva",
+   "hermandad": "Perdón",
+   "paso": "Ntra. Sra. de los Dolores",
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de Ntra. Sra. de los Dolores",
+   "lugar": null,
+   "capataz": null,
+   "fuente": "https://www.instagram.com/p/Df22uw7jF8p/",
+   "fuente_nombre": "Instagram oficial de la Hdad. del Perdón",
+   "verificado_por": null,
+   "nota": "Tras el ensayo, mudá del paso.",
+   "añadido": "2026-11-28"
+  },
+  {
+   "fecha": "2027-03-02",
+   "hora": null,
+   "provincia": "huelva",
+   "localidad": "Huelva",
+   "hermandad": "Perdón",
+   "paso": "Ntra. Sra. de los Dolores",
+   "tipo": "mudá",
+   "titulo": "Mudá del paso de Ntra. Sra. de los Dolores",
+   "lugar": null,
+   "capataz": null,
+   "fuente": "https://www.instagram.com/p/Df22uw7jF8p/",
+   "fuente_nombre": "Instagram oficial de la Hdad. del Perdón",
+   "verificado_por": null,
+   "nota": "Tras el ensayo.",
+   "añadido": "2026-11-28"
   },
   {
    "fecha": "2027-03-03",
