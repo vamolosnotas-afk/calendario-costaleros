@@ -1,6 +1,6 @@
 {
- "actualizado": "2026-11-24",
- "total": 714,
+ "actualizado": "2026-11-28",
+ "total": 731,
  "eventos": [
   {
    "provincia": "sevilla",
@@ -2312,6 +2312,23 @@
    "añadido": "2026-11-14"
   },
   {
+   "fecha": "2027-01-10",
+   "hora": "12:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "Los Panaderos",
+   "paso": "Misterio (Soberano Poder en su Prendimiento)",
+   "tipo": "igualá",
+   "titulo": "Igualá del paso del Soberano Poder en su Prendimiento",
+   "lugar": "Casa de Hermandad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-28"
+  },
+  {
    "provincia": "sevilla",
    "localidad": "Sevilla",
    "hermandad": "Señor de la Luz Despojado (Campos de Soria)",
@@ -2361,6 +2378,23 @@
    "provincia": "sevilla",
    "localidad": "Sevilla",
    "añadido": "2026-11-18"
+  },
+  {
+   "fecha": "2027-01-12",
+   "hora": "20:30",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "La Redención",
+   "paso": "Misterio (Jesús de la Redención)",
+   "tipo": "igualá",
+   "titulo": "Igualá de aspirantes al paso de misterio de Jesús de la Redención",
+   "lugar": "Iglesia de Santiago",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-28"
   },
   {
    "fecha": "2027-01-12",
@@ -2795,6 +2829,23 @@
    "añadido": "2026-11-18"
   },
   {
+   "fecha": "2027-01-16",
+   "hora": "16:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "La Redención",
+   "paso": "Misterio (Jesús de la Redención)",
+   "tipo": "igualá",
+   "titulo": "Igualá del paso de misterio de Jesús de la Redención",
+   "lugar": "Polígono Industrial Navisa",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-28"
+  },
+  {
    "fuente": "https://www.instagram.com/p/Df16-KgA84E/",
    "fuente_nombre": "Instagram oficial de la Hdad. del Cautivo (Coria del Río)",
    "verificado_por": "manuel",
@@ -3083,6 +3134,23 @@
   },
   {
    "fecha": "2027-01-17",
+   "hora": "10:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "Los Panaderos",
+   "paso": "Misterio (Soberano Poder en su Prendimiento)",
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo del paso del Prendimiento",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-28"
+  },
+  {
+   "fecha": "2027-01-17",
    "hora": "11:00",
    "provincia": "ciudadreal",
    "localidad": "Ciudad Real",
@@ -3146,6 +3214,23 @@
    "verificado_por": "manuel",
    "nota": null,
    "añadido": "2026-11-10"
+  },
+  {
+   "fecha": "2027-01-17",
+   "hora": "11:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "Los Panaderos",
+   "paso": "Palio (Regla)",
+   "tipo": "igualá",
+   "titulo": "Igualá del paso de palio de la Virgen de Regla",
+   "lugar": "Casa de Hermandad",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-28"
   },
   {
    "fecha": "2027-01-17",
@@ -3379,6 +3464,23 @@
    "verificado_por": "manuel",
    "nota": null,
    "añadido": "2026-11-11"
+  },
+  {
+   "fecha": "2027-01-19",
+   "hora": "20:30",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "La Redención",
+   "paso": "Palio (Rocío)",
+   "tipo": "igualá",
+   "titulo": "Igualá de aspirantes al paso de palio de la Virgen del Rocío",
+   "lugar": "Iglesia de Santiago",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-28"
   },
   {
    "fecha": "2027-01-20",
@@ -3731,6 +3833,23 @@
    "fuente_nombre": "Web oficial de la Hdad. de la Merced (Córdoba)",
    "nota": "Obligatorio calzado negro de salida.",
    "añadido": "2026-11-06"
+  },
+  {
+   "fecha": "2027-01-23",
+   "hora": "16:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "La Redención",
+   "paso": "Palio (Rocío)",
+   "tipo": "igualá",
+   "titulo": "Igualá del paso de palio de la Virgen del Rocío",
+   "lugar": "Polígono Industrial Navisa",
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-28"
   },
   {
    "fecha": "2027-01-23",
@@ -4136,6 +4255,23 @@
   },
   {
    "fecha": "2027-01-24",
+   "hora": "10:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "Dulce Nombre (Bellavista)",
+   "paso": "Jesús de la Salud y Remedios",
+   "tipo": "igualá",
+   "titulo": "Igualá del paso de Jesús de la Salud y Remedios",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-28"
+  },
+  {
+   "fecha": "2027-01-24",
    "hora": "10:30",
    "provincia": "ciudadreal",
    "localidad": "Bolaños de Calatrava",
@@ -4166,6 +4302,23 @@
    "fuente_nombre": "Instagram oficial de la Hdad. del Rosario (Alcalá de Guadaíra)",
    "nota": "Asistir con el calzado de salida",
    "añadido": "2026-11-09"
+  },
+  {
+   "fecha": "2027-01-24",
+   "hora": "11:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "La Resurrección (Sevilla)",
+   "paso": null,
+   "tipo": "igualá",
+   "titulo": "Igualá de las cuadrillas de costaleros",
+   "lugar": "Colegio La Salle-La Purísima",
+   "capataz": null,
+   "fuente": "https://www.hermandaddelaresurreccion.com/iguala-y-ensayos-de-costaleros-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. de la Resurrección",
+   "verificado_por": null,
+   "nota": null,
+   "añadido": "2026-11-28"
   },
   {
    "fecha": "2027-01-24",
@@ -4900,6 +5053,40 @@
    "verificado_por": "manuel",
    "nota": "Calzado negro de salida.",
    "añadido": "2026-11-21"
+  },
+  {
+   "fecha": "2027-01-30",
+   "hora": "21:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "La Resurrección (Sevilla)",
+   "paso": null,
+   "tipo": "ensayo",
+   "titulo": "Primer ensayo de las cuadrillas de costaleros",
+   "lugar": "Colegio La Salle-La Purísima",
+   "capataz": null,
+   "fuente": "https://www.hermandaddelaresurreccion.com/iguala-y-ensayos-de-costaleros-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. de la Resurrección",
+   "verificado_por": null,
+   "nota": null,
+   "añadido": "2026-11-28"
+  },
+  {
+   "fecha": "2027-01-30",
+   "hora": null,
+   "provincia": "jerez",
+   "localidad": "Jerez de la Frontera",
+   "hermandad": "La Yedra",
+   "paso": null,
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de costaleros",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-28"
   },
   {
    "fecha": "2027-01-31",
@@ -5807,6 +5994,23 @@
    "tipo": "ensayo",
    "titulo": "Ensayo de la cuadrilla de Ntro. Padre Jesús Resucitado",
    "añadido": "2026-11-21"
+  },
+  {
+   "fecha": "2027-02-06",
+   "hora": "21:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "La Resurrección (Sevilla)",
+   "paso": null,
+   "tipo": "ensayo",
+   "titulo": "Segundo ensayo de las cuadrillas de costaleros",
+   "lugar": "Colegio La Salle-La Purísima",
+   "capataz": null,
+   "fuente": "https://www.hermandaddelaresurreccion.com/iguala-y-ensayos-de-costaleros-2027/",
+   "fuente_nombre": "Web oficial de la Hdad. de la Resurrección",
+   "verificado_por": null,
+   "nota": null,
+   "añadido": "2026-11-28"
   },
   {
    "fecha": "2027-02-06",
@@ -7357,6 +7561,23 @@
    "añadido": "2026-11-17"
   },
   {
+   "fecha": "2027-02-17",
+   "hora": null,
+   "provincia": "jerez",
+   "localidad": "Jerez de la Frontera",
+   "hermandad": "La Yedra",
+   "paso": null,
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de costaleros",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-28"
+  },
+  {
    "provincia": "huelva",
    "localidad": "Huelva",
    "hermandad": "Lanzada",
@@ -7808,6 +8029,23 @@
   },
   {
    "fecha": "2027-02-20",
+   "hora": "16:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "Los Panaderos",
+   "paso": "Misterio (Soberano Poder en su Prendimiento)",
+   "tipo": "ensayo",
+   "titulo": "Ensayo del paso del Prendimiento",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-28"
+  },
+  {
+   "fecha": "2027-02-20",
    "hora": "17:00",
    "provincia": "cordoba",
    "localidad": "Córdoba",
@@ -8219,6 +8457,23 @@
    "titulo": "Ensayo del paso de misterio (ambas cuadrillas)",
    "nota": "Ensayo de ambas cuadrillas. Calzado negro.",
    "añadido": "2026-10-30"
+  },
+  {
+   "fecha": "2027-02-21",
+   "hora": "10:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "Los Panaderos",
+   "paso": "Palio (Regla)",
+   "tipo": "ensayo",
+   "titulo": "Ensayo del paso de palio de la Virgen de Regla",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-28"
   },
   {
    "provincia": "huelva",
@@ -9115,6 +9370,23 @@
    "verificado_por": "manuel",
    "nota": null,
    "añadido": "2026-11-10"
+  },
+  {
+   "fecha": "2027-02-28",
+   "hora": null,
+   "provincia": "jerez",
+   "localidad": "Jerez de la Frontera",
+   "hermandad": "La Yedra",
+   "paso": null,
+   "tipo": "ensayo",
+   "titulo": "Ensayo de la cuadrilla de costaleros",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-28"
   },
   {
    "fecha": "2027-03-02",
@@ -10175,6 +10447,23 @@
    "verificado_por": "manuel",
    "nota": "Obligatorio llevar calzado negro de salida.",
    "añadido": "2026-11-10"
+  },
+  {
+   "fecha": "2027-03-07",
+   "hora": "10:00",
+   "provincia": "sevilla",
+   "localidad": "Sevilla",
+   "hermandad": "Los Panaderos",
+   "paso": "Palio (Regla)",
+   "tipo": "ensayo",
+   "titulo": "Ensayo del paso de palio de la Virgen de Regla",
+   "lugar": null,
+   "capataz": null,
+   "fuente": null,
+   "fuente_nombre": null,
+   "verificado_por": "manuel",
+   "nota": null,
+   "añadido": "2026-11-28"
   },
   {
    "fecha": "2027-03-07",
